@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(python -m pip:*)",
+      "Bash(python test_pdf_extraction.py:*)",
+      "Bash(python search_keywords.py:*)",
+      "Bash(python search_transformative.py:*)",
+      "Bash(cat:*)",
+      "Bash(python test_codebook.py:*)",
+      "Bash(python app.py:*)",
+      "Bash(dir:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
