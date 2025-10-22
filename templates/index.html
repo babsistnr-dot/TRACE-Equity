@@ -205,7 +205,7 @@
             border-radius: 10px;
             height: 30px;
             margin: 20px 0;
-            overflow: hidden;
+            overflow: visible;
             position: relative;
         }
 
@@ -213,11 +213,20 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             height: 100%;
             transition: width 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .progress-bar #progressText {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #333;
+            font-weight: 600;
+            font-size: 14px;
+            white-space: nowrap;
+            z-index: 10;
         }
 
         .save-indicator {
@@ -388,9 +397,8 @@
                 </div>
 
                 <div class="progress-bar">
-                    <div class="progress-fill" id="progressFill" style="width: 0%;">
-                        <span id="progressText">0 / 0 validiert</span>
-                    </div>
+                    <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                    <span id="progressText">0 / 0 validiert</span>
                 </div>
 
                 <div id="resultsList"></div>
@@ -661,14 +669,14 @@
                         <label>Code bestätigen:</label>
                         <select id="code_${index}">
                             <option value="${result.code}">${result.code}</option>
-                            <option value="Code 1.1">Code 1.1</option>
-                            <option value="Code 2.1">Code 2.1</option>
-                            <option value="Code 2.2">Code 2.2</option>
-                            <option value="Code 2.3">Code 2.3</option>
-                            <option value="Code 2.4">Code 2.4</option>
-                            <option value="Code 2.5">Code 2.5</option>
-                            <option value="Code 2.6">Code 2.6</option>
-                            <option value="Code 2.7">Code 2.7</option>
+                            <option value="Code 1.1: Direkte Nennung">Code 1.1: Direkte Nennung</option>
+                            <option value="Code 2.1: Diversität & Heterogenität">Code 2.1: Diversität & Heterogenität</option>
+                            <option value="Code 2.2: Inklusion & Partizipation">Code 2.2: Inklusion & Partizipation</option>
+                            <option value="Code 2.3: Individuelle Förderung & Differenzierung">Code 2.3: Individuelle Förderung & Differenzierung</option>
+                            <option value="Code 2.4: Abbau von Benachteiligung & Diskriminierung">Code 2.4: Abbau von Benachteiligung & Diskriminierung</option>
+                            <option value="Code 2.5: Bildungspartnerschaft & Sozialraumorientierung">Code 2.5: Bildungspartnerschaft & Sozialraumorientierung</option>
+                            <option value="Code 2.6: Sprachliche Bildung & Mehrsprachigkeit">Code 2.6: Sprachliche Bildung & Mehrsprachigkeit</option>
+                            <option value="Code 2.7: Professionelle Haltung & Ethik">Code 2.7: Professionelle Haltung & Ethik</option>
                         </select>
                         <input type="text" id="notes_${index}" placeholder="Notizen..." style="flex: 1;">
                     </div>

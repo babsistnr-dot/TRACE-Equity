@@ -184,47 +184,60 @@ def index():
 @app.route('/upload', methods=['POST'])
 def upload_pdf():
     """PDF hochladen und analysieren"""
-    if 'pdf' not in request.files:
-        return jsonify({'error': 'Keine Datei hochgeladen'}), 400
+    try:
+        if 'pdf' not in request.files:
+            return jsonify({'error': 'Keine Datei hochgeladen'}), 400
 
-    file = request.files['pdf']
-    if file.filename == '':
-        return jsonify({'error': 'Keine Datei ausgewählt'}), 400
+        file = request.files['pdf']
+        if file.filename == '':
+            return jsonify({'error': 'Keine Datei ausgewählt'}), 400
 
-    if not file.filename.endswith('.pdf'):
-        return jsonify({'error': 'Nur PDF-Dateien erlaubt'}), 400
+        if not file.filename.endswith('.pdf'):
+            return jsonify({'error': 'Nur PDF-Dateien erlaubt'}), 400
 
-    # Datei speichern
-    filename = file.filename
-    filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-    file.save(filepath)
+        # Datei speichern
+        filename = file.filename
+        filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        file.save(filepath)
 
-    # PDF analysieren
-    pages = extract_pdf_text(filepath)
-    for page in pages:
-        page['pdf_path'] = filepath
+        # PDF analysieren
+        pages = extract_pdf_text(filepath)
+        for page in pages:
+            page['pdf_path'] = filepath
 
-    results = search_keywords_in_text(pages)
+        results = search_keywords_in_text(pages)
 
-    # Ergebnisse temporär speichern
-    session_id = datetime.now().strftime('%Y%m%d_%H%M%S')
-    results_file = os.path.join('ergebnisse', f'analyse_{session_id}.json')
+        # Ergebnisse temporär speichern
+        session_id = datetime.now().strftime('%Y%m%d_%H%M%S')
+        results_file = os.path.join('ergebnisse', f'analyse_{session_id}.json')
 
-    with open(results_file, 'w', encoding='utf-8') as f:
-        json.dump({
+        # Debug-Ausgabe
+        print(f"DEBUG: Versuche JSON zu speichern in: {results_file}")
+        print(f"DEBUG: Absolute Path: {os.path.abspath(results_file)}")
+
+        with open(results_file, 'w', encoding='utf-8') as f:
+            json.dump({
+                'pdf_name': filename,
+                'timestamp': session_id,
+                'total_results': len(results),
+                'results': results
+            }, f, ensure_ascii=False, indent=2)
+
+        print(f"DEBUG: JSON erfolgreich gespeichert!")
+
+        return jsonify({
+            'success': True,
             'pdf_name': filename,
-            'timestamp': session_id,
             'total_results': len(results),
-            'results': results
-        }, f, ensure_ascii=False, indent=2)
+            'session_id': session_id,
+            'results': results  # ALLE Ergebnisse anzeigen
+        })
 
-    return jsonify({
-        'success': True,
-        'pdf_name': filename,
-        'total_results': len(results),
-        'session_id': session_id,
-        'results': results  # ALLE Ergebnisse anzeigen
-    })
+    except Exception as e:
+        print(f"ERROR in upload_pdf: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({'error': f'Upload fehlgeschlagen: {str(e)}'}), 500
 
 @app.route('/load_session/<session_id>')
 def load_session(session_id):
@@ -278,28 +291,64 @@ def save_validation():
 @app.route('/export/<session_id>')
 def export_results(session_id):
     """Ergebnisse als CSV exportieren"""
-    results_file = os.path.join('ergebnisse', f'analyse_{session_id}.json')
+    try:
+        from io import BytesIO, StringIO
+        from flask import Response
 
-    if not os.path.exists(results_file):
-        return jsonify({'error': 'Session nicht gefunden'}), 404
+        results_file = os.path.join('ergebnisse', f'analyse_{session_id}.json')
 
-    with open(results_file, 'r', encoding='utf-8') as f:
-        data = json.load(f)
+        if not os.path.exists(results_file):
+            return jsonify({'error': 'Session nicht gefunden'}), 404
 
-    # Als DataFrame
-    df = pd.DataFrame(data['results'])
+        with open(results_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
 
-    # Sortiere Spalten für bessere Übersicht
-    column_order = ['pdf_name', 'page', 'code', 'keyword', 'context', 'validated', 'relevant', 'confirmed_code', 'notes']
-    # Nur Spalten verwenden die existieren
-    column_order = [col for col in column_order if col in df.columns]
-    df = df[column_order]
+        # Prüfe ob Ergebnisse vorhanden sind
+        if not data.get('results') or len(data['results']) == 0:
+            return jsonify({'error': 'Keine Ergebnisse zum Exportieren vorhanden'}), 400
 
-    # CSV speichern
-    csv_file = os.path.join('ergebnisse', f'export_{session_id}.csv')
-    df.to_csv(csv_file, index=False, encoding='utf-8-sig')
+        # Als DataFrame
+        df = pd.DataFrame(data['results'])
 
-    return send_file(csv_file, as_attachment=True, download_name=f'TRACE_Equity_Export_{session_id}.csv')
+        # Entferne HTML-Tags aus dem Kontext für CSV-Export
+        if 'context' in df.columns:
+            df['context'] = df['context'].str.replace('<strong style="[^"]*">', '', regex=True)
+            df['context'] = df['context'].str.replace('</strong>', '', regex=True)
+
+        # Sortiere Spalten für bessere Übersicht
+        column_order = ['pdf_name', 'page', 'code', 'keyword', 'context', 'validated', 'relevant', 'confirmed_code', 'notes']
+        # Nur Spalten verwenden die existieren
+        column_order = [col for col in column_order if col in df.columns]
+        df = df[column_order]
+
+        # Debug-Ausgabe
+        print(f"DEBUG: Erstelle CSV im Speicher für Session: {session_id}")
+        print(f"DEBUG: DataFrame Shape: {df.shape}")
+
+        # CSV im Speicher erstellen (BytesIO für PythonAnywhere-Kompatibilität)
+        output = BytesIO()
+        # UTF-8 BOM für Excel-Kompatibilität
+        output.write('\ufeff'.encode('utf-8'))
+        df.to_csv(output, index=False, encoding='utf-8')
+        output.seek(0)
+
+        print(f"DEBUG: CSV erfolgreich im Speicher erstellt! Größe: {output.getbuffer().nbytes} bytes")
+
+        # Erstelle Response mit BytesIO
+        return Response(
+            output.getvalue(),
+            mimetype='text/csv',
+            headers={
+                'Content-Disposition': f'attachment; filename=TRACE_Equity_Export_{session_id}.csv'
+            }
+        )
+
+    except Exception as e:
+        # Logging für Debugging
+        print(f"ERROR in export_results: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({'error': f'Export fehlgeschlagen: {str(e)}'}), 500
 
 if __name__ == '__main__':
     print("="*80)

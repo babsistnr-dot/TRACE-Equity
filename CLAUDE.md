@@ -63,9 +63,21 @@ The project has been fully implemented as a **Flask Web Application** with the f
 - **Delete sessions** - clean up completed analyses
 
 **5. Data Export (F5)**
-- CSV export with all validations
-- Columns: pdf_name, page, code, keyword, context, validated, relevant, confirmed_code, notes
+- **CSV export with all validations** - fully functional on both local and PythonAnywhere
+- **BytesIO implementation** - memory-based export (no temporary files on server)
+- **uWSGI-compatible** - works with PythonAnywhere's production server
+- Columns: pdf_name, page, keyword, context, validated, relevant, confirmed_code, notes
+- **HTML tag removal** - clean CSV output (strips highlighting tags)
 - UTF-8 encoding with BOM for Excel compatibility
+- Direct download to browser's download folder
+
+**6. User Interface Improvements**
+- **Progress tracking** - visual progress bar with readable dark text
+  - Shows "X / Y validiert" centered over progress bar
+  - Always visible regardless of progress percentage
+- **Enhanced Code Dropdown** - full code descriptions in validation interface
+  - "Code 2.1: Diversität & Heterogenität" instead of just "Code 2.1"
+  - Easier to confirm or change code assignments during validation
 
 #### **Technical Stack**
 
@@ -105,10 +117,10 @@ TRACE-Equity/
 #### **Key Routes**
 
 - `GET /` - Main page with upload and session list
-- `POST /upload` - Upload and analyze PDF
+- `POST /upload` - Upload and analyze PDF (with error handling and debug logging)
 - `GET /load_session/<session_id>` - Load existing session
 - `POST /save_validation` - Save validation (auto-triggered)
-- `GET /export/<session_id>` - Export results as CSV
+- `GET /export/<session_id>` - Export results as CSV (BytesIO implementation for PythonAnywhere compatibility)
 
 ---
 
@@ -200,6 +212,31 @@ See [DEPLOYMENT_ERFOLG.md](DEPLOYMENT_ERFOLG.md) for complete step-by-step instr
 6. Reload app
 
 **Production URL:** http://bsteiner.pythonanywhere.com
+
+### Known Issues & Solutions
+
+**Issue 1: CSV Export on PythonAnywhere (RESOLVED - 2025-10-22)**
+- **Problem**: `send_file()` with file-based CSV failed on uWSGI with "FileNotFoundError"
+- **Root Cause**: PythonAnywhere uses uWSGI which has issues with temporary file handling
+- **Solution**: Implemented BytesIO (memory-based) export instead of file-based export
+- **Implementation**:
+  - CSV is created in memory using `BytesIO()`
+  - Returned as `Response()` with proper headers
+  - No temporary files created on server
+  - Works on both local development and PythonAnywhere production
+
+**Issue 2: Progress Bar Text Visibility (RESOLVED - 2025-10-22)**
+- **Problem**: White text on gray background was unreadable
+- **Solution**:
+  - Changed text color to dark gray (`#333`)
+  - Positioned text outside of progress fill bar
+  - Centered text absolutely over entire progress bar
+  - Reduced font size to 14px
+
+**Issue 3: Code Dropdown Usability (RESOLVED - 2025-10-22)**
+- **Problem**: Dropdown only showed code numbers (e.g., "Code 2.1")
+- **Solution**: Added full descriptions (e.g., "Code 2.1: Diversität & Heterogenität")
+- **Benefit**: Easier to confirm or change code assignments during validation
 
 ---
 
