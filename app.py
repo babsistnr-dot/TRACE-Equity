@@ -9,6 +9,7 @@ import pandas as pd
 import os
 from datetime import datetime
 import json
+import re
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
@@ -18,76 +19,105 @@ app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024  # 50MB max
 os.makedirs('uploads', exist_ok=True)
 os.makedirs('ergebnisse', exist_ok=True)
 
-# Keywords aus Kodiermanual.md (VOLLSTÄNDIGE Liste)
-KEYWORDS = {
-    "Code 1.1: Direkte Nennung": [
-        "Chancengleichheit",
-        "Chancengerechtigkeit"
-    ],
-    "Code 2.1: Diversität & Heterogenität": [
-        "Diversität", "Diversity", "Vielfalt", "Heterogenität",
-        "kulturell", "Interkulturalität", "Interreligiosität", "multireligiös",
-        "Geschlecht", "Gender", "geschlechtssensibel", "sozioökonomisch",
-        "ethnisch", "Familienkonstellationen", "Pädagogik der Vielfalt",
-        "Diversitätsansprüche", "Diversitätsbedingungen", "multikulturell"
-    ],
-    "Code 2.2: Inklusion & Partizipation": [
-        "Inklusion", "inklusive Pädagogik", "inklusives Setting", "inklusiv",
-        "Integration", "Segregation", "Partizipation", "Teilhabe",
-        "Zugehörigkeit", "barrierefrei", "inklusive Lernumgebungen",
-        "inklusiven Settings"
-    ],
-    "Code 2.3: Individuelle Förderung & Differenzierung": [
-        "individuelle Förderung", "individuelle Lernprozesse", "individuelle Lernphasen",
-        "Individualisierung", "Differenzierung", "Stärkenorientierung", "stärkenorientiert",
-        "Ressourcenorientierung", "ressourcenorientiert", "Potenzialanalyse",
-        "Potenziale erkennen", "Fördermaßnahmen", "Begabung", "Begabungsförderung",
-        "Behinderung", "spezifische Lern- und Entwicklungsschwierigkeiten",
-        "individuelle Lebensrealität", "individuelle Entwicklung",
-        "individuelle Entwicklungs- und Bildungsprozesse",
-        "individuelle Entwicklungs- und Bildungsverläufe",
-        "besondere Bedarfe", "individuelle Lernausgangslagen",
-        "Förderplanung", "Lernprozessbegleitung"
-    ],
-    "Code 2.4: Abbau von Benachteiligung & Diskriminierung": [
-        # Problemerkennung & Analyse
-        "Benachteiligung", "Ungleichheit", "Gleichheit", "soziale Ungerechtigkeit",
-        "Diskriminierung", "diskriminierungskritisch", "Vorurteile", "vorurteilsbewusst",
-        "Stereotype", "soziale Stratifizierung", "soziale Herkunft",
-        "soziale Lebensbedingungen", "soziale Benachteiligung", "Gleichstellung",
-        "Gleichstellungspädagogik", "Bildungsgerechtigkeit",
-        "Bedingungen und Auswirkungen von Ungleichheit", "sensibel wahrnehmen",
-        "Zugang", "Zugang zu Bildung", "Bildungszugang", "Barrieren",
-        # Transformatives Handeln
-        "Empowerment", "entgegenwirken", "bekämpfen", "verändern", "transformieren",
-        "kritisch hinterfragen", "Machtverhältnisse", "Machtstrukturen",
-        "strukturelle Veränderung", "strukturell", "emanzipatorisch",
-        "Selbstbestimmung fördern", "Selbstbestimmung stärken", "Teilhabe ermöglichen",
-        "ko-konstruktiv", "auf Empowerment ausgerichtet", "in die Handlungen miteinzubeziehen"
-    ],
-    "Code 2.5: Bildungspartnerschaft & Sozialraumorientierung": [
-        "Bildungspartnerschaft", "Erziehungspartnerschaft",
-        "Zusammenarbeit mit Erziehungsberechtigten", "Kooperation mit externen Partnern",
-        "Netzwerkarbeit", "Vernetzung", "Sozialraum", "multiprofessionelle Teams",
-        "interdisziplinäre Zusammenarbeit", "Kooperation mit Eltern bzw. Erziehungsberechtigten",
-        "Kooperation mit Netzwerkorganisationen", "sozialräumliche Programme"
-    ],
-    "Code 2.6: Sprachliche Bildung & Mehrsprachigkeit": [
-        "Sprachliche Bildung", "Sprachförderung", "alltagsintegrierte Sprachbildung",
-        "Mehrsprachigkeit", "Erstspracherwerb", "Zweitspracherwerb", "Literacy",
-        "Family Literacy", "Sprachstandsbeobachtung", "Sprachstandsdiagnostik",
-        "sprachsensibel", "sprachbezogen", "Deutsch als Erst- bzw. Zweitsprache",
-        "Fremdspracherwerb", "Mehrsprachendidaktik"
-    ],
-    "Code 2.7: Professionelle Haltung & Ethik": [
-        "Professionelle Haltung", "pädagogischer Habitus", "Berufsethos",
-        "Werte", "Werthaltung", "Wertebildung", "Haltung", "Grundhaltung",
-        "Selbstreflexion", "ethisch", "Ethik", "Menschenbild", "Kinderbild",
-        "Reflexionskompetenz", "Vorbildwirkung", "wissenschaftlich-reflektierender Habitus",
-        "forschend reflexiver Habitus", "persönlichkeitsorientierte Professionsentwicklung",
-        "lösungsorientierte Grundhaltung", "kritische Distanz"
-    ]
-}
+# Get the directory where app.py is located
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+def parse_keywords_from_kodiermanual(filepath=None):
+    """
+    Parst Keywords direkt aus dem Kodiermanual.md
+    Single Source of Truth - keine Duplikation mehr!
+    """
+    # Default to Knowledge/Kodiermanual.md relative to app.py location
+    if filepath is None:
+        filepath = os.path.join(BASE_DIR, 'Knowledge', 'Kodiermanual.md')
+
+    keywords = {}
+
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # Finde alle Code-Definitionen
+        # Split by code sections (##### Code X.X: Name)
+        code_sections = re.split(r'(?=##### Code [\d\.]+: )', content)
+
+        for section in code_sections:
+            if not section.strip():
+                continue
+
+            # Extract code number and name
+            code_match = re.match(r'##### Code ([\d\.]+): ([^\n]+)', section)
+            if not code_match:
+                continue
+
+            code_num = code_match.group(1)
+            code_name = code_match.group(2).strip()
+
+            # Find all keyword sections (could be multiple for Code 2.4)
+            # Pattern: **Keywords und Phrasen** or **Keywords und Phrasen (...):**
+            keyword_sections = re.findall(
+                r'\*\*Keywords und Phrasen[^:]*:\*\*\n((?:- [^\n]+\n?)+)',
+                section,
+                re.DOTALL
+            )
+
+            # Collect all keywords from all sections
+            keyword_list = []
+            for keywords_text in keyword_sections:
+                for line in keywords_text.split('\n'):
+                    line = line.strip()
+                    if line.startswith('- '):
+                        keyword = line[2:].strip()
+                        # Entferne Klammern-Kommentare wie "(im Bildungskontext)"
+                        keyword = re.sub(r'\s*\([^)]+\)\s*$', '', keyword)
+                        if keyword:
+                            keyword_list.append(keyword)
+
+            # Erstelle vollständigen Code-Namen
+            full_code_name = f"Code {code_num}: {code_name}"
+            keywords[full_code_name] = keyword_list
+
+            print(f"[OK] Parsed {full_code_name}: {len(keyword_list)} keywords")
+
+        # Validierung
+        if len(keywords) != 8:
+            print(f"[WARNING] Expected 8 codes, found {len(keywords)}")
+
+        total_keywords = sum(len(v) for v in keywords.values())
+        print(f"[OK] Total keywords loaded: {total_keywords}")
+
+        return keywords
+
+    except FileNotFoundError:
+        print("="*80)
+        print(f"CRITICAL ERROR: Kodiermanual.md not found")
+        print("="*80)
+        print(f"Looked for file at: {filepath}")
+        print(f"App directory (BASE_DIR): {BASE_DIR}")
+        print("")
+        print("The application CANNOT run without the Kodiermanual.md file.")
+        print("This file is the Single Source of Truth for all keywords.")
+        print("")
+        print("If deploying to PythonAnywhere:")
+        print(f"1. Ensure file exists at: {filepath}")
+        print("2. Check that the 'Knowledge' folder is in the same directory as app.py")
+        print("3. Reload the web app")
+        print("="*80)
+        raise SystemExit("FATAL: Kodiermanual.md not found - cannot continue")
+    except Exception as e:
+        print("="*80)
+        print(f"CRITICAL ERROR parsing Kodiermanual.md: {str(e)}")
+        print("="*80)
+        import traceback
+        traceback.print_exc()
+        print("")
+        print("The application CANNOT run with a corrupted Kodiermanual.md file.")
+        print("Please check the file format and try again.")
+        print("="*80)
+        raise SystemExit(f"FATAL: Cannot parse Kodiermanual.md - {str(e)}")
+
+# Keywords aus Kodiermanual.md laden (Single Source of Truth!)
+KEYWORDS = parse_keywords_from_kodiermanual()
 
 def extract_pdf_text(pdf_path):
     """Extrahiert Text aus PDF seitenweise"""

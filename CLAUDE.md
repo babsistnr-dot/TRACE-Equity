@@ -27,7 +27,8 @@ The project has been fully implemented as a **Flask Web Application** with the f
 **1. PDF Analysis (F1)**
 - Automatic text extraction from curriculum PDFs using PyPDF2
 - Page-by-page processing
-- 138 keywords across 8 code categories (from Kodiermanual.md)
+- **233 keywords across 8 code categories** dynamically loaded from [Kodiermanual.md](Knowledge/Kodiermanual.md)
+- **Single Source of Truth**: Keywords are parsed directly from the Kodiermanual at runtime (no hardcoding)
 
 **2. Keyword Search with Visual Highlighting**
 - Case-insensitive keyword search
@@ -98,17 +99,32 @@ The project has been fully implemented as a **Flask Web Application** with the f
 - Production: PythonAnywhere (http://bsteiner.pythonanywhere.com)
 - Local development: http://localhost:5000
 
+#### **Architecture: Single Source of Truth**
+
+The application follows a **Single Source of Truth** principle:
+
+- **[Knowledge/Kodiermanual.md](Knowledge/Kodiermanual.md)** - The authoritative source for all keywords
+- **app.py** - Dynamically parses keywords from Kodiermanual.md at startup
+- **No keyword duplication** - All keyword updates happen in the Kodiermanual only
+
+This ensures:
+- ✅ Easy maintenance (update keywords in one place)
+- ✅ No synchronization issues between files
+- ✅ Automatic updates (restart app after Kodiermanual changes)
+- ✅ Clear separation: methodology (MD) vs. implementation (Python)
+
 #### **File Structure**
 
 ```
 TRACE-Equity/
-├── app.py                          # Flask backend (9KB)
+├── app.py                          # Flask backend - parses Kodiermanual.md dynamically
 ├── templates/
 │   └── index.html                  # Frontend UI (20KB)
+├── Knowledge/
+│   └── Kodiermanual.md             # Coding manual (SINGLE SOURCE OF TRUTH - 233 keywords)
 ├── uploads/                        # Uploaded PDFs (gitignored)
 ├── ergebnisse/                     # Analysis results JSON (gitignored)
 ├── requirements.txt                # Python dependencies
-├── Kodiermanual.md                 # Coding manual (8 codes, 138 keywords)
 ├── DEPLOYMENT_ERFOLG.md            # PythonAnywhere deployment guide
 ├── WIE_STARTE_ICH_DIE_APP.md      # Local development guide
 └── [documentation files]
@@ -128,30 +144,32 @@ TRACE-Equity/
 
 ### Kodiermanual (Coding Manual)
 
-**Code 1.1: Direkte Nennung** (2 keywords)
-- Explicit mentions of "Chancengleichheit", "Chancengerechtigkeit"
+**Total: 233 keywords across 8 code categories** (parsed dynamically from [Knowledge/Kodiermanual.md](Knowledge/Kodiermanual.md))
 
-**Code 2.1: Diversität & Heterogenität** (16 keywords)
-- Diversity, multiculturality, gender sensitivity
+**Code 1.1: Direkte Nennung** (7 keywords)
+- Explicit mentions: "Chancengleichheit", "Chancengerechtigkeit", "Equality", "Equity", "Educational Equity", "Bildungsgerechtigkeit", "Teilhabegerechtigkeit"
 
-**Code 2.2: Inklusion & Partizipation** (12 keywords)
-- Inclusion, integration, participation, belonging
+**Code 2.1: Diversität & Heterogenität** (28 keywords)
+- Diversity, multiculturality, gender sensitivity, cultural/ethnic/religious diversity, family forms
 
-**Code 2.3: Individuelle Förderung & Differenzierung** (23 keywords)
-- Individual support, differentiation, strengths-based approaches
+**Code 2.2: Inklusion & Partizipation** (20 keywords)
+- Inclusion, integration, participation, belonging, barrier-free environments, equal participation
 
-**Code 2.4: Abbau von Benachteiligung & Diskriminierung** (39 keywords)
-- Problem recognition: disadvantage, discrimination, inequality
-- Transformative action: empowerment, structural change
+**Code 2.3: Individuelle Förderung & Differenzierung** (33 keywords)
+- Individual support, differentiation, strengths-based approaches, talent development, adaptive support
 
-**Code 2.5: Bildungspartnerschaft & Sozialraumorientierung** (11 keywords)
-- Educational partnerships, networking, community orientation
+**Code 2.4: Abbau von Benachteiligung & Diskriminierung** (61 keywords)
+- Problem recognition: disadvantage, discrimination, inequality, stereotypes, marginalization
+- Transformative action: empowerment, structural change, anti-bias, critical reflection of power structures
 
-**Code 2.6: Sprachliche Bildung & Mehrsprachigkeit** (15 keywords)
-- Language education, multilingualism, literacy
+**Code 2.5: Bildungspartnerschaft & Sozialraumorientierung** (22 keywords)
+- Educational partnerships, networking, community orientation, multiprofessional teams, social space orientation
 
-**Code 2.7: Professionelle Haltung & Ethik** (20 keywords)
-- Professional attitude, ethics, reflection, values
+**Code 2.6: Sprachliche Bildung & Mehrsprachigkeit** (30 keywords)
+- Language education, multilingualism, literacy, German as second language (DaZ), emergent literacy, translanguaging
+
+**Code 2.7: Professionelle Haltung & Ethik** (32 keywords)
+- Professional attitude, ethics, self-reflection, values, pedagogical habitus, critical self-reflection, appreciation, respect
 
 ### Analysis Results JSON Structure
 
