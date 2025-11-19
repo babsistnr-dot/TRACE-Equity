@@ -1,0 +1,2 @@
+# This file ensures the ergebnisse/ directory is tracked by Git
+# The directory itself contains analysis results which are .gitignored
