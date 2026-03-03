@@ -68,5 +68,3 @@ Thumbs.db
 *.orig
 
 # TRACE-Equity specific: Working data (not to be committed)
-uploads/
-ergebnisse/
