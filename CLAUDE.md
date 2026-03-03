@@ -27,7 +27,7 @@ The project has been fully implemented as a **Flask Web Application** with the f
 **1. PDF Analysis (F1)**
 - Automatic text extraction from curriculum PDFs using PyPDF2
 - Page-by-page processing
-- **233 keywords across 8 code categories** dynamically loaded from [Kodiermanual.md](Knowledge/Kodiermanual.md)
+- **233 keywords across 8 code categories** dynamically loaded from [coding_manual.md](knowledge/coding_manual.md)
 - **Single Source of Truth**: Keywords are parsed directly from the Kodiermanual at runtime (no hardcoding)
 
 **2. Keyword Search with Visual Highlighting**
@@ -103,8 +103,8 @@ The project has been fully implemented as a **Flask Web Application** with the f
 
 The application follows a **Single Source of Truth** principle:
 
-- **[Knowledge/Kodiermanual.md](Knowledge/Kodiermanual.md)** - The authoritative source for all keywords
-- **app.py** - Dynamically parses keywords from Kodiermanual.md at startup
+- **[knowledge/coding_manual.md](knowledge/coding_manual.md)** - The authoritative source for all keywords
+- **app.py** - Dynamically parses keywords from coding_manual.md at startup
 - **No keyword duplication** - All keyword updates happen in the Kodiermanual only
 
 This ensures:
@@ -117,16 +117,18 @@ This ensures:
 
 ```
 TRACE-Equity/
-├── app.py                                    # Flask backend - parses Kodiermanual.md dynamically
+├── app.py                                    # Flask backend - parses coding_manual.md dynamically
 ├── templates/
 │   └── index.html                            # Frontend UI
-├── Knowledge/
-│   ├── Kodiermanual.md                       # SINGLE SOURCE OF TRUTH - 233 keywords
-│   ├── DEPLOYMENT_ERFOLG.md                  # PythonAnywhere deployment guide
-│   ├── WIE_STARTE_ICH_DIE_APP.md            # Local development guide
-│   ├── PromtotypingBlogeintrag.md            # Promptotyping method blog post
-│   ├── abstract.md                           # Research abstract
-│   └── forschungsmethode.md                  # Methodology details
+├── knowledge/                                # Promptotyping Documents
+│   ├── coding_manual.md                      # REFERENCE — SINGLE SOURCE OF TRUTH, 233 keywords
+│   ├── requirements.md                       # REQUIREMENTS — Funktionale Anforderungen
+│   ├── abstract.md                           # KNOWLEDGE — Forschungskontext
+│   ├── methodology.md                        # KNOWLEDGE — QCA + RTA Methodik
+│   └── journal.md                            # JOURNAL — Entwicklungsprotokoll
+├── docs/                                     # Forschungs-Artefakte (Outputs)
+│   ├── expose.md                             # Akademisches Exposé
+│   └── expose_narrative.md                   # Narratives Exposé
 ├── scripts/                                  # Analyse-Skripte (post-export)
 │   ├── analyse_code_verteilung.py            # Cluster Mitte: Quantitative Analyse
 │   ├── analyse_code_1_1_deep_dive.py         # Cluster Mitte: Code 1.1 Tiefenanalyse
@@ -155,10 +157,9 @@ TRACE-Equity/
 │       ├── validation_report.md              # Validierungsbericht
 │       ├── analyse_code_verteilung.md        # Quantitativer Report
 │       └── visualisierungen/                 # 4 PNG-Grafiken
-├── ARBEITSPROTOKOLL.md                       # Full session-by-session development log
-├── REQUIREMENTS.md                           # Original requirements (Version A fully implemented)
-├── expose.md                                 # Research exposé
-├── expose_narrativ.md                        # Narrative exposé version
+├── _archive/                                 # Archivierte Docs (veraltet, aber aufbewahrt)
+│   ├── deployment.md                         # PythonAnywhere deployment (Okt 2025)
+│   └── quickstart.md                         # Lokale Entwicklung (Okt 2025)
 ├── requirements.txt                          # Python dependencies
 └── README.md                                 # Project overview
 ```
@@ -177,7 +178,7 @@ TRACE-Equity/
 
 ### Kodiermanual (Coding Manual)
 
-**Total: 233 keywords across 8 code categories** (parsed dynamically from [Knowledge/Kodiermanual.md](Knowledge/Kodiermanual.md))
+**Total: 233 keywords across 8 code categories** (parsed dynamically from [knowledge/coding_manual.md](knowledge/coding_manual.md))
 
 **Code 1.1: Direkte Nennung** (7 keywords)
 - Explicit mentions: "Chancengleichheit", "Chancengerechtigkeit", "Equality", "Equity", "Educational Equity", "Bildungsgerechtigkeit", "Teilhabegerechtigkeit"
@@ -255,7 +256,7 @@ TRACE-Equity/
 
 ### Deployment to PythonAnywhere
 
-See [DEPLOYMENT_ERFOLG.md](DEPLOYMENT_ERFOLG.md) for complete step-by-step instructions.
+See [deployment.md](knowledge/deployment.md) for complete step-by-step instructions.
 
 **Quick summary:**
 1. Upload files via "Files" tab
@@ -405,19 +406,19 @@ Future enhancement could include:
 **WHAT? (Pflicht)**
 ```
 README.md → WARUM? Kontext, Motivation, Domäne
-REQUIREMENTS.md → WAS? Funktionale + nicht-funktionale Anforderungen
+requirements.md → WAS? Funktionale + nicht-funktionale Anforderungen
 ```
 
 **USING WHAT? (Optional)**
 ```
 DATA.md → WOMIT? Datenstrukturen, APIs, Beispiele
-Kodiermanual.md → Keywords und Code-Definitionen
+coding_manual.md → Keywords und Code-Definitionen
 ```
 
 **HOW? (Je nach Bedarf)**
 ```
-DEPLOYMENT_ERFOLG.md → Deployment-Anleitung
-WIE_STARTE_ICH_DIE_APP.md → Lokale Entwicklung
+deployment.md → Deployment-Anleitung
+quickstart.md → Lokale Entwicklung
 ```
 
 ### Phase 2: Iterative Entwicklung
@@ -460,16 +461,22 @@ The analysis is grounded in:
 
 ## Key Files Reference
 
-- **[README.md](README.md)** - Project overview
-- **[REQUIREMENTS.md](REQUIREMENTS.md)** - Original requirements (Version A fully implemented)
-- **[ARBEITSPROTOKOLL.md](ARBEITSPROTOKOLL.md)** - Full development session log
-- **[Knowledge/Kodiermanual.md](Knowledge/Kodiermanual.md)** - Coding manual with all keywords (Single Source of Truth)
-- **[Knowledge/DEPLOYMENT_ERFOLG.md](Knowledge/DEPLOYMENT_ERFOLG.md)** - PythonAnywhere deployment (tested & working)
-- **[Knowledge/WIE_STARTE_ICH_DIE_APP.md](Knowledge/WIE_STARTE_ICH_DIE_APP.md)** - Local development guide
-- **[Knowledge/abstract.md](Knowledge/abstract.md)** - Research abstract
-- **[Knowledge/forschungsmethode.md](Knowledge/forschungsmethode.md)** - Methodology details
-- **[expose.md](expose.md)** - Research exposé
-- **[ergebnisse/README.md](ergebnisse/README.md)** - Results folder documentation
+**Promptotyping Documents (knowledge/):**
+- **[knowledge/coding_manual.md](knowledge/coding_manual.md)** — REFERENCE: 233 keywords (Single Source of Truth)
+- **[knowledge/requirements.md](knowledge/requirements.md)** — REQUIREMENTS: Funktionale Anforderungen
+- **[knowledge/abstract.md](knowledge/abstract.md)** — KNOWLEDGE: Forschungskontext
+- **[knowledge/methodology.md](knowledge/methodology.md)** — KNOWLEDGE: QCA + RTA Methodik
+- **[knowledge/journal.md](knowledge/journal.md)** — JOURNAL: Entwicklungsprotokoll
+- **[_archive/deployment.md](_archive/deployment.md)** — TECHNICAL: PythonAnywhere deployment (archiviert)
+- **[_archive/quickstart.md](_archive/quickstart.md)** — TECHNICAL: Lokale Entwicklung (archiviert)
+
+**Forschungs-Artefakte (docs/):**
+- **[docs/expose.md](docs/expose.md)** — Akademisches Exposé
+- **[docs/expose_narrative.md](docs/expose_narrative.md)** — Narratives Exposé
+
+**Sonstiges:**
+- **[README.md](README.md)** — Project overview
+- **[ergebnisse/README.md](ergebnisse/README.md)** — Results folder documentation
 
 ---
 

@@ -8,8 +8,8 @@ Analysiert Validierungsstatus und prüft auf semantische Duplikate.
 import pandas as pd
 from pathlib import Path
 
-CSV_FILE = 'ergebnisse/TRACE_Equity_Export_ClusterSüdOst.csv'
-CLEANED_FILE = 'ergebnisse/TRACE_Equity_Export_ClusterSüdOst_cleaned.csv'
+CSV_FILE = '../ergebnisse/cluster_suedost/export_raw.csv'
+CLEANED_FILE = '../ergebnisse/cluster_suedost/export_clean.csv'
 
 print("="*80)
 print("CLUSTER SÜDOST - CSV VALIDATION")

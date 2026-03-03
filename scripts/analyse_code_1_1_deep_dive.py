@@ -10,9 +10,9 @@ import json
 from pathlib import Path
 
 # Konfiguration
-CSV_FILE = 'ergebnisse/TRACE_Equity_Export_20251118_173805_cleaned.csv'
-REPORT_FILE = 'ergebnisse/analyse_2_code_1_1_deep_dive.md'
-ZITATE_FILE = 'ergebnisse/analyse_2_zitate.md'
+CSV_FILE = '../ergebnisse/cluster_mitte/export_clean.csv'
+REPORT_FILE = '../ergebnisse/cluster_mitte/analyse_code_1_1_deep_dive.md'
+ZITATE_FILE = '../ergebnisse/cluster_mitte/zitate.md'
 
 print("="*80)
 print("TRACE-EQUITY ANALYSE 2: CODE 1.1 DEEP DIVE")

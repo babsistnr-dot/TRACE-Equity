@@ -27,9 +27,9 @@ def parse_keywords_from_kodiermanual(filepath=None):
     Parst Keywords direkt aus dem Kodiermanual.md
     Single Source of Truth - keine Duplikation mehr!
     """
-    # Default to Knowledge/Kodiermanual.md relative to app.py location
+    # Default to knowledge/coding_manual.md relative to app.py location
     if filepath is None:
-        filepath = os.path.join(BASE_DIR, 'Knowledge', 'Kodiermanual.md')
+        filepath = os.path.join(BASE_DIR, 'knowledge', 'coding_manual.md')
 
     keywords = {}
 
@@ -100,7 +100,7 @@ def parse_keywords_from_kodiermanual(filepath=None):
         print("")
         print("If deploying to PythonAnywhere:")
         print(f"1. Ensure file exists at: {filepath}")
-        print("2. Check that the 'Knowledge' folder is in the same directory as app.py")
+        print("2. Check that the 'knowledge' folder is in the same directory as app.py")
         print("3. Reload the web app")
         print("="*80)
         raise SystemExit("FATAL: Kodiermanual.md not found - cannot continue")

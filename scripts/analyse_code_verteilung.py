@@ -13,9 +13,9 @@ from pathlib import Path
 import os
 
 # Konfiguration
-CSV_FILE = 'ergebnisse/TRACE_Equity_Export_20251118_173805_cleaned.csv'
-OUTPUT_DIR = 'ergebnisse/analyse_1_visualisierungen'
-REPORT_FILE = 'ergebnisse/analyse_1_code_verteilung.md'
+CSV_FILE = '../ergebnisse/cluster_mitte/export_clean.csv'
+OUTPUT_DIR = '../ergebnisse/cluster_mitte/visualisierungen'
+REPORT_FILE = '../ergebnisse/cluster_mitte/analyse_code_verteilung.md'
 
 # Erstelle Output-Ordner
 os.makedirs(OUTPUT_DIR, exist_ok=True)
