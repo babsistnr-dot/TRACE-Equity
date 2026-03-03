@@ -1,110 +1,72 @@
 # Ergebnisse / Results
 
-Dieser Ordner enthält die Analyse-Ergebnisse des TRACE-Equity Projekts.
+Analyseergebnisse des TRACE-Equity Projekts, geordnet nach Cluster.
 
-## Inhalt
+## Struktur
 
-Die Dateien in diesem Ordner werden **nicht in Git versioniert** (siehe `.gitignore`), da sie große Datenmengen und persönliche Analyseergebnisse enthalten.
+```
+ergebnisse/
+├── cluster_west/         # Cluster West: Tirol, Vorarlberg, Edith Stein
+├── cluster_mitte/        # Cluster Mitte: OÖ, Linz, Salzburg
+└── cluster_suedost/      # Cluster SüdOst: Burgenland, Kärnten, Steiermark
+```
 
-### Typische Dateien:
+## Cluster-Übersicht
 
-#### 1. PDF-Analyse-Ergebnisse
-- `analyse_YYYYMMDD_HHMMSS.json` - Rohdaten der PDF-Keyword-Analyse
-- Session-spezifische JSON-Dateien mit allen Findings
+### cluster_west/
+| Datei | Beschreibung |
+|---|---|
+| `export.csv` | 534 Findings, 476 validiert (89%), 347 relevant |
 
-#### 2. Export-Dateien
-- `TRACE_Equity_Export_YYYYMMDD_HHMMSS.csv` - Exportierte validierte Findings
-- `TRACE_Equity_Export_*_cleaned.csv` - Bereinigte Versionen (Duplikate entfernt)
+**Status:** Validierung noch offen (58 Einträge)
 
-#### 3. Wissenschaftliche Analysen
+---
 
-**Quantitative Analyse:**
-- `analyse_1_code_verteilung.md` - Statistischer Report zur Code-Verteilung
-- `analyse_1_visualisierungen/` - Ordner mit PNG-Grafiken (4 Visualisierungen)
-  - `01_code_verteilung_alle.png` - Alle Findings
-  - `02_code_verteilung_relevant.png` - Nur relevante Findings
-  - `03_relevanz_ratio.png` - Relevanz-Verteilung (Pie Chart)
-  - `04_top_keywords.png` - Top 15 Keywords
+### cluster_mitte/
+| Datei | Beschreibung |
+|---|---|
+| `export_raw.csv` | 591 Findings (Roh-Export aus App) |
+| `export_clean.csv` | 516 Findings (bereinigt, vollständig validiert) |
+| `analyse_code_verteilung.md` | Quantitativer Report: Code-Verteilung |
+| `analyse_code_1_1_deep_dive.md` | Qualitativer Report: Code 1.1 Direkte Nennung |
+| `zitate.md` | Strukturierte Zitate-Sammlung |
+| `visualisierungen/` | 4 PNG-Grafiken zur Code-Verteilung |
 
-**Qualitative Analyse:**
-- `analyse_2_code_1_1_deep_dive.md` - Deep Dive: Direkte Nennung von Chancengleichheit
-- `analyse_2_zitate.md` - Strukturierte Zitate-Sammlung für wissenschaftliche Arbeiten
+**Status:** Vollständig analysiert
+
+---
+
+### cluster_suedost/
+| Datei | Beschreibung |
+|---|---|
+| `export_raw.csv` | 319 Findings (Roh-Export aus App) |
+| `export_clean.csv` | 276 Findings (bereinigt, vollständig validiert) |
+| `validation_report.md` | Validierungsbericht (Duplikate-Analyse) |
+| `analyse_code_verteilung.md` | Quantitativer Report: Code-Verteilung |
+| `visualisierungen/` | 4 PNG-Grafiken zur Code-Verteilung |
+
+**Status:** Vollständig analysiert
 
 ---
 
 ## Neue Analyse erstellen
 
-### 1. PDF hochladen und analysieren
 ```bash
-# Lokal
-python app.py
-# → http://localhost:5000
+# 1. App starten (aus Projekt-Root)
+python app.py  →  http://localhost:5000
 
-# Oder PythonAnywhere
-# → http://bsteiner.pythonanywhere.com
-```
+# 2. PDF hochladen, analysieren, validieren, exportieren
 
-### 2. Validierung durchführen
-- Manual review aller Findings
-- Relevanz-Bewertung (ja/nein)
-- Code-Bestätigung oder -Änderung
-- Optionale Notizen
+# 3. CSV in passenden cluster_*/ Ordner ablegen:
+#    export_raw.csv    = direkt aus App exportiert
+#    export_clean.csv  = nach Duplikate-Bereinigung
 
-### 3. Export als CSV
-- Button "Exportieren" klicken
-- CSV wird in diesem Ordner gespeichert
-
-### 4. Wissenschaftliche Analysen ausführen
-
-**Quantitative Analyse:**
-```bash
-python analyse_code_verteilung.py
-```
-
-**Qualitative Analyse (Code 1.1):**
-```bash
-python analyse_code_1_1_deep_dive.py
+# 4. Analyse-Skripte ausführen (aus Projekt-Root):
+python scripts/analyse_code_verteilung.py
+python scripts/analyse_code_verteilung_suedost.py
 ```
 
 ---
 
-## Ordnerstruktur (Beispiel)
-
-```
-ergebnisse/
-├── README.md                                          # Diese Datei
-├── .gitkeep                                           # Git-Tracking
-│
-├── analyse_20251118_173805.json                       # Session-Daten
-├── TRACE_Equity_Export_20251118_173805.csv            # Original-Export
-├── TRACE_Equity_Export_20251118_173805_cleaned.csv    # Bereinigt
-│
-├── analyse_1_code_verteilung.md                       # Quantitativer Report
-├── analyse_1_visualisierungen/
-│   ├── 01_code_verteilung_alle.png
-│   ├── 02_code_verteilung_relevant.png
-│   ├── 03_relevanz_ratio.png
-│   └── 04_top_keywords.png
-│
-├── analyse_2_code_1_1_deep_dive.md                    # Qualitativer Report
-└── analyse_2_zitate.md                                # Zitate-Sammlung
-```
-
----
-
-## Wichtig
-
-⚠️ **Nicht committen:** Diese Dateien sollten NICHT in Git committed werden
-- Enthalten Rohdaten und persönliche Analyseergebnisse
-- Große Dateigröße (CSV/JSON)
-- Sessions sind lokal/serverseitig gespeichert
-
-✅ **Backup:** Sichere wichtige Ergebnisse separat
-- CSV-Exports extern sichern
-- Visualisierungen für Paper kopieren
-- Reports für wissenschaftliche Arbeit archivieren
-
----
-
-**Erstellt:** 2025-11-19
 **Projekt:** TRACE-Equity (Tracking Representations of Access, Chances and Equity)
+**Stand:** März 2026

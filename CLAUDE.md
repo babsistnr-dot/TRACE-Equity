@@ -117,17 +117,50 @@ This ensures:
 
 ```
 TRACE-Equity/
-├── app.py                          # Flask backend - parses Kodiermanual.md dynamically
+├── app.py                                    # Flask backend - parses Kodiermanual.md dynamically
 ├── templates/
-│   └── index.html                  # Frontend UI (20KB)
+│   └── index.html                            # Frontend UI
 ├── Knowledge/
-│   └── Kodiermanual.md             # Coding manual (SINGLE SOURCE OF TRUTH - 233 keywords)
-├── uploads/                        # Uploaded PDFs (gitignored)
-├── ergebnisse/                     # Analysis results JSON (gitignored)
-├── requirements.txt                # Python dependencies
-├── DEPLOYMENT_ERFOLG.md            # PythonAnywhere deployment guide
-├── WIE_STARTE_ICH_DIE_APP.md      # Local development guide
-└── [documentation files]
+│   ├── Kodiermanual.md                       # SINGLE SOURCE OF TRUTH - 233 keywords
+│   ├── DEPLOYMENT_ERFOLG.md                  # PythonAnywhere deployment guide
+│   ├── WIE_STARTE_ICH_DIE_APP.md            # Local development guide
+│   ├── PromtotypingBlogeintrag.md            # Promptotyping method blog post
+│   ├── abstract.md                           # Research abstract
+│   └── forschungsmethode.md                  # Methodology details
+├── scripts/                                  # Analyse-Skripte (post-export)
+│   ├── analyse_code_verteilung.py            # Cluster Mitte: Quantitative Analyse
+│   ├── analyse_code_1_1_deep_dive.py         # Cluster Mitte: Code 1.1 Tiefenanalyse
+│   ├── analyse_code_verteilung_suedost.py    # Cluster SüdOst: Quantitative Analyse
+│   └── validate_cluster_suedost.py           # Cluster SüdOst: CSV-Validierung
+├── uploads/                                  # PDFs der analysierten Curricula
+│   ├── Cluster Mitte_OÖ_Linz, Salzburg.pdf
+│   ├── Cluster Süd Ost_Burgenland, Kärnten, Steiermark.pdf
+│   ├── PH Burgenland, Kärnten, Steiermark.pdf
+│   ├── PH Oberösterreich.pdf
+│   └── PH Tirol.pdf
+├── ergebnisse/                               # Analyseergebnisse nach Cluster getrennt
+│   ├── README.md
+│   ├── cluster_west/
+│   │   └── export.csv                        # 534 Findings, 476 validiert (89%)
+│   ├── cluster_mitte/
+│   │   ├── export_raw.csv                    # 591 Findings (roh)
+│   │   ├── export_clean.csv                  # 516 Findings (bereinigt, vollständig validiert)
+│   │   ├── analyse_code_verteilung.md        # Quantitativer Report
+│   │   ├── analyse_code_1_1_deep_dive.md     # Qualitativer Report Code 1.1
+│   │   ├── zitate.md                         # Zitate-Sammlung
+│   │   └── visualisierungen/                 # 4 PNG-Grafiken
+│   └── cluster_suedost/
+│       ├── export_raw.csv                    # 319 Findings (roh)
+│       ├── export_clean.csv                  # 276 Findings (bereinigt, vollständig validiert)
+│       ├── validation_report.md              # Validierungsbericht
+│       ├── analyse_code_verteilung.md        # Quantitativer Report
+│       └── visualisierungen/                 # 4 PNG-Grafiken
+├── ARBEITSPROTOKOLL.md                       # Full session-by-session development log
+├── REQUIREMENTS.md                           # Original requirements (Version A fully implemented)
+├── expose.md                                 # Research exposé
+├── expose_narrativ.md                        # Narrative exposé version
+├── requirements.txt                          # Python dependencies
+└── README.md                                 # Project overview
 ```
 
 #### **Key Routes**
@@ -203,6 +236,9 @@ TRACE-Equity/
 
 1. **Start the app:**
    ```bash
+   # chstn's machine:
+   cd "C:\Users\chstn\Documents\Master Elementarpädagogik\TRACE-Equity"
+   # Babsi's machine:
    cd "C:\Users\Babsi\Documents\Master Elementarpädagogik\3. Semester\SE Forschungsmethoden\TRACE-Equity"
    python app.py
    ```
@@ -230,6 +266,51 @@ See [DEPLOYMENT_ERFOLG.md](DEPLOYMENT_ERFOLG.md) for complete step-by-step instr
 6. Reload app
 
 **Production URL:** http://bsteiner.pythonanywhere.com
+
+### Scientific Analysis Scripts
+
+Four Python scripts for post-export analysis (run after CSV export from app):
+
+```bash
+# Skripte aus dem Projekt-Root ausführen:
+python scripts/analyse_code_verteilung.py
+python scripts/analyse_code_1_1_deep_dive.py
+python scripts/analyse_code_verteilung_suedost.py
+python scripts/validate_cluster_suedost.py
+```
+
+Alle Skripte verwenden relative Pfade (`../ergebnisse/cluster_*/`) und müssen aus dem **Projekt-Root** ausgeführt werden.
+
+---
+
+## Current Analysis Status (Stand: März 2026)
+
+Drei Cluster wurden analysiert und vollständig (oder teilweise) validiert:
+
+### Cluster West (Tirol, Vorarlberg, Edith Stein)
+- **Datei:** `ergebnisse/Cluster West_TRACE_Equity_Export_.csv`
+- **Findings gesamt:** 534 | **Validiert:** 476 (89%) — **58 noch offen**
+- **Relevant "ja":** 347 | **Relevant "nein":** 121
+- **Code 1.1 Treffer:** 0 (kein direktes Chancengleichheit/Equity im Curriculum)
+
+### Cluster Mitte (OÖ, Linz, Salzburg)
+- **Datei:** `ergebnisse/TRACE_Equity_Export_ClusterMitte.csv` (Roh)
+- **Cleaned:** `ergebnisse/TRACE_Equity_Export_20251118_173805_cleaned.csv` (die Datei, auf die Analyse-Skripte zeigen)
+- **Findings gesamt:** 591 | **Validiert:** 516 (87%) — **75 noch offen**
+- **Relevant "ja":** 259 | **Relevant "nein":** 257
+- **Analyse:** `ergebnisse/analyse_1_code_verteilung.md`, `analyse_2_code_1_1_deep_dive.md`, `analyse_2_zitate.md`
+- **Visualisierungen:** `ergebnisse/analyse_1_visualisierungen/` (4 PNGs)
+
+### Cluster SüdOst (Burgenland, Kärnten, Steiermark)
+- **Datei:** `ergebnisse/TRACE_Equity_Export_ClusterSüdOst.csv` (Roh)
+- **Cleaned:** `ergebnisse/TRACE_Equity_Export_ClusterSüdOst_cleaned.csv`
+- **Findings gesamt:** 319 | **Validiert:** 276 (vollständig bereinigt)
+- **Relevant "ja":** 192 | **Relevant "nein":** 80
+- **Validierungsbericht:** `ergebnisse/VALIDATION_ClusterSüdOst.md`
+- **Analyse:** `ergebnisse/analyse_1_code_verteilung_suedost.md`
+- **Visualisierungen:** `ergebnisse/analyse_1_visualisierungen_suedost/` (4 PNGs)
+
+---
 
 ### Known Issues & Solutions
 
@@ -381,11 +462,14 @@ The analysis is grounded in:
 
 - **[README.md](README.md)** - Project overview
 - **[REQUIREMENTS.md](REQUIREMENTS.md)** - Original requirements (Version A fully implemented)
-- **[Kodiermanual.md](Kodiermanual.md)** - Coding manual with all keywords
-- **[DEPLOYMENT_ERFOLG.md](DEPLOYMENT_ERFOLG.md)** - PythonAnywhere deployment (tested & working)
-- **[WIE_STARTE_ICH_DIE_APP.md](WIE_STARTE_ICH_DIE_APP.md)** - Local development guide
-- **[abstract.md](abstract.md)** - Research abstract
-- **[forschungsmethode.md](forschungsmethode.md)** - Methodology details
+- **[ARBEITSPROTOKOLL.md](ARBEITSPROTOKOLL.md)** - Full development session log
+- **[Knowledge/Kodiermanual.md](Knowledge/Kodiermanual.md)** - Coding manual with all keywords (Single Source of Truth)
+- **[Knowledge/DEPLOYMENT_ERFOLG.md](Knowledge/DEPLOYMENT_ERFOLG.md)** - PythonAnywhere deployment (tested & working)
+- **[Knowledge/WIE_STARTE_ICH_DIE_APP.md](Knowledge/WIE_STARTE_ICH_DIE_APP.md)** - Local development guide
+- **[Knowledge/abstract.md](Knowledge/abstract.md)** - Research abstract
+- **[Knowledge/forschungsmethode.md](Knowledge/forschungsmethode.md)** - Methodology details
+- **[expose.md](expose.md)** - Research exposé
+- **[ergebnisse/README.md](ergebnisse/README.md)** - Results folder documentation
 
 ---
 
