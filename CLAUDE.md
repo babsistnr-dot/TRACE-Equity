@@ -123,12 +123,9 @@ TRACE-Equity/
 ├── knowledge/                                # Promptotyping Documents
 │   ├── coding_manual.md                      # REFERENCE — SINGLE SOURCE OF TRUTH, 233 keywords
 │   ├── requirements.md                       # REQUIREMENTS — Funktionale Anforderungen
-│   ├── abstract.md                           # KNOWLEDGE — Forschungskontext
+│   ├── expose.md                             # KNOWLEDGE — Akademisches Exposé (finale Version)
 │   ├── methodology.md                        # KNOWLEDGE — QCA + RTA Methodik
 │   └── journal.md                            # JOURNAL — Entwicklungsprotokoll
-├── docs/                                     # Forschungs-Artefakte (Outputs)
-│   ├── expose.md                             # Akademisches Exposé
-│   └── expose_narrative.md                   # Narratives Exposé
 ├── scripts/                                  # Analyse-Skripte (post-export)
 │   ├── analyse_code_verteilung.py            # Cluster Mitte: Quantitative Analyse
 │   ├── analyse_code_1_1_deep_dive.py         # Cluster Mitte: Code 1.1 Tiefenanalyse
@@ -256,7 +253,7 @@ TRACE-Equity/
 
 ### Deployment to PythonAnywhere
 
-See [deployment.md](knowledge/deployment.md) for complete step-by-step instructions.
+See [deployment.md](_archive/deployment.md) for complete step-by-step instructions.
 
 **Quick summary:**
 1. Upload files via "Files" tab
@@ -464,15 +461,11 @@ The analysis is grounded in:
 **Promptotyping Documents (knowledge/):**
 - **[knowledge/coding_manual.md](knowledge/coding_manual.md)** — REFERENCE: 233 keywords (Single Source of Truth)
 - **[knowledge/requirements.md](knowledge/requirements.md)** — REQUIREMENTS: Funktionale Anforderungen
-- **[knowledge/abstract.md](knowledge/abstract.md)** — KNOWLEDGE: Forschungskontext
+- **[knowledge/expose.md](knowledge/expose.md)** — KNOWLEDGE: Akademisches Exposé (finale Version)
 - **[knowledge/methodology.md](knowledge/methodology.md)** — KNOWLEDGE: QCA + RTA Methodik
 - **[knowledge/journal.md](knowledge/journal.md)** — JOURNAL: Entwicklungsprotokoll
 - **[_archive/deployment.md](_archive/deployment.md)** — TECHNICAL: PythonAnywhere deployment (archiviert)
 - **[_archive/quickstart.md](_archive/quickstart.md)** — TECHNICAL: Lokale Entwicklung (archiviert)
-
-**Forschungs-Artefakte (docs/):**
-- **[docs/expose.md](docs/expose.md)** — Akademisches Exposé
-- **[docs/expose_narrative.md](docs/expose_narrative.md)** — Narratives Exposé
 
 **Sonstiges:**
 - **[README.md](README.md)** — Project overview
