@@ -1,7 +1,7 @@
 # TRACE-Equity Analyse 1: Code-Verteilungs-Analyse
 
 **Curriculum:** Cluster West — Tirol, Vorarlberg, Edith Stein
-**Analysedatum:** 03.03.2026
+**Analysedatum:** 17.03.2026
 **Datenbasis:** 468 validierte Findings (100% validiert, nicht-validierte entfernt)
 
 ---
@@ -19,17 +19,17 @@
 
 | Code | Anzahl | Prozent | Relevant | Nicht-relevant | Relevanz-Ratio |
 |------|--------|---------|----------|----------------|----------------|
-| Code 2.1: Diversität & Heterogenität | 124 | 26.5% | 111 | 13 | 89.5% |
-| Code 2.7: Professionelle Haltung & Ethik | 111 | 23.7% | 91 | 20 | 82.0% |
-| Code 2.3: Individuelle Förderung & Differenzierung | 66 | 14.1% | 32 | 34 | 48.5% |
-| Code 2.4: Abbau von Benachteiligung & Diskriminierung | 56 | 12.0% | 10 | 46 | 17.9% |
+| Code 2.1: Diversität & Heterogenität | 125 | 26.7% | 112 | 13 | 89.6% |
+| Code 2.7: Professionelle Haltung & Ethik | 113 | 24.1% | 92 | 21 | 81.4% |
+| Code 2.3: Individuelle Förderung & Differenzierung | 65 | 13.9% | 31 | 34 | 47.7% |
+| Code 2.4: Abbau von Benachteiligung & Diskriminierung | 54 | 11.5% | 9 | 45 | 16.7% |
 | Code 2.2: Inklusion & Partizipation | 40 | 8.5% | 39 | 1 | 97.5% |
 | Code 2.6: Sprachliche Bildung & Mehrsprachigkeit | 37 | 7.9% | 34 | 3 | 91.9% |
 | Code 2.5: Bildungspartnerschaft & Sozialraumorientierung | 34 | 7.3% | 30 | 4 | 88.2% |
 
 **Interpretation:**
 
-- **Größte Kategorie:** Code 2.1: Diversität & Heterogenität (124 Findings, 26.5%)
+- **Größte Kategorie:** Code 2.1: Diversität & Heterogenität (125 Findings, 26.7%)
 - **Kleinste Kategorie:** Code 2.5: Bildungspartnerschaft & Sozialraumorientierung (34 Findings, 7.3%)
 - **Code 1.1 fehlt:** Keine explizite Nennung von Chancengleichheit im Curriculum
 
@@ -39,13 +39,13 @@
 
 | Code | Anzahl | Prozent |
 |------|--------|---------|
-| Code 2.1: Diversität & Heterogenität | 111 | 32.0% |
-| Code 2.7: Professionelle Haltung & Ethik | 91 | 26.2% |
+| Code 2.1: Diversität & Heterogenität | 112 | 32.3% |
+| Code 2.7: Professionelle Haltung & Ethik | 92 | 26.5% |
 | Code 2.2: Inklusion & Partizipation | 39 | 11.2% |
 | Code 2.6: Sprachliche Bildung & Mehrsprachigkeit | 34 | 9.8% |
-| Code 2.3: Individuelle Förderung & Differenzierung | 32 | 9.2% |
+| Code 2.3: Individuelle Förderung & Differenzierung | 31 | 8.9% |
 | Code 2.5: Bildungspartnerschaft & Sozialraumorientierung | 30 | 8.6% |
-| Code 2.4: Abbau von Benachteiligung & Diskriminierung | 10 | 2.9% |
+| Code 2.4: Abbau von Benachteiligung & Diskriminierung | 9 | 2.6% |
 
 ---
 

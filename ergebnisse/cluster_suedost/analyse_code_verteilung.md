@@ -1,7 +1,7 @@
 # TRACE-Equity Analyse 1: Code-Verteilungs-Analyse
 
 **Curriculum:** Cluster Süd Ost - Burgenland, Kärnten, Steiermark.pdf
-**Analysedatum:** 19.11.2025
+**Analysedatum:** 17.03.2026
 **Datenbasis:** 276 validierte Findings (100% validiert, semantische Duplikate entfernt)
 
 ---
@@ -19,18 +19,18 @@
 
 | Code | Anzahl | Prozent | Relevant | Nicht-relevant | Relevanz-Ratio |
 |------|--------|---------|----------|----------------|----------------|
-| Code 2.1: Diversität & Heterogenität | 112 | 40.6% | 84 | 26 | 75.0% |
-| Code 2.7: Professionelle Haltung & Ethik | 57 | 20.7% | 33 | 23 | 57.9% |
-| Code 2.3: Individuelle Förderung & Differenzierung | 27 | 9.8% | 19 | 8 | 70.4% |
+| Code 2.1: Diversität & Heterogenität | 102 | 37.0% | 75 | 25 | 73.5% |
+| Code 2.7: Professionelle Haltung & Ethik | 59 | 21.4% | 35 | 23 | 59.3% |
+| Code 2.5: Bildungspartnerschaft & Sozialraumorientierung | 27 | 9.8% | 25 | 1 | 92.6% |
+| Code 2.3: Individuelle Förderung & Differenzierung | 25 | 9.1% | 17 | 8 | 68.0% |
 | Code 2.2: Inklusion & Partizipation | 24 | 8.7% | 17 | 7 | 70.8% |
-| Code 2.5: Bildungspartnerschaft & Sozialraumorientierung | 20 | 7.2% | 18 | 1 | 90.0% |
-| Code 2.4: Abbau von Benachteiligung & Diskriminierung | 19 | 6.9% | 9 | 10 | 47.4% |
-| Code 2.6: Sprachliche Bildung & Mehrsprachigkeit | 17 | 6.2% | 12 | 5 | 70.6% |
+| Code 2.4: Abbau von Benachteiligung & Diskriminierung | 20 | 7.2% | 9 | 11 | 45.0% |
+| Code 2.6: Sprachliche Bildung & Mehrsprachigkeit | 19 | 6.9% | 14 | 5 | 73.7% |
 
 **Interpretation:**
 
-- **Größte Kategorie:** Code 2.1: Diversität & Heterogenität (112 Findings, 40.6%)
-- **Kleinste Kategorie:** Code 2.6: Sprachliche Bildung & Mehrsprachigkeit (17 Findings, 6.2%)
+- **Größte Kategorie:** Code 2.1: Diversität & Heterogenität (102 Findings, 37.0%)
+- **Kleinste Kategorie:** Code 2.6: Sprachliche Bildung & Mehrsprachigkeit (19 Findings, 6.9%)
 - **Code 1.1 fehlt:** Keine explizite Nennung von Chancengleichheit im Curriculum
 
 ---
@@ -39,12 +39,12 @@
 
 | Code | Anzahl | Prozent |
 |------|--------|---------|
-| Code 2.1: Diversität & Heterogenität | 84 | 43.8% |
-| Code 2.7: Professionelle Haltung & Ethik | 33 | 17.2% |
-| Code 2.3: Individuelle Förderung & Differenzierung | 19 | 9.9% |
-| Code 2.5: Bildungspartnerschaft & Sozialraumorientierung | 18 | 9.4% |
+| Code 2.1: Diversität & Heterogenität | 75 | 39.1% |
+| Code 2.7: Professionelle Haltung & Ethik | 35 | 18.2% |
+| Code 2.5: Bildungspartnerschaft & Sozialraumorientierung | 25 | 13.0% |
 | Code 2.2: Inklusion & Partizipation | 17 | 8.9% |
-| Code 2.6: Sprachliche Bildung & Mehrsprachigkeit | 12 | 6.2% |
+| Code 2.3: Individuelle Förderung & Differenzierung | 17 | 8.9% |
+| Code 2.6: Sprachliche Bildung & Mehrsprachigkeit | 14 | 7.3% |
 | Code 2.4: Abbau von Benachteiligung & Diskriminierung | 9 | 4.7% |
 
 ---
@@ -57,17 +57,17 @@
 | 2 | Reflexion | 23 |
 | 3 | Diversität | 20 |
 | 4 | Haltung | 11 |
-| 5 | Gender | 11 |
+| 5 | kulturell | 11 |
 | 6 | inklusiv | 11 |
-| 7 | kulturell | 11 |
+| 7 | Gender | 11 |
 | 8 | Diversity | 7 |
 | 9 | Inklusion | 6 |
-| 10 | Literacy | 6 |
-| 11 | Ethik | 6 |
-| 12 | Geschlecht | 6 |
-| 13 | Individualisierung | 5 |
-| 14 | Heterogenität | 5 |
-| 15 | Zugang | 5 |
+| 10 | Geschlecht | 6 |
+| 11 | Literacy | 6 |
+| 12 | Ethik | 6 |
+| 13 | Zugang | 5 |
+| 14 | Werte | 5 |
+| 15 | Individualisierung | 5 |
 
 ---
 

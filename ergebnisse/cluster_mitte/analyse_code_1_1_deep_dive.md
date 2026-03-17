@@ -1,7 +1,7 @@
 # TRACE-Equity Analyse 2: Code 1.1 "Direkte Nennung" - Deep Dive
 
 **Curriculum:** Cluster Mitte_OÖ_Linz, Salzburg.pdf
-**Analysedatum:** 19.11.2025
+**Analysedatum:** 17.03.2026
 **Fokus:** Explizite Verankerung von Chancengleichheit im Curriculum
 
 ---

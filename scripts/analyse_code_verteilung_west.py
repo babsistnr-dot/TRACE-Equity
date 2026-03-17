@@ -48,17 +48,17 @@ print()
 print("Berechne Statistiken...")
 
 # Alle Findings
-code_counts_all = df['code'].value_counts()
+code_counts_all = df['confirmed_code'].value_counts()
 code_pct_all = (code_counts_all / len(df) * 100).round(1)
 
 # Nur relevante Findings
 relevant_df = df[df['relevant'] == 'ja']
-code_counts_relevant = relevant_df['code'].value_counts()
+code_counts_relevant = relevant_df['confirmed_code'].value_counts()
 code_pct_relevant = (code_counts_relevant / len(relevant_df) * 100).round(1)
 
 # Nicht-relevante Findings
 not_relevant_df = df[df['relevant'] == 'nein']
-code_counts_not_relevant = not_relevant_df['code'].value_counts()
+code_counts_not_relevant = not_relevant_df['confirmed_code'].value_counts()
 
 # Relevanz-Ratio pro Code
 relevanz_ratio = {}

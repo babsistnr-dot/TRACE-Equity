@@ -79,7 +79,7 @@ print("4. CODE-VERTEILUNG (nur relevante Findings)")
 print("="*80)
 
 relevant_df = validated_df[validated_df['relevant'] == 'ja']
-code_counts_relevant = relevant_df['code'].value_counts()
+code_counts_relevant = relevant_df['confirmed_code'].value_counts()
 for code, count in code_counts_relevant.items():
     pct = count / len(relevant_df) * 100
     print(f"{code}: {count} ({pct:.1f}%)")

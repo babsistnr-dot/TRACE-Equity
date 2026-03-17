@@ -1,7 +1,7 @@
 # TRACE-Equity Analyse 1: Code-Verteilungs-Analyse
 
 **Curriculum:** Cluster Mitte_OÖ_Linz, Salzburg.pdf
-**Analysedatum:** 19.11.2025
+**Analysedatum:** 17.03.2026
 **Datenbasis:** 516 validierte Findings (100% validiert, semantische Duplikate entfernt)
 
 ---
@@ -19,18 +19,18 @@
 
 | Code | Anzahl | Prozent | Relevant | Nicht-relevant | Relevanz-Ratio |
 |------|--------|---------|----------|----------------|----------------|
-| Code 2.1: Diversität & Heterogenität | 163 | 31.6% | 94 | 69 | 57.7% |
-| Code 2.7: Professionelle Haltung & Ethik | 96 | 18.6% | 52 | 44 | 54.2% |
-| Code 2.6: Sprachliche Bildung & Mehrsprachigkeit | 81 | 15.7% | 19 | 62 | 23.5% |
-| Code 2.2: Inklusion & Partizipation | 76 | 14.7% | 42 | 34 | 55.3% |
-| Code 2.4: Abbau von Benachteiligung & Diskriminierung | 36 | 7.0% | 22 | 14 | 61.1% |
-| Code 2.3: Individuelle Förderung & Differenzierung | 30 | 5.8% | 14 | 16 | 46.7% |
-| Code 2.5: Bildungspartnerschaft & Sozialraumorientierung | 26 | 5.0% | 8 | 18 | 30.8% |
+| Code 2.1: Diversität & Heterogenität | 160 | 31.0% | 91 | 69 | 56.9% |
+| Code 2.7: Professionelle Haltung & Ethik | 101 | 19.6% | 56 | 45 | 55.4% |
+| Code 2.6: Sprachliche Bildung & Mehrsprachigkeit | 81 | 15.7% | 20 | 61 | 24.7% |
+| Code 2.2: Inklusion & Partizipation | 73 | 14.1% | 39 | 34 | 53.4% |
+| Code 2.4: Abbau von Benachteiligung & Diskriminierung | 35 | 6.8% | 21 | 14 | 60.0% |
+| Code 2.5: Bildungspartnerschaft & Sozialraumorientierung | 32 | 6.2% | 14 | 18 | 43.8% |
+| Code 2.3: Individuelle Förderung & Differenzierung | 26 | 5.0% | 10 | 16 | 38.5% |
 | Code 1.1: Direkte Nennung | 8 | 1.6% | 8 | 0 | 100.0% |
 
 **Interpretation:**
 
-- **Größte Kategorie:** Code 2.1: Diversität & Heterogenität (163 Findings, 31.6%)
+- **Größte Kategorie:** Code 2.1: Diversität & Heterogenität (160 Findings, 31.0%)
 - **Kleinste Kategorie:** Code 1.1: Direkte Nennung (8 Findings, 1.6%)
 
 ---
@@ -39,14 +39,14 @@
 
 | Code | Anzahl | Prozent |
 |------|--------|---------|
-| Code 2.1: Diversität & Heterogenität | 94 | 36.3% |
-| Code 2.7: Professionelle Haltung & Ethik | 52 | 20.1% |
-| Code 2.2: Inklusion & Partizipation | 42 | 16.2% |
-| Code 2.4: Abbau von Benachteiligung & Diskriminierung | 22 | 8.5% |
-| Code 2.6: Sprachliche Bildung & Mehrsprachigkeit | 19 | 7.3% |
-| Code 2.3: Individuelle Förderung & Differenzierung | 14 | 5.4% |
+| Code 2.1: Diversität & Heterogenität | 91 | 35.1% |
+| Code 2.7: Professionelle Haltung & Ethik | 56 | 21.6% |
+| Code 2.2: Inklusion & Partizipation | 39 | 15.1% |
+| Code 2.4: Abbau von Benachteiligung & Diskriminierung | 21 | 8.1% |
+| Code 2.6: Sprachliche Bildung & Mehrsprachigkeit | 20 | 7.7% |
+| Code 2.5: Bildungspartnerschaft & Sozialraumorientierung | 14 | 5.4% |
+| Code 2.3: Individuelle Förderung & Differenzierung | 10 | 3.9% |
 | Code 1.1: Direkte Nennung | 8 | 3.1% |
-| Code 2.5: Bildungspartnerschaft & Sozialraumorientierung | 8 | 3.1% |
 
 ---
 
@@ -61,14 +61,14 @@
 | 5 | Reflexion | 23 |
 | 6 | Mehrsprachigkeit | 21 |
 | 7 | kulturell | 21 |
-| 8 | Werte | 19 |
-| 9 | Literacy | 19 |
+| 8 | Literacy | 19 |
+| 9 | Werte | 19 |
 | 10 | mehrsprachig | 18 |
-| 11 | sprachlich | 15 |
+| 11 | Transition | 15 |
 | 12 | Haltung | 15 |
-| 13 | Transition | 15 |
-| 14 | Geschlecht | 13 |
-| 15 | Inklusion | 13 |
+| 13 | sprachlich | 15 |
+| 14 | Inklusion | 13 |
+| 15 | Geschlecht | 13 |
 
 ---
 

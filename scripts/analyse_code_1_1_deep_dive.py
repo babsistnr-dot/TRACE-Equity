@@ -32,7 +32,7 @@ print()
 print("Extrahiere Code 1.1 Findings...")
 
 # Alle Code 1.1 Findings
-code_1_1_all = df[df['code'] == 'Code 1.1: Direkte Nennung']
+code_1_1_all = df[df['confirmed_code'] == 'Code 1.1: Direkte Nennung']
 code_1_1_relevant = code_1_1_all[code_1_1_all['relevant'] == 'ja']
 
 print(f"[OK] Code 1.1 Findings:")
