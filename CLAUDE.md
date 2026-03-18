@@ -125,12 +125,14 @@ TRACE-Equity/
 │   ├── requirements.md                       # REQUIREMENTS — Funktionale Anforderungen
 │   ├── expose.md                             # KNOWLEDGE — Akademisches Exposé (finale Version)
 │   ├── methodology.md                        # KNOWLEDGE — QCA + RTA Methodik
-│   └── journal.md                            # JOURNAL — Entwicklungsprotokoll
+│   ├── journal.md                            # JOURNAL — Entwicklungsprotokoll
+│   ├── semester_plan_ss2026.md               # PLAN — Roadmap SS2026
+│   └── arbeitsaufteilung.md                  # PLAN — Teamaufteilung SS2026
 ├── scripts/                                  # Analyse-Skripte (post-export)
-│   ├── analyse_code_verteilung.py            # Cluster Mitte: Quantitative Analyse
-│   ├── analyse_code_1_1_deep_dive.py         # Cluster Mitte: Code 1.1 Tiefenanalyse
-│   ├── analyse_code_verteilung_suedost.py    # Cluster SüdOst: Quantitative Analyse
-│   └── validate_cluster_suedost.py           # Cluster SüdOst: CSV-Validierung
+│   ├── utils.py                              # Shared Utilities (Pfade, Farben, Levinson-Mapping)
+│   ├── analyse_code_verteilung.py            # Quantitative Analyse (alle Cluster, CLI-Parameter)
+│   ├── analyse_code_1_1_deep_dive.py         # Code 1.1 Tiefenanalyse (Cluster Mitte)
+│   └── validate_cluster_suedost.py           # CSV-Validierung (Cluster SüdOst)
 ├── uploads/                                  # PDFs der analysierten Curricula
 │   ├── Cluster Mitte_OÖ_Linz, Salzburg.pdf
 │   ├── Cluster Süd Ost_Burgenland, Kärnten, Steiermark.pdf
@@ -139,18 +141,22 @@ TRACE-Equity/
 │   └── PH Tirol.pdf
 ├── ergebnisse/                               # Analyseergebnisse nach Cluster getrennt
 │   ├── README.md
+│   ├── intercoder_reliability.md             # ICR-Dokumentation
 │   ├── cluster_west/
-│   │   └── export.csv                        # 534 Findings, 476 validiert (89%)
+│   │   ├── export_raw.csv                    # Roh-Export aus App
+│   │   ├── export_clean.csv                  # 468 Findings (bereinigt, 100% validiert)
+│   │   ├── analyse_code_verteilung.md        # Quantitativer Report
+│   │   └── visualisierungen/                 # 4 PNG-Grafiken
 │   ├── cluster_mitte/
-│   │   ├── export_raw.csv                    # 591 Findings (roh)
-│   │   ├── export_clean.csv                  # 516 Findings (bereinigt, vollständig validiert)
+│   │   ├── export_raw.csv                    # Roh-Export aus App
+│   │   ├── export_clean.csv                  # 516 Findings (bereinigt, 100% validiert)
 │   │   ├── analyse_code_verteilung.md        # Quantitativer Report
 │   │   ├── analyse_code_1_1_deep_dive.md     # Qualitativer Report Code 1.1
 │   │   ├── zitate.md                         # Zitate-Sammlung
 │   │   └── visualisierungen/                 # 4 PNG-Grafiken
 │   └── cluster_suedost/
-│       ├── export_raw.csv                    # 319 Findings (roh)
-│       ├── export_clean.csv                  # 276 Findings (bereinigt, vollständig validiert)
+│       ├── export_raw.csv                    # Roh-Export aus App
+│       ├── export_clean.csv                  # 272 Findings (bereinigt, 100% validiert)
 │       ├── validation_report.md              # Validierungsbericht
 │       ├── analyse_code_verteilung.md        # Quantitativer Report
 │       └── visualisierungen/                 # 4 PNG-Grafiken
@@ -267,17 +273,22 @@ See [deployment.md](_archive/deployment.md) for complete step-by-step instructio
 
 ### Scientific Analysis Scripts
 
-Four Python scripts for post-export analysis (run after CSV export from app):
+Analyse-Scripts für post-export Auswertung (aus `scripts/` Ordner ausführen):
 
 ```bash
-# Skripte aus dem Projekt-Root ausführen:
-python scripts/analyse_code_verteilung.py
-python scripts/analyse_code_1_1_deep_dive.py
-python scripts/analyse_code_verteilung_suedost.py
-python scripts/validate_cluster_suedost.py
+cd scripts/
+
+# Quantitative Code-Verteilung (ein Cluster oder alle):
+python analyse_code_verteilung.py west
+python analyse_code_verteilung.py mitte
+python analyse_code_verteilung.py suedost
+python analyse_code_verteilung.py --alle
+
+# Code 1.1 Tiefenanalyse (Cluster Mitte):
+python analyse_code_1_1_deep_dive.py
 ```
 
-Alle Skripte verwenden relative Pfade (`../ergebnisse/cluster_*/`) und müssen aus dem **Projekt-Root** ausgeführt werden.
+Alle Scripts verwenden `utils.py` für Pfade, Farben und Levinson-Mapping. Pfade werden automatisch über `Path(__file__)` aufgelöst.
 
 ---
 
@@ -286,27 +297,25 @@ Alle Skripte verwenden relative Pfade (`../ergebnisse/cluster_*/`) und müssen a
 Drei Cluster wurden analysiert und vollständig (oder teilweise) validiert:
 
 ### Cluster West (Tirol, Vorarlberg, Edith Stein)
-- **Datei:** `ergebnisse/Cluster West_TRACE_Equity_Export_.csv`
-- **Findings gesamt:** 534 | **Validiert:** 476 (89%) — **58 noch offen**
-- **Relevant "ja":** 347 | **Relevant "nein":** 121
-- **Code 1.1 Treffer:** 0 (kein direktes Chancengleichheit/Equity im Curriculum)
+- **Datei:** `ergebnisse/cluster_west/export_clean.csv`
+- **Findings:** 468 (100% validiert) | **Relevant:** 347 (74.1%) | **Nicht relevant:** 121
+- **Code 1.1:** 0 Findings — keine explizite Nennung von Chancengleichheit
+- **Analyse:** `cluster_west/analyse_code_verteilung.md` + `visualisierungen/`
 
 ### Cluster Mitte (OÖ, Linz, Salzburg)
-- **Datei:** `ergebnisse/TRACE_Equity_Export_ClusterMitte.csv` (Roh)
-- **Cleaned:** `ergebnisse/TRACE_Equity_Export_20251118_173805_cleaned.csv` (die Datei, auf die Analyse-Skripte zeigen)
-- **Findings gesamt:** 591 | **Validiert:** 516 (87%) — **75 noch offen**
-- **Relevant "ja":** 259 | **Relevant "nein":** 257
-- **Analyse:** `ergebnisse/analyse_1_code_verteilung.md`, `analyse_2_code_1_1_deep_dive.md`, `analyse_2_zitate.md`
-- **Visualisierungen:** `ergebnisse/analyse_1_visualisierungen/` (4 PNGs)
+- **Datei:** `ergebnisse/cluster_mitte/export_clean.csv`
+- **Findings:** 516 (100% validiert) | **Relevant:** 259 (50.2%) | **Nicht relevant:** 257
+- **Code 1.1:** 8 Findings — einziger Cluster mit expliziter Nennung
+- **Analyse:** `cluster_mitte/analyse_code_verteilung.md`, `analyse_code_1_1_deep_dive.md`, `zitate.md` + `visualisierungen/`
 
 ### Cluster SüdOst (Burgenland, Kärnten, Steiermark)
-- **Datei:** `ergebnisse/TRACE_Equity_Export_ClusterSüdOst.csv` (Roh)
-- **Cleaned:** `ergebnisse/TRACE_Equity_Export_ClusterSüdOst_cleaned.csv`
-- **Findings gesamt:** 319 | **Validiert:** 276 (vollständig bereinigt)
-- **Relevant "ja":** 192 | **Relevant "nein":** 80
-- **Validierungsbericht:** `ergebnisse/VALIDATION_ClusterSüdOst.md`
-- **Analyse:** `ergebnisse/analyse_1_code_verteilung_suedost.md`
-- **Visualisierungen:** `ergebnisse/analyse_1_visualisierungen_suedost/` (4 PNGs)
+- **Datei:** `ergebnisse/cluster_suedost/export_clean.csv`
+- **Findings:** 272 (100% validiert) | **Relevant:** 192 (70.6%) | **Nicht relevant:** 80
+- **Code 1.1:** 0 Findings — keine explizite Nennung von Chancengleichheit
+- **Analyse:** `cluster_suedost/analyse_code_verteilung.md` + `visualisierungen/`
+
+### Cluster FH Wien — ausstehend
+- **Status:** PDF-Beschaffung + CEiL-Validierung durch Laura (Schritt 4 im Semesterplan)
 
 ---
 
@@ -464,18 +473,25 @@ The analysis is grounded in:
 - **[knowledge/expose.md](knowledge/expose.md)** — KNOWLEDGE: Akademisches Exposé (finale Version)
 - **[knowledge/methodology.md](knowledge/methodology.md)** — KNOWLEDGE: QCA + RTA Methodik
 - **[knowledge/journal.md](knowledge/journal.md)** — JOURNAL: Entwicklungsprotokoll
-- **[_archive/deployment.md](_archive/deployment.md)** — TECHNICAL: PythonAnywhere deployment (archiviert)
-- **[_archive/quickstart.md](_archive/quickstart.md)** — TECHNICAL: Lokale Entwicklung (archiviert)
+- **[knowledge/semester_plan_ss2026.md](knowledge/semester_plan_ss2026.md)** — PLAN: Roadmap SS2026 (Schritte 0–11)
+- **[knowledge/arbeitsaufteilung.md](knowledge/arbeitsaufteilung.md)** — PLAN: Teamaufteilung SS2026
+
+**Analyse:**
+- **[scripts/utils.py](scripts/utils.py)** — Shared Utilities (Pfade, Farben, Levinson-Mapping)
+- **[ergebnisse/intercoder_reliability.md](ergebnisse/intercoder_reliability.md)** — ICR-Dokumentation
 
 **Sonstiges:**
 - **[README.md](README.md)** — Project overview
 - **[ergebnisse/README.md](ergebnisse/README.md)** — Results folder documentation
+- **[_archive/deployment.md](_archive/deployment.md)** — PythonAnywhere deployment (archiviert)
+- **[_archive/quickstart.md](_archive/quickstart.md)** — Lokale Entwicklung (archiviert)
 
 ---
 
 ## Contact & Collaboration
 
 **Project Lead:** Babsi
-**Institution:** Master Elementarpädagogik, 3. Semester
-**Research Team:** Working group analyzing multiple PH curricula
+**Team:** Babsi + Laura
+**Institution:** Master Elementarpädagogik, 4. Semester (SS2026)
+**LV:** SE Forschungsmethoden
 **Production URL:** http://bsteiner.pythonanywhere.com

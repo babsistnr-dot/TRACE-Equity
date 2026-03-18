@@ -2,71 +2,58 @@
 
 Analyseergebnisse des TRACE-Equity Projekts, geordnet nach Cluster.
 
+## Übersicht
+
+| Cluster | Findings | Relevant | Relevanz-Ratio | Code 1.1 |
+|---------|----------|----------|----------------|----------|
+| **West** | 468 | 347 | 74.1% | 0 |
+| **Mitte** | 516 | 259 | 50.2% | 8 |
+| **SüdOst** | 272 | 192 | 70.6% | 0 |
+| **FH Wien** | — | — | — | ausstehend |
+
+Alle `export_clean.csv` sind 100% validiert, 0 NaN-Werte.
+
+---
+
 ## Struktur
 
 ```
 ergebnisse/
-├── cluster_west/         # Cluster West: Tirol, Vorarlberg, Edith Stein
-├── cluster_mitte/        # Cluster Mitte: OÖ, Linz, Salzburg
-└── cluster_suedost/      # Cluster SüdOst: Burgenland, Kärnten, Steiermark
+├── intercoder_reliability.md     # ICR-Dokumentation
+├── cluster_west/
+│   ├── export_raw.csv            # Roh-Export aus App
+│   ├── export_clean.csv          # 468 Findings (bereinigt)
+│   ├── analyse_code_verteilung.md
+│   └── visualisierungen/         # 4 PNGs
+├── cluster_mitte/
+│   ├── export_raw.csv
+│   ├── export_clean.csv          # 516 Findings (bereinigt)
+│   ├── analyse_code_verteilung.md
+│   ├── analyse_code_1_1_deep_dive.md
+│   ├── zitate.md
+│   └── visualisierungen/         # 4 PNGs
+└── cluster_suedost/
+    ├── export_raw.csv
+    ├── export_clean.csv          # 272 Findings (bereinigt)
+    ├── validation_report.md
+    ├── analyse_code_verteilung.md
+    └── visualisierungen/         # 4 PNGs
 ```
 
-## Cluster-Übersicht
-
-### cluster_west/
-| Datei | Beschreibung |
-|---|---|
-| `export.csv` | 534 Findings, 476 validiert (89%), 347 relevant |
-
-**Status:** Validierung noch offen (58 Einträge)
-
----
-
-### cluster_mitte/
-| Datei | Beschreibung |
-|---|---|
-| `export_raw.csv` | 591 Findings (Roh-Export aus App) |
-| `export_clean.csv` | 516 Findings (bereinigt, vollständig validiert) |
-| `analyse_code_verteilung.md` | Quantitativer Report: Code-Verteilung |
-| `analyse_code_1_1_deep_dive.md` | Qualitativer Report: Code 1.1 Direkte Nennung |
-| `zitate.md` | Strukturierte Zitate-Sammlung |
-| `visualisierungen/` | 4 PNG-Grafiken zur Code-Verteilung |
-
-**Status:** Vollständig analysiert
-
----
-
-### cluster_suedost/
-| Datei | Beschreibung |
-|---|---|
-| `export_raw.csv` | 319 Findings (Roh-Export aus App) |
-| `export_clean.csv` | 276 Findings (bereinigt, vollständig validiert) |
-| `validation_report.md` | Validierungsbericht (Duplikate-Analyse) |
-| `analyse_code_verteilung.md` | Quantitativer Report: Code-Verteilung |
-| `visualisierungen/` | 4 PNG-Grafiken zur Code-Verteilung |
-
-**Status:** Vollständig analysiert
-
----
-
-## Neue Analyse erstellen
+## Analyse ausführen
 
 ```bash
-# 1. App starten (aus Projekt-Root)
-python app.py  →  http://localhost:5000
+cd scripts/
 
-# 2. PDF hochladen, analysieren, validieren, exportieren
+# Quantitative Code-Verteilung:
+python analyse_code_verteilung.py west       # ein Cluster
+python analyse_code_verteilung.py --alle     # alle Cluster
 
-# 3. CSV in passenden cluster_*/ Ordner ablegen:
-#    export_raw.csv    = direkt aus App exportiert
-#    export_clean.csv  = nach Duplikate-Bereinigung
-
-# 4. Analyse-Skripte ausführen (aus Projekt-Root):
-python scripts/analyse_code_verteilung.py
-python scripts/analyse_code_verteilung_suedost.py
+# Code 1.1 Tiefenanalyse:
+python analyse_code_1_1_deep_dive.py
 ```
 
 ---
 
-**Projekt:** TRACE-Equity (Tracking Representations of Access, Chances and Equity)
+**Projekt:** TRACE-Equity
 **Stand:** März 2026
