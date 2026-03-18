@@ -2,13 +2,12 @@
 
 **Curriculum:** Cluster Mitte (OÖ, Linz, Salzburg)
 **Analysedatum:** 18.03.2026
-**Datenbasis:** 516 validierte Findings (100% validiert, semantische Duplikate entfernt)
+**Datenbasis:** 516 validierte Findings
 
 ---
 
 ## 1. Übersicht
 
-### Validierungsstatus
 - **Total Findings:** 516
 - **Relevante Findings:** 259 (50.2%)
 - **Nicht-relevante Findings:** 257 (49.8%)
@@ -45,7 +44,7 @@
 
 ---
 
-## 4. Top 15 Keywords (alle Findings)
+## 4. Top 15 Keywords
 
 | Rank | Keyword | Anzahl |
 |------|---------|--------|
@@ -68,8 +67,6 @@
 ---
 
 ## 5. Visualisierungen
-
-Siehe Ordner: `visualisierungen/`
 
 1. `01_code_verteilung_alle.png` — Code-Verteilung (alle Findings)
 2. `02_code_verteilung_relevant.png` — Code-Verteilung (nur relevante)

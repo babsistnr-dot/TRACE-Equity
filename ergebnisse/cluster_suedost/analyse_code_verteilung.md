@@ -2,13 +2,12 @@
 
 **Curriculum:** Cluster SüdOst (Burgenland, Kärnten, Steiermark)
 **Analysedatum:** 18.03.2026
-**Datenbasis:** 272 validierte Findings (100% validiert, semantische Duplikate entfernt)
+**Datenbasis:** 272 validierte Findings
 
 ---
 
 ## 1. Übersicht
 
-### Validierungsstatus
 - **Total Findings:** 272
 - **Relevante Findings:** 192 (70.6%)
 - **Nicht-relevante Findings:** 80 (29.4%)
@@ -43,7 +42,7 @@
 
 ---
 
-## 4. Top 15 Keywords (alle Findings)
+## 4. Top 15 Keywords
 
 | Rank | Keyword | Anzahl |
 |------|---------|--------|
@@ -66,8 +65,6 @@
 ---
 
 ## 5. Visualisierungen
-
-Siehe Ordner: `visualisierungen/`
 
 1. `01_code_verteilung_alle.png` — Code-Verteilung (alle Findings)
 2. `02_code_verteilung_relevant.png` — Code-Verteilung (nur relevante)

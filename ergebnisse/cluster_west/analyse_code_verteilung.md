@@ -2,13 +2,12 @@
 
 **Curriculum:** Cluster West (Tirol, Vorarlberg, Edith Stein)
 **Analysedatum:** 18.03.2026
-**Datenbasis:** 468 validierte Findings (100% validiert, nicht-validierte entfernt)
+**Datenbasis:** 468 validierte Findings
 
 ---
 
 ## 1. Übersicht
 
-### Validierungsstatus
 - **Total Findings:** 468
 - **Relevante Findings:** 347 (74.1%)
 - **Nicht-relevante Findings:** 121 (25.9%)
@@ -27,12 +26,6 @@
 | Code 2.6: Sprachliche Bildung & Mehrsprachigkeit | 37 | 7.9% | 34 | 3 | 91.9% |
 | Code 2.5: Bildungspartnerschaft & Sozialraumorientierung | 34 | 7.3% | 30 | 4 | 88.2% |
 
-**Interpretation:**
-
-- **Größte Kategorie:** Code 2.1: Diversität & Heterogenität (125 Findings, 26.7%)
-- **Kleinste Kategorie:** Code 2.5: Bildungspartnerschaft & Sozialraumorientierung (34 Findings, 7.3%)
-- **Code 1.1 fehlt:** Keine explizite Nennung von Chancengleichheit im Curriculum
-
 ---
 
 ## 3. Code-Verteilung (nur relevante Findings, n=347)
@@ -49,7 +42,7 @@
 
 ---
 
-## 4. Top 15 Keywords (alle Findings)
+## 4. Top 15 Keywords
 
 | Rank | Keyword | Anzahl |
 |------|---------|--------|
@@ -72,8 +65,6 @@
 ---
 
 ## 5. Visualisierungen
-
-Siehe Ordner: `visualisierungen/`
 
 1. `01_code_verteilung_alle.png` — Code-Verteilung (alle Findings)
 2. `02_code_verteilung_relevant.png` — Code-Verteilung (nur relevante)
