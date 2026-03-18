@@ -1,7 +1,7 @@
 # TRACE-Equity Analyse 2: Code 1.1 "Direkte Nennung" - Deep Dive
 
-**Curriculum:** Cluster Mitte_OÖ_Linz, Salzburg.pdf
-**Analysedatum:** 17.03.2026
+**Curriculum:** Cluster Mitte (OÖ, Linz, Salzburg)
+**Analysedatum:** 18.03.2026
 **Fokus:** Explizite Verankerung von Chancengleichheit im Curriculum
 
 ---
@@ -27,134 +27,33 @@
 
 ---
 
-## 3. Semantische Differenzierung
+## 3. Verwendungskontexte
 
-Die verwendeten Begriffe unterscheiden sich in ihrer konzeptuellen Bedeutung:
-
-| Begriff | Konzeptuelle Rahmung | Theoretischer Bezug |
-|---------|---------------------|---------------------|
-| Chancengleichheit | Formale Gleichheit der Ausgangsbedingungen | Liberal-egalitärer Ansatz |
-| Chancengerechtigkeit | Substanzielle Gerechtigkeit (Kompensation) | Capability Approach (Sen) |
-| Equity | Fairness durch Berücksichtigung unterschiedlicher Ausgangslagen | International: Educational Equity |
-| Bildungsgerechtigkeit | Gerechtigkeit spezifisch im Bildungskontext | Kritische Bildungstheorie |
-
-**Interpretation:**
-
-Die Begriffswahl im Curriculum ist nicht zufällig:
-- **"Chancengleichheit"** betont formale Gleichbehandlung
-- **"Chancengerechtigkeit"** impliziert kompensatorische/transformative Ansätze
-- **"Equity" vs. "Equality"** international etablierte Unterscheidung
-
----
-
-## 4. Verwendungskontexte
-
-Die explizite Nennung von Chancengleichheit erfolgt in unterschiedlichen curricularen Kontexten:
-
-
-### 4.1 Normativ (Leitprinzip)
+### Normativ (Leitprinzip)
 
 **Anzahl Findings:** 4
 
-**Charakteristik:**
-- Chancengleichheit als übergeordneter Wert oder Grundsatz
-- Meist in Präambeln, Leitbildern oder Zielsetzungen
-- Normative Verpflichtung der Institution
-
-
-### 4.2 Beschreibend (Modulinhalte)
+### Beschreibend (Modulinhalte)
 
 **Anzahl Findings:** 1
 
-**Charakteristik:**
-- Chancengleichheit als Modulinhalt oder Thema
-- Didaktische Verankerung in Lehrveranstaltungen
-- Wissensvermittlung
-
-
-### 4.3 Kompetenzbezogen (Fähigkeiten)
+### Kompetenzbezogen (Fähigkeiten)
 
 **Anzahl Findings:** 1
 
-**Charakteristik:**
-- Chancengleichheit als zu erwerbende Kompetenz
-- Studierende sollen Chancengleichheit fördern KÖNNEN
-- Handlungsorientierung
-
-
-### 4.4 Organisatorisch (Strukturen)
+### Organisatorisch (Strukturen)
 
 **Anzahl Findings:** 2
 
-**Charakteristik:**
-- Organisatorische oder strukturelle Kontexte
-
 
 ---
 
-## 5. Interpretation: Capability Approach Mapping
+## 4. Explizit vs. Implizit
 
-Gemäß dem theoretischen Rahmen (Sen, Nussbaum) lassen sich die Findings in drei Kategorien einordnen:
+**Code 1.1 (Direkte Nennung):** 8 Findings
+**Code 2.1–2.7 (Implizite Dimensionen):** 251 Findings
 
-### 5.1 Formale Chancengleichheit
-- **Fokus:** Gleiche Ausgangsbedingungen, Nicht-Diskriminierung
-- **Begriffe:** Primär "Chancengleichheit", "Equality"
-- **Limitation:** Ignoriert strukturelle Ungleichheiten
-
-### 5.2 Substanzielle Chancengerechtigkeit
-- **Fokus:** Kompensation unterschiedlicher Ausgangslagen
-- **Begriffe:** "Chancengerechtigkeit", "Equity", "Bildungsgerechtigkeit"
-- **Ansatz:** Ressourcenorientiert, kompensatorisch
-
-### 5.3 Transformative Gerechtigkeit
-- **Fokus:** Strukturelle Veränderung, Empowerment
-- **Begriffe:** "Teilhabegerechtigkeit" (am nächsten)
-- **Ansatz:** Kritisch-emanzipatorisch
-
-**Befund:**
-
-Die explizite Verankerung von Chancengleichheit im Curriculum ist **gering**:
-- Nur {len(code_1_1_relevant)} relevante Findings
-- Bedeutet: Chancengleichheit wird primär **implizit** (über Codes 2.1-2.7) behandelt
-
-**Kritische Frage:**
-- Ist implizite Verankerung ausreichend für professionelle Habitusbildung?
-- Oder braucht es mehr explizite normative Verpflichtung?
-
----
-
-## 6. Vergleich mit anderen Codes
-
-**Code 1.1 (Direkte Nennung):** {len(code_1_1_relevant)} Findings
-**Code 2.1-2.7 (Implizite Dimensionen):** {len(df[df['relevant'] == 'ja']) - len(code_1_1_relevant)} Findings
-
-**Verhältnis:**
-- Implizite zu explizite Verankerung: {(len(df[df['relevant'] == 'ja']) - len(code_1_1_relevant)) / len(code_1_1_relevant):.1f}:1
-
-**Interpretation:**
-- Chancengleichheit wird primär über **Diversität, Inklusion, Sprache etc.** thematisiert
-- Explizite Benennung als Leitprinzip ist selten
-- Mögliche Erklärung: "Hidden Curriculum" vs. Manifest Curriculum
-
----
-
-## 7. Methodenkritische Reflexion
-
-**Limitation der Keyword-Suche:**
-- Nur 7 Keywords für Code 1.1
-- Mögliche weitere Begriffe: "Gerechtigkeit", "Fairness", "gleiche Bildungschancen"
-- Trade-off: Spezifität vs. Sensitivität
-
-**Stärke:**
-- Präzise Erfassung expliziter Nennungen
-- Hohe Relevanz-Ratio ({len(code_1_1_relevant)/len(code_1_1_all)*100:.1f}%)
-
----
-
-## Siehe auch
-
-- **Zitate-Sammlung:** `analyse_2_zitate.md`
-- **Quantitative Übersicht:** `analyse_1_code_verteilung.md`
+**Verhältnis Implizit zu Explizit:** 31.4:1
 
 ---
 

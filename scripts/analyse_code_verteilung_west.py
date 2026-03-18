@@ -2,42 +2,29 @@
 TRACE-Equity Analyse Script
 Analyse 1: Code-Verteilungs-Analyse (Quantitativ)
 CLUSTER WEST (Tirol, Vorarlberg, Edith Stein)
-
-Erstellt deskriptive Statistiken und Visualisierungen zur Verteilung
-der Chancengleichheits-Dimensionen im analysierten Curriculum.
 """
 
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
-from pathlib import Path
-import os
+from utils import (load_cluster, relevante, nicht_relevante, setup_plots,
+                   output_dir, FARBEN_LISTE, CLUSTER_NAMEN, ERGEBNISSE_DIR)
 
 # Konfiguration
-CSV_FILE = '../ergebnisse/cluster_west/export_clean.csv'
-OUTPUT_DIR = '../ergebnisse/cluster_west/visualisierungen'
-REPORT_FILE = '../ergebnisse/cluster_west/analyse_code_verteilung.md'
+CLUSTER = 'west'
+OUTPUT_DIR = output_dir(CLUSTER)
+REPORT_FILE = ERGEBNISSE_DIR / f'cluster_{CLUSTER}' / 'analyse_code_verteilung.md'
 
-# Erstelle Output-Ordner
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+setup_plots()
 
-# Setze Matplotlib auf nicht-interaktiv für Hintergrund-Rendering
-plt.switch_backend('Agg')
-
-# Style-Konfiguration
-sns.set_theme(style="whitegrid")
-plt.rcParams['figure.figsize'] = (12, 8)
-plt.rcParams['font.size'] = 11
-
-print("="*80)
+print("=" * 80)
 print("TRACE-EQUITY ANALYSE 1: CODE-VERTEILUNGS-ANALYSE")
-print("CLUSTER WEST (Tirol, Vorarlberg, Edith Stein)")
-print("="*80)
+print(f"CLUSTER WEST (Tirol, Vorarlberg, Edith Stein)")
+print("=" * 80)
 print()
 
 # Lade Daten
 print("Lade Daten...")
-df = pd.read_csv(CSV_FILE)
+df = load_cluster(CLUSTER)
 print(f"[OK] {len(df)} Findings geladen (alle validiert)")
 print()
 
@@ -52,20 +39,20 @@ code_counts_all = df['confirmed_code'].value_counts()
 code_pct_all = (code_counts_all / len(df) * 100).round(1)
 
 # Nur relevante Findings
-relevant_df = df[df['relevant'] == 'ja']
+relevant_df = relevante(df)
 code_counts_relevant = relevant_df['confirmed_code'].value_counts()
 code_pct_relevant = (code_counts_relevant / len(relevant_df) * 100).round(1)
 
 # Nicht-relevante Findings
-not_relevant_df = df[df['relevant'] == 'nein']
+not_relevant_df = nicht_relevante(df)
 code_counts_not_relevant = not_relevant_df['confirmed_code'].value_counts()
 
 # Relevanz-Ratio pro Code
 relevanz_ratio = {}
 for code in code_counts_all.index:
     total = code_counts_all[code]
-    relevant = code_counts_relevant.get(code, 0)
-    ratio = (relevant / total * 100) if total > 0 else 0
+    rel = code_counts_relevant.get(code, 0)
+    ratio = (rel / total * 100) if total > 0 else 0
     relevanz_ratio[code] = ratio
 
 # ============================================================================
@@ -75,9 +62,8 @@ for code in code_counts_all.index:
 print("Erstelle Visualisierung 1: Code-Verteilung (alle Findings)...")
 
 fig, ax = plt.subplots(figsize=(14, 8))
-colors = ['#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6', '#1abc9c', '#e67e22', '#34495e']
 
-bars = ax.barh(range(len(code_counts_all)), code_counts_all.values, color=colors[:len(code_counts_all)])
+bars = ax.barh(range(len(code_counts_all)), code_counts_all.values, color=FARBEN_LISTE[:len(code_counts_all)])
 ax.set_yticks(range(len(code_counts_all)))
 ax.set_yticklabels([code.replace('ä', 'ae').replace('ö', 'oe').replace('ü', 'ue')
                      for code in code_counts_all.index])
@@ -85,7 +71,6 @@ ax.set_xlabel('Anzahl Findings', fontsize=12, fontweight='bold')
 ax.set_title(f'Code-Verteilung im Curriculum Cluster West\n(Alle {len(df)} validierten Findings)',
              fontsize=14, fontweight='bold', pad=20)
 
-# Werte an Balken
 for i, (bar, count, pct) in enumerate(zip(bars, code_counts_all.values, code_pct_all.values)):
     ax.text(bar.get_width() + 2, bar.get_y() + bar.get_height()/2,
             f'{count} ({pct}%)', va='center', fontweight='bold')
@@ -102,7 +87,7 @@ print(f"  [OK] Gespeichert: {OUTPUT_DIR}/01_code_verteilung_alle.png")
 print("Erstelle Visualisierung 2: Code-Verteilung (nur relevante Findings)...")
 
 fig, ax = plt.subplots(figsize=(14, 8))
-bars = ax.barh(range(len(code_counts_relevant)), code_counts_relevant.values, color=colors[:len(code_counts_relevant)])
+bars = ax.barh(range(len(code_counts_relevant)), code_counts_relevant.values, color=FARBEN_LISTE[:len(code_counts_relevant)])
 ax.set_yticks(range(len(code_counts_relevant)))
 ax.set_yticklabels([code.replace('ä', 'ae').replace('ö', 'oe').replace('ü', 'ue')
                      for code in code_counts_relevant.index])
@@ -177,7 +162,7 @@ print("Erstelle Markdown-Report...")
 
 report = f"""# TRACE-Equity Analyse 1: Code-Verteilungs-Analyse
 
-**Curriculum:** Cluster West — Tirol, Vorarlberg, Edith Stein
+**Curriculum:** {CLUSTER_NAMEN[CLUSTER]}
 **Analysedatum:** {pd.Timestamp.now().strftime('%d.%m.%Y')}
 **Datenbasis:** {len(df)} validierte Findings (100% validiert, nicht-validierte entfernt)
 
@@ -241,76 +226,9 @@ for i, (keyword, count) in enumerate(keyword_counts.items(), 1):
 report += """
 ---
 
-## 5. Wissenschaftliche Interpretation
+## 5. Visualisierungen
 
-### 5.1 Schwerpunkte
-
-**Dominanz von Code 2.1 (Diversität & Heterogenität):**
-- Mit Abstand die größte Kategorie bei allen und relevanten Findings
-- Deutet auf starken Fokus auf Diversitäts-Diskurse im Curriculum hin
-- Konsistent mit den Befunden aus Cluster Mitte und SüdOst
-
-**Starke Präsenz von Code 2.7 (Professionelle Haltung & Ethik):**
-- Zweitgrößte Kategorie
-- Zeigt Fokus auf Reflexivität und professionelle Habitusbildung
-- Verbindung zu Professionalisierungstheorien (Fröhlich-Gildhoff et al.)
-
-### 5.2 Lücken und Unterrepräsentation
-
-**Keine Code 1.1 Findings (Direkte Nennung):**
-- 0 Findings — Chancengleichheit wird NIE explizit benannt
-- Identisch mit Cluster SüdOst (ebenfalls 0)
-- Cluster Mitte hatte immerhin 8 Findings (1.6%)
-- **Ausschließlich implizite Verankerung** im Curriculum
-
-**Unterrepräsentation transformativer Ansätze:**
-- Code 2.4 (Abbau von Benachteiligung) und Code 2.5 (Bildungspartnerschaft) — relativ schwach vertreten
-- Empowerment und strukturelle Veränderung weniger prominent
-
-### 5.3 Capability Approach Mapping
-
-**Formale Chancengleichheit:**
-- Primär in Code 2.1 (Diversität) — oft deskriptiv/anerkennend
-
-**Kompensatorische Ansätze:**
-- Code 2.3 (Individuelle Förderung) — moderate Präsenz
-- Code 2.2 (Inklusion) — moderate Präsenz
-
-**Transformative Ansätze:**
-- Code 2.4 (Abbau von Benachteiligung) — schwach vertreten
-- Empowerment und strukturelle Veränderung deutlich unterrepräsentiert
-
----
-
-## 6. Vergleich aller drei Cluster
-
-| Metrik | Cluster West | Cluster Mitte | Cluster SüdOst |
-|--------|-------------|---------------|----------------|
-| **Hochschulen** | Tirol, Vorarlberg, Edith Stein | OÖ, Linz, Salzburg | Burgenland, Kärnten, Steiermark |
-| **Total validierte Findings** | 468 | 516 | 276 |
-| **Relevanz-Ratio** | 74.1% | 50.2% | 69.6% |
-| **Code 1.1 (Direkte Nennung)** | 0% | 1.6% | 0% |
-| **Code 2.1 (Diversität) — relevant** | s.o. | 36.6% | 43.8% |
-| **Code 2.7 (Haltung) — relevant** | s.o. | 18.4% | 17.2% |
-| **Code 2.4 (Abbau Benachteiligung) — relevant** | s.o. | 7.3% | 4.7% |
-
-*(Prozente für Cluster West werden dynamisch berechnet und in der Tabelle oben angezeigt.)*
-
-### Cluster-übergreifende Befunde
-
-**Konsistent über alle drei Cluster:**
-1. Code 2.1 (Diversität) dominiert in allen Curricula
-2. Code 2.7 (Professionelle Haltung) durchgängig zweitstärkstes Thema
-3. Code 1.1 (Direkte Nennung) fast nicht vorhanden — Chancengleichheit wird primär implizit thematisiert
-4. Transformative Ansätze (Code 2.4) überall unterrepräsentiert
-
-**Implikation:** Österreichische Elementarpädagogik-Curricula verankern Chancengleichheit primär über Diversitätsdiskurse und professionelle Haltungen, jedoch kaum über explizite Benennung oder transformative Handlungsstrategien.
-
----
-
-## 7. Visualisierungen
-
-Siehe Ordner: `ergebnisse/cluster_west/visualisierungen/`
+Siehe Ordner: `visualisierungen/`
 
 1. `01_code_verteilung_alle.png` — Code-Verteilung (alle Findings)
 2. `02_code_verteilung_relevant.png` — Code-Verteilung (nur relevante)
@@ -319,44 +237,19 @@ Siehe Ordner: `ergebnisse/cluster_west/visualisierungen/`
 
 ---
 
-## 8. Methodenkritische Reflexion
-
-### Relevanz-Ratio: 74.1%
-
-**Interpretation:**
-- Höchste Relevanz-Ratio aller drei Cluster (Mitte: 50.2%, SüdOst: 69.6%)
-- Mögliche Erklärungen:
-  1. Validierungs-Lerneffekt (drittes Curriculum → präzisere Keyword-Zuordnung)
-  2. Curriculum tatsächlich stärker auf Equity-Themen fokussiert
-  3. Kürzere/fokussiertere Curricula mit weniger Rauschen
-
-**Methodenkritisch:**
-- Intercoder-Reliabilität fehlt (nur eine Person validiert)
-- Reihenfolge-Effekt möglich (West nach Mitte und SüdOst validiert)
-
-### Code 1.1 fehlt komplett
-
-**Kritischer Befund (identisch mit SüdOst):**
-- Chancengleichheit wird im Curriculum nie explizit benannt
-- Nur Cluster Mitte hat überhaupt explizite Nennungen (8 Findings)
-- Implizite Verankerung = weniger verbindlich?
-
----
-
 **Erstellt mit:** Python (pandas, matplotlib, seaborn)
 **Methodik:** Qualitative Content Analysis (QCA) + Critical Expert in the Loop (CEiL)
 """
 
-# Speichere Report
 with open(REPORT_FILE, 'w', encoding='utf-8') as f:
     f.write(report)
 
 print(f"  [OK] Report gespeichert: {REPORT_FILE}")
 print()
 
-print("="*80)
+print("=" * 80)
 print("ANALYSE 1 ABGESCHLOSSEN")
-print("="*80)
+print("=" * 80)
 print()
 print("Outputs:")
 print(f"  - Report: {REPORT_FILE}")
