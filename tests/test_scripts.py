@@ -195,3 +195,29 @@ class TestBekannteZahlen:
         df = relevante(load_cluster('mitte'))
         count = len(df[df['confirmed_code'] == 'Code 1.1: Direkte Nennung'])
         assert count == 8
+
+    def test_fh_wien_code_1_1_count(self):
+        """FH Wien hat 1 relevantes Code-1.1-Finding."""
+        df = relevante(load_cluster('fh_wien'))
+        count = len(df[df['confirmed_code'] == 'Code 1.1: Direkte Nennung'])
+        assert count == 1
+
+    def test_west_kein_code_1_1(self):
+        """Cluster West hat 0 Code-1.1-Findings."""
+        df = relevante(load_cluster('west'))
+        count = len(df[df['confirmed_code'] == 'Code 1.1: Direkte Nennung'])
+        assert count == 0
+
+    def test_suedost_kein_code_1_1(self):
+        """Cluster SüdOst hat 0 Code-1.1-Findings."""
+        df = relevante(load_cluster('suedost'))
+        count = len(df[df['confirmed_code'] == 'Code 1.1: Direkte Nennung'])
+        assert count == 0
+
+    def test_gesamt_code_1_1_count(self):
+        """Über alle Cluster hinweg gibt es genau 9 Code-1.1-Findings."""
+        total = 0
+        for name in ['west', 'mitte', 'suedost', 'fh_wien']:
+            df = relevante(load_cluster(name))
+            total += len(df[df['confirmed_code'] == 'Code 1.1: Direkte Nennung'])
+        assert total == 9

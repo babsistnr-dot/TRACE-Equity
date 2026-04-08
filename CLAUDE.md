@@ -131,8 +131,9 @@ TRACE-Equity/
 ├── scripts/                                  # Analyse-Skripte (post-export)
 │   ├── utils.py                              # Shared Utilities (Pfade, Farben, Levinson-Mapping)
 │   ├── analyse_code_verteilung.py            # Quantitative Analyse (alle Cluster, CLI-Parameter)
-│   ├── analyse_code_1_1_deep_dive.py         # Code 1.1 Tiefenanalyse (Cluster Mitte)
-│   └── validate_cluster_suedost.py           # CSV-Validierung (Cluster SüdOst)
+│   └── analyse_code_1_1_deep_dive.py         # Code 1.1 Tiefenanalyse (Cluster Mitte)
+├── tests/                                    # Pytest Test Suite
+│   └── test_scripts.py                       # 49 Tests (Konfig, Laden, Datenqualität, Regression)
 ├── uploads/                                  # PDFs der analysierten Curricula
 │   ├── Cluster Mitte_OÖ_Linz, Salzburg.pdf
 │   ├── Cluster Süd Ost_Burgenland, Kärnten, Steiermark.pdf
@@ -154,12 +155,15 @@ TRACE-Equity/
 │   │   ├── analyse_code_1_1_deep_dive.md     # Qualitativer Report Code 1.1
 │   │   ├── zitate.md                         # Zitate-Sammlung
 │   │   └── visualisierungen/                 # 4 PNG-Grafiken
-│   └── cluster_suedost/
-│       ├── export_raw.csv                    # Roh-Export aus App
-│       ├── export_clean.csv                  # 272 Findings (bereinigt, 100% validiert)
-│       ├── validation_report.md              # Validierungsbericht
-│       ├── analyse_code_verteilung.md        # Quantitativer Report
-│       └── visualisierungen/                 # 4 PNG-Grafiken
+│   ├── cluster_suedost/
+│   │   ├── export_raw.csv                    # Roh-Export aus App
+│   │   ├── export_clean.csv                  # 272 Findings (bereinigt, 100% validiert)
+│   │   ├── validation_report.md              # Validierungsbericht
+│   │   ├── analyse_code_verteilung.md        # Quantitativer Report
+│   │   └── visualisierungen/                 # 4 PNG-Grafiken
+│   └── cluster_fh_wien/
+│       ├── export_raw.csv                    # Roh-Export (konvertiert aus .numbers)
+│       └── export_clean.csv                  # 370 Findings (bereinigt, 100% validiert)
 ├── _archive/                                 # Archivierte Docs (veraltet, aber aufbewahrt)
 │   ├── deployment.md                         # PythonAnywhere deployment (Okt 2025)
 │   └── quickstart.md                         # Lokale Entwicklung (Okt 2025)
@@ -282,19 +286,23 @@ cd scripts/
 python analyse_code_verteilung.py west
 python analyse_code_verteilung.py mitte
 python analyse_code_verteilung.py suedost
+python analyse_code_verteilung.py fh_wien
 python analyse_code_verteilung.py --alle
 
 # Code 1.1 Tiefenanalyse (Cluster Mitte):
 python analyse_code_1_1_deep_dive.py
+
+# Tests ausführen (aus Projekt-Root):
+python -m pytest tests/ -v
 ```
 
-Alle Scripts verwenden `utils.py` für Pfade, Farben und Levinson-Mapping. Pfade werden automatisch über `Path(__file__)` aufgelöst.
+Alle Scripts verwenden `utils.py` für Pfade, Farben und Levinson-Mapping. Pfade werden automatisch über `Path(__file__)` aufgelöst. Alle Scripts verwenden `confirmed_code` (Expert-validiert), nicht `code` (automatisch).
 
 ---
 
-## Current Analysis Status (Stand: März 2026)
+## Current Analysis Status (Stand: April 2026)
 
-Drei Cluster wurden analysiert und vollständig (oder teilweise) validiert:
+Alle 4 Cluster sind analysiert, validiert und bereinigt (N=1.626 Findings, davon 1.061 relevant):
 
 ### Cluster West (Tirol, Vorarlberg, Edith Stein)
 - **Datei:** `ergebnisse/cluster_west/export_clean.csv`
@@ -305,7 +313,7 @@ Drei Cluster wurden analysiert und vollständig (oder teilweise) validiert:
 ### Cluster Mitte (OÖ, Linz, Salzburg)
 - **Datei:** `ergebnisse/cluster_mitte/export_clean.csv`
 - **Findings:** 516 (100% validiert) | **Relevant:** 259 (50.2%) | **Nicht relevant:** 257
-- **Code 1.1:** 8 Findings — einziger Cluster mit expliziter Nennung
+- **Code 1.1:** 8 Findings — einziger Cluster mit nennenswerter expliziter Nennung
 - **Analyse:** `cluster_mitte/analyse_code_verteilung.md`, `analyse_code_1_1_deep_dive.md`, `zitate.md` + `visualisierungen/`
 
 ### Cluster SüdOst (Burgenland, Kärnten, Steiermark)
@@ -314,8 +322,11 @@ Drei Cluster wurden analysiert und vollständig (oder teilweise) validiert:
 - **Code 1.1:** 0 Findings — keine explizite Nennung von Chancengleichheit
 - **Analyse:** `cluster_suedost/analyse_code_verteilung.md` + `visualisierungen/`
 
-### Cluster FH Wien — ausstehend
-- **Status:** PDF-Beschaffung + CEiL-Validierung durch Laura (Schritt 4 im Semesterplan)
+### Cluster FH Wien (FH Campus Wien)
+- **Datei:** `ergebnisse/cluster_fh_wien/export_clean.csv`
+- **Findings:** 370 (100% validiert) | **Relevant:** 263 (71.1%) | **Nicht relevant:** 107
+- **Code 1.1:** 1 Finding — minimale explizite Nennung
+- **Validierung:** Laura (CEiL), konvertiert aus Apple Numbers Export
 
 ---
 
@@ -343,6 +354,14 @@ Drei Cluster wurden analysiert und vollständig (oder teilweise) validiert:
 - **Problem**: Dropdown only showed code numbers (e.g., "Code 2.1")
 - **Solution**: Added full descriptions (e.g., "Code 2.1: Diversität & Heterogenität")
 - **Benefit**: Easier to confirm or change code assignments during validation
+
+**Issue 4: Scripts verwendeten `code` statt `confirmed_code` (RESOLVED - 2026-03)**
+- **Problem**: Alle Analyse-Scripts nutzten `df['code']` (automatische Zuordnung) statt `df['confirmed_code']` (Expert-validiert). 31 manuell umkodierte Findings wurden ignoriert.
+- **Solution**: Alle Scripts auf `confirmed_code` umgestellt, utils.py als zentrale Ladestelle
+
+**Issue 5: NaN-Werte in SüdOst und FH Wien (RESOLVED - 2026-03)**
+- **Problem**: SüdOst: 4 Findings mit `relevant=NaN`, FH Wien: 42 unvalidierte + 6 NaN
+- **Solution**: Bereinigt (SüdOst 276→272, FH Wien 418→370), Tests sichern Datenqualität
 
 ---
 
@@ -478,7 +497,12 @@ The analysis is grounded in:
 
 **Analyse:**
 - **[scripts/utils.py](scripts/utils.py)** — Shared Utilities (Pfade, Farben, Levinson-Mapping)
-- **[ergebnisse/intercoder_reliability.md](ergebnisse/intercoder_reliability.md)** — ICR-Dokumentation
+- **[scripts/analyse_code_verteilung.py](scripts/analyse_code_verteilung.py)** — Quantitative Analyse (alle 4 Cluster, CLI)
+- **[scripts/analyse_code_1_1_deep_dive.py](scripts/analyse_code_1_1_deep_dive.py)** — Code 1.1 Tiefenanalyse (Cluster Mitte)
+- **[ergebnisse/intercoder_reliability.md](ergebnisse/intercoder_reliability.md)** — ICR-Dokumentation (κ=0.71 Relevanz, κ=0.83 Code)
+
+**Tests:**
+- **[tests/test_scripts.py](tests/test_scripts.py)** — 49 Tests: Konfig, Laden, Datenqualität, Filter, Levinson, Regressionszahlen
 
 **Sonstiges:**
 - **[README.md](README.md)** — Project overview
