@@ -17,15 +17,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 ERGEBNISSE_DIR = BASE_DIR / 'ergebnisse'
 
 CLUSTER_PATHS = {
-    'west': ERGEBNISSE_DIR / 'cluster_west' / 'export_clean.csv',
-    'mitte': ERGEBNISSE_DIR / 'cluster_mitte' / 'export_clean.csv',
-    'suedost': ERGEBNISSE_DIR / 'cluster_suedost' / 'export_clean.csv',
+    'west':     ERGEBNISSE_DIR / 'cluster_west'    / 'export_clean.csv',
+    'mitte':    ERGEBNISSE_DIR / 'cluster_mitte'   / 'export_clean.csv',
+    'suedost':  ERGEBNISSE_DIR / 'cluster_suedost' / 'export_clean.csv',
+    'fh_wien':  ERGEBNISSE_DIR / 'cluster_fh_wien' / 'export_clean.csv',
 }
 
 CLUSTER_NAMEN = {
-    'west': 'Cluster West (Tirol, Vorarlberg, Edith Stein)',
-    'mitte': 'Cluster Mitte (OÖ, Linz, Salzburg)',
+    'west':    'Cluster West (Tirol, Vorarlberg, Edith Stein)',
+    'mitte':   'Cluster Mitte (OÖ, Linz, Salzburg)',
     'suedost': 'Cluster SüdOst (Burgenland, Kärnten, Steiermark)',
+    'fh_wien': 'FH Campus Wien',
 }
 
 # ============================================================================
