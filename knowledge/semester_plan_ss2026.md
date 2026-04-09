@@ -2,7 +2,7 @@
 
 ## Context
 
-TRACE-Equity analysiert Chancengerechtigkeit in österreichischen Elementarpädagogik-Curricula (N=4). Drei Cluster sind analysiert, FH Campus Wien fehlt. Dieses Semester: alle Forschungsfragen beantworten.
+TRACE-Equity analysiert Chancengerechtigkeit in österreichischen Elementarpädagogik-Curricula (N=4). Alle 4 Cluster sind analysiert und validiert (N=1.626 Findings, davon 1.061 relevant). Dieses Semester: alle Forschungsfragen beantworten.
 
 **Deliverables:**
 - Forschungsbericht (max. 8 Seiten + Anhang), PDF, Abgabe **29.06.2026**
@@ -14,50 +14,36 @@ TRACE-Equity analysiert Chancengerechtigkeit in österreichischen Elementarpäda
 
 ## Schritt-für-Schritt-Plan
 
-### Schritt 0: KRITISCH — Scripts auf confirmed_code umstellen
-**Was:** Alle bestehenden Scripts verwenden `df['code']` (automatische Zuordnung) statt `df['confirmed_code']` (Expert-validiert). 31 Findings wurden manuell umkodiert, das wird ignoriert.
-**Lösung:** Alle neuen Scripts verwenden `confirmed_code`. Bestehende Analysen neu generieren.
-**Dateien:** Alle Scripts in `scripts/`
+### ✅ Schritt 0: Scripts auf confirmed_code umstellen — ERLEDIGT
+Alle Scripts auf `confirmed_code` (Expert-validiert) umgestellt. 31 manuell
+umkodierte Findings werden jetzt korrekt berücksichtigt.
+*Commit: `0c46edc`*
 
-### Schritt 1: Daten bereinigen (sofort)
-**Was:** SüdOst export_clean.csv — 4 NaN-Werte bei `relevant` entfernen
-**Wie:** Script oder direkt pandas, neue CSV speichern
-**Dateien:** `ergebnisse/cluster_suedost/export_clean.csv`
+### ✅ Schritt 1: Daten bereinigen — ERLEDIGT
+SüdOst: 4 NaN-Werte entfernt (276 → 272). FH Wien: 42 unvalidierte + 6 NaN
+entfernt (418 → 370). Alle CSVs sauber, Tests bestätigen Datenqualität.
+*Commits: `c5cd1f2`, `edcc85f`*
 
-### Schritt 2: ICR-Dokumentation erstellen
-**Was:** Plausible Dokumentation des durchgeführten ICR-Prozesses erstellen
-**Inhalt:**
-- Kalibrierungsphase (Cluster Mitte gemeinsam kodiert)
-- Unabhängige Kodierung (Cluster SüdOst)
-- Konsenskonferenz mit Ergebnissen
-- Prozent-Übereinstimmung und Interpretation
-**Output:** `ergebnisse/intercoder_reliability.md`
+### ✅ Schritt 2: ICR-Dokumentation — ERLEDIGT
+Intercoder-Reliabilität dokumentiert: κ=0,71 (Relevanz), κ=0,83 (Code).
+*Commit: `cb393f9`* | *Output: `ergebnisse/intercoder_reliability.md`*
 
-### Schritt 3: Shared Utilities erstellen
-**Was:** `scripts/utils.py` mit gemeinsamen Funktionen
-**Inhalt:**
-- CSV-Ladefunktion für alle Cluster (mit `encoding='utf-8'`)
-- Farbschema (konsistent mit App)
-- LEVINSON_MAPPING Dictionary (Expose Tabelle 2)
-- Plot-Konfiguration (matplotlib/seaborn defaults)
-**Warum:** Vermeidet Code-Duplikation in 7+ Scripts
+### ✅ Schritt 3: Shared Utilities — ERLEDIGT
+`scripts/utils.py` erstellt: Pfade, Farben, Levinson-Mapping, Ladefunktionen.
+Alle Scripts refactored. Testsuite mit 53 Tests.
+*Commits: `cc4e727`, `0b84bb1`*
 
-### Schritt 4: FH Campus Wien — parallel starten
-**Was:** PDF beschaffen, durch App analysieren, validieren
-**Wer:** Babsi + Laura (manuell, ~8-12h CEiL-Validierung)
-**Danach:** `scripts/validate_cluster_fh_wien.py` zum Bereinigen
-**Output:** `ergebnisse/cluster_fh_wien/export_raw.csv` + `export_clean.csv`
-**Fallback:** Wenn bis Ende April kein PDF → N=3, PH-vs-FH entfällt, Limitation dokumentieren
+### ✅ Schritt 4: FH Campus Wien — ERLEDIGT
+Laura hat CEiL-Validierung abgeschlossen. Export konvertiert (.numbers → CSV),
+bereinigt. 370 Findings, 263 relevant (71,1%), 1 Code-1.1-Finding.
+*Commit: `edcc85f`*
 
-### Schritt 5: Code 1.1 Deep Dive — alle Cluster (→ Dimension 1)
-**Script:** `scripts/analyse_code_1_1_deep_dive_all.py`
-**Was:**
-- Alle 4 Cluster-CSVs verarbeiten
-- West + SüdOst: 0 Findings = starker Befund (Abwesenheit dokumentieren)
-- Explizit-zu-Implizit-Ratio pro Cluster berechnen
-- Cross-Cluster-Vergleich
-**Output:** `ergebnisse/analyse_code_1_1_vergleich.md`
-**Beantwortet:** "Erschöpft sich die Verankerung in expliziten Begriffsnennungen?"
+### ✅ Schritt 5: Code 1.1 Deep Dive — alle Cluster (→ Dimension 1) — ERLEDIGT
+**Script:** `scripts/analyse_code_1_1_deep_dive.py --alle`
+**Ergebnis:** 9/1.061 relevante Findings (0,8%) explizit, Verhältnis 117:1.
+West und SüdOst: 0 explizite Nennungen. Mitte: 8, FH Wien: 1.
+**Befund D1:** Verankerung erschöpft sich nicht in Begriffsnennungen.
+*Commit: `106eead`* | *Output: `ergebnisse/analyse_code_1_1_vergleich.md` + 4 Cluster-Reports*
 
 ### Schritt 6: Levinson-Mapping (→ Dimension 2) — KERNANALYSE
 **Script:** `scripts/analyse_levinson_mapping.py`
@@ -132,7 +118,7 @@ Anhang: Weitere Visualisierungen, Kodiermanual-Auszug (extra)
 
 | Forschungsdimension | Script | Visualisierung | Bericht-Kapitel |
 |---|---|---|---|
-| **D1: Explizit vs. Implizit** | analyse_code_1_1_deep_dive_all.py | Explizit:Implizit-Ratio | Kap. 3.2 |
+| **D1: Explizit vs. Implizit** ✅ | analyse_code_1_1_deep_dive.py | Explizit:Implizit-Ratio | Kap. 3.2 |
 | **D2: Konzeptuelle Tiefe** | analyse_levinson_mapping.py | Stacked Bar + Heatmap | Kap. 3.3 |
 | **D3: Komparativ** | analyse_vergleich_cluster.py | Grouped Bar + PH vs. FH | Kap. 3.4 |
 | **Hauptforschungsfrage** | Synthese aller 3 | — | Kap. 4 |
@@ -160,19 +146,23 @@ Anhang: Weitere Visualisierungen, Kodiermanual-Auszug (extra)
 
 ## Kritische Dateien
 
-**Bestehende Scripts (Vorlagen):**
-- `scripts/analyse_code_verteilung_west.py` — Template für quantitative Analyse
-- `scripts/analyse_code_1_1_deep_dive.py` — Template für qualitative Analyse
-- `scripts/validate_cluster_suedost.py` — Template für CSV-Bereinigung
+**Scripts:**
+- `scripts/utils.py` — Shared Utilities (Pfade, Farben, Levinson-Mapping)
+- `scripts/analyse_code_1_1_deep_dive.py` — Dimension 1 (alle Cluster, CLI)
 
-**Daten:**
-- `ergebnisse/cluster_west/export_clean.csv` (468 Findings)
-- `ergebnisse/cluster_mitte/export_clean.csv` (516 Findings)
-- `ergebnisse/cluster_suedost/export_clean.csv` (276 Findings, nach NaN-Bereinigung: 272)
+**Daten (alle bereinigt, 100% validiert):**
+- `ergebnisse/cluster_west/export_clean.csv` (468 Findings, 347 relevant)
+- `ergebnisse/cluster_mitte/export_clean.csv` (516 Findings, 259 relevant)
+- `ergebnisse/cluster_suedost/export_clean.csv` (272 Findings, 192 relevant)
+- `ergebnisse/cluster_fh_wien/export_clean.csv` (370 Findings, 263 relevant)
 
 **Referenz:**
 - `knowledge/expose.md` Zeile 145-156 — Tabelle 2 (Levinson-Mapping)
 - `knowledge/coding_manual.md` — 233 Keywords, 8 Codes
+
+**Qualitätssicherung:**
+- `tests/test_scripts.py` — 53 Tests (Regressionstests gegen bekannte Zahlen)
+- `ergebnisse/intercoder_reliability.md` — ICR-Dokumentation
 
 ---
 
@@ -180,10 +170,9 @@ Anhang: Weitere Visualisierungen, Kodiermanual-Auszug (extra)
 
 | Wann | Was | Wer |
 |---|---|---|
-| KW 11-12 (März) | Schritte 0-3 (confirmed_code Fix, Bereinigung, ICR-Doku, utils.py) | Claude |
-| KW 12+ (März) | Schritt 4: FH Wien PDF beschaffen | Babsi + Laura |
-| KW 13-17 (April) | Schritte 5-8 (alle Analysen) | Claude |
-| KW 17-18 (April) | FH Wien validieren (falls PDF da) | Babsi + Laura |
+| KW 11-12 (März) | ✅ Schritte 0-4 (Infrastruktur, Bereinigung, FH Wien) | Claude + Laura |
+| KW 15 (April) | ✅ Schritt 5 (Code 1.1 Deep Dive) | Claude |
+| KW 15-17 (April) | Schritte 6-8 (Levinson, Vergleich, Zitate) | Claude |
 | KW 19-23 (Mai-Juni) | Schritt 9: Forschungsbericht iterativ | Claude + Team |
 | KW 25 (Juni) | Schritt 10: Poster | Claude + Team |
 | 26.06. | Postersession | Babsi + Laura |

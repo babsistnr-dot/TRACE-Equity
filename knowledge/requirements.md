@@ -1,84 +1,101 @@
-# Anforderungen: TRACE-Equity Analyseplattform
+# Anforderungen: TRACE-Equity
 
-## Muss-Kriterien (Core Features)
+## Teil A: Web-App (WS 2025 — abgeschlossen)
 
 ### F1: PDF-Textextraktion
-- Das System muss Curriculum-PDFs einlesen können
-- Automatische Extraktion von Text aus den Dokumenten
-- Erhalt der Dokumentstruktur (Kapitel, Abschnitte)
+- Curriculum-PDFs einlesen, Text seitenweise extrahieren
+- 233 Keywords aus Kodiermanual automatisch suchen (Single Source of Truth)
 
-### F2: LLM-basierte Vor-Codierung
-- Automatische Identifikation relevanter Textstellen zu "Chancengleichheit"
-- Nutzung von Large Language Models (z.B. Gemini 2.5 Pro) mit großem Context Window
-- Kategorisierung nach thematischer Dichte und Schlüsselbegriffen
+### F2: Keyword-basierte Vor-Codierung
+- Automatische Zuordnung zu 8 Code-Kategorien anhand der Keywords
+- Farbcodierte Hervorhebung im Kontext (±200 Zeichen)
+- *Anmerkung:* LLM-basierte Analyse (Version B) wurde bewusst nicht
+  umgesetzt — Keyword-Ansatz bietet Transparenz und Reproduzierbarkeit
 
 ### F3: Expert-Validierung Interface (CEiL)
-- Darstellung der automatisch identifizierten Textstellen
-- Möglichkeit zur manuellen Überprüfung: "Relevant" / "Nicht relevant"
-- Zweifache menschliche Validierung (fachpraktisch + curriculumtheoretisch)
-- Transparente Anzeige der LLM-Begründung für jede Codierung
+- Relevanz-Bewertung (ja/nein) pro Finding
+- Code-Bestätigung oder -Korrektur per Dropdown
+- Notizfeld für qualitative Anmerkungen
+- Automatische Speicherung, Fortschrittsanzeige
 
-### F4: Hochschulvergleich
-- Vergleichende Analyse über alle Curricula hinweg
-- Quantitative Auswertung (Häufigkeiten, Gewichtung)
-- Qualitative Auswertung (konzeptuelle Rahmungen)
-- Export als strukturierte Tabelle
+### F4: Session-Management
+- Mehrere PDFs parallel analysierbar
+- Sessions persistent (localStorage), fortsetzbar, löschbar
 
-### F5: Nachvollziehbarkeit & Dokumentation
-- Logging aller Analyseschritte (Promptotyping-Journal)
-- Speicherung aller Zwischenschritte
-- Export der Ergebnisse in maschinenlesbarem Format (CSV/JSON)
-
-## Nicht-funktionale Anforderungen
-
-### NF1: Benutzerfreundlichkeit
-- **Einfache Bedienung** für Personen ohne Programmierkenntnisse
-- Klare, verständliche Benutzeroberfläche
-- Schritt-für-Schritt-Führung durch den Analyseprozess
-
-### NF2: Genauigkeit
-- Hohe Präzision bei der Identifikation relevanter Textstellen
-- Minimierung von False Positives/Negatives
-- Validierung durch Expert*innen-Konsens
-
-### NF3: Nachvollziehbarkeit
-- Alle Entscheidungen müssen transparent sein
-- Erklärungen der LLM-Codierungen einsehbar
-- Audit-Trail aller Änderungen und Validierungen
-
-### NF4: Skalierbarkeit
-- Verarbeitung mehrerer PDF-Dokumente (mind. 10 Curricula)
-- Effiziente Verarbeitung großer Textmengen
-
-## Kann-Kriterien (Nice-to-have)
-
-### P1: Visualisierung
-- Grafische Darstellung der Ergebnisse (Diagramme, Heatmaps)
-- Vergleichsvisualisierung zwischen Hochschulen
-
-### P2: Erweiterte Suchfunktionen
-- Volltextsuche in allen Curricula
-- Filterung nach Hochschule, Kategorie, Relevanz
-
-### P3: Export-Formate
-- PDF-Report-Generierung
-- Direkte Integration mit Excel/Google Sheets
-
-## Nicht-Ziele (Bewusst ausgeschlossen)
-
-- ❌ Automatische Interpretation ohne menschliche Validierung
-- ❌ Quantitative Inhaltsanalyse (Wortfrequenzen ohne Kontext)
-- ❌ Bearbeitung oder Änderung der Original-PDFs
-- ❌ Automatische Kausalitäts-Schlussfolgerungen
-- ❌ Veröffentlichung sensibler Hochschuldaten
-
-## Technische Präferenzen
-
-- **LLM**: Gemini 2.5 Pro (großes Context Window für lange Curricula)
-- **Programmiersprache**: Python (Standard für Data Science)
-- **Interface**: Einfach und zugänglich (z.B. Jupyter Notebook oder Streamlit Web-App)
-- **Datenformat**: PDF (Input), CSV/JSON (Output)
+### F5: Datenexport
+- CSV-Export mit allen Validierungen (BytesIO, UTF-8 mit BOM)
+- Spalten: pdf_name, page, keyword, context, validated, relevant,
+  confirmed_code, notes
 
 ---
 
-*Priorisierung: Muss-Kriterien (F1-F5) zuerst, dann Kann-Kriterien (P1-P3)*
+## Teil B: Analyse-Scripts (SS 2026 — in Arbeit)
+
+### A1: Datenintegrität sicherstellen
+- Alle CSVs verwenden `confirmed_code` (Expert-validiert), nicht `code`
+- Keine NaN-Werte in `relevant` oder `confirmed_code`
+- Nur validierte Findings (`validated == True`)
+- Regressionstests sichern bekannte Zahlen gegen versehentliche Änderung
+- *Erfolgskriterium:* 53/53 Tests bestehen (`python -m pytest tests/ -v`)
+
+### A2: Dimension 1 — Explizit vs. Implizit (Code 1.1 Deep Dive)
+- Pro Cluster: Anzahl Code-1.1-Findings und implizite Findings bestimmen
+- Verhältnis implizit:explizit berechnen
+- Cross-Cluster-Vergleich als Markdown-Report
+- *Erfolgskriterium:* Forschungsfrage D1 beantwortbar mit konkreten Zahlen
+
+### A3: Dimension 2 — Konzeptuelle Tiefe (Levinson-Mapping)
+- Codes auf Levinson-Stufen mappen (Exposé Tabelle 2)
+- Verteilung der Stufen pro Cluster berechnen (nur relevante Findings)
+- Heatmap: Levinson-Stufe × Cluster (normalisiert auf Prozent)
+- *Erfolgskriterium:* Dominantes Gerechtigkeitsverständnis pro Cluster
+  identifizierbar
+
+### A4: Dimension 3 — Cross-Cluster-Vergleich
+- Summary-Tabelle aller 4 Cluster (Findings, relevant, Relevanz-Rate)
+- Code-Verteilung normalisiert (prozentual) für Vergleichbarkeit
+- PH-Aggregat (West + Mitte + SüdOst) vs. FH Wien
+- *Erfolgskriterium:* Systematische Unterschiede beschreibbar
+
+### A5: Zitate-Sammlung
+- Pro Code und Cluster: repräsentative Textstellen für den Bericht
+- HTML-Tags aus Kontexten entfernen
+- *Erfolgskriterium:* Mindestens 1 Zitat pro Code pro Cluster (wo vorhanden)
+
+### A6: Forschungsbericht
+- Max. 8 Seiten + Anhang, PDF-Abgabe bis 29.06.2026
+- Struktur: Einleitung, Methodik, Ergebnisse (D1–D3), Diskussion, Limitationen
+- 1 Kernvisualisierung im Hauptteil (Levinson-Heatmap)
+- *Erfolgskriterium:* Alle 3 Dimensionen + Hauptforschungsfrage beantwortet
+
+### A7: Poster
+- 10-Minuten-Postersession am 26.06.2026
+- Forschungsfrage, Methode, Kernbefunde, Levinson-Heatmap, Fazit
+- *Erfolgskriterium:* Zentrale Ergebnisse auf einen Blick erfassbar
+
+---
+
+## Nicht-funktionale Anforderungen
+
+### NF1: Wissenschaftlichkeit
+- Alle Analyseschritte nachvollziehbar und dokumentiert
+- Intercoder-Reliabilität dokumentiert (κ-Werte)
+- Theoretischer Bezugsrahmen (Levinson) konsequent angewandt
+
+### NF2: Reproduzierbarkeit
+- Scripts wiederholbar ausführbar mit identischen Ergebnissen
+- Daten versioniert (git), Regressionstests vorhanden
+- Single Source of Truth für Keywords (Kodiermanual)
+
+### NF3: Verständlichkeit
+- Dokumentation für beide Teammitglieder verständlich (Master-Niveau)
+- Methodik-Dokumentation erklärt jede Analyse für Nicht-Programmiererinnen
+
+---
+
+## Nicht-Ziele
+
+- Automatische Interpretation ohne menschliche Validierung
+- Kausalitäts-Schlussfolgerungen
+- LLM-basierte Analyse (Version B) — bewusste Entscheidung für Transparenz
+- Veröffentlichung sensibler Hochschuldaten

@@ -197,14 +197,11 @@ Konfiguration (Pfade, Farben, Levinson-Mapping, Ladefunktionen).
 ```bash
 cd scripts/
 
-# Analyse 1: Quantitative Code-Verteilung
-python analyse_code_verteilung.py --alle
-
-# Analyse 2: Code 1.1 Deep Dive (Dimension 1)
+# Dimension 1: Code 1.1 Deep Dive (Explizit vs. Implizit)
 python analyse_code_1_1_deep_dive.py --alle
 
-# Analyse 3: Levinson-Mapping (Dimension 2) — kommt als nächstes
-# Analyse 4: Cross-Cluster-Vergleich (Dimension 3) — kommt danach
+# Dimension 2: Levinson-Mapping — kommt als nächstes
+# Dimension 3: Cross-Cluster-Vergleich — kommt danach
 ```
 
 ---

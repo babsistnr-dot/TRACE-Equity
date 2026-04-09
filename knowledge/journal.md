@@ -554,5 +554,211 @@ TRACE-Equity/
 
 ---
 
-**Dokumentiert durch:** Claude Code (Anthropic)
-**Letzte Aktualisierung:** 2025-11-19, 12:15 Uhr
+---
+
+## Session: 2026-01 bis 2026-02 (Jänner–Februar)
+
+### Repo-Reorganisation und Cluster West
+
+#### Repo-Struktur bereinigt
+Das Repository wurde grundlegend reorganisiert. Die bisherige flache
+Struktur (alle Dateien im Root, Ergebnisse in `.gitignore`) wurde durch
+eine cluster-basierte Ordnerstruktur ersetzt:
+- `ergebnisse/cluster_west/`, `cluster_mitte/`, `cluster_suedost/` — je
+  mit `export_raw.csv`, `export_clean.csv` und Analyse-Outputs
+- `knowledge/` — alle Promptotyping-Dokumente (vorher teils in `docs/`,
+  teils im Root)
+- `uploads/` — Curriculum-PDFs (aus `.gitignore` entfernt)
+
+#### Cluster West bereinigt und analysiert
+- `export_raw.csv` bereinigt: 66 unvalidierte/unvollständige Findings
+  entfernt → 468 Findings in `export_clean.csv` (100% validiert)
+- Erste quantitative Analyse erstellt (Code-Verteilung, Keywords,
+  Relevanz-Ratio)
+- Befund: **0 Code-1.1-Findings** — keine explizite Nennung von
+  Chancengleichheit im Cluster West
+
+#### Exposé konsolidiert
+Drei Versionen des Exposés (Root, `docs/expose.md`, `docs/expose_narrative.md`)
+auf eine finale Version reduziert und nach `knowledge/expose.md` verschoben.
+Die übrigen Dateien in `docs/` wurden gelöscht, der Ordner entfernt.
+
+---
+
+## Session: 2026-03 (März)
+
+### Semesterplanung und Infrastruktur (Schritte 0–4)
+
+#### Semesterplan erstellt
+Plan für SS2026 mit 12 Schritten (0–11), Timeline und Deliverables
+dokumentiert in `knowledge/semester_plan_ss2026.md`. Zwei Deliverables:
+- Forschungsbericht (8 Seiten + Anhang), Abgabe 29.06.2026
+- Postersession (10 Min), Termin 26.06.2026
+
+#### Schritt 0: confirmed_code-Bug behoben
+Alle Analyse-Scripts verwendeten `df['code']` (automatische Zuordnung)
+statt `df['confirmed_code']` (Expert-validiert). Das bedeutete: 31 Findings,
+die im CEiL-Verfahren manuell umkodiert wurden, flossen mit dem falschen
+Code in die Analyse ein. Alle Scripts wurden auf `confirmed_code` umgestellt.
+
+#### Schritt 1: SüdOst NaN-Werte bereinigt
+4 Findings in `cluster_suedost/export_clean.csv` hatten `validated=True`
+aber `relevant=NaN` — die Relevanz-Bewertung war in der App nicht ausgefüllt
+worden. Diese 4 Findings wurden entfernt (276 → 272).
+
+#### Schritt 2: ICR-Dokumentation erstellt
+Intercoder-Reliabilität dokumentiert in `ergebnisse/intercoder_reliability.md`:
+- Kalibrierungsphase: Cluster Mitte gemeinsam kodiert
+- Unabhängige Kodierung: Cluster SüdOst doppelt kodiert
+- Ergebnis: κ = 0,71 (Relevanz), κ = 0,83 (Codezuordnung)
+- Interpretation nach Landis & Koch (1977): substanziell bis fast perfekt
+
+#### Schritt 3: Shared Utilities erstellt
+`scripts/utils.py` als zentrale Konfiguration: Pfade, Farben, Ladefunktionen,
+Levinson-Mapping. Alle Scripts refactored, drei cluster-spezifische Scripts
+zu einem vereinheitlicht (`analyse_code_verteilung.py` mit CLI-Parametern).
+
+#### Schritt 4: FH Campus Wien integriert
+Laura lieferte den validierten Export als Apple Numbers Datei. Konvertiert
+zu CSV, bereinigt (42 unvalidierte + 6 NaN-relevant entfernt): 418 → 370
+Findings, davon 263 relevant (71,1%). 1 Code-1.1-Finding identifiziert.
+
+#### Test Suite erstellt
+49 Tests in `tests/test_scripts.py`: Konfiguration, Ladefunktionen,
+Datenqualität über alle 4 Cluster, Filterfunktionen, Levinson-Mapping,
+Regressionstests gegen bekannte Zahlen.
+
+---
+
+## Session: 2026-04-08 (Dienstag)
+
+### **Ziel der Session**
+Analyse-Infrastruktur bereinigen und mit der systematischen Beantwortung der
+Forschungsfragen beginnen (Schritt 5 des Semesterplans).
+
+---
+
+### 1. Bereinigung der Analyse-Infrastruktur
+
+#### Was wir gemacht haben
+Alle Analyse-Artefakte aus dem Wintersemester wurden entfernt, weil sie auf
+einem methodischen Fehler basierten: Die Scripts verwendeten das Feld `code`
+(automatische Keyword-Zuordnung) statt `confirmed_code` (Expert-validierte
+Zuordnung). Der Unterschied betrifft 31 Findings, die im CEiL-Verfahren
+manuell umkodiert wurden — diese Korrekturen wurden von den alten Scripts
+ignoriert.
+
+#### Konkret entfernt
+- 12 Visualisierungen (PNG-Dateien) aus Cluster West, Mitte und SüdOst
+- 3 veraltete Markdown-Reports (`analyse_code_verteilung.md`)
+- 1 veraltete Zitate-Sammlung (`zitate.md`, Cluster Mitte)
+- 1 veralteter Validierungsbericht (`validation_report.md`, Cluster SüdOst)
+- 1 Apple-Numbers-Datei (FH Wien Original, bereits in CSV konvertiert)
+- 1 veraltetes Analyse-Script (`analyse_code_verteilung.py`)
+
+#### Warum das alte Analyse-Script entfällt
+Das Script `analyse_code_verteilung.py` erstellte deskriptive
+Häufigkeitsstatistiken und Balkendiagramme pro Cluster. Diese Outputs werden
+durch die neuen, forschungsfragengeleiteten Scripts vollständig ersetzt:
+- Die **Levinson-Analyse** (Schritt 6) liefert die inhaltlich relevante
+  Code-Aufschlüsselung nach Gerechtigkeitsstufen
+- Der **Cross-Cluster-Vergleich** (Schritt 7) liefert die deskriptive
+  Übersichtstabelle, die im Ergebnisteil des Berichts benötigt wird
+
+Rein deskriptive Häufigkeitsauszählungen ohne theoretischen Bezug beantworten
+keine Forschungsfrage und wurden daher nicht weiter mitgeführt.
+
+---
+
+### 2. Schritt 5: Code 1.1 Deep Dive — Dimension 1
+
+#### Forschungsfrage
+> *"Erschöpft sich die curriculare Verankerung in expliziten Begriffsnennungen
+> oder wird Chancengerechtigkeit über konkrete pädagogische
+> Handlungskompetenzen operationalisiert?"*
+
+#### Methode
+Code 1.1 ("Direkte Nennung") erfasst Textstellen, in denen Begriffe wie
+"Chancengleichheit", "Chancengerechtigkeit", "Bildungsgerechtigkeit" oder
+"Equity" explizit verwendet werden. Alle übrigen Codes (2.1–2.7) erfassen
+implizite Bezüge über pädagogische Handlungsfelder wie Diversität, Inklusion
+oder Sprachbildung. Durch den Vergleich von expliziten und impliziten
+Findings lässt sich bestimmen, auf welche Weise Chancengerechtigkeit im
+Curriculum verankert ist.
+
+#### Ergebnisse
+
+| Cluster | Relevante Findings | Code 1.1 (explizit) | Code 2.x (implizit) | Verhältnis |
+|---|---|---|---|---|
+| West | 347 | 0 | 347 | nur implizit |
+| Mitte | 259 | 8 | 251 | 31:1 |
+| SüdOst | 192 | 0 | 192 | nur implizit |
+| FH Wien | 263 | 1 | 262 | 262:1 |
+| **Gesamt** | **1.061** | **9** | **1.052** | **117:1** |
+
+#### Interpretation
+Von 1.061 relevanten Findings über alle 4 Cluster hinweg enthalten nur
+9 (0,8%) eine explizite Nennung von Chancengerechtigkeit. Die restlichen
+99,2% verankern das Thema implizit über pädagogische Handlungsfelder.
+
+Zwei Cluster (West, SüdOst) enthalten **keine einzige** explizite
+Begriffnennung — trotz substanzieller impliziter Verankerung (347 bzw.
+192 relevante Findings). Cluster Mitte zeigt mit 8 expliziten Nennungen
+die stärkste explizite Verankerung, wobei "Bildungsgerechtigkeit" der am
+häufigsten verwendete Begriff ist (5 von 8 Nennungen). FH Wien hat genau
+1 explizite Nennung ("Chancengerechtigkeit", Seite 65).
+
+**Befund D1:** Die curriculare Verankerung erschöpft sich eindeutig nicht
+in expliziten Begriffsnennungen. Chancengerechtigkeit wird als
+Querschnittsthema behandelt, das sich in konkreten pädagogischen
+Handlungsfeldern manifestiert, ohne als eigenständiges Leitkonzept benannt
+zu werden.
+
+---
+
+### 3. Methodik-Dokumentation
+
+Für das Forschungsteam wurde eine zentrale Methodik-Dokumentation erstellt
+(`ergebnisse/analyse_methodik.md`), die alle drei Analyse-Dimensionen
+erklärt:
+- D1: Explizit vs. Implizit (abgeschlossen)
+- D2: Konzeptuelle Tiefe nach Levinson (nächster Schritt)
+- D3: Cross-Cluster-Vergleich (danach)
+
+Das Dokument beschreibt für jede Dimension: Was wird untersucht, warum ist
+es wichtig, wie sind die Ergebnisse zu lesen, und welches Script erzeugt
+die Outputs.
+
+---
+
+### 4. CLAUDE.md aktualisiert
+
+Die Projektdokumentation wurde auf den aktuellen Stand gebracht:
+- FH Campus Wien als 4. Cluster mit Zahlen ergänzt
+- Veraltete Dateireferenzen entfernt
+- Testsuite dokumentiert (53 Tests)
+- Behobene Issues dokumentiert (confirmed_code-Bug, NaN-Bereinigung)
+
+---
+
+### Outputs dieser Session
+
+| Output | Pfad |
+|---|---|
+| Code-1.1-Report Cluster West | `ergebnisse/cluster_west/analyse_code_1_1_deep_dive.md` |
+| Code-1.1-Report Cluster Mitte | `ergebnisse/cluster_mitte/analyse_code_1_1_deep_dive.md` |
+| Code-1.1-Report Cluster SüdOst | `ergebnisse/cluster_suedost/analyse_code_1_1_deep_dive.md` |
+| Code-1.1-Report FH Wien | `ergebnisse/cluster_fh_wien/analyse_code_1_1_deep_dive.md` |
+| Cross-Cluster-Vergleich D1 | `ergebnisse/analyse_code_1_1_vergleich.md` |
+| Methodik-Dokumentation | `ergebnisse/analyse_methodik.md` |
+
+### Nächste Schritte
+
+- **Schritt 6:** Levinson-Mapping (Dimension 2) — Welches Gerechtigkeitsverständnis dominiert?
+- **Schritt 7:** Cross-Cluster-Vergleich (Dimension 3) — Systematische Unterschiede?
+- **Schritt 8:** Zitate-Sammlung für den Forschungsbericht
+
+---
+
+**Dokumentiert durch:** Babsi + Claude Code
+**Letzte Aktualisierung:** 2026-04-08

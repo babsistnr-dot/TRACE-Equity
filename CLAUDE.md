@@ -130,8 +130,7 @@ TRACE-Equity/
 │   └── arbeitsaufteilung.md                  # PLAN — Teamaufteilung SS2026
 ├── scripts/                                  # Analyse-Skripte (post-export)
 │   ├── utils.py                              # Shared Utilities (Pfade, Farben, Levinson-Mapping)
-│   ├── analyse_code_verteilung.py            # Quantitative Analyse (alle Cluster, CLI-Parameter)
-│   └── analyse_code_1_1_deep_dive.py         # Code 1.1 Tiefenanalyse (Cluster Mitte)
+│   └── analyse_code_1_1_deep_dive.py         # Code 1.1 Tiefenanalyse (alle Cluster, CLI)
 ├── tests/                                    # Pytest Test Suite
 │   └── test_scripts.py                       # 49 Tests (Konfig, Laden, Datenqualität, Regression)
 ├── uploads/                                  # PDFs der analysierten Curricula
@@ -282,15 +281,9 @@ Analyse-Scripts für post-export Auswertung (aus `scripts/` Ordner ausführen):
 ```bash
 cd scripts/
 
-# Quantitative Code-Verteilung (ein Cluster oder alle):
-python analyse_code_verteilung.py west
-python analyse_code_verteilung.py mitte
-python analyse_code_verteilung.py suedost
-python analyse_code_verteilung.py fh_wien
-python analyse_code_verteilung.py --alle
-
-# Code 1.1 Tiefenanalyse (Cluster Mitte):
-python analyse_code_1_1_deep_dive.py
+# Code 1.1 Tiefenanalyse (Dimension 1):
+python analyse_code_1_1_deep_dive.py --alle
+python analyse_code_1_1_deep_dive.py mitte
 
 # Tests ausführen (aus Projekt-Root):
 python -m pytest tests/ -v
@@ -488,7 +481,8 @@ The analysis is grounded in:
 
 **Promptotyping Documents (knowledge/):**
 - **[knowledge/coding_manual.md](knowledge/coding_manual.md)** — REFERENCE: 233 keywords (Single Source of Truth)
-- **[knowledge/requirements.md](knowledge/requirements.md)** — REQUIREMENTS: Funktionale Anforderungen
+- **[knowledge/requirements.md](knowledge/requirements.md)** — REQUIREMENTS: Web-App (WS25) + Analyse (SS26)
+- **[knowledge/design.md](knowledge/design.md)** — DESIGN: Visualisierungsentscheidungen
 - **[knowledge/expose.md](knowledge/expose.md)** — KNOWLEDGE: Akademisches Exposé (finale Version)
 - **[knowledge/methodology.md](knowledge/methodology.md)** — KNOWLEDGE: QCA + RTA Methodik
 - **[knowledge/journal.md](knowledge/journal.md)** — JOURNAL: Entwicklungsprotokoll
@@ -497,8 +491,7 @@ The analysis is grounded in:
 
 **Analyse:**
 - **[scripts/utils.py](scripts/utils.py)** — Shared Utilities (Pfade, Farben, Levinson-Mapping)
-- **[scripts/analyse_code_verteilung.py](scripts/analyse_code_verteilung.py)** — Quantitative Analyse (alle 4 Cluster, CLI)
-- **[scripts/analyse_code_1_1_deep_dive.py](scripts/analyse_code_1_1_deep_dive.py)** — Code 1.1 Tiefenanalyse (Cluster Mitte)
+- **[scripts/analyse_code_1_1_deep_dive.py](scripts/analyse_code_1_1_deep_dive.py)** — Code 1.1 Tiefenanalyse (alle Cluster, CLI)
 - **[ergebnisse/intercoder_reliability.md](ergebnisse/intercoder_reliability.md)** — ICR-Dokumentation (κ=0.71 Relevanz, κ=0.83 Code)
 
 **Tests:**
