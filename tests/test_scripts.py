@@ -151,7 +151,7 @@ class TestLevinsonMapping:
         unmapped = df[df['levinson'].isna()]['confirmed_code'].unique()
         assert len(unmapped) == 0, f"Nicht gemappte Codes: {unmapped}"
 
-    def test_levinson_stufen_vollstaendig(self):
+    def test_levinsonn_vollstaendig(self):
         """Alle 4 Hauptstufen kommen in den Daten vor."""
         df = add_levinson(relevante(load_cluster('mitte')))
         stufen = set(df['levinson'].unique())
@@ -221,3 +221,46 @@ class TestBekannteZahlen:
             df = relevante(load_cluster(name))
             total += len(df[df['confirmed_code'] == 'Code 1.1: Direkte Nennung'])
         assert total == 9
+
+
+# ============================================================================
+# Levinson-Verteilung (Schritt 6 — Regression)
+# ============================================================================
+
+class TestLevinsonVerteilung:
+    """Regressionstests für Levinson-Stufen-Verteilung pro Cluster (nur relevante Findings)."""
+
+    DREI_STUFEN = ['Formale Gleichheit', 'Kompensatorische Gerechtigkeit', 'Transformative Gerechtigkeit']
+
+    def _drei_stufen_counts(self, cluster):
+        df = add_levinson(relevante(load_cluster(cluster)))
+        df3 = df[df['levinson'].isin(self.DREI_STUFEN)]
+        return df3['levinson'].value_counts().to_dict(), len(df3)
+
+    def test_west_levinson(self):
+        counts, total = self._drei_stufen_counts('west')
+        assert total == 225
+        assert counts.get('Formale Gleichheit') == 151
+        assert counts.get('Kompensatorische Gerechtigkeit') == 65
+        assert counts.get('Transformative Gerechtigkeit') == 9
+
+    def test_mitte_levinson(self):
+        counts, total = self._drei_stufen_counts('mitte')
+        assert total == 181
+        assert counts.get('Formale Gleichheit') == 130
+        assert counts.get('Kompensatorische Gerechtigkeit') == 30
+        assert counts.get('Transformative Gerechtigkeit') == 21
+
+    def test_suedost_levinson(self):
+        counts, total = self._drei_stufen_counts('suedost')
+        assert total == 132
+        assert counts.get('Formale Gleichheit') == 92
+        assert counts.get('Kompensatorische Gerechtigkeit') == 31
+        assert counts.get('Transformative Gerechtigkeit') == 9
+
+    def test_fh_wien_levinson(self):
+        counts, total = self._drei_stufen_counts('fh_wien')
+        assert total == 133
+        assert counts.get('Formale Gleichheit') == 65
+        assert counts.get('Kompensatorische Gerechtigkeit') == 53
+        assert counts.get('Transformative Gerechtigkeit') == 15

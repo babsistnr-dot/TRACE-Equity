@@ -45,8 +45,15 @@ West und SüdOst: 0 explizite Nennungen. Mitte: 8, FH Wien: 1.
 **Befund D1:** Verankerung erschöpft sich nicht in Begriffsnennungen.
 *Commit: `106eead`* | *Output: `ergebnisse/analyse_code_1_1_vergleich.md` + 4 Cluster-Reports*
 
-### Schritt 6: Levinson-Mapping (→ Dimension 2) — KERNANALYSE
-**Script:** `scripts/analyse_levinson_mapping.py`
+### ✅ Schritt 6: Levinson-Mapping (→ Dimension 2) — ERLEDIGT
+**Script:** `scripts/analyse_levinson_mapping.py --alle`
+**Ergebnis:** Formale Gleichheit dominiert überall (49–72%), Transformative
+Gerechtigkeit durchgängig schwach (4–12%). FH Wien deutlich kompensatorischer
+(40%) als PH-Cluster (17–29%). Abdeckung der 3 Stufen: 51–70% der relevanten Findings.
+**Befund D2:** Curricula bleiben überwiegend auf formaler Gleichheit; transformative
+Gerechtigkeit ist systematisch unterrepräsentiert.
+*Output:* `ergebnisse/analyse_levinson_vergleich.md` + 4 Cluster-Reports + Heatmap
+
 **Mapping (Expose Tabelle 2):**
 
 | Levinson-Stufe | Codes | Handlungslogik |

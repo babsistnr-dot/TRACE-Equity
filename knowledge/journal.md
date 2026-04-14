@@ -762,3 +762,83 @@ Die Projektdokumentation wurde auf den aktuellen Stand gebracht:
 
 **Dokumentiert durch:** Babsi + Claude Code
 **Letzte Aktualisierung:** 2026-04-08
+
+---
+
+## Session: 2026-04-14 (Dienstag)
+
+### **Ziel der Session**
+Schritt 6 des Semesterplans umsetzen: das Levinson-Mapping als Kernanalyse
+für Dimension 2 (Konzeptuelle Tiefe). Zentrale Forschungsfrage: Welches
+Gerechtigkeitsverständnis — formale Gleichheit, kompensatorische oder
+transformative Gerechtigkeit — dominiert in den untersuchten Curricula?
+
+---
+
+### 1. Konzeptuelle Entscheidung vor der Implementierung
+
+Das Kodiermanual umfasst acht Codes; das Levinson-Mapping laut Exposé
+(Tabelle 2) verteilt diese auf drei Gerechtigkeitsstufen plus zwei
+Querschnittskategorien und die explizite Nennung (Code 1.1). Für die
+Hauptauswertung der Dimension 2 haben wir uns entschieden, ausschließlich
+die drei Levinson-Stufen auszuwerten:
+
+- **Formale Gleichheit** (Codes 2.1 Diversität, 2.2 Inklusion)
+- **Kompensatorische Gerechtigkeit** (Codes 2.3 Individuelle Förderung, 2.6 Sprachliche Bildung)
+- **Transformative Gerechtigkeit** (Code 2.4 Abbau von Benachteiligung)
+
+Begründung: Die Querschnittskategorien (2.5 Bildungspartnerschaft, 2.7
+Professionelle Haltung) lassen sich nicht sinnvoll einer der drei Stufen
+zuordnen, und Code 1.1 wurde bereits in Schritt 5 separat behandelt. Um
+Transparenz zu wahren, werden die ausgeschlossenen Findings separat
+ausgewiesen (absolut und als "Abdeckungsrate der drei Stufen").
+
+### 2. Implementierung
+
+Neues Script `scripts/analyse_levinson_mapping.py` mit CLI analog zu
+Schritt 5 (`--alle`, einzelne Cluster). Pro Cluster entsteht ein
+Markdown-Report mit drei Tabellen (prozentuale Verteilung über die drei
+Stufen, absolute Zahlen, orthogonale Kategorien) und ein horizontales
+Stacked-Bar-Diagramm. Der Cross-Cluster-Report enthält die
+**Levinson-Heatmap als Kernvisualisierung** des Forschungsberichts
+(3 Stufen × 4 Cluster, prozentual normalisiert, mit Abdeckungsraten im
+Untertitel) sowie ein ergänzendes Grouped-Bar-Diagramm.
+
+### 3. Ergebnisse (nur relevante Findings, prozentual über die drei Stufen)
+
+| Cluster | Formale Gleichheit | Kompensatorisch | Transformativ | Abdeckung |
+|---|---:|---:|---:|---:|
+| West | 67,1% | 28,9% | 4,0% | 64,8% |
+| Mitte | 71,8% | 16,6% | 11,6% | 69,9% |
+| SüdOst | 69,7% | 23,5% | 6,8% | 68,8% |
+| FH Wien | 48,9% | 39,8% | 11,3% | 50,6% |
+
+**Befund D2:** Formale Gleichheit dominiert in allen vier Clustern;
+transformative Gerechtigkeit bleibt durchgängig unterrepräsentiert
+(4–12%). Die FH Campus Wien fällt durch einen deutlich höheren Anteil
+kompensatorischer Gerechtigkeit auf als die drei PH-Cluster.
+
+### 4. Qualitätssicherung
+
+Vier neue Regressionstests für die Levinson-Verteilung ergänzt;
+Testsuite umfasst nun 57 Tests, alle grün.
+
+### Outputs dieser Session
+
+| Output | Pfad |
+|---|---|
+| Levinson-Analyse pro Cluster (4×) | `ergebnisse/cluster_*/analyse_levinson.md` |
+| Stacked Bar pro Cluster (4×) | `ergebnisse/cluster_*/visualisierungen/levinson_verteilung.png` |
+| Cross-Cluster-Vergleich D2 | `ergebnisse/analyse_levinson_vergleich.md` |
+| **Kernvisualisierung Heatmap** | `ergebnisse/visualisierungen_vergleich/levinson_heatmap.png` |
+| Grouped Bar (Anhang) | `ergebnisse/visualisierungen_vergleich/levinson_grouped_bar.png` |
+
+### Nächste Schritte
+
+- **Schritt 7:** Cross-Cluster-Vergleich (Dimension 3) — systematische Unterschiede
+- **Schritt 8:** Zitate-Sammlung für den Forschungsbericht
+
+---
+
+**Dokumentiert durch:** Babsi + Claude Code
+**Letzte Aktualisierung:** 2026-04-14

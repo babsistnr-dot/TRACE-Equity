@@ -107,7 +107,24 @@ python analyse_code_1_1_deep_dive.py mitte     # Nur ein Cluster
 
 ## Dimension 2: Konzeptuelle Tiefe (Levinson-Mapping)
 
-*Wird in Schritt 6 implementiert.*
+*Umgesetzt in Schritt 6 (Stand 2026-04-14).*
+
+### Ergebnis (prozentuale Verteilung über die 3 Levinson-Stufen)
+
+| Cluster | Formale Gleichheit | Kompensatorisch | Transformativ | Abdeckung |
+|---|---:|---:|---:|---:|
+| West | 67,1% | 28,9% | 4,0% | 64,8% |
+| Mitte | 71,8% | 16,6% | 11,6% | 69,9% |
+| SüdOst | 69,7% | 23,5% | 6,8% | 68,8% |
+| FH Wien | 48,9% | 39,8% | 11,3% | 50,6% |
+
+**Hauptvisualisierung:** `visualisierungen_vergleich/levinson_heatmap.png`
+**Report:** `analyse_levinson_vergleich.md` + 4× `cluster_*/analyse_levinson.md`
+
+Die Hauptauswertung fokussiert auf die drei Levinson-Stufen. Querschnitts-
+kategorien (Codes 2.5, 2.7) und explizite Nennung (Code 1.1) werden separat
+ausgewiesen. Die Abdeckungsrate gibt an, welcher Anteil der relevanten
+Findings in die Heatmap-Prozente einfließt.
 
 ### Was wird untersucht?
 
