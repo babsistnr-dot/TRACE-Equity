@@ -161,7 +161,25 @@ Das Mapping stammt aus dem **Exposé, Tabelle 2** und basiert auf:
 
 ## Dimension 3: Cluster-Vergleich
 
-*Wird in Schritt 7 implementiert.*
+*Umgesetzt in Schritt 7 (Stand 2026-04-15).*
+
+### Ergebnis
+
+Alle vier Cluster werden getrennt verglichen, Normalisierung auf Prozent
+pro Cluster. Auffällige Befunde:
+
+- Relevanzraten variieren zwischen 50,2% (Mitte) und 74,1% (West) —
+  interpretiert als Varianz in der curricularen Sprache, nicht als
+  inhaltlicher Befund.
+- Die FH Campus Wien weicht systematisch von den drei PHs ab:
+  geringerer Anteil bei Code 2.1 (18,3% vs. 32–39% PH), höherer Anteil
+  bei Code 2.3 (12,9%) und Code 2.7 (43,0%).
+- Das Muster ist konsistent mit dem Levinson-Befund aus Schritt 6
+  (FH Wien kompensatorischer).
+
+**Report:** `analyse_vergleich_cluster.md`
+**Visualisierungen:** `visualisierungen_vergleich/code_verteilung_grouped_bar.png`
+und `code_verteilung_heatmap.png` (Anhang-Kandidaten).
 
 ### Was wird untersucht?
 

@@ -264,3 +264,45 @@ class TestLevinsonVerteilung:
         assert counts.get('Formale Gleichheit') == 65
         assert counts.get('Kompensatorische Gerechtigkeit') == 53
         assert counts.get('Transformative Gerechtigkeit') == 15
+
+
+# ============================================================================
+# Cross-Cluster-Vergleich (Schritt 7 — Regression)
+# ============================================================================
+
+class TestClusterVergleich:
+    """Regressionstests für Code-Verteilungen je Cluster (nur relevante Findings)."""
+
+    def _counts(self, cluster):
+        df = relevante(load_cluster(cluster))
+        return df['confirmed_code'].value_counts().to_dict(), len(df)
+
+    def test_gesamt_relevant(self):
+        total = sum(len(relevante(load_cluster(c)))
+                    for c in ['west', 'mitte', 'suedost', 'fh_wien'])
+        assert total == 1061
+
+    def test_west_code_verteilung(self):
+        counts, total = self._counts('west')
+        assert total == 347
+        assert counts.get('Code 2.1: Diversität & Heterogenität') == 112
+        assert counts.get('Code 2.7: Professionelle Haltung & Ethik') == 92
+
+    def test_mitte_code_verteilung(self):
+        counts, total = self._counts('mitte')
+        assert total == 259
+        assert counts.get('Code 2.1: Diversität & Heterogenität') == 91
+        assert counts.get('Code 2.7: Professionelle Haltung & Ethik') == 56
+
+    def test_suedost_code_verteilung(self):
+        counts, total = self._counts('suedost')
+        assert total == 192
+        assert counts.get('Code 2.1: Diversität & Heterogenität') == 75
+        assert counts.get('Code 2.7: Professionelle Haltung & Ethik') == 35
+
+    def test_fh_wien_code_verteilung(self):
+        counts, total = self._counts('fh_wien')
+        assert total == 263
+        assert counts.get('Code 2.1: Diversität & Heterogenität') == 48
+        assert counts.get('Code 2.3: Individuelle Förderung & Differenzierung') == 34
+        assert counts.get('Code 2.7: Professionelle Haltung & Ethik') == 113

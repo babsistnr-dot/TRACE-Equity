@@ -73,8 +73,13 @@ Gerechtigkeit ist systematisch unterrepräsentiert.
 **Output:** `ergebnisse/analyse_levinson_mapping.md` + `ergebnisse/visualisierungen_vergleich/`
 **Beantwortet:** "Welches Gerechtigkeitsverständnis dominiert?"
 
-### Schritt 7: Cross-Cluster Vergleich (→ Dimension 3)
+### ✅ Schritt 7: Cross-Cluster-Vergleich (→ Dimension 3) — ERLEDIGT
 **Script:** `scripts/analyse_vergleich_cluster.py`
+**Ergebnis:** Relevanzraten 50,2–74,1%. FH Wien mit deutlich abweichendem
+Profil (Code 2.1: 18,3% vs. PH 32–39%; Code 2.7: 43% vs. PH 18–27%; Code 2.3
+erhöht). Konsistent mit kompensatorischem Levinson-Profil aus Schritt 6.
+**Output:** `ergebnisse/analyse_vergleich_cluster.md` + 2 Visualisierungen
+
 **Was:**
 - Summary-Tabelle aller Cluster
 - Code-Verteilung normalisiert

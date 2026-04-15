@@ -842,3 +842,77 @@ Testsuite umfasst nun 57 Tests, alle grün.
 
 **Dokumentiert durch:** Babsi + Claude Code
 **Letzte Aktualisierung:** 2026-04-14
+
+---
+
+## Session: 2026-04-15 (Mittwoch)
+
+### **Ziel der Session**
+Schritt 7 des Semesterplans umsetzen: den Cross-Cluster-Vergleich auf
+Code-Ebene als Beantwortung der Dimension 3 der Forschungsfrage
+("Gibt es systematische Unterschiede zwischen den vier Clustern?").
+
+---
+
+### 1. Konzeptuelle Entscheidung
+
+Ein PH-Sammelwert (West + Mitte + SüdOst aggregiert) wurde bewusst nicht
+gebildet. Alle vier Cluster bleiben als eigenständige Einheiten im
+Vergleich, die institutionelle Einordnung (Pädagogische Hochschulen vs.
+Fachhochschule) wird ausschließlich im Interpretationstext vorgenommen.
+Grund: Ein Aggregat würde vortäuschen, dass die drei PH-Standorte
+intern homogen sind — tatsächlich variieren sie deutlich (etwa bei
+Relevanzrate und Code 2.3).
+
+### 2. Implementierung
+
+Neues Script `scripts/analyse_vergleich_cluster.py` (ohne
+Einzel-Cluster-CLI, da per Definition cross-cluster). Das Script
+erzeugt eine Summary-Tabelle, drei Detailtabellen (prozentual,
+absolut, Spannweite je Code) sowie zwei Visualisierungen (Grouped Bar
+und Heatmap 8 Codes × 4 Cluster). Die Kernvisualisierung des
+Forschungsberichts bleibt die Levinson-Heatmap aus Schritt 6; die hier
+erzeugten Grafiken sind für Anhang und Postersession gedacht.
+
+### 3. Ergebnisse
+
+**Relevanzraten:** 50,2% (Mitte) bis 74,1% (West). Diese Varianz
+interpretieren wir als methodischen Hinweis auf Unterschiede in der
+curricularen Sprache (generische vs. fachspezifische Begriffsdichte),
+nicht als inhaltlichen Befund zu Chancengerechtigkeit.
+
+**Systematische Abweichung FH Wien ↔ PH-Cluster:**
+
+| Code | West | Mitte | SüdOst | FH Wien |
+|---|---:|---:|---:|---:|
+| 2.1 Diversität | 32,3% | 35,1% | 39,1% | 18,3% |
+| 2.3 Individuelle Förderung | 8,9% | 3,9% | 8,9% | 12,9% |
+| 2.7 Professionelle Haltung | 26,5% | 21,6% | 18,2% | 43,0% |
+
+Die FH Wien zeigt einen deutlich geringeren Anteil bei Diversitäts-
+Begriffen und einen auffällig hohen Anteil bei Professioneller Haltung
+und Ethik. Das fügt sich konsistent in den Levinson-Befund aus Schritt 6,
+wo die FH Wien das kompensatorischste Profil aufwies.
+
+### 4. Qualitätssicherung
+
+Fünf neue Regressionstests für Summe aller relevanten Findings sowie
+Code-Verteilungen pro Cluster. Testsuite umfasst nun 62 Tests, alle grün.
+
+### Outputs dieser Session
+
+| Output | Pfad |
+|---|---|
+| Cross-Cluster-Report D3 | `ergebnisse/analyse_vergleich_cluster.md` |
+| Grouped Bar | `ergebnisse/visualisierungen_vergleich/code_verteilung_grouped_bar.png` |
+| Heatmap Codes × Cluster | `ergebnisse/visualisierungen_vergleich/code_verteilung_heatmap.png` |
+
+### Nächste Schritte
+
+- **Schritt 8:** Zitate-Sammlung pro Code pro Cluster für den Bericht
+- **Schritt 9:** Forschungsbericht (8 Seiten + Anhang) iterativ
+
+---
+
+**Dokumentiert durch:** Babsi + Claude Code
+**Letzte Aktualisierung:** 2026-04-15
