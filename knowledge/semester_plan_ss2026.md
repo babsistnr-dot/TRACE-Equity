@@ -89,10 +89,11 @@ erhöht). Konsistent mit kompensatorischem Levinson-Profil aus Schritt 6.
 **Output:** `ergebnisse/analyse_vergleich_cluster.md`
 **Beantwortet:** "Systematische Unterschiede zwischen Clustern?"
 
-### Schritt 8: Zitate-Sammlung alle Cluster
-**Script:** `scripts/zitate_sammlung_all.py`
-**Was:** Top-Zitate pro Code pro Cluster für den Bericht
-**Output:** `ergebnisse/cluster_*/zitate.md`
+### ✅ Schritt 8: Zitate-Sammlung alle Cluster — ERLEDIGT
+**Script:** `scripts/zitate_sammlung.py` (optional Einzel-Cluster-CLI)
+**Was:** Bis zu 5 Zitate pro Code pro Cluster, HTML bereinigt, sortiert nach
+Kontext-Länge (informativere Textstellen zuerst).
+**Output:** 4× `ergebnisse/cluster_*/zitate.md`
 
 ### Schritt 9: Forschungsbericht (8 Seiten + Anhang)
 **Iterativ mit Claude:** Erst Daten → dann Entwurf → Team überarbeitet

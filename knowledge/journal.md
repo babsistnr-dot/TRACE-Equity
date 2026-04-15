@@ -916,3 +916,50 @@ Code-Verteilungen pro Cluster. Testsuite umfasst nun 62 Tests, alle grün.
 
 **Dokumentiert durch:** Babsi + Claude Code
 **Letzte Aktualisierung:** 2026-04-15
+
+---
+
+## Session: 2026-04-15 (Mittwoch, Abend)
+
+### **Ziel der Session**
+Schritt 8 des Semesterplans: Zitate-Sammlung pro Code pro Cluster
+für den Forschungsbericht und die Postersession.
+
+### Umsetzung
+
+Neues Script `scripts/zitate_sammlung.py` extrahiert aus den vier
+bereinigten CSVs bis zu fünf Zitate pro Code pro Cluster. Grundlage
+sind ausschließlich die validierten relevanten Findings. HTML-Tags
+aus den Kontexten werden mit einem regulären Ausdruck entfernt,
+Whitespace normalisiert. Die Auswahlheuristik bevorzugt längere
+Kontexte, weil diese in unseren CSV-Exports in der Regel informativer
+sind (±200 Zeichen rund um den Keyword-Treffer).
+
+Pro Cluster entsteht eine Markdown-Datei `zitate.md`, die für jeden
+der acht Codes einen Abschnitt mit nummerierten Zitaten, Seitenzahl
+und auslösendem Keyword enthält. Wo Codierungsanmerkungen aus dem
+CEiL-Verfahren vorliegen, werden sie unter dem Zitat angezeigt.
+
+Die Dateien dienen als Materialpool für den Ergebnis-Teil des
+Forschungsberichts und als Quelle für prägnante Textstellen auf
+dem Poster.
+
+### Outputs
+
+| Output | Pfad |
+|---|---|
+| Zitate Cluster West | `ergebnisse/cluster_west/zitate.md` |
+| Zitate Cluster Mitte | `ergebnisse/cluster_mitte/zitate.md` |
+| Zitate Cluster SüdOst | `ergebnisse/cluster_suedost/zitate.md` |
+| Zitate FH Wien | `ergebnisse/cluster_fh_wien/zitate.md` |
+
+### Nächste Schritte
+
+- **Schritt 9:** Forschungsbericht (8 Seiten + Anhang) iterativ
+- **Schritt 10:** Poster
+- **Schritt 11:** README und CLAUDE.md auf aktuellen Stand bringen
+
+---
+
+**Dokumentiert durch:** Babsi + Claude Code
+**Letzte Aktualisierung:** 2026-04-15
