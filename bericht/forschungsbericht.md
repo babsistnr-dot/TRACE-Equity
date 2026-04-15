@@ -15,14 +15,24 @@ linestretch: 1.3
 
 # 1. Einleitung und Forschungsfragen
 
-<!-- Zielumfang: ~0,5 Seite -->
+Mit der Einführung der Bachelorstudiengänge Elementarpädagogik im Jahr
+2018 vollzog Österreich einen historischen Professionalisierungsschritt
+(Vollmann & Fageth, 2022). Zeitgleich identifiziert die OECD (2018)
+Educational Equity als zentralen Qualitätsfaktor früher Bildung: Nicht
+die Herkunft, sondern das Potential eines Kindes soll den Bildungsweg
+bestimmen. Für die Ausbildung folgt daraus die Frage, ob die neuen
+Curricula diesen Anspruch einlösen. Eine systematische empirische
+Untersuchung fehlt für den österreichischen Raum. TRACE-Equity schließt
+diese Lücke durch eine qualitative Inhaltsanalyse aller österreichischen
+Bachelor-Curricula auf Hochschulebene.
 
 **Hauptforschungsfrage:** Inwiefern gehen die Curricula der
 Bachelorstudiengänge Elementarpädagogik österreichischer Hochschulen
 über formale Chancengleichheit hinaus und verankern Chancengerechtigkeit
 als pädagogisches Leitprinzip?
 
-**Drei analytische Dimensionen:**
+Die Hauptforschungsfrage wird in drei analytische Dimensionen
+ausdifferenziert:
 
 - **D1 — Explizit vs. Implizit:** Erschöpft sich die curriculare
   Verankerung in expliziten Begriffsnennungen, oder wird Chancen-
@@ -31,40 +41,81 @@ als pädagogisches Leitprinzip?
   Levinson et al. (2022) dominiert — formale Gleichheit, kompensatorische
   oder transformative Gerechtigkeit?
 - **D3 — Komparativer Vergleich:** Lassen sich systematische Unterschiede
-  zwischen den vier Clustern identifizieren, insbesondere zwischen PH und FH?
-
-<!-- TODO: Kurze Einleitung (Kontext Akademisierung 2018, internationale
-     Equity-Debatte, Forschungslücke) — 3–4 Sätze, aus Exposé Kap. 1. -->
+  zwischen den vier Clustern identifizieren, insbesondere zwischen
+  Pädagogischen Hochschulen und Fachhochschule?
 
 # 2. Methodik
 
-<!-- Zielumfang: ~1,5 Seiten -->
-
 ## 2.1 Datenkorpus
 
-<!-- TODO: Vollerhebung N=4 Cluster, 11 Hochschulen. Tabelle 1 in Kap. 3.1. -->
+Das Sample umfasst N = 4 Curricula, was einer Vollerhebung der
+österreichischen Bachelor-Curricula für Elementarpädagogik im öffentlichen
+Sektor entspricht. Die Pädagogischen Hochschulen sind in
+Entwicklungsverbünde organisiert, sodass ein Curriculum jeweils mehrere
+Standorte abdeckt. Insgesamt sind elf Pädagogische Hochschulen und die FH
+Campus Wien abgedeckt (vgl. Tabelle 1 in Abschnitt 3.1). Die Validität
+des Samples wurde anhand der vier Kriterien nach Morgan (2022) geprüft:
+Authentizität (offiziell akkreditierte Originaldokumente),
+Glaubwürdigkeit (rechtlich bindende Studienpläne), Repräsentativität
+(Vollerhebung durch Cluster-Struktur) und Bedeutung (Curricula definieren
+den normativen Rahmen der Ausbildung).
 
 ## 2.2 Kategoriensystem
 
-<!-- TODO: 8 Codes × 233 Keywords, Kodiermanual als Single Source of Truth,
-     Levinson-Mapping (Exposé Tabelle 2). -->
+Das Kategoriensystem umfasst acht Codes, denen insgesamt 233 Keywords
+zugeordnet sind. Code 1.1 erfasst die direkte Nennung von
+Gerechtigkeitsbegriffen (z. B. *Chancengleichheit*, *Bildungsgerechtigkeit*).
+Die Codes 2.1–2.7 operationalisieren pädagogische Handlungskompetenzen
+(Diversität, Inklusion, individuelle Förderung, Abbau von Benachteiligung,
+Bildungspartnerschaft, sprachliche Bildung, professionelle Haltung).
+
+Für die Auswertung zu Dimension 2 werden diese Codes über das Mapping aus
+Levinson et al. (2022) den drei Gerechtigkeitsstufen zugeordnet: Formale
+Gleichheit (Codes 2.1, 2.2), kompensatorische Gerechtigkeit (Codes 2.3,
+2.6) und transformative Gerechtigkeit (Code 2.4). Die Codes 2.5
+(Bildungspartnerschaft) und 2.7 (professionelle Haltung) werden als
+Querschnittskategorien separat ausgewiesen, da sie orthogonal zu den drei
+Stufen liegen. Das Kodiermanual dient als *Single Source of Truth*: Sowohl
+die Analyse-App als auch die späteren Auswertungsskripte greifen
+dynamisch auf dieselbe Keyword-Liste zu.
 
 ## 2.3 Keyword-basierte Analyse mit Expertenvalidierung (CEiL)
 
-<!-- TODO: Version A, keine LLM-Analyse, Flask-App, manuelle Validierung
-     jedes Findings (relevant ja/nein + Code-Bestätigung). -->
+Die Analyse erfolgt in zwei Stufen. In einem ersten, automatisierten
+Schritt extrahiert eine eigens entwickelte Flask-Webapplikation alle
+Textstellen aus den Curriculum-PDFs, in denen ein Keyword des
+Kategoriensystems auftritt. Jedes Finding wird mit einem Kontextfenster
+von ±200 Zeichen und einer vorläufigen Code-Zuordnung versehen.
+
+Der zweite Schritt ist die Expertenvalidierung durch beide
+Kodiererinnen (*Critical Expert in the Loop*). Über die Web-App wird pro
+Finding (a) die Relevanz (ja/nein) und (b) der bestätigte oder korrigierte
+Code entschieden. Die explizite Trennung zwischen automatischer
+Vor-Codierung (`code`) und expertenvalidiertem Endbefund (`confirmed_code`)
+gewährleistet Transparenz und Reproduzierbarkeit. Auf eine
+LLM-basierte Analyse wurde bewusst verzichtet, um Nachvollziehbarkeit und
+Kontextstabilität zu priorisieren (Tai et al., 2024).
 
 ## 2.4 Gütekriterien und Intercoder-Reliabilität
 
-<!-- TODO: κ=0,71 (Relevanz), κ=0,83 (Code). Verweis auf Anhang A.2. -->
+Vor der unabhängigen Kodierung wurde anhand des Clusters Mitte eine
+Kalibrierungsphase durchgeführt, in der geteilte Entscheidungsregeln
+formuliert wurden. Die Intercoder-Reliabilität wurde am Cluster SüdOst
+(n = 272 Findings) bestimmt: Beide Kodiererinnen validierten alle
+Findings unabhängig voneinander.
+
+Die Übereinstimmung liegt für die Relevanz-Entscheidung bei κ = 0,71
+(87,1 % Übereinstimmung) und für die Code-Zuordnung bei κ = 0,83
+(89,7 %) und damit im Bereich *gut* bis *sehr gut* (Landis & Koch, 1977).
+Die höhere Übereinstimmung bei der Code-Zuordnung spiegelt die stärkere
+Strukturiertheit der Kategorien gegenüber der stärker interpretativen
+Relevanz-Entscheidung. Die 52 nicht-übereinstimmenden Fälle wurden in
+einer Konsenskonferenz bereinigt; die Ergebnisse flossen in das Feld
+`confirmed_code` ein. Details finden sich in Anhang A.2.
 
 # 3. Ergebnisse
 
-<!-- Zielumfang: ~4 Seiten -->
-
 ## 3.1 Datenübersicht
-
-<!-- Zielumfang: ~0,5 Seite -->
 
 **Tabelle 1.** *Zusammensetzung des Datenkorpus und Umfang der Analyse*
 
@@ -76,11 +127,12 @@ als pädagogisches Leitprinzip?
 | FH Wien | FH Campus Wien | 370 | 263 | 71,1 % | 1 |
 | **Gesamt** | N = 4 Cluster | **1.626** | **1.061** | **65,3 %** | **9** |
 
-<!-- TODO: 2–3 Sätze Kontext zur Tabelle. -->
+Aus den vier Curricula resultierten insgesamt 1.626 Keyword-Treffer, von
+denen 1.061 (65,3 %) im CEiL-Verfahren als inhaltlich relevant
+klassifiziert wurden. Die deutliche Varianz der Relevanzraten zwischen
+50,2 % (Mitte) und 74,1 % (West) wird in Abschnitt 3.4 eigens aufgegriffen.
 
 ## 3.2 Dimension 1 — Explizit vs. Implizit
-
-<!-- Zielumfang: ~0,75 Seite -->
 
 **Tabelle 2.** *Verhältnis expliziter zu impliziter Verankerung je Cluster*
 
@@ -92,17 +144,32 @@ als pädagogisches Leitprinzip?
 | FH Wien | 1 | 262 | 262 : 1 |
 | **Gesamt** | **9** | **1.052** | **117 : 1** |
 
-<!-- TODO: Befund formulieren: Chancengerechtigkeit wird curricular
-     fast ausschließlich implizit verankert; 0,8 % explizite Nennungen.
-     Nur Mitte zeigt nennenswerte Begriffsverwendung (Bildungs­gerechtigkeit
-     in der Einleitung des Curriculums). 1–2 Zitate aus
-     cluster_mitte/zitate.md. -->
+Die explizite Verankerung von Chancengerechtigkeit ist über alle Cluster
+hinweg marginal: Nur 9 von 1.061 relevanten Findings (0,8 %) nennen
+Begriffe wie *Chancengleichheit*, *Chancengerechtigkeit* oder
+*Bildungsgerechtigkeit* direkt. Zwei der vier Cluster verzichten
+vollständig auf die Begriffe. Auf jede explizite Nennung kommen 117
+Findings, in denen Chancengerechtigkeit *implizit* — über pädagogische
+Handlungskompetenzen — operationalisiert wird.
+
+Nur das Curriculum des Clusters Mitte führt den Begriff in der Einleitung
+programmatisch ein:
+
+> „Die Forderung nach Bildungsgerechtigkeit, die in der österreichischen
+> Bundesverfassung in Bezug auf Chancengleichheit und Teilhabegerechtigkeit
+> als Ziele genannt werden, bildet die Basis." (Cluster Mitte, S. 10)
+
+Die übrigen Code-1.1-Findings in Mitte verweisen auf diese einleitende
+Rahmung; sie repräsentieren also keine systematische Durchdringung des
+Curriculums, sondern einen diskursiven Rahmen. Die zentrale Erkenntnis der
+ersten Dimension ist somit ein **Implementierungsspalt zwischen
+bildungspolitischem Labeling und curricularer Substanz**: Die Curricula
+nennen Chancengerechtigkeit kaum beim Namen, adressieren sie aber
+über ein breites Spektrum pädagogischer Kompetenzen.
 
 ## 3.3 Dimension 2 — Konzeptuelle Tiefe (Levinson-Mapping)
 
-<!-- Zielumfang: ~1,5 Seiten — enthält die Kernvisualisierung. -->
-
-![Levinson-Heatmap: Verteilung der drei Gerechtigkeitsstufen je Cluster (nur relevante Findings, normalisiert pro Cluster über die drei Stufen). Abdeckungsraten siehe Tabelle 3.](abbildungen/levinson_heatmap.png){#fig:heatmap}
+![Levinson-Heatmap: Verteilung der drei Gerechtigkeitsstufen je Cluster (nur relevante Findings, normalisiert pro Cluster über die drei Stufen). Abdeckungsraten siehe Tabelle 3.](abbildungen/levinson_heatmap.png){#fig:heatmap width=100%}
 
 **Tabelle 3.** *Levinson-Verteilung numerisch (Anteile über die drei Stufen)*
 
@@ -113,26 +180,55 @@ als pädagogisches Leitprinzip?
 | SüdOst | 69,7 % | 23,5 % | 6,8 % | 68,8 % |
 | FH Wien | 48,9 % | 39,8 % | 11,3 % | 50,6 % |
 
-<!-- TODO: Interpretation:
-     - Formale Gleichheit dominiert überall (49–72 %)
-     - Transformative Gerechtigkeit durchgängig schwach (4–12 %)
-     - FH Wien deutlich kompensatorischer als PH-Cluster
-     - Abdeckungsrate erklären (Querschnitt 2.5/2.7 separat)
-     - 1–2 Zitate zur Illustration (z. B. Code 2.4 = transformativ). -->
+Die Prozentwerte beziehen sich auf die Summe der drei Levinson-Stufen
+(= 100 %). Die *Abdeckungsrate* gibt an, welcher Anteil der relevanten
+Findings pro Cluster in diese Summe eingeht; die übrigen Findings
+entfallen auf die Querschnittscodes 2.5 (Bildungspartnerschaft) und 2.7
+(professionelle Haltung) sowie auf Code 1.1 und werden separat
+ausgewiesen.
+
+Drei Befunde stechen heraus. *Erstens* dominiert in allen vier Clustern
+die Stufe der **formalen Gleichheit**: Zwischen 48,9 % (FH Wien) und
+71,8 % (Mitte) der einschlägigen Findings entfallen auf Codes, die
+Diversitätsanerkennung und Inklusion als Zugangs- und
+Partizipationsbedingungen thematisieren. *Zweitens* bleibt die
+**transformative Gerechtigkeit** durchgängig schwach: Der Anteil liegt
+zwischen 4,0 % (West) und 11,6 % (Mitte). Machtkritische und
+strukturverändernde Perspektiven — etwa auf institutionelle
+Diskriminierung oder Empowerment — sind curricular unterrepräsentiert.
+*Drittens* weicht die FH Campus Wien von den drei PH-Clustern ab: Sie
+zeigt mit 39,8 % den deutlich höchsten Anteil **kompensatorischer
+Gerechtigkeit** (individuelle Förderung, sprachliche Bildung) und den
+geringsten Anteil formaler Gleichheit.
+
+Die inhaltliche Signatur der transformativen Stufe lässt sich an einem
+Finding aus Cluster Mitte illustrieren:
+
+> „Haben umfangreiches Wissen bezüglich Konzepten der vorurteilsbewussten
+> Bildung und sind sich der Bedeutung kindlicher Erfahrungen mit Vielfalt
+> bewusst." (Cluster Mitte, S. 106)
+
+Solche Formulierungen, die aktive Reflexion und Haltungsbildung gegen
+Benachteiligung adressieren, bleiben die Ausnahme. Die empirische
+Struktur entspricht damit dem, was Stojanov (2011) als Dominanz
+verteilungs- und teilhabeorientierter Gerechtigkeitsbegriffe gegenüber
+anerkennungstheoretisch fundierten Ansätzen beschreibt.
 
 ## 3.4 Dimension 3 — Komparativer Vergleich
 
-<!-- Zielumfang: ~1,25 Seiten -->
+Der komparative Vergleich bestätigt das Levinson-Muster auf Code-Ebene
+und legt ein systematisch abweichendes Profil der FH Campus Wien frei.
+Vorangestellt ist ein methodischer Befund: Die Relevanzraten variieren
+deutlich zwischen 50,2 % (Mitte) und 74,1 % (West). Diese Varianz
+interpretieren wir **nicht** als inhaltlichen Unterschied in der
+Verankerung von Chancengerechtigkeit, sondern als Hinweis auf
+unterschiedliche curriculare Sprachdichte: Ein niedrigerer Wert deutet
+darauf hin, dass ein größerer Anteil der Keyword-Treffer in generischen
+Kontexten (z. B. Modulüberschriften, Literaturverzeichnisse) auftritt
+und im CEiL-Verfahren als nicht einschlägig klassifiziert wurde.
 
-<!-- TODO: Drei Befunde:
-     1. Relevanzraten-Varianz (50,2 % Mitte vs. 74,1 % West) als
-        Sprachvarianz interpretieren, nicht als inhaltlicher Befund.
-     2. FH Wien systematisch abweichend: Code 2.1 geringer (18,3 %),
-        Code 2.7 erhöht (43,0 %), Code 2.3 erhöht (12,9 %).
-     3. Konsistenz mit Levinson-Befund (FH Wien kompensatorischer).
-     Tabelle mit Auszug der auffälligsten Codes; volle Tabelle im Anhang A.4. -->
-
-**Tabelle 4.** *Auszug Code-Verteilung — Codes mit größter Spannweite zwischen Clustern*
+**Tabelle 4.** *Auszug Code-Verteilung — Codes mit größter Spannweite
+zwischen Clustern*
 
 | Code | West | Mitte | SüdOst | FH Wien |
 |---|---:|---:|---:|---:|
@@ -140,74 +236,170 @@ als pädagogisches Leitprinzip?
 | 2.3 Individuelle Förderung | 8,9 % | 3,9 % | 8,9 % | 12,9 % |
 | 2.7 Professionelle Haltung | 26,5 % | 21,6 % | 18,2 % | 43,0 % |
 
-# 4. Diskussion und Beantwortung der Hauptforschungsfrage
+Die FH Campus Wien weist bei Code 2.1 (Diversität & Heterogenität) mit
+18,3 % einen deutlich geringeren Anteil als die drei PH-Cluster (32,3 %
+bis 39,1 %) auf; umgekehrt ist sie bei Code 2.7 (professionelle Haltung)
+mit 43,0 % nahezu doppelt so stark vertreten wie SüdOst (18,2 %) und
+erhöht auch bei Code 2.3 (individuelle Förderung) gegenüber Mitte (3,9 %).
+Dieses Muster ist konsistent mit dem Levinson-Befund aus Abschnitt 3.3:
+Ein höherer Anteil bei Codes 2.3 und 2.7 verschiebt das Profil in
+Richtung kompensatorischer und professioneller Handlungslogik, ein
+geringerer Anteil bei Code 2.1 reduziert den Bereich formaler Gleichheit.
 
-<!-- Zielumfang: ~1,5 Seiten -->
+Die Pädagogischen Hochschulen bleiben untereinander nicht homogen. West
+zeigt die stärkste Ausprägung bei Diversität und professioneller Haltung,
+Mitte die höchste Transformativ-Quote (11,6 %), SüdOst das ausgeglichenste
+Profil zwischen den PHs. Die Streuung ist aber durchweg kleiner als der
+Abstand zur FH Wien, sodass sich der institutionelle Unterschied (PH vs.
+FH) als **dominantes Strukturmerkmal** der Ausbildungslandschaft
+identifizieren lässt.
+
+# 4. Diskussion und Beantwortung der Hauptforschungsfrage
 
 ## 4.1 Synthese der drei Dimensionen
 
-<!-- TODO: HFF explizit beantworten.
-     - D1: Explizite Verankerung ist marginal (0,8 %).
-     - D2: Gerechtigkeit wird überwiegend als formale Gleichheit gedacht.
-     - D3: Transformative Gerechtigkeit bleibt in allen Clustern
-       unterrepräsentiert; FH Wien zeigt am stärksten kompensatorisches
-       Profil.
-     Kernaussage: Curricula gehen punktuell über formale Chancengleichheit
-     hinaus, aber selten bis zur transformativen Stufe. -->
+Die Befunde lassen sich zu einer konsolidierten Antwort auf die
+Hauptforschungsfrage zusammenführen. **Erstens** ist die explizite
+curriculare Verankerung von Chancengerechtigkeit marginal (D1: 0,8 %
+explizite Nennungen). **Zweitens** wird Chancengerechtigkeit implizit
+überwiegend auf der Stufe **formaler Gleichheit** adressiert (D2: 49 –
+72 % der Levinson-zuordenbaren Findings). **Drittens** bleibt
+**transformative Gerechtigkeit** in allen Clustern unterrepräsentiert
+(D2: 4 – 12 %), während die FH Campus Wien als einziger Cluster ein
+deutlich kompensatorisches Profil aufweist (D3).
+
+Damit lässt sich die Hauptforschungsfrage präzisiert beantworten: Die
+Curricula gehen punktuell über formale Chancengleichheit hinaus —
+insbesondere durch kompensatorische Förderkonzepte und durch Elemente
+professioneller Haltungsbildung — verankern Chancengerechtigkeit als
+pädagogisches Leitprinzip aber **nicht systematisch** im Sinne einer
+transformativen Gerechtigkeit. Der von der OECD (2018) geforderte
+Anspruch, soziale Mobilität durch frühe Bildung aktiv zu ermöglichen,
+findet in den analysierten Dokumenten selten eine machtkritische oder
+strukturverändernde Entsprechung.
 
 ## 4.2 Einordnung in den Fachdiskurs
 
-<!-- TODO: Rückbindung an Levinson et al. (2022), Stojanov (2011),
-     Gomolla & Radtke (2009), OECD (2018). 3–4 Sätze. -->
+Diese Struktur entspricht der von Gomolla & Radtke (2009) empirisch
+herausgearbeiteten Erkenntnis, dass formale Gleichbehandlung strukturelle
+Benachteiligung nicht überwindet. Sie fügt sich zugleich in Stojanovs
+(2011) Diagnose ein, wonach anerkennungstheoretisch fundierte
+Gerechtigkeitskonzepte im deutschsprachigen Bildungsdiskurs gegenüber
+verteilungs- und teilhabeorientierten Ansätzen in der Minderheit bleiben.
+Das abweichende Profil der FH Campus Wien — stärker kompensatorisch,
+stärker professionalisierungsbezogen — könnte Ausdruck einer
+unterschiedlichen institutionellen Tradition sein; eine Einordnung, die
+quantitative Dokumentenanalyse nicht leisten kann und die für eine
+Anschlussuntersuchung aufzugreifen wäre.
 
 # 5. Limitationen
 
-<!-- Zielumfang: ~0,5 Seite -->
-
-<!-- TODO:
-     - Keyword-basierter Zugang: latente Bedeutungen werden interpretativ
-       erschlossen (Validierung durch CEiL).
-     - N = 1 pro Institution — keine statistische Inferenz.
-     - Relevanzraten-Varianz nivelliert durch Prozent-Normalisierung.
-     - Dokumentenanalyse erfasst curricularen Anspruch, nicht Umsetzung
-       in der Lehre.
-     - Levinson-Mapping basiert auf theoretischer Zuordnung; Codes 2.5
-       und 2.7 als orthogonal ausgewiesen. -->
+Mehrere methodische Einschränkungen sind bei der Interpretation zu
+berücksichtigen. *Erstens* erfasst die Dokumentenanalyse den curricularen
+Anspruch, nicht die Umsetzung in der Lehre (Morgan, 2022). Zwischen
+verschriftlichtem Curriculum und gelebter Lehrpraxis besteht ein
+Implementierungsspalt, der über Dokumente nicht zu erfassen ist.
+*Zweitens* liegt in jedem Cluster nur ein Curriculum vor (N = 1 pro
+Institution); statistische Inferenz ist daher nicht möglich, die Befunde
+sind strikt deskriptiv. *Drittens* sind die drei Levinson-Stufen
+unterschiedlich gut operationalisierbar: Während formale Gleichheit über
+klare Keywords erkennbar ist, manifestiert sich transformative
+Gerechtigkeit in subtileren Formulierungen, die stärker interpretative
+Leistung erfordern (Levinson et al., 2022). *Viertens* nivelliert die
+prozentuale Normalisierung Unterschiede im absoluten Datenvolumen und
+blendet so die Varianz der Relevanzraten im direkten Vergleich aus. Die
+Befunde sind schließlich als *Momentaufnahme* zu verstehen: Curricula
+werden periodisch überarbeitet, und eine Folgeerhebung könnte
+Veränderungen gegenüber dem hier dokumentierten Stand 2025/26 aufzeigen.
 
 # Literaturverzeichnis
 
-<!-- TODO: Aus Exposé übernehmen, gekürzt auf zitierte Werke. -->
-
-- Drerup, J. (2015). [...]
-- Gomolla, M., & Radtke, F.-O. (2009). [...]
-- Kuckartz, U., & Rädiker, S. (2022). [...]
-- Levinson, M., Geron, T., & Brighouse, H. (2022). [...]
-- Morgan, H. (2022). [...]
-- OECD (2018). [...]
-- Stojanov, K. (2011). [...]
-- Vollmann, M., & Fageth, B. (2022). [...]
+- Bundesministerium für Bildung. (2025). *Chancengleichheit – Definition*. Bundesministerium für Bildung.
+- Drerup, J. (2015). Genug ist genug? Zur Kritik non-egalitaristischer Konzeptionen der Bildungsgerechtigkeit. *Zeitschrift für Praktische Philosophie, 2*(1), 89–128.
+- Gomolla, M., & Radtke, F.-O. (2009). *Institutionelle Diskriminierung: Die Herstellung ethnischer Differenz in der Schule* (3. Aufl.). VS Verlag für Sozialwissenschaften.
+- Kuckartz, U., & Rädiker, S. (2022). *Qualitative Inhaltsanalyse: Methoden, Praxis, Computerunterstützung* (5. Aufl.). Beltz Juventa.
+- Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data. *Biometrics, 33*(1), 159–174.
+- Levinson, M., Geron, T., & Brighouse, H. (2022). Conceptions of educational equity. *AERA Open, 8*, 1–14.
+- Morgan, H. (2022). Conducting a qualitative document analysis. *The Qualitative Report, 27*(1), 64–77.
+- OECD. (2018). *Equity in education: Breaking down barriers to social mobility* (PISA). OECD Publishing.
+- Roller, M. R., & Lavrakas, P. J. (2015). *Applied qualitative research design: A total quality framework approach*. Guilford Press.
+- Stojanov, K. (2011). *Bildungsgerechtigkeit: Rekonstruktionen eines umkämpften Begriffs*. VS Verlag für Sozialwissenschaften.
+- Tai, R. H., Bentley, L. R., Xia, X., Sitt, J. M., Fankhauser, S. C., Chicas-Mosier, A. M., & Monteith, B. G. (2024). An examination of the use of large language models to aid analysis of textual data. *International Journal of Qualitative Methods, 23*, 1–12.
+- Vollmann, P., & Fageth, B. (2022). Thesen zum Bachelorstudium Elementarpädagogik an der Pädagogischen Hochschule der Diözese Linz. *Pädagogische Horizonte, 6*(1), 1–20.
 
 # Anhang
 
 ## A.1 Kodiermanual-Auszug
 
-<!-- TODO: 8 Codes mit je 1-Satz-Beschreibung. Quelle: knowledge/coding_manual.md. -->
+Das vollständige Kodiermanual umfasst 233 Keywords, die acht Codes
+zugeordnet sind. Der folgende Auszug beschreibt die Codes in
+Kurzform; die vollständige Keyword-Liste ist im Projekt-Repository unter
+`knowledge/coding_manual.md` dokumentiert.
+
+- **Code 1.1 — Direkte Nennung:** explizite Verwendung von Begriffen wie *Chancengleichheit*, *Chancengerechtigkeit*, *Bildungsgerechtigkeit*, *Equity*.
+- **Code 2.1 — Diversität & Heterogenität:** Anerkennung von Vielfalt (Geschlecht, Herkunft, Religion, Familienformen).
+- **Code 2.2 — Inklusion & Partizipation:** Zugang, Teilhabe, Barrierefreiheit.
+- **Code 2.3 — Individuelle Förderung & Differenzierung:** stärkenorientierte, differenzierte Förderung.
+- **Code 2.4 — Abbau von Benachteiligung & Diskriminierung:** Machtkritik, Empowerment, strukturelle Veränderung.
+- **Code 2.5 — Bildungspartnerschaft & Sozialraumorientierung:** Vernetzung, multiprofessionelle Teams.
+- **Code 2.6 — Sprachliche Bildung & Mehrsprachigkeit:** DaZ, Literacy, Translanguaging.
+- **Code 2.7 — Professionelle Haltung & Ethik:** Selbstreflexion, Werteorientierung, pädagogischer Habitus.
 
 ## A.2 Intercoder-Reliabilität — Detailtabelle
 
-<!-- TODO: κ-Werte, Stichprobengröße, Prozedur. Quelle: ergebnisse/intercoder_reliability.md. -->
+**ICR-Stichprobe:** Cluster SüdOst, n = 272 Findings, beide Kodiererinnen unabhängig.
+
+| Maß | Wert | Bewertung (Landis & Koch, 1977) |
+|---|---:|---|
+| Prozent-Übereinstimmung Relevanz | 87,1 % | — |
+| Cohens κ Relevanz | 0,71 | gut |
+| Prozent-Übereinstimmung Code | 89,7 % | — |
+| Cohens κ Code | 0,83 | sehr gut |
+
+Häufigste Abweichungen betrafen (a) kontextarme Findings ohne
+eindeutigen Equity-Bezug und (b) die Grenze zwischen Code 2.1 (Anerkennung
+von Vielfalt) und Code 2.4 (Abbau von Benachteiligung). Eine
+Konsenskonferenz bereinigte alle 52 nicht-übereinstimmenden Fälle. Die
+finalen Kodierungen wurden in der Spalte `confirmed_code` gespeichert
+und liegen allen Analysen zugrunde.
 
 ## A.3 Zusätzliche Visualisierungen
 
-<!-- TODO: Abbildungen einbinden:
-     - Code-Verteilungs-Heatmap (8 × 4)
-     - Grouped Bar Code-Verteilung
-     - Stacked Bars Levinson pro Cluster (4 × )
-     - Levinson Grouped Bar
-     Referenz: ergebnisse/visualisierungen_vergleich/ und
-     ergebnisse/cluster_*/visualisierungen/. -->
+Die folgenden Abbildungen ergänzen Abschnitt 3. Sie sind im
+Projekt-Repository unter
+`ergebnisse/visualisierungen_vergleich/` und `ergebnisse/cluster_*/visualisierungen/`
+abgelegt.
+
+- Code-Verteilungs-Heatmap (8 Codes × 4 Cluster, prozentual)
+- Grouped Bar der Code-Verteilung über alle Cluster
+- Stacked Bars der Levinson-Verteilung pro Cluster (4 Stück)
+- Grouped Bar der Levinson-Verteilung über alle Cluster
 
 ## A.4 Code-Verteilung — vollständige Tabelle
 
-<!-- TODO: 8 Codes × 4 Cluster, prozentual und absolut.
-     Quelle: ergebnisse/analyse_vergleich_cluster.md Tabellen 2 und 3. -->
+**A.4.1** *Prozentuale Verteilung pro Cluster (Summe je Spalte = 100 %)*
+
+| Code | West | Mitte | SüdOst | FH Wien |
+|---|---:|---:|---:|---:|
+| Code 1.1 | 0,0 % | 3,1 % | 0,0 % | 0,4 % |
+| Code 2.1 | 32,3 % | 35,1 % | 39,1 % | 18,3 % |
+| Code 2.2 | 11,2 % | 15,1 % | 8,9 % | 6,5 % |
+| Code 2.3 | 8,9 % | 3,9 % | 8,9 % | 12,9 % |
+| Code 2.4 | 2,6 % | 8,1 % | 4,7 % | 5,7 % |
+| Code 2.5 | 8,6 % | 5,4 % | 13,0 % | 6,1 % |
+| Code 2.6 | 9,8 % | 7,7 % | 7,3 % | 7,2 % |
+| Code 2.7 | 26,5 % | 21,6 % | 18,2 % | 43,0 % |
+
+**A.4.2** *Absolute Zahlen (relevante Findings)*
+
+| Code | West | Mitte | SüdOst | FH Wien |
+|---|---:|---:|---:|---:|
+| Code 1.1 | 0 | 8 | 0 | 1 |
+| Code 2.1 | 112 | 91 | 75 | 48 |
+| Code 2.2 | 39 | 39 | 17 | 17 |
+| Code 2.3 | 31 | 10 | 17 | 34 |
+| Code 2.4 | 9 | 21 | 9 | 15 |
+| Code 2.5 | 30 | 14 | 25 | 16 |
+| Code 2.6 | 34 | 20 | 14 | 19 |
+| Code 2.7 | 92 | 56 | 35 | 113 |
+| **Summe** | **347** | **259** | **192** | **263** |
