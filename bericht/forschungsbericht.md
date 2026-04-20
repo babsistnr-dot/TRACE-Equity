@@ -284,16 +284,19 @@ Gerechtigkeitskonzepte (Stojanov, 2011) voraussetzt.
 
 ## 4.2 Einordnung in den Fachdiskurs und Praxisimplikationen
 
-Diese Struktur entspricht der von Gomolla & Radtke (2009) empirisch
-herausgearbeiteten Erkenntnis, dass formale Gleichbehandlung strukturelle
-Benachteiligung nicht überwindet. Sie fügt sich zugleich in Stojanovs
-(2011) Diagnose ein, wonach anerkennungstheoretisch fundierte
-Gerechtigkeitskonzepte im deutschsprachigen Bildungsdiskurs gegenüber
-verteilungs- und teilhabeorientierten Ansätzen in der Minderheit bleiben.
-Das abweichende Profil der FH Campus Wien — stärker kompensatorisch,
-stärker professionalisierungsbezogen — könnte Ausdruck einer
-unterschiedlichen institutionellen Tradition sein; eine Einordnung, die
-quantitative Dokumentenanalyse nicht leisten kann und die für eine
+Diese Struktur stützt die empirischen Befunde von Gomolla & Radtke
+(2009), wonach formal-neutrale Routinen in Bildungsorganisationen —
+*„Gleichbehandlung von Ungleichen"* — ethnische Differenz nicht nur
+unbearbeitet lassen, sondern aktiv mit herstellen. Sie verweist zugleich
+auf das von Stojanov (2011) rekonstruierte Spannungsfeld zwischen
+verteilungs-, teilhabe- und anerkennungsorientierten
+Gerechtigkeitsverständnissen, in dem anerkennungstheoretische
+Perspektiven einen normativen Vorrang beanspruchen, in der
+Bildungspraxis jedoch weniger präsent sind. Das abweichende Profil der
+FH Campus Wien — stärker kompensatorisch, stärker
+professionalisierungsbezogen — könnte Ausdruck einer unterschiedlichen
+institutionellen Tradition sein; eine Einordnung, die quantitative
+Dokumentenanalyse nicht leisten kann und die für eine
 Anschlussuntersuchung aufzugreifen wäre.
 
 Für die curriculare Weiterentwicklung folgen aus den Befunden zwei
