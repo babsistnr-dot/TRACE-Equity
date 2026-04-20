@@ -274,10 +274,13 @@ Curricula gehen punktuell über formale Chancengleichheit hinaus —
 insbesondere durch kompensatorische Förderkonzepte und durch Elemente
 professioneller Haltungsbildung — verankern Chancengerechtigkeit als
 pädagogisches Leitprinzip aber **nicht systematisch** im Sinne einer
-transformativen Gerechtigkeit. Der von der OECD (2018) geforderte
-Anspruch, soziale Mobilität durch frühe Bildung aktiv zu ermöglichen,
-findet in den analysierten Dokumenten selten eine machtkritische oder
-strukturverändernde Entsprechung.
+transformativen Gerechtigkeit. Der von der OECD (2018) formulierte
+Anspruch, durch Bildungspolitik soziale Mobilität aktiv zu fördern,
+findet in den analysierten Curricula nur punktuell eine Entsprechung in
+machtkritischen oder strukturverändernden Lerngelegenheiten — ein
+Anspruch, der allerdings über die outcome-orientierte OECD-Rahmung
+hinaus eine theoretische Erweiterung im Sinne anerkennungstheoretischer
+Gerechtigkeitskonzepte (Stojanov, 2011) voraussetzt.
 
 ## 4.2 Einordnung in den Fachdiskurs und Praxisimplikationen
 
