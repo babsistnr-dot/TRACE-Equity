@@ -313,22 +313,24 @@ curricular machbar ist, zeigt das Profil der FH Campus Wien.
 
 Die Befunde unterliegen mehreren methodischen Einschränkungen. Eine
 grundsätzliche Grenze betrifft den Gegenstand selbst: Dokumentenanalysen
-erfassen den curricularen Anspruch, nicht seine Umsetzung in der Lehre
-(Morgan, 2022) — zwischen verschriftlichtem Curriculum und gelebter
-Lehrpraxis besteht ein Implementierungsspalt, der sich in den
-analysierten Texten nicht abbildet. Hinzu kommt die Datengrundlage: Mit
-nur einem Curriculum pro Cluster (N = 1 pro Institution) bleibt jede
+erschließen nur den schriftlichen Gehalt der Curricula, nicht deren
+Umsetzung im Lehrgeschehen — eine in der Curriculumforschung etablierte
+Unterscheidung zwischen intendiertem und realisiertem Curriculum. Zu
+den generellen Grenzen der Dokumentenanalyse zählt zudem, dass
+Dokumente nicht alles abbilden, was in Institutionen tatsächlich
+geschieht (Morgan, 2022). Hinzu kommt die Datengrundlage: Mit nur
+einem Curriculum pro Cluster (N = 1 pro Institution) bleibt jede
 Aussage strikt deskriptiv, statistische Inferenz ist auf dieser Basis
 nicht möglich.
 
 Auch das Kategoriensystem stößt an Grenzen. Die drei Levinson-Stufen
 lassen sich unterschiedlich gut operationalisieren: Formale Gleichheit
-wird über klare Keywords greifbar, während transformative Gerechtigkeit
+wird über klare Begriffe greifbar, während transformative Gerechtigkeit
 häufig in subtileren Formulierungen zum Ausdruck kommt, deren Erfassung
-stärkere interpretative Leistung voraussetzt (Levinson et al., 2022).
-Die prozentuale Normalisierung pro Cluster wiederum nivelliert
-Unterschiede im absoluten Datenvolumen und blendet die Varianz der
-Relevanzraten im direkten Vergleich aus.
+stärkere interpretative Leistung voraussetzt und anfälliger für
+Codiervarianz ist. Die prozentuale Normalisierung pro Cluster wiederum
+nivelliert Unterschiede im absoluten Datenvolumen und blendet die
+Varianz der Relevanzraten im direkten Vergleich aus.
 
 Schließlich ist der Momentaufnahme-Charakter der Erhebung zu
 berücksichtigen: Curricula werden periodisch überarbeitet, und eine
