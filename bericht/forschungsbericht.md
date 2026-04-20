@@ -189,19 +189,19 @@ entfallen auf die Querschnittscodes 2.5 (Bildungspartnerschaft) und 2.7
 (professionelle Haltung) sowie auf Code 1.1 und werden separat
 ausgewiesen.
 
-Drei Befunde stechen heraus. *Erstens* dominiert in allen vier Clustern
-die Stufe der **formalen Gleichheit**: Zwischen 48,9 % (FH Wien) und
-71,8 % (Mitte) der einschlägigen Findings entfallen auf Codes, die
-Diversitätsanerkennung und Inklusion als Zugangs- und
-Partizipationsbedingungen thematisieren. *Zweitens* bleibt die
-**transformative Gerechtigkeit** durchgängig schwach: Der Anteil liegt
-zwischen 4,0 % (West) und 11,6 % (Mitte). Machtkritische und
-strukturverändernde Perspektiven — etwa auf institutionelle
-Diskriminierung oder Empowerment — sind curricular unterrepräsentiert.
-*Drittens* weicht die FH Campus Wien von den drei PH-Clustern ab: Sie
-zeigt mit 39,8 % den deutlich höchsten Anteil **kompensatorischer
-Gerechtigkeit** (individuelle Förderung, sprachliche Bildung) und den
-geringsten Anteil formaler Gleichheit.
+Die Heatmap zeigt ein konsistentes Grundmuster bei gleichzeitig deutlicher
+institutioneller Streuung. In allen vier Clustern dominiert die Stufe der
+**formalen Gleichheit** mit Anteilen zwischen 48,9 % (FH Wien) und 71,8 %
+(Mitte); hier wirken jene Codes, die Diversitätsanerkennung und Inklusion
+als Zugangs- und Partizipationsbedingungen thematisieren. Demgegenüber
+bleibt die **transformative Gerechtigkeit** durchgängig schwach und
+erreicht nur Anteile zwischen 4,0 % (West) und 11,6 % (Mitte);
+machtkritische und strukturverändernde Perspektiven — etwa auf
+institutionelle Diskriminierung oder Empowerment — sind curricular
+unterrepräsentiert. Innerhalb dieses Grundmusters nimmt die FH Campus
+Wien eine Sonderstellung ein: Mit 39,8 % weist sie den höchsten Anteil
+**kompensatorischer Gerechtigkeit** (individuelle Förderung, sprachliche
+Bildung) und zugleich den geringsten Anteil formaler Gleichheit auf.
 
 Die inhaltliche Signatur der transformativen Stufe lässt sich an einem
 Finding aus Cluster Mitte illustrieren:
@@ -259,15 +259,14 @@ identifizieren lässt.
 
 ## 4.1 Synthese der drei Dimensionen
 
-Die Befunde lassen sich zu einer konsolidierten Antwort auf die
-Hauptforschungsfrage zusammenführen. **Erstens** ist die explizite
-curriculare Verankerung von Chancengerechtigkeit marginal (D1: 0,8 %
-explizite Nennungen). **Zweitens** wird Chancengerechtigkeit implizit
+Die Befunde der drei Dimensionen ergeben ein konsistentes Gesamtbild.
+Die explizite curriculare Verankerung von Chancengerechtigkeit ist
+marginal (D1: 0,8 % explizite Nennungen), inhaltlich wird das Konzept
 überwiegend auf der Stufe **formaler Gleichheit** adressiert (D2: 49 –
-72 % der Levinson-zuordenbaren Findings). **Drittens** bleibt
-**transformative Gerechtigkeit** in allen Clustern unterrepräsentiert
-(D2: 4 – 12 %), während die FH Campus Wien als einziger Cluster ein
-deutlich kompensatorisches Profil aufweist (D3).
+72 % der Levinson-zuordenbaren Findings), während **transformative
+Gerechtigkeit** in allen Clustern unterrepräsentiert bleibt (D2: 4 –
+12 %). Innerhalb dieses Grundmusters hebt sich die FH Campus Wien als
+einziger Cluster mit einem deutlich kompensatorischen Profil ab (D3).
 
 Damit lässt sich die Hauptforschungsfrage präzisiert beantworten: Die
 Curricula gehen punktuell über formale Chancengleichheit hinaus —
@@ -299,15 +298,16 @@ institutionellen Tradition sein; eine Einordnung, die quantitative
 Dokumentenanalyse nicht leisten kann und die für eine
 Anschlussuntersuchung aufzugreifen wäre.
 
-Für die curriculare Weiterentwicklung folgen aus den Befunden zwei
-Ansatzpunkte. *Erstens* könnte die explizite begriffliche Verankerung
+Für die curriculare Weiterentwicklung lassen sich aus diesen Befunden
+zwei Ansatzpunkte ableiten, die unterschiedliche Reichweite haben. Auf
+sprachlicher Ebene könnte die explizite begriffliche Verankerung
 gestärkt werden, um Chancengerechtigkeit als Leitprinzip auch in
 Modulüberschriften, Lernergebnissen und Kompetenzbeschreibungen
-sichtbar zu machen. *Zweitens* — und inhaltlich gewichtiger — braucht
-es eine Erweiterung des Kategorienrepertoires in Richtung
-machtkritischer und strukturreflexiver Lerngelegenheiten (Code 2.4),
-die über individuelle Fördermaßnahmen hinausgehen. Die FH Campus Wien
-zeigt, dass eine Akzentverschiebung curricular machbar ist.
+sichtbar zu machen. Inhaltlich gewichtiger ist jedoch die Erweiterung
+des Kategorienrepertoires in Richtung machtkritischer und
+strukturreflexiver Lerngelegenheiten (Code 2.4), die über individuelle
+Fördermaßnahmen hinausgehen. Dass eine solche Akzentverschiebung
+curricular machbar ist, zeigt das Profil der FH Campus Wien.
 
 # 5. Limitationen
 
