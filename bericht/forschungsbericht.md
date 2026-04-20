@@ -209,10 +209,9 @@ Finding aus Cluster Mitte illustrieren:
 > bewusst." (Cluster Mitte, S. 106)
 
 Solche Formulierungen, die aktive Reflexion und Haltungsbildung gegen
-Benachteiligung adressieren, bleiben die Ausnahme. Die empirische
-Struktur entspricht damit dem, was Stojanov (2011) als Dominanz
-verteilungs- und teilhabeorientierter Gerechtigkeitsbegriffe gegenüber
-anerkennungstheoretisch fundierten Ansätzen beschreibt.
+Benachteiligung adressieren, bleiben die Ausnahme. Die curriculare
+Schwerlast liegt auf Diversitätsanerkennung und Teilhabe, nicht auf
+Machtkritik.
 
 ## 3.4 Dimension 3 — Komparativer Vergleich
 
@@ -239,7 +238,7 @@ zwischen Clustern*
 Die FH Campus Wien weist bei Code 2.1 (Diversität & Heterogenität) mit
 18,3 % einen deutlich geringeren Anteil als die drei PH-Cluster (32,3 %
 bis 39,1 %) auf; umgekehrt ist sie bei Code 2.7 (professionelle Haltung)
-mit 43,0 % nahezu doppelt so stark vertreten wie SüdOst (18,2 %) und
+mit 43,0 % mehr als doppelt so stark vertreten wie SüdOst (18,2 %) und
 erhöht auch bei Code 2.3 (individuelle Förderung) gegenüber Mitte (3,9 %).
 Dieses Muster ist konsistent mit dem Levinson-Befund aus Abschnitt 3.3:
 Ein höherer Anteil bei Codes 2.3 und 2.7 verschiebt das Profil in
@@ -278,7 +277,7 @@ Anspruch, soziale Mobilität durch frühe Bildung aktiv zu ermöglichen,
 findet in den analysierten Dokumenten selten eine machtkritische oder
 strukturverändernde Entsprechung.
 
-## 4.2 Einordnung in den Fachdiskurs
+## 4.2 Einordnung in den Fachdiskurs und Praxisimplikationen
 
 Diese Struktur entspricht der von Gomolla & Radtke (2009) empirisch
 herausgearbeiteten Erkenntnis, dass formale Gleichbehandlung strukturelle
@@ -291,6 +290,16 @@ stärker professionalisierungsbezogen — könnte Ausdruck einer
 unterschiedlichen institutionellen Tradition sein; eine Einordnung, die
 quantitative Dokumentenanalyse nicht leisten kann und die für eine
 Anschlussuntersuchung aufzugreifen wäre.
+
+Für die curriculare Weiterentwicklung folgen aus den Befunden zwei
+Ansatzpunkte. *Erstens* könnte die explizite begriffliche Verankerung
+gestärkt werden, um Chancengerechtigkeit als Leitprinzip auch in
+Modulüberschriften, Lernergebnissen und Kompetenzbeschreibungen
+sichtbar zu machen. *Zweitens* — und inhaltlich gewichtiger — braucht
+es eine Erweiterung des Kategorienrepertoires in Richtung
+machtkritischer und strukturreflexiver Lerngelegenheiten (Code 2.4),
+die über individuelle Fördermaßnahmen hinausgehen. Die FH Campus Wien
+zeigt, dass eine Akzentverschiebung curricular machbar ist.
 
 # 5. Limitationen
 
@@ -314,15 +323,11 @@ Veränderungen gegenüber dem hier dokumentierten Stand 2025/26 aufzeigen.
 
 # Literaturverzeichnis
 
-- Bundesministerium für Bildung. (2025). *Chancengleichheit – Definition*. Bundesministerium für Bildung.
-- Drerup, J. (2015). Genug ist genug? Zur Kritik non-egalitaristischer Konzeptionen der Bildungsgerechtigkeit. *Zeitschrift für Praktische Philosophie, 2*(1), 89–128.
 - Gomolla, M., & Radtke, F.-O. (2009). *Institutionelle Diskriminierung: Die Herstellung ethnischer Differenz in der Schule* (3. Aufl.). VS Verlag für Sozialwissenschaften.
-- Kuckartz, U., & Rädiker, S. (2022). *Qualitative Inhaltsanalyse: Methoden, Praxis, Computerunterstützung* (5. Aufl.). Beltz Juventa.
 - Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data. *Biometrics, 33*(1), 159–174.
 - Levinson, M., Geron, T., & Brighouse, H. (2022). Conceptions of educational equity. *AERA Open, 8*, 1–14.
 - Morgan, H. (2022). Conducting a qualitative document analysis. *The Qualitative Report, 27*(1), 64–77.
 - OECD. (2018). *Equity in education: Breaking down barriers to social mobility* (PISA). OECD Publishing.
-- Roller, M. R., & Lavrakas, P. J. (2015). *Applied qualitative research design: A total quality framework approach*. Guilford Press.
 - Stojanov, K. (2011). *Bildungsgerechtigkeit: Rekonstruktionen eines umkämpften Begriffs*. VS Verlag für Sozialwissenschaften.
 - Tai, R. H., Bentley, L. R., Xia, X., Sitt, J. M., Fankhauser, S. C., Chicas-Mosier, A. M., & Monteith, B. G. (2024). An examination of the use of large language models to aid analysis of textual data. *International Journal of Qualitative Methods, 23*, 1–12.
 - Vollmann, P., & Fageth, B. (2022). Thesen zum Bachelorstudium Elementarpädagogik an der Pädagogischen Hochschule der Diözese Linz. *Pädagogische Horizonte, 6*(1), 1–20.
