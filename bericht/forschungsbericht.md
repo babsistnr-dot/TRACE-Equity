@@ -93,8 +93,10 @@ Finding (a) die Relevanz (ja/nein) und (b) der bestätigte oder korrigierte
 Code entschieden. Die explizite Trennung zwischen automatischer
 Vor-Codierung (`code`) und expertenvalidiertem Endbefund (`confirmed_code`)
 gewährleistet Transparenz und Reproduzierbarkeit. Auf eine
-LLM-basierte Analyse wurde bewusst verzichtet, um Nachvollziehbarkeit und
-Kontextstabilität zu priorisieren (Tai et al., 2024).
+LLM-gestützte Codierung wurde verzichtet, da generative KI komplexe
+Kontextbedeutungen tendenziell auf dekontextualisierte Kategorien
+reduziert und latente Bedeutungen oder Machtstrukturen häufig nicht
+erfasst (Tai et al., 2024).
 
 ## 2.4 Gütekriterien und Intercoder-Reliabilität
 
