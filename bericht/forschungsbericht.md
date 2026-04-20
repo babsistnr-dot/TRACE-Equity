@@ -311,23 +311,29 @@ zeigt, dass eine Akzentverschiebung curricular machbar ist.
 
 # 5. Limitationen
 
-Mehrere methodische Einschränkungen sind bei der Interpretation zu
-berücksichtigen. *Erstens* erfasst die Dokumentenanalyse den curricularen
-Anspruch, nicht die Umsetzung in der Lehre (Morgan, 2022). Zwischen
-verschriftlichtem Curriculum und gelebter Lehrpraxis besteht ein
-Implementierungsspalt, der über Dokumente nicht zu erfassen ist.
-*Zweitens* liegt in jedem Cluster nur ein Curriculum vor (N = 1 pro
-Institution); statistische Inferenz ist daher nicht möglich, die Befunde
-sind strikt deskriptiv. *Drittens* sind die drei Levinson-Stufen
-unterschiedlich gut operationalisierbar: Während formale Gleichheit über
-klare Keywords erkennbar ist, manifestiert sich transformative
-Gerechtigkeit in subtileren Formulierungen, die stärker interpretative
-Leistung erfordern (Levinson et al., 2022). *Viertens* nivelliert die
-prozentuale Normalisierung Unterschiede im absoluten Datenvolumen und
-blendet so die Varianz der Relevanzraten im direkten Vergleich aus. Die
-Befunde sind schließlich als *Momentaufnahme* zu verstehen: Curricula
-werden periodisch überarbeitet, und eine Folgeerhebung könnte
-Veränderungen gegenüber dem hier dokumentierten Stand 2025/26 aufzeigen.
+Die Befunde unterliegen mehreren methodischen Einschränkungen. Eine
+grundsätzliche Grenze betrifft den Gegenstand selbst: Dokumentenanalysen
+erfassen den curricularen Anspruch, nicht seine Umsetzung in der Lehre
+(Morgan, 2022) — zwischen verschriftlichtem Curriculum und gelebter
+Lehrpraxis besteht ein Implementierungsspalt, der sich in den
+analysierten Texten nicht abbildet. Hinzu kommt die Datengrundlage: Mit
+nur einem Curriculum pro Cluster (N = 1 pro Institution) bleibt jede
+Aussage strikt deskriptiv, statistische Inferenz ist auf dieser Basis
+nicht möglich.
+
+Auch das Kategoriensystem stößt an Grenzen. Die drei Levinson-Stufen
+lassen sich unterschiedlich gut operationalisieren: Formale Gleichheit
+wird über klare Keywords greifbar, während transformative Gerechtigkeit
+häufig in subtileren Formulierungen zum Ausdruck kommt, deren Erfassung
+stärkere interpretative Leistung voraussetzt (Levinson et al., 2022).
+Die prozentuale Normalisierung pro Cluster wiederum nivelliert
+Unterschiede im absoluten Datenvolumen und blendet die Varianz der
+Relevanzraten im direkten Vergleich aus.
+
+Schließlich ist der Momentaufnahme-Charakter der Erhebung zu
+berücksichtigen: Curricula werden periodisch überarbeitet, und eine
+Folgeerhebung könnte Veränderungen gegenüber dem hier dokumentierten
+Stand 2025/26 sichtbar machen.
 
 # Literaturverzeichnis
 
