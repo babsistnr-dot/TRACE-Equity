@@ -69,10 +69,11 @@ Die Codes 2.1–2.7 operationalisieren pädagogische Handlungskompetenzen
 (Diversität, Inklusion, individuelle Förderung, Abbau von Benachteiligung,
 Bildungspartnerschaft, sprachliche Bildung, professionelle Haltung).
 
-Für die Auswertung zu Dimension 2 werden diese Codes über das Mapping aus
-Levinson et al. (2022) den drei Gerechtigkeitsstufen zugeordnet: Formale
-Gleichheit (Codes 2.1, 2.2), kompensatorische Gerechtigkeit (Codes 2.3,
-2.6) und transformative Gerechtigkeit (Code 2.4). Die Codes 2.5
+Für die Auswertung zu Dimension 2 werden diese Codes einer an
+Levinson et al. (2022) angelehnten dreistufigen Typologie zugeordnet,
+die deren Progression *equality → equity → liberation* auf die Stufen
+formale Gleichheit (Codes 2.1, 2.2), kompensatorische Gerechtigkeit
+(Codes 2.3, 2.6) und transformative Gerechtigkeit (Code 2.4) überträgt. Die Codes 2.5
 (Bildungspartnerschaft) und 2.7 (professionelle Haltung) werden als
 Querschnittskategorien separat ausgewiesen, da sie orthogonal zu den drei
 Stufen liegen. Das Kodiermanual dient als *Single Source of Truth*: Sowohl
