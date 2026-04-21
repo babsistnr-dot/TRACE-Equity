@@ -63,7 +63,12 @@ Aus diesem Rahmen leitet sich die Hauptforschungsfrage ab: Inwiefern
 gehen die Curricula der Bachelorstudiengänge Elementarpädagogik
 österreichischer Hochschulen über formale Chancengleichheit hinaus
 und verankern Chancengerechtigkeit als pädagogisches Leitprinzip?
-Die Frage ist empirisch-deskriptiv angelegt und wird über drei
+Die Frage ist wichtig, weil Curricula mitbestimmen, wie angehende
+Elementarpädagog:innen später mit Bildungsungleichheit umgehen —
+und damit, ob die Bachelor-Ausbildung Chancengerechtigkeit
+strukturell einlöst oder auf formale Gleichheitsrhetorik beschränkt
+bleibt. Die Frage ist
+empirisch-deskriptiv angelegt und wird über drei
 Dimensionen operationalisiert: das Verhältnis zwischen expliziter
 begrifflicher Nennung und impliziter Verankerung, die konzeptuelle
 Tiefe im Sinne der Levinson-Typologie sowie systematische
