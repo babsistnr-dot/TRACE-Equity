@@ -13,145 +13,186 @@ geometry:
 linestretch: 1.3
 ---
 
-<!--
-Arbeitsauftrag (LV 420.810 Forschungsmethoden, Moser, WS25/SS26):
-Maximal 3 Seiten. Methodenskizze (zentrale Begriffe), Literaturreferenzen
-zur theoretischen Perspektive und eine Skizze der methodischen
-Herangehensweise der Aufbereitung der Daten und der Auswertung der Daten.
-Keine Ergebnisse.
-
-Seitenbudget:
-- § 1 Theoretische Perspektive + Literatur ~500 W. / 1 S.
-- § 2 Methodenskizze + zentrale Begriffe ~500 W. / 1 S.
-- § 3 Datenaufbereitung + Auswertung ~500 W. / 1 S.
-- Literaturverzeichnis: außerhalb des 3-Seiten-Budgets
-
-Reihenfolge: Theorie → Methode → Operation (sinnvoller als die
-Auftragsreihenfolge, da § 2 auf § 1 aufbaut). Falls die LV strikt
-die Auftragsreihenfolge verlangt → vor Abgabe umordnen.
--->
-
 # 1. Theoretische Perspektive
 
-<!--
-Ziel: Die theoretische Rahmung, auf der das Projekt ruht, in ~500 W.
-skizzieren und die zentralen Referenzen setzen. KEINE Methoden,
-KEINE Ergebnisse.
+Mit der Einführung der Bachelorstudiengänge Elementarpädagogik im Jahr
+2018 vollzog Österreich einen Professionalisierungsschritt der
+Elementarpädagogik (Vollmann & Fageth, 2022). Die Verschiebung der
+Ausbildung auf die tertiäre Ebene hat den normativen Anspruch
+verschärft, Elementarpädagog:innen auf eine pluralisierte und
+ungleichheitsbelastete Bildungslandschaft vorzubereiten. Zugleich
+identifiziert die OECD (2018) Educational Equity als zentralen
+Qualitätsfaktor früher Bildung: Nicht die Herkunft, sondern das
+Potential eines Kindes soll den Bildungsweg bestimmen. Für die
+Ausbildung folgt daraus die Frage, inwiefern die neuen Curricula
+diesen Anspruch konzeptuell einlösen — eine systematische empirische
+Untersuchung fehlt für den österreichischen Raum bislang.
 
-Bausteine:
-- Gegenstand und Forschungslücke: Bachelorisierung der österreichischen
-  Elementarpädagogik ab 2018 (Vollmann & Fageth, 2022) — normative
-  Rahmensetzung ohne systematische empirische Curriculum-Analyse
-  zum Themenfeld Chancengerechtigkeit.
-- Begriffliche Spannung Chancengleichheit vs. Chancengerechtigkeit:
-  formale Zugangsgleichheit vs. substantielle Gerechtigkeit im
-  Bildungssystem (Stojanov, 2011). Anerkennungstheoretische
-  Perspektive als normativer Vorrang.
-- Educational Equity als bildungspolitischer Begriff (OECD, 2018):
-  Potential statt Herkunft als Determinante des Bildungsweges.
-- Theoretisches Leitraster: Levinson, Geron & Brighouse (2022) mit
-  der Progression equality → equity → liberation. In TRACE-Equity
-  adaptiert zu einer dreistufigen Typologie: formale Gleichheit,
-  kompensatorische Gerechtigkeit, transformative Gerechtigkeit.
-  Ehrlichkeitsformel „in Anlehnung an".
-- Anschlusslinien im deutschsprachigen Diskurs: Gomolla & Radtke
-  (2009) zu institutioneller Diskriminierung; Prengel zu inklusiver
-  Pädagogik; Fröhlich-Gildhoff zur Professionalisierung (optional,
-  falls Platz).
-- Hauptforschungsfrage: Inwiefern gehen die Curricula der
-  österreichischen Bachelorstudiengänge Elementarpädagogik über
-  formale Chancengleichheit hinaus und verankern Chancengerechtigkeit
-  als pädagogisches Leitprinzip?
--->
+Theoretisch setzt TRACE-Equity an der Unterscheidung zwischen
+Chancengleichheit und Chancengerechtigkeit an. Chancengleichheit
+adressiert formale Zugangsgleichheit im Bildungssystem;
+Chancengerechtigkeit zielt demgegenüber auf substantielle Teilhabe
+und auf eine aktive Kompensation struktureller Benachteiligung.
+Stojanov (2011) rekonstruiert dieses Spannungsfeld als Konkurrenz
+zwischen verteilungs-, teilhabe- und anerkennungsorientierten
+Gerechtigkeitsverständnissen. Anerkennungstheoretische Perspektiven
+beanspruchen dabei einen normativen Vorrang, sind in der
+Bildungspraxis jedoch weniger präsent. Auf struktureller Ebene zeigen
+Gomolla & Radtke (2009), dass formal-neutrale Routinen in
+Bildungsorganisationen — „Gleichbehandlung von Ungleichen" —
+ethnische Differenz nicht nur unbearbeitet lassen, sondern aktiv mit
+herstellen.
+
+Als theoretisches Leitraster dient die Equity-Typologie nach
+Levinson, Geron & Brighouse (2022). Die Autor:innen unterscheiden
+fünf Konzeptionen von Educational Equity und ordnen sie entlang
+einer Progression von formaler *equality* über kompensatorische
+*equity* hin zu *liberation*-orientierten Konzepten an. In
+TRACE-Equity wird diese Progression in Anlehnung an Levinson et al.
+(2022) zu einer dreistufigen analytischen Typologie übertragen:
+(a) formale Gleichheit (Zugang und Anerkennung von Vielfalt),
+(b) kompensatorische Gerechtigkeit (gezielte Förderung unter
+Berücksichtigung ungleicher Ausgangslagen) und (c) transformative
+Gerechtigkeit (Machtkritik und strukturverändernde Perspektive). Die
+Dreistufigkeit ist eine interpretative Adaption; sie bildet nicht
+den vollen Auffächerungsgrad der Originaltypologie ab,
+operationalisiert aber die Kerndifferenz zwischen formaler
+Zugangsgleichheit und substantiell-transformativer Gerechtigkeit.
+
+Aus diesem Rahmen leitet sich die Hauptforschungsfrage ab: Inwiefern
+gehen die Curricula der Bachelorstudiengänge Elementarpädagogik
+österreichischer Hochschulen über formale Chancengleichheit hinaus
+und verankern Chancengerechtigkeit als pädagogisches Leitprinzip?
+Die Frage ist empirisch-deskriptiv angelegt und wird über drei
+Dimensionen operationalisiert: das Verhältnis zwischen expliziter
+begrifflicher Nennung und impliziter Verankerung, die konzeptuelle
+Tiefe im Sinne der Levinson-Typologie sowie systematische
+Unterschiede zwischen den vier Cluster-Curricula, insbesondere
+zwischen Pädagogischen Hochschulen und Fachhochschule.
 
 # 2. Methodenskizze — zentrale Begriffe
 
-<!--
-Ziel: Die methodische Grundorientierung und die zentralen Begriffe
-der Auswertungsstrategie in ~500 W. einführen. Keine Operation
-(das kommt in § 3), sondern die konzeptuelle Ebene.
+Methodisch stützt sich TRACE-Equity auf die Qualitative
+Inhaltsanalyse (QCA) nach Kuckartz & Rädiker (2022). Die QCA eignet
+sich für die regelgeleitete Auswertung natürlich vorliegender
+Textmaterialien, weil sie systematische Reduktion mit interpretativer
+Bedeutungsrekonstruktion verbindet und intersubjektive
+Nachvollziehbarkeit über explizite Kodierregeln sichert. Die
+Auswertung erfolgt deduktiv entlang eines vorab entwickelten
+Kategoriensystems; latente Bedeutungen werden im Rahmen der
+Expertenvalidierung interpretativ erschlossen, nicht über eine
+ergänzende Reflexive Thematic Analysis.
 
-Bausteine:
-- Qualitative Inhaltsanalyse (QCA) nach Kuckartz & Rädiker (2022)
-  als methodisches Rückgrat: strukturiert, regelgeleitet,
-  intersubjektiv nachvollziehbar.
-- Deduktives Kategoriensystem aus dem Kodiermanual:
-  8 Codes (Code 1.1 direkte Nennung; Codes 2.1–2.7 pädagogische
-  Handlungskompetenzen). 233 Keywords.
-- Single-Source-of-Truth-Prinzip: `knowledge/coding_manual.md` ist
-  die einzige Quelle der Keyword-Liste; Analyse-App und
-  Auswertungsskripte greifen dynamisch darauf zu.
-- Critical Expert in the Loop (CEiL): Jede keywordbasiert generierte
-  Fundstelle wird von beiden Kodiererinnen manuell validiert
-  (Relevanz + Code-Bestätigung/-Korrektur). Trennung zwischen
-  automatischer Vor-Codierung (`code`) und expertenvalidiertem
-  Endbefund (`confirmed_code`).
-- Intercoder-Reliabilität (Cohens κ) als Gütekriterium; κ=0,71
-  (Relevanz) bzw. κ=0,83 (Code-Zuordnung) — Interpretation nach
-  Landis & Koch (1977).
-- Verzicht auf LLM-Codierung begründet: Tendenz zur Dekontextuali-
-  sierung, Gefahr des Übersehens latenter Machtstrukturen (Tai
-  et al., 2024).
-- Auswertungsstrategie entlang drei Dimensionen: D1 explizite vs.
-  implizite Verankerung, D2 konzeptuelle Tiefe (Levinson-Mapping),
-  D3 clusterkomparativer Vergleich. Nur beschreiben, NICHT auswerten.
--->
+Das Kategoriensystem ist im projekteigenen Kodiermanual dokumentiert
+und umfasst acht Codes: Code 1.1 erfasst die direkte Nennung von
+Gerechtigkeitsbegriffen (*Chancengleichheit*, *Chancengerechtigkeit*,
+*Bildungsgerechtigkeit*); die Codes 2.1–2.7 operationalisieren
+pädagogische Handlungskompetenzen (Diversität, Inklusion,
+individuelle Förderung, Abbau von Benachteiligung,
+Bildungspartnerschaft, sprachliche Bildung, professionelle Haltung).
+Dem Kategoriensystem sind 233 Keywords zugeordnet. Das Kodiermanual
+dient als *Single Source of Truth*: Sowohl die Analyse-Webapplikation
+als auch die nachgelagerten Auswertungsskripte greifen dynamisch auf
+dieselbe Keyword-Liste zu, wodurch Inkonsistenzen zwischen Suche und
+Auswertung ausgeschlossen sind.
+
+Ein zentrales methodisches Merkmal ist das Verfahren *Critical
+Expert in the Loop* (CEiL). Jede automatisch generierte Fundstelle
+wird durch beide Kodiererinnen manuell validiert. Die Validierung
+umfasst zwei Entscheidungen: Ist die Fundstelle inhaltlich relevant
+für die Forschungsfrage, und ist die vorläufige Code-Zuordnung zu
+bestätigen oder zu korrigieren? Die Datenstruktur trennt konsequent
+zwischen der automatischen Vor-Codierung (Feld `code`) und dem
+expertenvalidierten Endbefund (Feld `confirmed_code`); alle
+Auswertungen stützen sich ausschließlich auf letzteres. Auf eine
+LLM-gestützte Codierung wurde bewusst verzichtet: Generative Systeme
+tendieren dazu, komplexe Kontextbedeutungen auf dekontextualisierte
+Kategorien zu reduzieren und latente Machtstrukturen unzureichend zu
+erfassen (Tai et al., 2024).
+
+Die Intercoder-Reliabilität wird als zentrales Gütekriterium
+ausgewiesen. Vor der unabhängigen Kodierung fand eine
+Kalibrierungsphase am Referenzcluster Mitte statt, in der beide
+Kodiererinnen geteilte Entscheidungsregeln entwickelten,
+insbesondere zur Abgrenzung zwischen Diversitätsanerkennung
+(Code 2.1) und machtkritischem Abbau von Benachteiligung (Code 2.4).
+Die Doppelkodierung am Cluster SüdOst ergab Cohens κ = 0,71 für die
+Relevanzentscheidung und κ = 0,83 für die Code-Zuordnung — nach
+Landis & Koch (1977) im Bereich *gut* bis *sehr gut*. Die
+Auswertungsstrategie folgt drei analytischen Dimensionen (D1:
+explizite vs. implizite Verankerung; D2: konzeptuelle Tiefe über die
+Levinson-Typologie; D3: Cluster-Vergleich), die in § 3 operationell
+entfaltet werden.
 
 # 3. Datenaufbereitung und Auswertung
 
-<!--
-Ziel: Den Weg von den Quelldokumenten zur Auswertung in ~500 W.
-schildern. Wieder: OPERATION, nicht Ergebnis.
+Das Sample umfasst N = 4 Curricula und entspricht einer Vollerhebung
+der öffentlichen österreichischen Bachelor-Curricula für
+Elementarpädagogik. Die Pädagogischen Hochschulen sind in
+Entwicklungsverbünde organisiert, sodass ein Curriculum jeweils
+mehrere Standorte abdeckt. Abgedeckt sind elf Pädagogische
+Hochschulen (Cluster West, Mitte, SüdOst) sowie die FH Campus Wien
+als vierter Cluster. Die Qualitätsprüfung der Dokumente orientiert
+sich an den vier Kriterien nach Morgan (2022): Authentizität
+(offiziell akkreditierte Originaldokumente), Glaubwürdigkeit
+(rechtlich bindende Studienpläne), Repräsentativität (Vollerhebung
+durch Cluster-Struktur) und Bedeutung (Curricula definieren den
+normativen Rahmen der Ausbildung).
 
-Bausteine:
-- Korpus: Vollerhebung der N=4 Bachelor-Curricula für Elementar-
-  pädagogik im öffentlichen Sektor Österreichs. Pädagogische
-  Hochschulen sind in Entwicklungsverbünde organisiert (3 Cluster
-  West/Mitte/SüdOst, 11 PHs) plus FH Campus Wien.
-- Qualitätsprüfung der Dokumente nach den vier Kriterien nach
-  Morgan (2022): Authentizität, Glaubwürdigkeit, Repräsentativität,
-  Bedeutung.
-- Datenaufbereitung: PDF → Text-Extraktion (Flask-Webapplikation,
-  eigens entwickelt) → keywordbasierte Vorsuche → Kontextfenster
-  ±200 Zeichen → vorläufige Code-Zuordnung. Ergebnis: N=1.626
-  Rohfindings, davon 1.061 nach CEiL als relevant klassifiziert
-  (Validierungsquote dokumentiert, ergebnisoffen).
-- Auswertungsprozess (zweistufig):
-  1. Kalibrierungsphase: Beide Kodiererinnen kodieren gemeinsam
-     ein Referenzcluster (Mitte) und entwickeln geteilte
-     Entscheidungsregeln, insbesondere zur Unterscheidung von
-     Code 2.1 (Anerkennung Diversität) und Code 2.4 (Abbau
-     Benachteiligung).
-  2. Unabhängige Kodierung der übrigen Cluster; Intercoder-
-     Reliabilität am Cluster SüdOst bestimmt; Konsenskonferenz
-     zur Klärung der 52 nicht-übereinstimmenden Fälle.
-- Dreidimensionale Auswertung:
-  - D1 operationalisiert über das Verhältnis Code-1.1- zu
-    impliziten Findings pro Cluster.
-  - D2 über die an Levinson et al. (2022) angelehnte Zuordnung
-    der Codes zu den drei Gerechtigkeitsstufen (formale
-    Gleichheit: 2.1/2.2; kompensatorisch: 2.3/2.6; transformativ:
-    2.4); Querschnittscodes 2.5/2.7 separat ausgewiesen.
-  - D3 über deskriptiv-komparative Profile auf Code-Ebene
-    (PH vs. FH, PH untereinander).
-- Reproduzierbarkeit: Alle Auswertungsskripte greifen auf dieselbe
-  `export_clean.csv` pro Cluster zu; Feld `confirmed_code` ist
-  kanonisch; 62 automatisierte Tests sichern Datenkonsistenz.
--->
+Die Datenaufbereitung erfolgt zweistufig. In einem ersten,
+automatisierten Schritt extrahiert eine eigens entwickelte
+Flask-Webapplikation alle Textstellen aus den Curriculum-PDFs, in
+denen ein Keyword des Kategoriensystems auftritt. Jedes Finding wird
+mit einem Kontextfenster von ±200 Zeichen und einer vorläufigen
+Code-Zuordnung versehen. In der Vorsuche entstehen insgesamt 1.626
+Rohfindings, von denen im nachfolgenden CEiL-Schritt 1.061 als
+inhaltlich relevant für die Forschungsfrage klassifiziert werden.
+Die übrigen 565 Findings entfallen auf Treffer in generischen
+Kontexten — etwa Modulüberschriften oder Literaturverzeichnisse —
+und werden dokumentiert, aber nicht weiter ausgewertet.
+
+Der Validierungsprozess ist selbst zweistufig organisiert: Eine
+Kalibrierungsphase führten beide Kodiererinnen gemeinsam am
+Referenzcluster Mitte durch; dabei entstanden geteilte
+Entscheidungsregeln, die im Kodiermanual dokumentiert sind.
+Anschließend wurden die übrigen drei Cluster unabhängig kodiert. Die
+Intercoder-Reliabilität wurde am Cluster SüdOst an der
+Gesamtstichprobe bestimmt; nicht-übereinstimmende Fälle wurden in
+einer Konsenskonferenz aufgelöst. Die so bereinigten Kodierungen
+gehen in die Spalte `confirmed_code` ein, die für alle folgenden
+Auswertungen kanonisch ist.
+
+Die Auswertung folgt drei komplementären Dimensionen. Die **erste
+Dimension** operationalisiert das Verhältnis expliziter zu impliziter
+curricularer Verankerung; sie quantifiziert, welcher Anteil der
+relevanten Findings Gerechtigkeitsbegriffe direkt nennt (Code 1.1)
+versus welcher Anteil Chancengerechtigkeit über pädagogische
+Handlungskompetenzen (Codes 2.1–2.7) adressiert. Die **zweite
+Dimension** ordnet die Codes einer an Levinson et al. (2022)
+angelehnten dreistufigen Typologie zu: formale Gleichheit
+(Codes 2.1, 2.2), kompensatorische Gerechtigkeit (Codes 2.3, 2.6)
+und transformative Gerechtigkeit (Code 2.4). Die Querschnittscodes
+2.5 (Bildungspartnerschaft) und 2.7 (professionelle Haltung) werden
+separat ausgewiesen, da sie orthogonal zu den drei
+Gerechtigkeitsstufen liegen. Die **dritte Dimension** vergleicht die
+Cluster deskriptiv-komparativ auf Code-Ebene und adressiert das
+strukturelle Verhältnis zwischen Pädagogischen Hochschulen und
+Fachhochschule.
+
+Die Reproduzierbarkeit der Auswertung ist organisatorisch gesichert:
+Alle Auswertungsskripte greifen auf dieselbe bereinigte Export-CSV
+pro Cluster zu, ausschließlich über das Feld `confirmed_code`. Eine
+Test-Suite mit 62 automatisierten Regressionstests prüft
+Datenkonsistenz und Ergebnisstabilität.
 
 # Literaturverzeichnis
 
-<!--
-Durchgang A: Nur Literatur-Stubs. APA-Formatierung in Durchgang C.
-Primärliteratur (im Abstrakt zitiert):
--->
-
-- Gomolla, M., & Radtke, F.-O. (2009). *Institutionelle Diskriminierung*. VS Verlag.
-- Kuckartz, U., & Rädiker, S. (2022). *Qualitative Inhaltsanalyse*. Beltz Juventa.
+- Gomolla, M., & Radtke, F.-O. (2009). *Institutionelle Diskriminierung: Die Herstellung ethnischer Differenz in der Schule* (3. Aufl.). VS Verlag für Sozialwissenschaften.
+- Kuckartz, U., & Rädiker, S. (2022). *Qualitative Inhaltsanalyse: Methoden, Praxis, Computerunterstützung* (5. Aufl.). Beltz Juventa.
 - Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data. *Biometrics, 33*(1), 159–174.
 - Levinson, M., Geron, T., & Brighouse, H. (2022). Conceptions of educational equity. *AERA Open, 8*, 1–14.
 - Morgan, H. (2022). Conducting a qualitative document analysis. *The Qualitative Report, 27*(1), 64–77.
-- OECD. (2018). *Equity in education: Breaking down barriers to social mobility*. OECD Publishing.
-- Stojanov, K. (2011). *Bildungsgerechtigkeit*. VS Verlag.
+- OECD. (2018). *Equity in education: Breaking down barriers to social mobility* (PISA). OECD Publishing.
+- Stojanov, K. (2011). *Bildungsgerechtigkeit: Rekonstruktionen eines umkämpften Begriffs*. VS Verlag für Sozialwissenschaften.
 - Tai, R. H., Bentley, L. R., Xia, X., Sitt, J. M., Fankhauser, S. C., Chicas-Mosier, A. M., & Monteith, B. G. (2024). An examination of the use of large language models to aid analysis of textual data. *International Journal of Qualitative Methods, 23*, 1–12.
-- Vollmann, P., & Fageth, B. (2022). Thesen zum Bachelorstudium Elementarpädagogik. *Pädagogische Horizonte, 6*(1), 1–20.
+- Vollmann, P., & Fageth, B. (2022). Thesen zum Bachelorstudium Elementarpädagogik an der Pädagogischen Hochschule der Diözese Linz. *Pädagogische Horizonte, 6*(1), 1–20.
