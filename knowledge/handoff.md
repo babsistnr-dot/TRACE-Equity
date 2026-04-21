@@ -10,7 +10,7 @@ Quelle der Wahrheit für Details: jeweils verlinkte Dokumente.
 TRACE-Equity untersucht, wie Chancengerechtigkeit in den Curricula der
 österreichischen Elementarpädagogik-Bachelorstudiengänge verankert ist
 (N=4 Cluster, 1.626 Findings, 1.061 relevant, alle CEiL-validiert).
-Methodik: QCA + RTA mit Keyword-basierter Web-App und Expert-in-the-Loop;
+Methodik: QCA mit deduktivem Kategoriensystem, Keyword-basierter Web-App und Expert-in-the-Loop (CEiL);
 Auswertung über 3 Dimensionen (Explizit/Implizit, Levinson-Tiefe, Cluster-Vergleich).
 
 **Deliverables SS2026:**
@@ -72,7 +72,7 @@ Pfad: `ergebnisse/cluster_*/export_clean.csv`
 |---|---|
 | `knowledge/coding_manual.md` | **Single Source of Truth** — 233 Keywords, 8 Codes |
 | `knowledge/expose.md` | Akademische Grundlage, Levinson-Mapping (Tabelle 2) |
-| `knowledge/methodology.md` | QCA + RTA Theorie |
+| `knowledge/methodology.md` | QCA-Theorie |
 | `knowledge/requirements.md` | App + Analyse-Anforderungen |
 | `knowledge/design.md` | Visualisierungsentscheidungen (1 Kernviz: Levinson-Heatmap) |
 | `knowledge/semester_plan_ss2026.md` | Roadmap, Schritte 0–11 |

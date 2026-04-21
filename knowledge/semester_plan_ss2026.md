@@ -127,7 +127,7 @@ Anhang: Weitere Visualisierungen, Kodiermanual-Auszug (extra)
 - § 3 Datenaufbereitung + Auswertung (~1 S.)
 - Literaturverzeichnis außerhalb des Seitenbudgets
 
-**Zentrale Begriffe (§ 1 + § 2):** Chancengleichheit vs. Chancengerechtigkeit, Educational Equity, Levinson-Typologie (in Anlehnung), QCA, RTA, CEiL, Intercoder-Reliabilität.
+**Zentrale Begriffe (§ 1 + § 2):** Chancengleichheit vs. Chancengerechtigkeit, Educational Equity, Levinson-Typologie (in Anlehnung), QCA, CEiL, Intercoder-Reliabilität.
 
 **Quellen (read-only):** `knowledge/expose.md`, `knowledge/methodology.md`, `bericht/forschungsbericht.md` (Formulierungsparallelen), `ergebnisse/analyse_methodik.md` (Strategie, nicht Ergebnisse), `ergebnisse/intercoder_reliability.md`.
 

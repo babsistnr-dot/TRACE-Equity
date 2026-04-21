@@ -270,7 +270,7 @@ cleaned_df.to_csv('TRACE_Equity_Export_20251118_173805_cleaned.csv')
 **Fokus:** Explizite Verankerung von Chancengleichheit
 
 **Methodik:**
-- Reflexive Thematische Analyse (RTA)
+- Qualitative Inhaltsanalyse (QCA) mit deduktivem Kategoriensystem
 - Semantische Differenzierung
 - Kontextkategorisierung
 - Capability Approach Mapping

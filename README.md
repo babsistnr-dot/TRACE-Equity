@@ -22,7 +22,7 @@ Die Akademisierung der Elementarpädagogik in Österreich (seit 2018) ist ein wi
 
 ## Methodischer Ansatz
 
-**Qualitative Inhaltsanalyse (QCA)** mit **Reflexiver Thematischer Analyse (RTA)**:
+**Qualitative Inhaltsanalyse (QCA)**:
 
 1. Analyse existierender Curriculum-Dokumente (PDF)
 2. LLM-unterstützte Vor-Codierung (automatische Textanalyse)

@@ -75,9 +75,6 @@ Bausteine:
 - Qualitative Inhaltsanalyse (QCA) nach Kuckartz & Rädiker (2022)
   als methodisches Rückgrat: strukturiert, regelgeleitet,
   intersubjektiv nachvollziehbar.
-- Ergänzend reflexive thematische Analyse (RTA) — latente
-  Bedeutungen und curriculare Deutungsmuster werden interpretativ
-  erschlossen; keine rein lexikalische Klassifikation.
 - Deduktives Kategoriensystem aus dem Kodiermanual:
   8 Codes (Code 1.1 direkte Nennung; Codes 2.1–2.7 pädagogische
   Handlungskompetenzen). 233 Keywords.

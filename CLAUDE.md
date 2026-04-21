@@ -9,7 +9,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### Research Methodology
 
 The project combines:
-- **Qualitative Content Analysis (QCA)** with **Reflexive Thematic Analysis (RTA)**
+- **Qualitative Content Analysis (QCA)** with deductive category system
 - **Keyword-based text analysis** with manual validation (Version A - implemented)
 - **Critical Expert in the Loop (CEiL)**: Mandatory human validation of all findings
 - **Promptotyping**: Structured prompt engineering methodology combining Requirements Engineering, User-Centred Design, and Scholar-Centred Design principles
@@ -124,7 +124,7 @@ TRACE-Equity/
 │   ├── coding_manual.md                      # REFERENCE — SINGLE SOURCE OF TRUTH, 233 keywords
 │   ├── requirements.md                       # REQUIREMENTS — Funktionale Anforderungen
 │   ├── expose.md                             # KNOWLEDGE — Akademisches Exposé (finale Version)
-│   ├── methodology.md                        # KNOWLEDGE — QCA + RTA Methodik
+│   ├── methodology.md                        # KNOWLEDGE — QCA-Methodik
 │   ├── journal.md                            # JOURNAL — Entwicklungsprotokoll
 │   ├── semester_plan_ss2026.md               # PLAN — Roadmap SS2026
 │   └── arbeitsaufteilung.md                  # PLAN — Teamaufteilung SS2026
@@ -374,13 +374,13 @@ Alle 4 Cluster sind analysiert, validiert und bereinigt (N=1.626 Findings, davon
 - **Consistent coding**: Same keyword list applied across all curricula
 - **Expert validation**: Manual review of all findings (CEiL principle)
 
-### Reflexive Thematic Analysis (RTA)
+### Interpretive Flexibility within QCA
 
-The implementation allows for RTA principles:
+The implementation supports interpretive validation:
 1. **Multiple coding**: Single passage can be relevant for multiple codes
-2. **Evolving interpretation**: Notes field captures qualitative insights
+2. **Evolving interpretation**: Notes field captures qualitative insights during validation
 3. **Flexibility**: Code can be changed during validation
-4. **Researcher reflexivity**: Manual validation ensures expert judgment
+4. **Expert judgment**: Manual validation ensures human sense-making
 
 ### Critical Considerations
 
@@ -484,7 +484,7 @@ The analysis is grounded in:
 - **[knowledge/requirements.md](knowledge/requirements.md)** — REQUIREMENTS: Web-App (WS25) + Analyse (SS26)
 - **[knowledge/design.md](knowledge/design.md)** — DESIGN: Visualisierungsentscheidungen
 - **[knowledge/expose.md](knowledge/expose.md)** — KNOWLEDGE: Akademisches Exposé (finale Version)
-- **[knowledge/methodology.md](knowledge/methodology.md)** — KNOWLEDGE: QCA + RTA Methodik
+- **[knowledge/methodology.md](knowledge/methodology.md)** — KNOWLEDGE: QCA-Methodik
 - **[knowledge/journal.md](knowledge/journal.md)** — JOURNAL: Entwicklungsprotokoll
 - **[knowledge/semester_plan_ss2026.md](knowledge/semester_plan_ss2026.md)** — PLAN: Roadmap SS2026 (Schritte 0–11)
 - **[knowledge/arbeitsaufteilung.md](knowledge/arbeitsaufteilung.md)** — PLAN: Teamaufteilung SS2026

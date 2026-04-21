@@ -4,7 +4,7 @@ Dieses Dokument definiert die Codierregeln zur Beantwortung der Forschungsfrage,
 
 ## Methodischer Hinweis: Mehrfachcodierung
 
-Eine Textstelle kann mehrere Codes gleichzeitig erhalten, wenn sie verschiedene Dimensionen von Chancengleichheit anspricht. Dies entspricht dem Prinzip der Reflexiven Thematischen Analyse (RTA), bei der Bedeutungsebenen sich überlagern können.
+Eine Textstelle kann mehrere Codes gleichzeitig erhalten, wenn sie verschiedene Dimensionen von Chancengleichheit anspricht. Bedeutungsebenen können sich überlagern; die Zuordnung erfolgt im CEiL-Verfahren expertengestützt.
 
 Beispiel: Ein Absatz über "inklusive Sprachförderung für mehrsprachige Kinder" könnte gleichzeitig codiert werden als:
 - Code 2.2 (Inklusion & Partizipation)

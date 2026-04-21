@@ -57,25 +57,12 @@ Vier Faktoren werden geprüft, um die Vertrauenswürdigkeit der Studie zu gewäh
 
 ---
 
-## Thematische Analyse (TA)
-
-Die Thematische Analyse (Thematic Analysis) ist aufgrund ihrer Vielseitigkeit eine ideale Methode für die Analyse von Dokumenten. Insbesondere wird die **Reflexive Thematische Analyse (RTA)** empfohlen.
-
-### Kernprozess der Qualitativen Inhaltsanalyse (QCA)
+## Kernprozess der Qualitativen Inhaltsanalyse (QCA)
 
 * Die QCA ist die systematische **Reduktion oder „Kondensation“** des Inhalts.
 * Sie muss **kontextuell** sein, d. h. sie stützt sich auf den Kontext, aus dem die Informationen extrahiert werden, um den Daten Bedeutung zu verleihen.
 * Sie ist ein systematischer, prozessgesteuerter Ansatz.
-
----
-
-## Besonderheiten der Reflexiven Thematischen Analyse (RTA)
-
-1.  **Entwicklung der Codierung:** Der Codierungsprozess ist nicht zu Beginn festgelegt, sondern entwickelt sich (evolves).
-2.  **Flexibilität:** Codes können geteilt oder umbenannt werden, wenn dies die sich entwickelnde Interpretation des Forschers besser widerspiegelt.
-3.  **Latente Bedeutung:** Die RTA zielt darauf ab, unerwartete Bedeutungen aufzudecken, anstatt die Daten nur zusammenzufassen.
-4.  **Einbeziehung der Subjektivität:** Die Subjektivität des Forschers wird als Ressource und nicht als Problem betrachtet. Reflexivität ist notwendig, um zu untersuchen, wie die eigenen Werte, die Geschichte und die getroffenen Entscheidungen die Ergebnisse beeinflussen.
-5.  **Themenkonstruktion:** Die Interpretation der Daten erfolgt durch die Annahmen und das wissenschaftliche Wissen des Forschers und führt zu Themen, die Muster gemeinsamer Bedeutung widerspiegeln.
+* In TRACE-Equity wird die QCA mit einem **deduktiven Kategoriensystem** (233 Keywords, 8 Codes) kombiniert und durch **Critical Expert in the Loop (CEiL)** expertengestützt validiert. Eine Reflexive Thematische Analyse (RTA) wurde nicht angewandt.
 
 ---
 
