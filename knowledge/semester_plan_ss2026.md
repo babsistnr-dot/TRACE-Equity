@@ -5,8 +5,9 @@
 TRACE-Equity analysiert Chancengerechtigkeit in österreichischen Elementarpädagogik-Curricula (N=4). Alle 4 Cluster sind analysiert und validiert (N=1.626 Findings, davon 1.061 relevant). Dieses Semester: alle Forschungsfragen beantworten.
 
 **Deliverables:**
-- Forschungsbericht (max. 8 Seiten + Anhang), PDF, Abgabe **29.06.2026**
-- Postersession (10 Min), Termin **26.06.2026**
+- **Abstrakt** (max. 3 Seiten) — Methodenskizze, theoretische Perspektive + Literatur, Skizze der Datenaufbereitung und -auswertung. Abgabetermin: **vor 29.06.2026** (konkret mit LV-Leitung zu klären).
+- **Forschungsbericht** (max. 8 Seiten + Anhang), PDF, Abgabe **29.06.2026**
+- **Postersession** (10 Min), Termin **26.06.2026**
 
 **Team:** Babsi + Laura, beide aktiv. Claude Code: Analyse + Textentwurf iterativ.
 
@@ -117,6 +118,23 @@ Anhang: Weitere Visualisierungen, Kodiermanual-Auszug (extra)
 **Kernvisualisierung im Hauptteil:** Levinson-Heatmap (beantwortet D2 + D3 gleichzeitig)
 **Anhang:** Detailtabellen, weitere Grafiken, Code-Verteilungen pro Cluster
 
+### Schritt 9.5: Abstrakt (3 Seiten)
+**Arbeitsauftrag (LV):** Methodenskizze (zentrale Begriffe), Literaturreferenzen zur theoretischen Perspektive, Skizze der methodischen Herangehensweise (Aufbereitung + Auswertung). **Keine Ergebnisse.**
+
+**Struktur (Markdown, 3 S. ≈ 1.500 Wörter):**
+- § 1 Theoretische Perspektive + Literaturreferenzen (~1 S.)
+- § 2 Methodenskizze + zentrale Begriffe (~1 S.)
+- § 3 Datenaufbereitung + Auswertung (~1 S.)
+- Literaturverzeichnis außerhalb des Seitenbudgets
+
+**Zentrale Begriffe (§ 1 + § 2):** Chancengleichheit vs. Chancengerechtigkeit, Educational Equity, Levinson-Typologie (in Anlehnung), QCA, RTA, CEiL, Intercoder-Reliabilität.
+
+**Quellen (read-only):** `knowledge/expose.md`, `knowledge/methodology.md`, `bericht/forschungsbericht.md` (Formulierungsparallelen), `ergebnisse/analyse_methodik.md` (Strategie, nicht Ergebnisse), `ergebnisse/intercoder_reliability.md`.
+
+**Iterativ:** Durchgang A (Skelett) → B (Rohtext) → C (Feinschliff + Wortzahl).
+
+**Output:** `bericht/abstrakt.md`
+
 ### Schritt 10: Poster
 **Was:** Poster-Entwurf für 10-Min-Postersession
 **Inhalt:** Forschungsfrage, Methode (kurz), Levinson-Heatmap, Kernbefunde, Fazit
@@ -187,7 +205,9 @@ Anhang: Weitere Visualisierungen, Kodiermanual-Auszug (extra)
 | KW 15 (April) | ✅ Schritt 5 (Code 1.1 Deep Dive) | Claude |
 | KW 15-17 (April) | Schritte 6-8 (Levinson, Vergleich, Zitate) | Claude |
 | KW 19-23 (Mai-Juni) | Schritt 9: Forschungsbericht iterativ | Claude + Team |
+| KW 17-18 (Apr-Mai) | Schritt 9.5: Abstrakt (3 S., vor Bericht abgeben) | Claude + Team |
 | KW 25 (Juni) | Schritt 10: Poster | Claude + Team |
+| TBD (vor 29.06.) | Abgabe Abstrakt (3 S.) | Team |
 | 26.06. | Postersession | Babsi + Laura |
 | 29.06. | Abgabe Forschungsbericht (PDF) | Team |
 

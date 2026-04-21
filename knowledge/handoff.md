@@ -13,8 +13,10 @@ TRACE-Equity untersucht, wie Chancengerechtigkeit in den Curricula der
 Methodik: QCA + RTA mit Keyword-basierter Web-App und Expert-in-the-Loop;
 Auswertung über 3 Dimensionen (Explizit/Implizit, Levinson-Tiefe, Cluster-Vergleich).
 
-**Deliverables SS2026:** Forschungsbericht (PDF/MD, max. 8 S. + Anhang,
-Abgabe **29.06.2026**) + Postersession (**26.06.2026**).
+**Deliverables SS2026:**
+- **Abstrakt** (MD, max. 3 S.) — Methodenskizze + Theorierahmen + Auswertungs-Skizze. Abgabetermin vor 29.06.2026 (TBD bei LV-Leitung).
+- **Forschungsbericht** (PDF/MD, max. 8 S. + Anhang), Abgabe **29.06.2026**.
+- **Postersession** (**26.06.2026**).
 
 ---
 
@@ -32,6 +34,7 @@ Abgabe **29.06.2026**) + Postersession (**26.06.2026**).
 | 7 | Cross-Cluster-Vergleich (D3) | ✅ |
 | 8 | Zitate-Sammlung pro Cluster | ✅ |
 | 9 | Forschungsbericht | 🟡 Durchgang A + B + C-Feinschliff fertig, **Schlussprüfung ausstehend** |
+| 9.5 | Abstrakt (3 S., separate LV-Abgabe) | ⏳ |
 | 10 | Poster | ⏳ |
 | 11 | README/CLAUDE.md aktualisieren | ⏳ |
 
