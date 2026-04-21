@@ -1,4 +1,4 @@
-# TRACE-Equity — Handoff (Stand: 2026-04-15)
+# TRACE-Equity — Handoff (Stand: 2026-04-21)
 
 Kompakter Übergabestand für Team / nächste Session / neue Mitwirkende.
 Quelle der Wahrheit für Details: jeweils verlinkte Dokumente.
@@ -31,11 +31,11 @@ Abgabe **29.06.2026**) + Postersession (**26.06.2026**).
 | 6 | Levinson-Mapping (D2) | ✅ |
 | 7 | Cross-Cluster-Vergleich (D3) | ✅ |
 | 8 | Zitate-Sammlung pro Cluster | ✅ |
-| 9 | Forschungsbericht | 🟡 Durchgang A + B fertig, **C ausstehend** |
+| 9 | Forschungsbericht | 🟡 Durchgang A + B + C-Feinschliff fertig, **Schlussprüfung ausstehend** |
 | 10 | Poster | ⏳ |
 | 11 | README/CLAUDE.md aktualisieren | ⏳ |
 
-Letzter Commit: `195f373` (Step 9B Durchgang B), gepusht zu `origin/master`.
+Letzter Commit: `c344eb8` (Step 9C Levinson-Mapping als Adaption), gepusht zu `origin/master`.
 
 ---
 
@@ -107,14 +107,22 @@ python -m pytest tests/ -v   # aus Projekt-Root
 - Pfad: `bericht/forschungsbericht.md` (Markdown, kein PDF-Export gewünscht)
 - Kernvisualisierung: `bericht/abbildungen/levinson_heatmap.png`
 - **Stand:** Durchgang A (Skelett) ✅, Durchgang B (Rohtext) ✅,
-  Durchgang C (Feinschliff: auf 8 S. kürzen, Layout glätten) **offen**
+  Durchgang C (Feinschliff) ✅ — inhaltliche Schlussprüfung durch Team ausstehend
 - Struktur: Einleitung (0,5) – Methodik (1,5) – Ergebnisse 4× (4) – Diskussion (1,5) – Limitationen (0,5) + Literatur + Anhang A.1–A.4
+- **9C-Arbeiten (Commits `d77e73a` → `c344eb8`):**
+  - Zitat-Accuracy geprüft + korrigiert: Tai et al. (2024), OECD (2018),
+    Gomolla & Radtke, Stojanov, Morgan (2022), Levinson et al. (2022)
+  - Levinson-Dreistufen-Typologie als Adaption ausgewiesen
+    (Methodik 2.2: „in Anlehnung an Levinson et al. (2022)")
+  - Enumerations-Stil (Erstens/Zweitens) in 3.3, 4.1, 4.2, 5 in Fließprosa
 
 ---
 
 ## Nächste Schritte (Reihenfolge)
 
-1. **Schritt 9 Durchgang C** — Wortzahl prüfen, kürzen, Zitate finalisieren, Literatur sortieren. Commit `9C`.
+1. **Schritt 9 Schlussprüfung** — Team-Review des finalisierten Berichts,
+   Wortzahl-Check, ggf. letzte Kürzungen. Restliche Zitate (Mayring,
+   Hsieh & Shannon, Landis & Koch) bei Bedarf gegenprüfen.
 2. **Schritt 10 Poster** — Inhalt: HFF, Methode kompakt, Levinson-Heatmap, Kernbefunde, Fazit. Format mit Team klären.
 3. **Schritt 11 Doku** — `ergebnisse/README.md` und `CLAUDE.md` aktualisieren (alte Zahlen / Pfade).
 4. **Abgabe 29.06.2026** — finale Konvertierung MD → Abgabeformat durch Team.
@@ -138,4 +146,4 @@ python -m pytest tests/ -v   # aus Projekt-Root
 
 ---
 
-**Erstellt:** 2026-04-15 | **Stand:** nach Commit `195f373`
+**Erstellt:** 2026-04-15 | **Aktualisiert:** 2026-04-21 | **Stand:** nach Commit `c344eb8`
