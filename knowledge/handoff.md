@@ -34,11 +34,11 @@ Auswertung über 3 Dimensionen (Explizit/Implizit, Levinson-Tiefe, Cluster-Vergl
 | 7 | Cross-Cluster-Vergleich (D3) | ✅ |
 | 8 | Zitate-Sammlung pro Cluster | ✅ |
 | 9 | Forschungsbericht | 🟡 Durchgang A + B + C-Feinschliff fertig, **Schlussprüfung ausstehend** |
-| 9.5 | Abstrakt (3 S., separate LV-Abgabe) | ⏳ |
+| 9.5 | Abstrakt (3 S., separate LV-Abgabe) | 🟡 Durchgang A + B fertig (~1.290 W.), **Durchgang C (Feinschliff + APA) ausstehend** |
 | 10 | Poster | ⏳ |
 | 11 | README/CLAUDE.md aktualisieren | ⏳ |
 
-Letzter Commit: `c344eb8` (Step 9C Levinson-Mapping als Adaption), gepusht zu `origin/master`.
+Letzter Commit: `a1983d2` (Step 9.5B Abstrakt — Rohtext), gepusht zu `origin/master`.
 
 ---
 
@@ -121,14 +121,36 @@ python -m pytest tests/ -v   # aus Projekt-Root
 
 ---
 
+## Abstrakt (Schritt 9.5)
+
+- Pfad: `bericht/abstrakt.md` (Markdown, 3 Abschnitte + Literaturverzeichnis)
+- Umfang: 3 Seiten (Richtwert ≈ 1.500 Wörter, aktuell **~1.290 W.**)
+- Struktur: § 1 Theoretische Perspektive · § 2 Methodenskizze ·
+  § 3 Datenaufbereitung + Auswertung · Literaturverzeichnis (9 APA-Einträge)
+- **Abgrenzung zum Bericht:** Keine Ergebnisse (keine Levinson-Verteilung,
+  keine Code-1.1-Zähler, keine Cluster-Befunde). Erlaubt: Korpus-Kenndaten
+  (N=4, 1.626 / 1.061 / 565 Findings) und ICR-Werte (κ=0,71 / 0,83).
+- **Stand:** Durchgang A (Skelett, `cd95ef2`) ✅, Durchgang B (Rohtext, `a1983d2`) ✅,
+  Durchgang C (Feinschliff + Wortzahl + APA) ⏳
+- **Methodik-Korrektur (`0b778f2`):** RTA-Claims aus allen Promptotyping-Docs
+  entfernt — TRACE-Equity nutzt ausschließlich QCA mit deduktivem
+  Kategoriensystem + CEiL, keine Reflexive Thematische Analyse.
+- Offen: Abgabetermin bei LV-Leitung klären (TBD, vor 29.06.2026).
+
+---
+
 ## Nächste Schritte (Reihenfolge)
 
-1. **Schritt 9 Schlussprüfung** — Team-Review des finalisierten Berichts,
+1. **Schritt 9.5C Abstrakt — Feinschliff** — Wortzahl-Check (≤ 1.500 W.),
+   APA-Konformität der 9 Einträge (Spot-Check Bandzahlen / Verlage /
+   Auflagen), Begriffsdichte in § 2 prüfen, Kreuzabgleich mit Bericht
+   (κ-Werte, N, „in Anlehnung an"-Formulierung).
+2. **Schritt 9 Schlussprüfung** — Team-Review des finalisierten Berichts,
    Wortzahl-Check, ggf. letzte Kürzungen. Restliche Zitate (Mayring,
    Hsieh & Shannon, Landis & Koch) bei Bedarf gegenprüfen.
-2. **Schritt 10 Poster** — Inhalt: HFF, Methode kompakt, Levinson-Heatmap, Kernbefunde, Fazit. Format mit Team klären.
-3. **Schritt 11 Doku** — `ergebnisse/README.md` und `CLAUDE.md` aktualisieren (alte Zahlen / Pfade).
-4. **Abgabe 29.06.2026** — finale Konvertierung MD → Abgabeformat durch Team.
+3. **Schritt 10 Poster** — Inhalt: HFF, Methode kompakt, Levinson-Heatmap, Kernbefunde, Fazit. Format mit Team klären.
+4. **Schritt 11 Doku** — `ergebnisse/README.md` und `CLAUDE.md` aktualisieren (alte Zahlen / Pfade).
+5. **Abgabe 29.06.2026** — finale Konvertierung MD → Abgabeformat durch Team.
 
 ---
 
@@ -149,4 +171,4 @@ python -m pytest tests/ -v   # aus Projekt-Root
 
 ---
 
-**Erstellt:** 2026-04-15 | **Aktualisiert:** 2026-04-21 | **Stand:** nach Commit `c344eb8`
+**Erstellt:** 2026-04-15 | **Aktualisiert:** 2026-04-21 | **Stand:** nach Commit `a1983d2`
