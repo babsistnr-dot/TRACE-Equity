@@ -73,44 +73,69 @@ erst nach Stabilisierung von § 3–7 sinnvoll. Ziel: ~250 W. -->
 
 # 3. Theorie
 
-<!-- PARKING C4: Dieses Kapitel wird in Commit C4 neu geschrieben.
-Rohmaterial steht unten. Zielumfang ~500 W. Kernachsen:
-(a) Chancengleichheit vs. Chancengerechtigkeit (Stojanov 2011)
-(b) Educational Equity als bildungspolitische Rahmung (OECD 2018)
-(c) Levinson-Typologie equality → equity → liberation als theoretisches
-    Raster (mit „in Anlehnung an"-Formel)
-(d) Gomolla & Radtke (2009) als organisationssoziologische Ergänzung
-    (institutionelle Diskriminierung, „Gleichbehandlung von Ungleichen")
+Die theoretische Rahmung der Studie stützt sich auf drei Stränge, die in
+einer dreistufigen analytischen Typologie zusammengeführt werden. Den
+bildungspolitischen Ausgangspunkt bildet die OECD-Rahmung früher
+Bildung als Equity-Faktor: Nicht die soziale Herkunft, sondern das
+Potenzial eines Kindes soll den Bildungsverlauf bestimmen — ein
+outcome-orientierter Anspruch, der Chancengleichheit von bloßer
+Zugangsgleichheit abhebt und aktive Kompensation struktureller
+Ungleichheit mitdenkt (OECD, 2018). Für die Ausbildung folgt daraus,
+dass Elementarpädagog:innen auf eine pluralisierte und ungleichheits-
+belastete Bildungslandschaft vorbereitet werden müssen — ein
+Professionalisierungsanspruch, der seit der Einführung der
+Bachelorstudiengänge 2018 (Vollmann & Fageth, 2022) an die Curricula
+adressiert ist. Die Frühpädagogik trägt dabei eine besondere
+Verantwortung, weil Bildungsbiografien in dieser Phase prägend
+grundgelegt werden und spätere Kompensation aufwendiger bleibt als
+präventive Strukturen.
 
-Nach Abschluss C4 dürfen Stojanov, Levinson, Gomolla & Radtke in § 5
-(Ergebnisse & Diskussion) nur noch RÜCKBEZÜGLICH zitiert werden — keine
-Primärdefinitionen doppelt.
--->
+Begrifflich trennt die Studie konsequent zwischen Chancengleichheit und
+Chancengerechtigkeit. Chancengleichheit adressiert formale
+Zugangsgleichheit; Chancengerechtigkeit zielt auf substantielle
+Teilhabe und setzt eine aktive Kompensation ungleicher Ausgangslagen
+voraus. Stojanov (2011) rekonstruiert dieses Spannungsfeld als
+Konkurrenz zwischen verteilungs-, teilhabe- und
+anerkennungsorientierten Gerechtigkeitsverständnissen; insbesondere
+anerkennungstheoretische Perspektiven beanspruchen einen normativen
+Vorrang, sind in der bildungspraktischen Operationalisierung jedoch
+weniger präsent. Auf struktureller Ebene ergänzen Gomolla und Radtke
+(2009) diesen Rahmen um eine organisationssoziologische Perspektive:
+Formal-neutrale Routinen in Bildungsorganisationen — als
+„Gleichbehandlung von Ungleichen" — lassen soziale und ethnische
+Differenz nicht nur unbearbeitet, sondern stellen sie aktiv mit her.
+Curricular übersetzt heißt das, dass die Abwesenheit expliziter
+Thematisierung von Ungleichheit kein neutraler Zustand ist, sondern
+selbst eine Positionierung. Für die Analyse curricularer
+Verankerungsformen ist deshalb sowohl die Begriffsebene (wird
+Chancengerechtigkeit als Leitprinzip benannt?) als auch die
+Kompetenzebene (welche pädagogischen Antworten auf Ungleichheit werden
+vorgesehen?) einzubeziehen.
 
-*Theoriekapitel folgt in C4.*
-
-**Rohmaterial (wird in C4 synthetisiert, dann hier entfernt):**
-
-> Stojanov (2011) rekonstruiert das Spannungsfeld zwischen verteilungs-,
-> teilhabe- und anerkennungsorientierten Gerechtigkeitsverständnissen,
-> in dem anerkennungstheoretische Perspektiven einen normativen Vorrang
-> beanspruchen. — Aus alter § 4.2.
-
-> Gomolla & Radtke (2009): formal-neutrale Routinen in Bildungs-
-> organisationen („*Gleichbehandlung von Ungleichen*") lassen ethnische
-> Differenz nicht nur unbearbeitet, sondern stellen sie aktiv mit her.
-> — Aus alter § 4.2.
-
-> OECD (2018) formuliert den Anspruch, durch Bildungspolitik soziale
-> Mobilität aktiv zu fördern — eine outcome-orientierte Rahmung, die
-> über anerkennungstheoretische Gerechtigkeitskonzepte (Stojanov, 2011)
-> hinaus erweitert werden muss. — Aus alter § 4.1.
-
-> Levinson, Geron & Brighouse (2022): Progression *equality → equity →
-> liberation*, die in der Studie auf die drei Stufen formale Gleichheit /
-> kompensatorische Gerechtigkeit / transformative Gerechtigkeit
-> übertragen wird (Code-Zuordnung: 2.1+2.2 / 2.3+2.6 / 2.4;
-> Querschnittscodes 2.5 und 2.7 orthogonal). — Aus § 1 + § 2.2.
+Als analytisches Leitraster dient die Equity-Typologie nach Levinson,
+Geron und Brighouse (2022). Die Autor:innen unterscheiden fünf
+Konzeptionen von Educational Equity und ordnen sie entlang einer
+Progression von formaler *equality* über kompensatorische *equity*
+hin zu *liberation*-orientierten Konzepten. In Anlehnung an Levinson
+et al. (2022) wird diese Progression in der vorliegenden Studie zu
+einer dreistufigen Typologie verdichtet: (1) **formale Gleichheit** —
+Zugang und Anerkennung von Vielfalt; (2) **kompensatorische
+Gerechtigkeit** — gezielte Förderung bei ungleichen Ausgangslagen; (3)
+**transformative Gerechtigkeit** — Machtkritik und
+strukturverändernde Perspektive. Die Dreistufigkeit ist eine
+interpretative Adaption und bildet den vollen Auffächerungsgrad der
+Originaltypologie nicht ab; sie operationalisiert aber die für die
+Forschungsfrage zentrale Differenz zwischen formaler Zugangsgleichheit
+und substantiell-transformativer Gerechtigkeit in einer Form, die sich
+auf curriculare Kompetenzbeschreibungen anwenden lässt. Wie die
+Zuordnung zu den acht Codes des Kategoriensystems erfolgt, ist in § 4.2
+dokumentiert. Die Hauptforschungsfrage adressiert vor diesem Hintergrund
+den Übergang zwischen Stufe (1) und den Stufen (2)–(3): Inwiefern
+gehen die Curricula über formale Chancengleichheit hinaus und
+verankern Chancengerechtigkeit als pädagogisches Leitprinzip? Das
+Raster erlaubt, diese Frage nicht nur quantitativ (wie viele Findings
+pro Stufe?), sondern strukturell (welche Stufen werden systematisch
+bedient, welche bleiben Randphänomen?) zu beantworten.
 
 # 4. Empirie
 
