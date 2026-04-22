@@ -407,29 +407,65 @@ Stand 2025/26 sichtbar machen.
 
 # 7. Conclusio, Ausblick und Endzusammenfassung
 
-<!-- PARKING C6: Neu zu verfassen in C6. Zielumfang ~500 W (1 S), als
-drei Unterabschnitte oder drei Absätze:
-  (a) Conclusio (~200 W): HFF-Antwort + theoretische Implikation
-      (Kern aus alter § 4.1 zweiter Absatz)
-  (b) Ausblick (~150 W): Folgeerhebung bei Curriculumsrevision +
-      Lehrveranstaltungsanalyse / Interviewstudie (intendiertes vs.
-      realisiertes Curriculum, Morgan-2022-Anschluss); Kern aus § 5
-      Schluss-Satz
-  (c) Endzusammenfassung (~150 W): funktional ANDERS als Abstract —
-      Bedeutung/Take-home, nicht Design+Befund-Wiederholung
+## 7.1 Conclusio
 
-Kernsatz (Rohmaterial für (a), aus alter § 4.1): „Die Curricula gehen
-punktuell über formale Chancengleichheit hinaus — insbesondere durch
-kompensatorische Förderkonzepte und durch Elemente professioneller
-Haltungsbildung — verankern Chancengerechtigkeit als pädagogisches
-Leitprinzip aber nicht systematisch im Sinne einer transformativen
-Gerechtigkeit."
+Die Hauptforschungsfrage lässt sich differenziert beantworten: Die
+Curricula der österreichischen Elementarpädagogik-Bachelorstudiengänge
+gehen punktuell über formale Chancengleichheit hinaus — insbesondere
+durch kompensatorische Förderkonzepte (Code 2.3, Code 2.6) und durch
+Elemente professioneller Haltungsbildung (Code 2.7) —, sie verankern
+Chancengerechtigkeit als Leitprinzip aber nicht systematisch im Sinne
+einer transformativen Gerechtigkeit. Theoretisch bedeutet das, dass
+die curriculare Operationalisierung auf den ersten beiden Stufen der
+an Levinson et al. (2022) angelehnten Typologie bleibt, während die
+dritte Stufe — machtkritisch und strukturverändernd — nur punktuell
+adressiert wird. Dieses Muster schließt an die von Gomolla und Radtke
+(2009) beschriebene Form institutioneller Neutralität an: Solange
+Curricula das Verhältnis von Bildung und Ungleichheit nicht explizit
+zum Gegenstand machen, reproduzieren sie die Trennung zwischen
+pädagogischer Kompetenz und gesellschaftlicher Strukturfrage. Für die
+anerkennungstheoretische Position Stojanovs (2011) heißt das, dass die
+Curricula zwar Anerkennung von Vielfalt breit entfalten, den
+normativen Vorrang einer substantiellen Teilhabegerechtigkeit
+programmatisch jedoch nicht einholen.
 
-Kernsatz (Rohmaterial für (b), aus § 6.2): Momentaufnahme → Folgeerhebung
-„könnte Veränderungen gegenüber dem hier dokumentierten Stand 2025/26
-sichtbar machen". -->
+## 7.2 Ausblick
 
-*Conclusio, Ausblick und Endzusammenfassung folgen in C6.*
+Die vorliegende Studie erschließt ausschließlich die schriftlich
+verankerte, intendierte Ebene der Ausbildung. Zwei Anschlussstudien
+sind deshalb vordringlich. Erstens wäre nach der nächsten
+Curriculumsrevision eine Folgeerhebung instruktiv, um zu prüfen, ob
+sich die Verschiebung in Richtung transformativer Gerechtigkeit als
+empirischer Trend etabliert. Zweitens bedarf es einer triangulierenden
+Erhebung auf der Ebene des realisierten Curriculums — über
+Lehrveranstaltungsanalysen, Dozierenden- und Studierendeninterviews —
+um zu klären, inwiefern die hier diagnostizierte konzeptuelle Lücke in
+der Lehrpraxis reproduziert oder kompensiert wird (Morgan, 2022). Die
+Befunde können zudem als Ausgangspunkt für einen systematischen
+Vergleich mit internationalen Ausbildungssystemen dienen, die eine
+ausgeprägtere Verankerung transformativer Equity-Konzepte aufweisen.
+Methodisch liegt ein weiteres Anschlusspotenzial in der Erweiterung
+des hier entwickelten Kodiermanuals um LLM-gestützte Vorverdichtung
+latenter Bedeutungen, sofern die Expert-in-the-Loop-Validierung als
+epistemischer Ankerpunkt erhalten bleibt.
+
+## 7.3 Endzusammenfassung
+
+Die Studie liefert erstmals eine systematische empirische Bestands-
+aufnahme, wie Chancengerechtigkeit in den österreichischen Elementar-
+pädagogik-Curricula verankert ist. Ihre Bedeutung liegt weniger in der
+Bestätigung einer vermuteten Schwäche transformativer Gerechtigkeit als
+darin, dass diese Schwäche nun präzise lokalisierbar ist: curricular
+in Code 2.4, institutionell vor allem in den Pädagogischen Hochschulen,
+diskursiv in der Abwesenheit expliziter Begriffsführung. Für die
+Praxis der Hochschulleitungen und Curriculumsentwicklung entsteht daraus
+ein konkreter Gestaltungshorizont; für die elementarpädagogische
+Professionalisierungsforschung eine empirische Referenzgröße, an der
+künftige Revisionen gemessen werden können. Der zentrale Take-home-Befund
+ist damit weniger eine Diagnose als eine Aufforderung: Chancen-
+gerechtigkeit muss, wenn sie mehr sein soll als Gleichheitsrhetorik,
+curricular explizit gemacht und auf allen drei Stufen tragfähig
+operationalisiert werden.
 
 # Literaturverzeichnis
 
