@@ -114,16 +114,6 @@ Primärdefinitionen doppelt.
 
 # 4. Empirie
 
-<!-- PARKING C3: Dieses Kapitel wird in Commit C3 auf ~500 W gekürzt.
-Aktuell sind § 2.1-2.4 (463 W) hier — das ist zu wenig Kürzung, aber
-zuviel Detail für die Position „Empirie". Plan:
-- Datenkorpus (§ 2.1): behalten
-- Kategoriensystem (§ 2.2): kürzen, Details ins Anhang A.1 verschieben
-- CEiL-Verfahren (§ 2.3): behalten (Kernstärke des Designs)
-- ICR-Details (§ 2.4): kürzen auf 2-3 Sätze, Detailtabelle Anhang A.2
-
-Querverweise „(siehe Anhang A.1)" / „(siehe Anhang A.2)" im Haupttext. -->
-
 ## 4.1 Datenkorpus
 
 Das Sample umfasst N = 4 Curricula, was einer Vollerhebung der
@@ -185,14 +175,12 @@ formuliert wurden. Die Intercoder-Reliabilität wurde am Cluster SüdOst
 (n = 272 Findings) bestimmt: Beide Kodiererinnen validierten alle
 Findings unabhängig voneinander.
 
-Die Übereinstimmung liegt für die Relevanz-Entscheidung bei κ = 0,71
-(87,1 % Übereinstimmung) und für die Code-Zuordnung bei κ = 0,83
-(89,7 %) und damit im Bereich *gut* bis *sehr gut* (Landis & Koch, 1977).
-Die höhere Übereinstimmung bei der Code-Zuordnung spiegelt die stärkere
-Strukturiertheit der Kategorien gegenüber der stärker interpretativen
-Relevanz-Entscheidung. Die 52 nicht-übereinstimmenden Fälle wurden in
-einer Konsenskonferenz bereinigt; die Ergebnisse flossen in das Feld
-`confirmed_code` ein. Details finden sich in Anhang A.2.
+Die Übereinstimmung liegt bei κ = 0,71 für die Relevanz-Entscheidung
+und κ = 0,83 für die Code-Zuordnung und damit im Bereich *gut* bis
+*sehr gut* (Landis & Koch, 1977). Die 52 nicht-übereinstimmenden Fälle
+wurden in einer Konsenskonferenz bereinigt; die finalen Kodierungen
+liegen in der Spalte `confirmed_code` vor. Verteilung der Abweichungen,
+Übereinstimmungsquoten und Konfliktmuster: Anhang A.2.
 
 # 5. Darstellung der Ergebnisse & Diskussion
 
