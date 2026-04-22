@@ -30,11 +30,24 @@ Folge-Commit (C2..C8) in das neue Kapitel integriert oder gelöscht wird.
 
 # 1. Abstract
 
-<!-- PARKING C7: Wird in Commit C7 aus bericht/kurzzusammenfassung.md
-übernommen und auf exakt ~150 W. justiert. Platzhalter bis dahin. -->
-
-*Abstract folgt in C7 — Inhalt liegt in `bericht/kurzzusammenfassung.md`
-(146 W.) bereit.*
+TRACE-Equity untersucht, wie Chancengerechtigkeit in den Curricula
+der österreichischen Bachelorstudiengänge Elementarpädagogik verankert
+ist. Die Studie fragt, inwiefern die Curricula über formale
+Chancengleichheit hinausgehen und Chancengerechtigkeit als
+pädagogisches Leitprinzip sichern. Sie ist relevant, weil Curricula
+mitentscheiden, ob die neue Bachelor-Ausbildung Chancengerechtigkeit
+strukturell einlöst oder auf formale Gleichheitsrhetorik beschränkt
+bleibt. Methodisch kombiniert sie eine regelgeleitete Qualitative
+Inhaltsanalyse (Kuckartz & Rädiker, 2022) mit deduktivem
+Kategoriensystem (233 Keywords, 8 Codes) und expertengestützter
+Validierung (Critical Expert in the Loop). Die codierten Inhalte
+werden in Anlehnung an Levinson et al. (2022) einer dreistufigen
+Gerechtigkeits-Typologie zugeordnet: formale Gleichheit,
+kompensatorische und transformative Gerechtigkeit. Das Sample umfasst
+eine Vollerhebung der vier Cluster-Curricula (N = 1.061 validierte
+Findings). Die Ergebnisse zeigen eine Dominanz formaler Gleichheit
+(49–72 %) gegenüber transformativer Gerechtigkeit (4–12 %); explizite
+Nennungen von Gerechtigkeitsbegriffen bleiben marginal (0,8 %).
 
 # 2. Einleitung
 
@@ -67,9 +80,16 @@ ausdifferenziert:
   zwischen den vier Clustern identifizieren, insbesondere zwischen
   Pädagogischen Hochschulen und Fachhochschule?
 
-<!-- PARKING C7: Aufbau-Hinweis noch zu ergänzen („Kap. 3 führt den
-theoretischen Rahmen ein, Kap. 4 das methodische Vorgehen …") —
-erst nach Stabilisierung von § 3–7 sinnvoll. Ziel: ~250 W. -->
+Der Bericht ist wie folgt aufgebaut: Kapitel 3 entfaltet den
+theoretischen Rahmen zwischen Chancengleichheit und
+Chancengerechtigkeit und führt die an Levinson et al. (2022)
+angelehnte Typologie ein. Kapitel 4 beschreibt das methodische
+Vorgehen samt Datenkorpus, Kategoriensystem und Intercoder-
+Reliabilität. Kapitel 5 stellt die Befunde entlang der drei
+Dimensionen dar und ordnet sie jeweils direkt theoretisch ein.
+Kapitel 6 leitet drei curriculare Handlungsempfehlungen ab und
+diskutiert die Limitationen der Studie. Kapitel 7 schließt mit
+Conclusio, Ausblick und Endzusammenfassung.
 
 # 3. Theorie
 
@@ -129,13 +149,12 @@ Forschungsfrage zentrale Differenz zwischen formaler Zugangsgleichheit
 und substantiell-transformativer Gerechtigkeit in einer Form, die sich
 auf curriculare Kompetenzbeschreibungen anwenden lässt. Wie die
 Zuordnung zu den acht Codes des Kategoriensystems erfolgt, ist in § 4.2
-dokumentiert. Die Hauptforschungsfrage adressiert vor diesem Hintergrund
-den Übergang zwischen Stufe (1) und den Stufen (2)–(3): Inwiefern
-gehen die Curricula über formale Chancengleichheit hinaus und
-verankern Chancengerechtigkeit als pädagogisches Leitprinzip? Das
-Raster erlaubt, diese Frage nicht nur quantitativ (wie viele Findings
-pro Stufe?), sondern strukturell (welche Stufen werden systematisch
-bedient, welche bleiben Randphänomen?) zu beantworten.
+dokumentiert. Analytisch trägt das Raster deshalb doppelt: Es erlaubt, curriculare
+Verankerungsformen nicht nur quantitativ (wie viele Findings pro
+Stufe?), sondern auch strukturell (welche Stufen werden systematisch
+bedient, welche bleiben Randphänomen?) zu erfassen — und damit den in
+§ 2 gestellten Übergang von formaler Gleichheit zu substantieller
+Chancengerechtigkeit empirisch adressierbar zu machen.
 
 # 4. Empirie
 
@@ -470,6 +489,7 @@ operationalisiert werden.
 # Literaturverzeichnis
 
 - Gomolla, M., & Radtke, F.-O. (2009). *Institutionelle Diskriminierung: Die Herstellung ethnischer Differenz in der Schule* (3. Aufl.). VS Verlag für Sozialwissenschaften.
+- Kuckartz, U., & Rädiker, S. (2022). *Qualitative Inhaltsanalyse: Methoden, Praxis, Computerunterstützung* (5. Aufl.). Beltz Juventa.
 - Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data. *Biometrics, 33*(1), 159–174.
 - Levinson, M., Geron, T., & Brighouse, H. (2022). Conceptions of educational equity. *AERA Open, 8*, 1–14.
 - Morgan, H. (2022). Conducting a qualitative document analysis. *The Qualitative Report, 27*(1), 64–77.
@@ -477,9 +497,6 @@ operationalisiert werden.
 - Stojanov, K. (2011). *Bildungsgerechtigkeit: Rekonstruktionen eines umkämpften Begriffs*. VS Verlag für Sozialwissenschaften.
 - Tai, R. H., Bentley, L. R., Xia, X., Sitt, J. M., Fankhauser, S. C., Chicas-Mosier, A. M., & Monteith, B. G. (2024). An examination of the use of large language models to aid analysis of textual data. *International Journal of Qualitative Methods, 23*, 1–12.
 - Vollmann, P., & Fageth, B. (2022). Thesen zum Bachelorstudium Elementarpädagogik an der Pädagogischen Hochschule der Diözese Linz. *Pädagogische Horizonte, 6*(1), 1–20.
-
-<!-- PARKING C7: Kuckartz & Rädiker (2022) hinzufügen, sobald Abstract
-in § 1 integriert ist (Zitation stammt aus kurzzusammenfassung.md). -->
 
 # Anhang
 
