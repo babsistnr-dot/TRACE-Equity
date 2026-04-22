@@ -30,31 +30,33 @@ Folge-Commit (C2..C8) in das neue Kapitel integriert oder gelöscht wird.
 
 # 1. Abstract
 
-TRACE-Equity untersucht, wie Chancengerechtigkeit in den Curricula
-der österreichischen Bachelorstudiengänge Elementarpädagogik verankert
-ist. Die Studie fragt, inwiefern die Curricula über formale
+Untersucht wird, wie Chancengerechtigkeit in den Curricula der
+österreichischen Bachelorstudiengänge Elementarpädagogik verankert
+ist. Im Zentrum steht die Frage, inwiefern die Curricula über formale
 Chancengleichheit hinausgehen und Chancengerechtigkeit als
-pädagogisches Leitprinzip sichern. Sie ist relevant, weil Curricula
-mitentscheiden, ob die neue Bachelor-Ausbildung Chancengerechtigkeit
-strukturell einlöst oder auf formale Gleichheitsrhetorik beschränkt
-bleibt. Methodisch kombiniert sie eine regelgeleitete Qualitative
-Inhaltsanalyse (Kuckartz & Rädiker, 2022) mit deduktivem
-Kategoriensystem (233 Keywords, 8 Codes) und expertengestützter
-Validierung (Critical Expert in the Loop). Die codierten Inhalte
-werden in Anlehnung an Levinson et al. (2022) einer dreistufigen
-Gerechtigkeits-Typologie zugeordnet: formale Gleichheit,
-kompensatorische und transformative Gerechtigkeit. Das Sample umfasst
-eine Vollerhebung der vier Cluster-Curricula (N = 1.061 validierte
-Findings). Die Ergebnisse zeigen eine Dominanz formaler Gleichheit
-(49–72 %) gegenüber transformativer Gerechtigkeit (4–12 %); explizite
-Nennungen von Gerechtigkeitsbegriffen bleiben marginal (0,8 %).
+pädagogisches Leitprinzip sichern. Diese Frage ist relevant, weil
+Curricula mitentscheiden, ob die neue Bachelor-Ausbildung
+Chancengerechtigkeit strukturell einlöst oder auf formale
+Gleichheitsrhetorik beschränkt bleibt. Als methodischer Zugang
+dient eine regelgeleitete Qualitative Inhaltsanalyse (Kuckartz &
+Rädiker, 2022) mit deduktivem Kategoriensystem (233 Keywords, 8
+Codes) und expertengestützter Validierung (Critical Expert in the
+Loop). Die codierten Inhalte werden in Anlehnung an Levinson et al.
+(2022) einer dreistufigen Gerechtigkeits-Typologie zugeordnet:
+formale Gleichheit, kompensatorische und transformative
+Gerechtigkeit. Das Sample umfasst eine Vollerhebung der vier
+Cluster-Curricula (1.061 validierte Findings). In den Curricula
+dominiert formale Gleichheit (49–72 %), während transformative
+Gerechtigkeit durchgängig schwach bleibt (4–12 %); Begriffe
+wie *Chancengleichheit* oder *Bildungsgerechtigkeit* werden in
+lediglich 0,8 % der Findings explizit genannt.
 
 # 2. Einleitung
 
 Mit der Einführung der Bachelorstudiengänge Elementarpädagogik im Jahr
 2018 vollzog Österreich einen historischen Professionalisierungsschritt
 (Vollmann & Fageth, 2022). Zeitgleich identifiziert die OECD (2018)
-Educational Equity als zentralen Qualitätsfaktor früher Bildung: Nicht
+Educational Equity als zentralen Qualitätsfaktor früher Bildung. Nicht
 die Herkunft, sondern das Potential eines Kindes soll den Bildungsweg
 bestimmen. Für die Ausbildung folgt daraus die Frage, ob die neuen
 Curricula diesen Anspruch einlösen. Eine systematische empirische
@@ -80,7 +82,7 @@ ausdifferenziert:
   zwischen den vier Clustern identifizieren, insbesondere zwischen
   Pädagogischen Hochschulen und Fachhochschule?
 
-Der Bericht ist wie folgt aufgebaut: Kapitel 3 entfaltet den
+Der Bericht ist wie folgt aufgebaut. Kapitel 3 entfaltet den
 theoretischen Rahmen zwischen Chancengleichheit und
 Chancengerechtigkeit und führt die an Levinson et al. (2022)
 angelehnte Typologie ein. Kapitel 4 beschreibt das methodische
@@ -93,10 +95,13 @@ Conclusio, Ausblick und Endzusammenfassung.
 
 # 3. Theorie
 
-Die theoretische Rahmung der Studie stützt sich auf drei Stränge, die in
-einer dreistufigen analytischen Typologie zusammengeführt werden. Den
+Die theoretische Rahmung stützt sich auf drei Stränge — eine
+bildungspolitische Einordnung (OECD), eine begrifflich-strukturelle
+Fundierung (Stojanov; Gomolla und Radtke) und ein analytisches
+Leitraster (Levinson et al.) —, die in einer dreistufigen
+analytischen Typologie zusammengeführt werden. Den
 bildungspolitischen Ausgangspunkt bildet die OECD-Rahmung früher
-Bildung als Equity-Faktor: Nicht die soziale Herkunft, sondern das
+Bildung als Equity-Faktor. Nicht die soziale Herkunft, sondern das
 Potenzial eines Kindes soll den Bildungsverlauf bestimmen — ein
 outcome-orientierter Anspruch, der Chancengleichheit von bloßer
 Zugangsgleichheit abhebt und aktive Kompensation struktureller
@@ -108,10 +113,10 @@ Bachelorstudiengänge 2018 (Vollmann & Fageth, 2022) an die Curricula
 adressiert ist. Die Frühpädagogik trägt dabei eine besondere
 Verantwortung, weil Bildungsbiografien in dieser Phase prägend
 grundgelegt werden und spätere Kompensation aufwendiger bleibt als
-präventive Strukturen.
+präventive Strukturen (OECD, 2018).
 
-Begrifflich trennt die Studie konsequent zwischen Chancengleichheit und
-Chancengerechtigkeit. Chancengleichheit adressiert formale
+Begrifflich wird konsequent zwischen Chancengleichheit und
+Chancengerechtigkeit getrennt. Chancengleichheit adressiert formale
 Zugangsgleichheit; Chancengerechtigkeit zielt auf substantielle
 Teilhabe und setzt eine aktive Kompensation ungleicher Ausgangslagen
 voraus. Stojanov (2011) rekonstruiert dieses Spannungsfeld als
@@ -120,7 +125,7 @@ anerkennungsorientierten Gerechtigkeitsverständnissen; insbesondere
 anerkennungstheoretische Perspektiven beanspruchen einen normativen
 Vorrang, sind in der bildungspraktischen Operationalisierung jedoch
 weniger präsent. Auf struktureller Ebene ergänzen Gomolla und Radtke
-(2009) diesen Rahmen um eine organisationssoziologische Perspektive:
+(2009) diesen Rahmen um eine organisationssoziologische Perspektive.
 Formal-neutrale Routinen in Bildungsorganisationen — als
 „Gleichbehandlung von Ungleichen" — lassen soziale und ethnische
 Differenz nicht nur unbearbeitet, sondern stellen sie aktiv mit her.
@@ -137,8 +142,8 @@ Geron und Brighouse (2022). Die Autor:innen unterscheiden fünf
 Konzeptionen von Educational Equity und ordnen sie entlang einer
 Progression von formaler *equality* über kompensatorische *equity*
 hin zu *liberation*-orientierten Konzepten. In Anlehnung an Levinson
-et al. (2022) wird diese Progression in der vorliegenden Studie zu
-einer dreistufigen Typologie verdichtet: (1) **formale Gleichheit** —
+et al. (2022) wird diese Progression zu einer dreistufigen Typologie
+verdichtet: (1) **formale Gleichheit** —
 Zugang und Anerkennung von Vielfalt; (2) **kompensatorische
 Gerechtigkeit** — gezielte Förderung bei ungleichen Ausgangslagen; (3)
 **transformative Gerechtigkeit** — Machtkritik und
@@ -149,12 +154,12 @@ Forschungsfrage zentrale Differenz zwischen formaler Zugangsgleichheit
 und substantiell-transformativer Gerechtigkeit in einer Form, die sich
 auf curriculare Kompetenzbeschreibungen anwenden lässt. Wie die
 Zuordnung zu den acht Codes des Kategoriensystems erfolgt, ist in § 4.2
-dokumentiert. Analytisch trägt das Raster deshalb doppelt: Es erlaubt, curriculare
-Verankerungsformen nicht nur quantitativ (wie viele Findings pro
-Stufe?), sondern auch strukturell (welche Stufen werden systematisch
-bedient, welche bleiben Randphänomen?) zu erfassen — und damit den in
-§ 2 gestellten Übergang von formaler Gleichheit zu substantieller
-Chancengerechtigkeit empirisch adressierbar zu machen.
+dokumentiert. Das Raster erfasst curriculare Verankerungsformen damit auf zwei
+Ebenen — quantitativ (wie viele Findings pro Stufe?) und strukturell
+(welche Stufen werden systematisch bedient, welche bleiben
+Randphänomen?) — und macht so den in § 2 gestellten Übergang von
+formaler Gleichheit zu substantieller Chancengerechtigkeit empirisch
+adressierbar.
 
 # 4. Empirie
 
@@ -325,8 +330,8 @@ Der komparative Vergleich bestätigt das Levinson-Muster auf Code-Ebene
 und legt ein systematisch abweichendes Profil der FH Campus Wien frei.
 Vorangestellt ist ein methodischer Befund: Die Relevanzraten variieren
 deutlich zwischen 50,2 % (Mitte) und 74,1 % (West). Diese Varianz
-interpretieren wir **nicht** als inhaltlichen Unterschied in der
-Verankerung von Chancengerechtigkeit, sondern als Hinweis auf
+wird **nicht** als inhaltlicher Unterschied in der Verankerung von
+Chancengerechtigkeit interpretiert, sondern als Hinweis auf
 unterschiedliche curriculare Sprachdichte: Ein niedrigerer Wert deutet
 darauf hin, dass ein größerer Anteil der Keyword-Treffer in generischen
 Kontexten (z. B. Modulüberschriften, Literaturverzeichnisse) auftritt
