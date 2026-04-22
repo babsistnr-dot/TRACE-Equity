@@ -1,4 +1,4 @@
-# TRACE-Equity — Handoff (Stand: 2026-04-22)
+# TRACE-Equity — Handoff (Stand: 2026-04-22, nach Bericht-Remap C1–C8)
 
 Kompakter Übergabestand für Team / nächste Session / neue Mitwirkende.
 Quelle der Wahrheit für Details: jeweils verlinkte Dokumente.
@@ -17,9 +17,10 @@ Auswertung über 3 Dimensionen (Explizit/Implizit, Levinson-Tiefe, Cluster-Vergl
 - **Abstrakt** (MD, max. 3 S., Studiendesign-Dokument ohne Ergebnisse) —
   Methodenskizze + Theorierahmen + Auswertungs-Skizze. Abgabetermin vor
   29.06.2026 (TBD bei LV-Leitung).
-- **Kurzzusammenfassung** (MD, max. 150 W., *mit* Ergebnissen) — als LV-
-  Zusatzanforderung zum Abstrakt; „ganz am Schluss" zu verfassen.
-- **Forschungsbericht** (PDF/MD, max. 8 S. + Anhang), Abgabe **29.06.2026**.
+- **Forschungsbericht** (MD, ~6,5 S. Haupttext + Anhang, Dozentinnen-
+  Gliederung 1–7), Abgabe **29.06.2026**. Der 150-W-Abstract ist
+  integriert in § 1; `bericht/kurzzusammenfassung.md` ist damit obsolet
+  und wurde in Commit C8 entfernt.
 - **Postersession** (**26.06.2026**).
 
 ---
@@ -37,13 +38,13 @@ Auswertung über 3 Dimensionen (Explizit/Implizit, Levinson-Tiefe, Cluster-Vergl
 | 6 | Levinson-Mapping (D2) | ✅ |
 | 7 | Cross-Cluster-Vergleich (D3) | ✅ |
 | 8 | Zitate-Sammlung pro Cluster | ✅ |
-| 9 | Forschungsbericht | 🟡 Durchgänge A+B+C fertig, Kapitel 3 auf ≤2 S. verdichtet (Tabellen/Heatmap in Anhang), **Schlussprüfung ausstehend** |
+| 9 | Forschungsbericht | 🟡 **Remap auf Dozentinnen-Gliederung C1–C7 fertig** (3.001 W. Haupttext, ~6 S.), **Team-Schlussprüfung + Rückfragen an Dozentin ausstehend** |
 | 9.5 | Abstrakt (3 S., ohne Ergebnisse) | 🟡 Durchgang A + B + Relevanz-Satz ergänzt (~1.319 W.), **Durchgang C (Feinschliff + APA) ausstehend** |
-| 9.6 | Kurzzusammenfassung (150 W., mit Ergebnissen) | 🟡 Rohtext fertig (146 W.), Feinschliff mit Bericht-Abgabe gemeinsam |
+| 9.6 | Kurzzusammenfassung | ✅ **Obsolet** (C8) — Abstract nun in § 1 des Berichts integriert, Datei entfernt |
 | 10 | Poster | ⏳ |
 | 11 | README/CLAUDE.md aktualisieren | ⏳ |
 
-Letzter Commit: `b0441e4` (Bericht Kap. 3 — Tabellen + Heatmap in Anhang verschoben), gepusht zu `origin/master`.
+Letzter Commit: `c11b034` (Bericht C7 — Abstract + Einleitung final, Redundanz-Pass). C8 (Kurzzsfg.-Obsoletierung + Doku-Update) in Arbeit.
 
 ---
 
@@ -113,29 +114,35 @@ python -m pytest tests/ -v   # aus Projekt-Root
 ## Bericht (Schritt 9)
 
 - Pfad: `bericht/forschungsbericht.md` (Markdown, kein PDF-Export gewünscht)
-- Aktueller Umfang: 3.049 W. (Hauptteil ~6 S. + Anhang)
+- **Neue Gliederung (Dozentinnen-Vorgabe, umgesetzt 2026-04-22):** 1 Abstract
+  · 2 Einleitung · 3 Theorie · 4 Empirie · 5 Darstellung der Ergebnisse &
+  Diskussion (integriert je Dimension) · 6 Handlungsempfehlungen &
+  Limitationen · 7 Conclusio, Ausblick, Endzusammenfassung · Literatur ·
+  Anhang A.1–A.4.
+- Umfang pro Kapitel: Abstract 133 W · Einleitung 248 W · Theorie 445 W
+  · Empirie 440 W · Erg.+Disk. 926 W · Handl.+Lim. 410 W · Conclusio 399 W
+  · **Gesamt Haupttext: 3.001 W (~6 S.)**.
 - Kernvisualisierung: `bericht/abbildungen/levinson_heatmap.png`
-  (jetzt in Anhang A.4.1, nicht mehr im Hauptteil)
-- **Stand:** Durchgänge A (Skelett) ✅, B (Rohtext) ✅, C (Feinschliff) ✅;
-  Kapitel 3 auf ≤ 2 S. verdichtet (Commit `b0441e4`) — inhaltliche
-  Schlussprüfung durch Team ausstehend
-- Struktur: Einleitung (0,5) – Methodik (1,5) – Ergebnisse (2, reine
-  Prosa, alle Tabellen/Heatmap im Anhang) – Diskussion (1,5) – Limitationen
-  (0,5) + Literatur + Anhang A.1–A.4
-- **9C-Arbeiten (Commits `d77e73a` → `c344eb8`):**
-  - Zitat-Accuracy geprüft + korrigiert: Tai et al. (2024), OECD (2018),
-    Gomolla & Radtke, Stojanov, Morgan (2022), Levinson et al. (2022)
-  - Levinson-Dreistufen-Typologie als Adaption ausgewiesen
-    (Methodik 2.2: „in Anlehnung an Levinson et al. (2022)")
-  - Enumerations-Stil (Erstens/Zweitens) in 3.3, 4.1, 4.2, 5 in Fließprosa
-- **Kapitel-3-Restructure (`b0441e4`):**
-  - 4 Inline-Tabellen (§ 3.1–3.4) in Anhang A.3 verschoben (A.3.1–A.3.5)
-  - Levinson-Heatmap aus § 3.3 in Anhang A.4.1 verschoben
-  - Kreuzverweise „(Tab. A.3.x)" / „(Abb. A.4.1)" in den Fließtext
-  - Prosa behält präzise Prozentwerte inline → lesbar ohne Tabellen-Lookup
-  - Originalzitate Cluster Mitte (S. 10 + S. 106) bleiben als analytische
-    Evidenz im Hauptteil
-  - Kapitel-3-Umfang: 1.057 W → 721 W
+  (Anhang A.4.1).
+- **Stand:** Remap C1–C7 fertig (Commits `85568bf` → `c11b034`); C8
+  (Kurzzsfg.-Obsoletierung + Doku-Update) abschließend. Team-
+  Schlussprüfung ausstehend.
+- **Mapping alter → neuer Bericht:**
+  - C1 Skelett mit Parking alter Inhalte (`85568bf`)
+  - C2 § 5 Ergebnisse & Diskussion integriert je Dimension (`5a1c718`)
+  - C3 § 4 Empirie auf 440 W gekürzt, ICR-Details in Anhang A.2 (`1d76ba2`)
+  - C4 § 3 Theorie neu, 449 W (OECD, Stojanov, Gomolla, Levinson) (`5fc9070`)
+  - C5 § 6.1 Handlungsempfehlungen E1/E2/E3 formuliert (`66ec336`)
+  - C6 § 7 Conclusio, Ausblick, Endzsfg. neu (`9388202`)
+  - C7 Abstract + Einleitung final, Kuckartz im Lit.verz., Redundanz-Pass
+    (`c11b034`)
+- **Offene Rückfragen an Dozentin (vor Abgabe):**
+  1. „Abstract — 150 Zeichen" = Tippfehler für 150 Wörter?
+  2. Seiten-Zählweise: zählen Literatur + Anhang zu ~6,5 S. Haupttext?
+  3. Ergebnisse & Diskussion je Dimension integriert OK, oder APA-strikt
+     5.1/5.2 getrennt?
+  4. Adressatenkreis der Handlungsempfehlungen (curricular vs.
+     bildungspolitisch)?
 
 ---
 
@@ -161,47 +168,36 @@ python -m pytest tests/ -v   # aus Projekt-Root
 
 ---
 
-## Kurzzusammenfassung (Schritt 9.6)
+## Kurzzusammenfassung (Schritt 9.6) — OBSOLET
 
-- Pfad: `bericht/kurzzusammenfassung.md` (eigenes Dokument, separat vom
-  Abstrakt)
-- Umfang: max. 150 W. (aktuell **146 W.**, 4 W. Buffer)
-- LV-Anforderung (Zusatz zum Abstrakt): „Eine maximal 150 Worte
-  umfassende Kurzzusammenfassung, die Sie ganz am Schluss verfassen. Sie
-  fasst Thema, Frage, Methode und Ergebnisse prägnant zusammen."
-- **Abgrenzung zum Abstrakt:** *enthält* Ergebnisse (Levinson-Verteilung
-  49–72 % / 4–12 %, 0,8 % explizite Nennungen) und Levinson-Stufen-
-  Definition; keine κ-Werte (zu detailliert für 150 W.).
-- **Entstehung:** erst als Absatz im Abstrakt angelegt (`719af82`), dann
-  in eigenes Dokument ausgelagert (`4a755fa`), Levinson-Stufen ergänzt +
-  κ-Werte entfernt (`4bec68b`), Relevanz-Satz integriert + auf 146 W.
-  gekürzt (`49c932e`).
-- **Stand:** Rohtext finalisiert; Feinschliff gemeinsam mit Bericht-
-  Schlussprüfung vor Abgabe.
+Im Zuge des Bericht-Remaps (Dozentinnen-Gliederung) wurde der 150-W-
+Abstract direkt in § 1 des Berichts integriert (Umfang 133 W.,
+Toleranz 128–172). `bericht/kurzzusammenfassung.md` wurde in C8
+entfernt. Falls die Dozentin „150 Zeichen" doch wörtlich meint (statt
+150 Wörter), ist das Dokument aus Git wiederherstellbar (letzter
+Stand: Commit `49c932e`).
 
 ---
 
 ## Nächste Schritte (Reihenfolge)
 
-1. **Schritt 9 Schlussprüfung** — Team-Review des finalisierten Berichts
-   inkl. Kapitel-3-Restructure (Prüfung: Prosa autark lesbar? Kreuz-
-   verweise eindeutig? Anhang-Tabellen vollständig?). Wortzahl-Check,
-   ggf. letzte Kürzungen. Restliche Zitate (Mayring, Hsieh & Shannon,
-   Landis & Koch) bei Bedarf gegenprüfen. Bekannte Lücken: asymmetrische
-   Zitate (nur Cluster Mitte im Hauptteil), Reflexivitäts-Abschnitt,
-   Querschnittscodes 2.5 + 2.7 in Diskussion.
-2. **Schritt 9.5C Abstrakt — Feinschliff** — Wortzahl-Check (≤ 1.500 W.,
-   aktuell 1.319 W. → Puffer 181 W.), APA-Konformität der 9 Einträge
-   (Spot-Check Bandzahlen / Verlage / Auflagen), Begriffsdichte in § 2
-   prüfen, Kreuzabgleich mit Bericht (κ-Werte, N, „in Anlehnung an"-
-   Formulierung).
-3. **Schritt 9.6 Kurzzusammenfassung — Feinschliff** — Finale Abstimmung
-   mit Bericht-Prozentwerten; sicherstellen, dass Zahlen exakt den
-   finalen Tabellen im Anhang A.3 entsprechen.
-4. **Schritt 10 Poster** — Inhalt: HFF, Methode kompakt, Levinson-Heatmap,
-   Kernbefunde, Fazit. Format mit Team klären.
-5. **Schritt 11 Doku** — `ergebnisse/README.md` und `CLAUDE.md` aktualisieren (alte Zahlen / Pfade).
-6. **Abgabe 29.06.2026** — finale Konvertierung MD → Abgabeformat durch Team.
+1. **Dozentin-Rückfragen klären** (vor Team-Review, blockierend für
+   Punkte 2–4): 150 Zeichen vs. Wörter · Seiten-Zählweise · integrierte
+   vs. 5.1/5.2-Struktur · Adressatenkreis der Empfehlungen.
+2. **Schritt 9 Team-Schlussprüfung des Berichts** — autarke Lesbarkeit
+   der Prosa, Kreuzverweise (Tab./Abb./§-Nummern) nach Remap, Anhang
+   vollständig, asymmetrische Zitate (nur Cluster Mitte im Hauptteil),
+   Wortzahl-Check. Bekannte Punkte: § 6 und § 7 knapp unter
+   Toleranzminimum (Kürze hier eher Asset als Problem).
+3. **Schritt 9.5C Abstrakt — Feinschliff** — Wortzahl-Check (≤ 1.500 W.,
+   aktuell 1.319 W.), APA-Konformität der 9 Einträge, Kreuzabgleich
+   mit Bericht (κ-Werte, N, „in Anlehnung an"-Formulierung).
+4. **Schritt 10 Poster** — Inhalt: HFF, Methode kompakt, Levinson-
+   Heatmap, Kernbefunde, Fazit. Format mit Team klären.
+5. **Schritt 11 Doku** — `ergebnisse/README.md` und `CLAUDE.md`
+   aktualisieren (alte Zahlen / Pfade, neue Bericht-Gliederung).
+6. **Abgabe 29.06.2026** — finale Konvertierung MD → Abgabeformat
+   durch Team.
 
 ---
 
@@ -227,4 +223,4 @@ python -m pytest tests/ -v   # aus Projekt-Root
 
 ---
 
-**Erstellt:** 2026-04-15 | **Aktualisiert:** 2026-04-22 | **Stand:** nach Commit `b0441e4`
+**Erstellt:** 2026-04-15 | **Aktualisiert:** 2026-04-22 | **Stand:** nach Bericht-Remap C1–C8
