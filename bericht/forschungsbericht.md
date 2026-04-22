@@ -169,7 +169,7 @@ Das Sample umfasst N = 4 Curricula, was einer Vollerhebung der
 österreichischen Bachelor-Curricula für Elementarpädagogik im öffentlichen
 Sektor entspricht. Die Pädagogischen Hochschulen sind in
 Entwicklungsverbünde organisiert, sodass ein Curriculum jeweils mehrere
-Standorte abdeckt. Insgesamt sind elf Pädagogische Hochschulen und die FH
+Standorte abdeckt. Insgesamt sind neun Pädagogische Hochschulen und die FH
 Campus Wien abgedeckt (vgl. Tab. A.3.1). Die Validität
 des Samples wurde anhand der vier Kriterien nach Morgan (2022) geprüft:
 Authentizität (offiziell akkreditierte Originaldokumente),
@@ -193,7 +193,7 @@ formale Gleichheit (Codes 2.1, 2.2), kompensatorische Gerechtigkeit
 (Codes 2.3, 2.6) und transformative Gerechtigkeit (Code 2.4) überträgt. Die Codes 2.5
 (Bildungspartnerschaft) und 2.7 (professionelle Haltung) werden als
 Querschnittskategorien separat ausgewiesen, da sie orthogonal zu den drei
-Stufen liegen. Das Kodiermanual dient als *Single Source of Truth*: Sowohl
+Stufen liegen. Das Kodiermanual dient als *Single Source of Truth*. Sowohl
 die Analyse-App als auch die späteren Auswertungsskripte greifen
 dynamisch auf dieselbe Keyword-Liste zu.
 
@@ -221,7 +221,7 @@ erfasst (Tai et al., 2024).
 Vor der unabhängigen Kodierung wurde anhand des Clusters Mitte eine
 Kalibrierungsphase durchgeführt, in der geteilte Entscheidungsregeln
 formuliert wurden. Die Intercoder-Reliabilität wurde am Cluster SüdOst
-(n = 272 Findings) bestimmt: Beide Kodiererinnen validierten alle
+(n = 272 Findings) bestimmt. Beide Kodiererinnen validierten alle
 Findings unabhängig voneinander.
 
 Die Übereinstimmung liegt bei κ = 0,71 für die Relevanz-Entscheidung
@@ -229,7 +229,8 @@ und κ = 0,83 für die Code-Zuordnung und damit im Bereich *gut* bis
 *sehr gut* (Landis & Koch, 1977). Die 52 nicht-übereinstimmenden Fälle
 wurden in einer Konsenskonferenz bereinigt; die finalen Kodierungen
 liegen in der Spalte `confirmed_code` vor. Verteilung der Abweichungen,
-Übereinstimmungsquoten und Konfliktmuster: Anhang A.2.
+Übereinstimmungsquoten und Konfliktmuster sind in Anhang A.2
+dokumentiert.
 
 # 5. Darstellung der Ergebnisse & Diskussion
 
@@ -241,7 +242,7 @@ Dimensionen nacheinander.
 
 ## 5.1 Datenübersicht
 
-Die Datenbasis umfasst vier Cluster-Curricula, die elf Pädagogische
+Die Datenbasis umfasst vier Cluster-Curricula, die neun Pädagogische
 Hochschulen und die FH Campus Wien abdecken (Tab. A.3.1). Aus den vier
 Curricula resultierten insgesamt 1.626 Keyword-Treffer, von denen 1.061
 (65,3 %) im CEiL-Verfahren als inhaltlich relevant klassifiziert wurden.
