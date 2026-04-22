@@ -1,4 +1,4 @@
-# TRACE-Equity — Handoff (Stand: 2026-04-22, nach Bericht-Remap C1–C8)
+# TRACE-Equity — Handoff (Stand: 2026-04-22, nach Review Pass 1+2 §§ 1–4)
 
 Kompakter Übergabestand für Team / nächste Session / neue Mitwirkende.
 Quelle der Wahrheit für Details: jeweils verlinkte Dokumente.
@@ -38,13 +38,13 @@ Auswertung über 3 Dimensionen (Explizit/Implizit, Levinson-Tiefe, Cluster-Vergl
 | 6 | Levinson-Mapping (D2) | ✅ |
 | 7 | Cross-Cluster-Vergleich (D3) | ✅ |
 | 8 | Zitate-Sammlung pro Cluster | ✅ |
-| 9 | Forschungsbericht | 🟡 **Remap auf Dozentinnen-Gliederung C1–C7 fertig** (3.001 W. Haupttext, ~6 S.), **Team-Schlussprüfung + Rückfragen an Dozentin ausstehend** |
+| 9 | Forschungsbericht | 🟡 **Remap C1–C8 + Review Pass 1+2 (§§ 1–4) fertig** (~3.000 W. Haupttext, ~6 S.), **Review §§ 5–7 + Rückfragen an Dozentin ausstehend** |
 | 9.5 | Abstrakt (3 S., ohne Ergebnisse) | 🟡 Durchgang A + B + Relevanz-Satz ergänzt (~1.319 W.), **Durchgang C (Feinschliff + APA) ausstehend** |
 | 9.6 | Kurzzusammenfassung | ✅ **Obsolet** (C8) — Abstract nun in § 1 des Berichts integriert, Datei entfernt |
 | 10 | Poster | ⏳ |
 | 11 | README/CLAUDE.md aktualisieren | ⏳ |
 
-Letzter Commit: `c11b034` (Bericht C7 — Abstract + Einleitung final, Redundanz-Pass). C8 (Kurzzsfg.-Obsoletierung + Doku-Update) in Arbeit.
+Letzter Commit: `09c90b0` (Review Pass 2 — § 4 Empirie: „elf"→„neun" Hochschulen, 3× satztrennender Doppelpunkt entfernt). Davor `445c510` (Review Pass 1 — §§ 1–3: Passiv-/Nominalstil, Doppelpunkte, Theorie-Gap-Fixes).
 
 ---
 
@@ -119,14 +119,16 @@ python -m pytest tests/ -v   # aus Projekt-Root
   Diskussion (integriert je Dimension) · 6 Handlungsempfehlungen &
   Limitationen · 7 Conclusio, Ausblick, Endzusammenfassung · Literatur ·
   Anhang A.1–A.4.
-- Umfang pro Kapitel: Abstract 133 W · Einleitung 248 W · Theorie 445 W
+- Umfang pro Kapitel: Abstract 140 W · Einleitung 248 W · Theorie 454 W
   · Empirie 440 W · Erg.+Disk. 926 W · Handl.+Lim. 410 W · Conclusio 399 W
-  · **Gesamt Haupttext: 3.001 W (~6 S.)**.
+  · **Gesamt Haupttext: ~3.000 W (~6 S.)**.
 - Kernvisualisierung: `bericht/abbildungen/levinson_heatmap.png`
   (Anhang A.4.1).
-- **Stand:** Remap C1–C7 fertig (Commits `85568bf` → `c11b034`); C8
-  (Kurzzsfg.-Obsoletierung + Doku-Update) abschließend. Team-
-  Schlussprüfung ausstehend.
+- **Stand:** Remap C1–C8 (Struktur + Obsoletierung Kurzzsfg.) fertig;
+  Step-by-step-Review mit Babsi läuft (Pass 1: §§ 1–3, Pass 2: § 4).
+  §§ 5–7 noch ungereviewt. Review-Kriterien: satztrennende Doppelpunkte
+  (KI-Stil) entfernen, reifizierende Agens-Formulierungen („die Studie
+  fragt…") in Passiv/Nominalstil umformulieren, Content-Gaps markieren.
 - **Mapping alter → neuer Bericht:**
   - C1 Skelett mit Parking alter Inhalte (`85568bf`)
   - C2 § 5 Ergebnisse & Diskussion integriert je Dimension (`5a1c718`)
@@ -136,6 +138,17 @@ python -m pytest tests/ -v   # aus Projekt-Root
   - C6 § 7 Conclusio, Ausblick, Endzsfg. neu (`9388202`)
   - C7 Abstract + Einleitung final, Kuckartz im Lit.verz., Redundanz-Pass
     (`c11b034`)
+  - C8 Kurzzsfg. obsolet (`f3f09ba`)
+- **Review-Passes (step-by-step mit Babsi):**
+  - Pass 1 — §§ 1–3 (`445c510`): Abstract in Passiv-/Nominalstil
+    umgeschrieben (kein „Wir"/„die Studie" als Agens); Einleitung + Theorie
+    satztrennende Doppelpunkte entfernt; Theorie-Gaps (Stränge benannt,
+    Frühpädagogik-Beleg, Schlusssatz) behoben; § 5.4 „interpretieren wir"
+    passiviert (Stilkonsistenz).
+  - Pass 2 — § 4 (`09c90b0`): Zahlen-Inkonsistenz „elf" → „neun" PHs
+    (konsistent zu Tab. A.3.1) in § 4.1 + § 5.1; drei satztrennende
+    Doppelpunkte entfernt (§ 4.2 *Single Source of Truth*, § 4.4 ICR-Satz,
+    § 4.4 Schlussfragment umformuliert).
 - **Offene Rückfragen an Dozentin (vor Abgabe):**
   1. „Abstract — 150 Zeichen" = Tippfehler für 150 Wörter?
   2. Seiten-Zählweise: zählen Literatur + Anhang zu ~6,5 S. Haupttext?
@@ -184,11 +197,13 @@ Stand: Commit `49c932e`).
 1. **Dozentin-Rückfragen klären** (vor Team-Review, blockierend für
    Punkte 2–4): 150 Zeichen vs. Wörter · Seiten-Zählweise · integrierte
    vs. 5.1/5.2-Struktur · Adressatenkreis der Empfehlungen.
-2. **Schritt 9 Team-Schlussprüfung des Berichts** — autarke Lesbarkeit
-   der Prosa, Kreuzverweise (Tab./Abb./§-Nummern) nach Remap, Anhang
-   vollständig, asymmetrische Zitate (nur Cluster Mitte im Hauptteil),
-   Wortzahl-Check. Bekannte Punkte: § 6 und § 7 knapp unter
-   Toleranzminimum (Kürze hier eher Asset als Problem).
+2. **Schritt 9 — Step-by-step-Review §§ 5–7** (mit Babsi fortsetzen):
+   § 5 Darstellung der Ergebnisse & Diskussion (926 W., 4 Teilabschnitte),
+   § 6 Handlungsempfehlungen + Limitationen (410 W.), § 7 Conclusio +
+   Ausblick + Endzsfg. (399 W.). Kriterien identisch zu Pass 1+2.
+   Danach Team-Schlussprüfung (Laura): autarke Lesbarkeit, Kreuzverweise
+   (Tab./Abb./§-Nummern), Anhang-Vollständigkeit, Zitate-Balance
+   (aktuell nur Cluster Mitte im Hauptteil).
 3. **Schritt 9.5C Abstrakt — Feinschliff** — Wortzahl-Check (≤ 1.500 W.,
    aktuell 1.319 W.), APA-Konformität der 9 Einträge, Kreuzabgleich
    mit Bericht (κ-Werte, N, „in Anlehnung an"-Formulierung).
@@ -223,4 +238,4 @@ Stand: Commit `49c932e`).
 
 ---
 
-**Erstellt:** 2026-04-15 | **Aktualisiert:** 2026-04-22 | **Stand:** nach Bericht-Remap C1–C8
+**Erstellt:** 2026-04-15 | **Aktualisiert:** 2026-04-22 | **Stand:** nach Review Pass 1+2 (§§ 1–4)
