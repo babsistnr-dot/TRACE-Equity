@@ -196,19 +196,11 @@ einer Konsenskonferenz bereinigt; die Ergebnisse flossen in das Feld
 
 # 5. Darstellung der Ergebnisse & Diskussion
 
-<!-- PARKING C2: Dieses Kapitel wird in Commit C2 zu einer integrierten
-Form umgebaut — nicht klassisch 5.1 Ergebnisse / 5.2 Diskussion, sondern
-pro Dimension (D1/D2/D3) Befund + Einordnung verschränkt. Struktur:
-  5.1 Datenübersicht (kurz)
-  5.2 Dimension 1 — Explizit vs. Implizit (Befund + Einordnung)
-  5.3 Dimension 2 — Konzeptuelle Tiefe (Levinson) (Befund + Einordnung)
-  5.4 Dimension 3 — Komparativer Vergleich (Befund + Einordnung)
-Rohmaterial: alte § 3.1-3.4 (Ergebnisse) + § 4.1 (Synthese).
-Zielumfang ~1.000 W. Aktuell 721 W + § 4.1-Material (~280 W).
-
-WICHTIG: In § 5 dürfen Stojanov/Levinson/Gomolla/OECD NICHT erneut
-primärdefiniert werden (das passiert in § 3 Theorie). Nur rückbezüglich
-zitieren. -->
+Die drei analytischen Dimensionen D1, D2 und D3 werden in diesem Kapitel
+integriert behandelt: Pro Dimension wird der Befund direkt in Bezug zum
+theoretischen Rahmen (Kap. 3) gestellt. Abschnitt 5.1 stellt die
+Datenbasis voran; die Abschnitte 5.2 bis 5.4 entfalten die
+Dimensionen nacheinander.
 
 ## 5.1 Datenübersicht
 
@@ -242,7 +234,13 @@ Curriculums, sondern einen diskursiven Rahmen. Die zentrale Erkenntnis der
 ersten Dimension ist somit ein **Implementierungsspalt zwischen
 bildungspolitischem Labeling und curricularer Substanz**: Die Curricula
 nennen Chancengerechtigkeit kaum beim Namen, adressieren sie aber
-über ein breites Spektrum pädagogischer Kompetenzen.
+über ein breites Spektrum pädagogischer Kompetenzen. Für die
+Beantwortung der Hauptforschungsfrage folgt daraus ein methodischer
+Befund: Eine Verankerungsanalyse, die sich auf die Begriffsebene
+beschränkte, würde den Gegenstand systematisch unterschätzen. Die
+inhaltliche Substanz ist in den Kompetenzbeschreibungen zu suchen —
+die konzeptuelle Tiefe dieser Verankerung ist Gegenstand von
+Dimension 2.
 
 ## 5.3 Dimension 2 — Konzeptuelle Tiefe (Levinson-Mapping)
 
@@ -278,7 +276,16 @@ Finding aus Cluster Mitte illustrieren:
 Solche Formulierungen, die aktive Reflexion und Haltungsbildung gegen
 Benachteiligung adressieren, bleiben die Ausnahme. Die curriculare
 Schwerlast liegt auf Diversitätsanerkennung und Teilhabe, nicht auf
-Machtkritik.
+Machtkritik. Im Rahmen der an Levinson et al. (2022) angelehnten
+Typologie bedeutet dies, dass die Progression *equality → equity →
+liberation* in den Curricula substantiell nur auf den ersten beiden
+Stufen aufgegriffen wird. Die transformative Stufe findet nur selten
+einen operativen Anker — ein Muster, das sich theoretisch an die
+von Gomolla und Radtke (2009) beschriebene *Gleichbehandlung von
+Ungleichen* anschließt: Wenn Kompetenzbeschreibungen formal-neutral
+bleiben, werden die strukturellen Bedingungen, unter denen
+Ungleichheit in Institutionen hergestellt und reproduziert wird,
+nicht als curricularer Gegenstand sichtbar.
 
 ## 5.4 Dimension 3 — Komparativer Vergleich
 
@@ -310,37 +317,12 @@ Mitte die höchste Transformativ-Quote (11,6 %), SüdOst das ausgeglichenste
 Profil zwischen den PHs. Die Streuung ist aber durchweg kleiner als der
 Abstand zur FH Wien, sodass sich der institutionelle Unterschied (PH vs.
 FH) als **dominantes Strukturmerkmal** der Ausbildungslandschaft
-identifizieren lässt.
-
-<!-- PARKING C2: Das folgende Material (ehemals § 4.1 Synthese, ~280 W.)
-wird in C2 je Dimension in 5.2/5.3/5.4 integriert; Redundanzen mit den
-dortigen Schluss-Absätzen (Implementierungsspalt / Machtkritik-Lücke /
-FH-Wien-Profil) werden dabei eliminiert. Der HFF-Antwort-Satz wandert
-in § 7 Conclusio. -->
-
-### Rohmaterial § 4.1 (alt) — wird in C2 verteilt
-
-Die Befunde der drei Dimensionen ergeben ein konsistentes Gesamtbild.
-Die explizite curriculare Verankerung von Chancengerechtigkeit ist
-marginal (D1: 0,8 % explizite Nennungen), inhaltlich wird das Konzept
-überwiegend auf der Stufe **formaler Gleichheit** adressiert (D2: 49 –
-72 % der Levinson-zuordenbaren Findings), während **transformative
-Gerechtigkeit** in allen Clustern unterrepräsentiert bleibt (D2: 4 –
-12 %). Innerhalb dieses Grundmusters hebt sich die FH Campus Wien als
-einziger Cluster mit einem deutlich kompensatorischen Profil ab (D3).
-
-Damit lässt sich die Hauptforschungsfrage präzisiert beantworten: Die
-Curricula gehen punktuell über formale Chancengleichheit hinaus —
-insbesondere durch kompensatorische Förderkonzepte und durch Elemente
-professioneller Haltungsbildung — verankern Chancengerechtigkeit als
-pädagogisches Leitprinzip aber **nicht systematisch** im Sinne einer
-transformativen Gerechtigkeit. Der von der OECD (2018) formulierte
-Anspruch, durch Bildungspolitik soziale Mobilität aktiv zu fördern,
-findet in den analysierten Curricula nur punktuell eine Entsprechung in
-machtkritischen oder strukturverändernden Lerngelegenheiten — ein
-Anspruch, der allerdings über die outcome-orientierte OECD-Rahmung
-hinaus eine theoretische Erweiterung im Sinne anerkennungstheoretischer
-Gerechtigkeitskonzepte (Stojanov, 2011) voraussetzt.
+identifizieren lässt. Die FH-Wien-Akzentuierung zeigt zudem, dass ein
+stärker kompensatorisches und professionalisierungsbezogenes Profil
+curricular realisierbar ist; welche institutionellen Traditionen
+dieses Profil tragen, lässt sich auf Basis der Dokumentenanalyse
+nicht rekonstruieren und bleibt Anschlussforschung vorbehalten
+(Morgan, 2022).
 
 # 6. Handlungsempfehlungen & Limitationen
 
