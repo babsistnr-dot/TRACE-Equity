@@ -339,28 +339,43 @@ nicht rekonstruieren und bleibt Anschlussforschung vorbehalten
 
 # 6. Handlungsempfehlungen & Limitationen
 
-<!-- PARKING C5: Neu zu formulieren in C5. Zielumfang ~500 W (1 S):
-  6.1 Handlungsempfehlungen (~300 W): E1/E2/E3 an D1/D2/D3 geknüpft
-      - E1 (zu D1): explizite begriffliche Verankerung in Modulbeschreibungen
-      - E2 (zu D2): Ausbau machtkritischer Lerngelegenheiten (Code 2.4)
-      - E3 (zu D3): FH-Wien-Profil (kompensatorisch + professionelle
-        Haltung) als Good-Practice-Signal für Transfer
-  6.2 Limitationen (~180 W): bestehende § 5-Passage übernehmen.
-
-Rohmaterial für 6.1 (aus alter § 4.2 letzter Absatz):
-- „sprachliche Ebene könnte die explizite begriffliche Verankerung
-  gestärkt werden, um Chancengerechtigkeit als Leitprinzip auch in
-  Modulüberschriften, Lernergebnissen und Kompetenzbeschreibungen
-  sichtbar zu machen" → Kern E1
-- „Erweiterung des Kategorienrepertoires in Richtung machtkritischer
-  und strukturreflexiver Lerngelegenheiten (Code 2.4), die über
-  individuelle Fördermaßnahmen hinausgehen" → Kern E2
-- „Dass eine solche Akzentverschiebung curricular machbar ist, zeigt
-  das Profil der FH Campus Wien." → Kern E3 -->
-
 ## 6.1 Handlungsempfehlungen
 
-*Folgt in C5.*
+Aus den drei Dimensionen des empirischen Befundes lassen sich drei
+curriculare Handlungsempfehlungen ableiten, die sich primär an die
+Hochschulleitungen der Pädagogischen Hochschulen und Fachhochschulen
+als Verantwortliche künftiger Curriculumsrevisionen richten.
+
+**E1 (Anknüpfung an D1): Begriffliche Verankerung auf Programmebene.**
+Die marginale explizite Nennung von Chancengerechtigkeit (0,8 % der
+relevanten Findings) ist keine neutrale Sprachlücke, sondern
+entscheidet mit darüber, ob Chancengerechtigkeit als Leitprinzip
+identifizierbar wird. Empfohlen wird, in Qualifikationsprofilen,
+Modulüberschriften und Lernergebnissen den Begriff programmatisch zu
+setzen — nicht als Etikett, sondern als anschlussfähige Bezugsgröße,
+die die pädagogischen Kompetenzen aus Codes 2.1–2.7 diskursiv bündelt.
+
+**E2 (Anknüpfung an D2): Ausbau machtkritischer Lerngelegenheiten.**
+Die durchgängige Schwäche der transformativen Stufe (4–12 %) signalisiert
+einen systematischen Leerraum bei machtkritischen und
+strukturreflexiven Kompetenzen (Code 2.4). Empfohlen wird, gezielt
+Lerngelegenheiten zu institutionalisieren, die über individuelle
+Fördermaßnahmen hinausgehen und Reflexion auf institutionelle
+Diskriminierung, Bildungsprivilegien und eigene professionelle
+Verstrickung ermöglichen — etwa durch vorurteilsbewusste
+Bildungsansätze, Fallarbeit zu Bildungsbiografien oder
+anti-diskriminatorische Praxisprojekte.
+
+**E3 (Anknüpfung an D3): FH-Wien-Profil als Transfer-Signal.**
+Das systematisch abweichende Profil der FH Campus Wien mit erhöhter
+kompensatorischer (39,8 %) und professioneller (43,0 % Code 2.7)
+Akzentuierung zeigt, dass eine Verschiebung weg von rein formaler
+Gleichheit curricular realisierbar ist. Empfohlen wird, dieses Profil
+als Referenzpunkt für den institutionellen Dialog zwischen
+Hochschulen zu nutzen — nicht als Schablone, sondern als Beleg, dass
+auch unter den Rahmenbedingungen der Hochschulgesetzgebung eine
+stärkere Kompensations- und Haltungsorientierung curricular möglich
+bleibt.
 
 ## 6.2 Limitationen
 
