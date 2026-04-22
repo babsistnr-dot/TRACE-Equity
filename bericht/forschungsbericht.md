@@ -120,40 +120,22 @@ einer Konsenskonferenz bereinigt; die Ergebnisse flossen in das Feld
 
 ## 3.1 Datenübersicht
 
-**Tabelle 1.** *Zusammensetzung des Datenkorpus und Umfang der Analyse*
-
-| Cluster | Hochschulen | Findings | Relevant | Relevanzrate | Code 1.1 |
-|---|---|---:|---:|---:|---:|
-| West | PH Tirol, PH Vorarlberg, KPH Edith Stein | 468 | 347 | 74,1 % | 0 |
-| Mitte | PH OÖ, PH Linz, PH Salzburg | 516 | 259 | 50,2 % | 8 |
-| SüdOst | PH Burgenland, PH Kärnten, PH Steiermark | 272 | 192 | 70,6 % | 0 |
-| FH Wien | FH Campus Wien | 370 | 263 | 71,1 % | 1 |
-| **Gesamt** | N = 4 Cluster | **1.626** | **1.061** | **65,3 %** | **9** |
-
-Aus den vier Curricula resultierten insgesamt 1.626 Keyword-Treffer, von
-denen 1.061 (65,3 %) im CEiL-Verfahren als inhaltlich relevant
-klassifiziert wurden. Die deutliche Varianz der Relevanzraten zwischen
-50,2 % (Mitte) und 74,1 % (West) wird in Abschnitt 3.4 eigens aufgegriffen.
+Die Datenbasis umfasst vier Cluster-Curricula, die elf Pädagogische
+Hochschulen und die FH Campus Wien abdecken (Tab. A.3.1). Aus den vier
+Curricula resultierten insgesamt 1.626 Keyword-Treffer, von denen 1.061
+(65,3 %) im CEiL-Verfahren als inhaltlich relevant klassifiziert wurden.
+Die deutliche Varianz der Relevanzraten zwischen 50,2 % (Mitte) und
+74,1 % (West) wird in Abschnitt 3.4 eigens aufgegriffen.
 
 ## 3.2 Dimension 1 — Explizit vs. Implizit
-
-**Tabelle 2.** *Verhältnis expliziter zu impliziter Verankerung je Cluster*
-
-| Cluster | Code 1.1 (explizit) | Relevant implizit | Verhältnis |
-|---|---:|---:|---:|
-| West | 0 | 347 | nur implizit |
-| Mitte | 8 | 251 | 31 : 1 |
-| SüdOst | 0 | 192 | nur implizit |
-| FH Wien | 1 | 262 | 262 : 1 |
-| **Gesamt** | **9** | **1.052** | **117 : 1** |
 
 Die explizite Verankerung von Chancengerechtigkeit ist über alle Cluster
 hinweg marginal: Nur 9 von 1.061 relevanten Findings (0,8 %) nennen
 Begriffe wie *Chancengleichheit*, *Chancengerechtigkeit* oder
-*Bildungsgerechtigkeit* direkt. Zwei der vier Cluster verzichten
-vollständig auf die Begriffe. Auf jede explizite Nennung kommen 117
-Findings, in denen Chancengerechtigkeit *implizit* — über pädagogische
-Handlungskompetenzen — operationalisiert wird.
+*Bildungsgerechtigkeit* direkt (Tab. A.3.2). Zwei der vier Cluster
+verzichten vollständig auf die Begriffe. Auf jede explizite Nennung
+kommen 117 Findings, in denen Chancengerechtigkeit *implizit* — über
+pädagogische Handlungskompetenzen — operationalisiert wird.
 
 Nur das Curriculum des Clusters Mitte führt den Begriff in der Einleitung
 programmatisch ein:
@@ -172,25 +154,15 @@ nennen Chancengerechtigkeit kaum beim Namen, adressieren sie aber
 
 ## 3.3 Dimension 2 — Konzeptuelle Tiefe (Levinson-Mapping)
 
-![Levinson-Heatmap: Verteilung der drei Gerechtigkeitsstufen je Cluster (nur relevante Findings, normalisiert pro Cluster über die drei Stufen). Abdeckungsraten siehe Tabelle 3.](abbildungen/levinson_heatmap.png){#fig:heatmap width=100%}
-
-**Tabelle 3.** *Levinson-Verteilung numerisch (Anteile über die drei Stufen)*
-
-| Cluster | Formale Gleichheit | Kompensatorisch | Transformativ | Abdeckung |
-|---|---:|---:|---:|---:|
-| West | 67,1 % | 28,9 % | 4,0 % | 64,8 % |
-| Mitte | 71,8 % | 16,6 % | 11,6 % | 69,9 % |
-| SüdOst | 69,7 % | 23,5 % | 6,8 % | 68,8 % |
-| FH Wien | 48,9 % | 39,8 % | 11,3 % | 50,6 % |
-
-Die Prozentwerte beziehen sich auf die Summe der drei Levinson-Stufen
-(= 100 %). Die *Abdeckungsrate* gibt an, welcher Anteil der relevanten
-Findings pro Cluster in diese Summe eingeht; die übrigen Findings
-entfallen auf die Querschnittscodes 2.5 (Bildungspartnerschaft) und 2.7
-(professionelle Haltung) sowie auf Code 1.1 und werden separat
+Die Zuordnung der relevanten Findings zur dreistufigen Typologie (Tab.
+A.3.3, Abb. A.4.1) bezieht sich auf die Summe der drei Levinson-Stufen
+(= 100 %). Die *Abdeckungsrate* der Tabelle gibt an, welcher Anteil der
+relevanten Findings pro Cluster in diese Summe eingeht; die übrigen
+Findings entfallen auf die Querschnittscodes 2.5 (Bildungspartnerschaft)
+und 2.7 (professionelle Haltung) sowie auf Code 1.1 und werden separat
 ausgewiesen.
 
-Die Heatmap zeigt ein konsistentes Grundmuster bei gleichzeitig deutlicher
+Das Mapping zeigt ein konsistentes Grundmuster bei gleichzeitig deutlicher
 institutioneller Streuung. In allen vier Clustern dominiert die Stufe der
 **formalen Gleichheit** mit Anteilen zwischen 48,9 % (FH Wien) und 71,8 %
 (Mitte); hier wirken jene Codes, die Diversitätsanerkennung und Inklusion
@@ -229,20 +201,12 @@ darauf hin, dass ein größerer Anteil der Keyword-Treffer in generischen
 Kontexten (z. B. Modulüberschriften, Literaturverzeichnisse) auftritt
 und im CEiL-Verfahren als nicht einschlägig klassifiziert wurde.
 
-**Tabelle 4.** *Auszug Code-Verteilung — Codes mit größter Spannweite
-zwischen Clustern*
-
-| Code | West | Mitte | SüdOst | FH Wien |
-|---|---:|---:|---:|---:|
-| 2.1 Diversität & Heterogenität | 32,3 % | 35,1 % | 39,1 % | 18,3 % |
-| 2.3 Individuelle Förderung | 8,9 % | 3,9 % | 8,9 % | 12,9 % |
-| 2.7 Professionelle Haltung | 26,5 % | 21,6 % | 18,2 % | 43,0 % |
-
 Die FH Campus Wien weist bei Code 2.1 (Diversität & Heterogenität) mit
 18,3 % einen deutlich geringeren Anteil als die drei PH-Cluster (32,3 %
 bis 39,1 %) auf; umgekehrt ist sie bei Code 2.7 (professionelle Haltung)
 mit 43,0 % mehr als doppelt so stark vertreten wie SüdOst (18,2 %) und
-erhöht auch bei Code 2.3 (individuelle Förderung) gegenüber Mitte (3,9 %).
+erhöht auch bei Code 2.3 (individuelle Förderung) gegenüber Mitte (3,9 %)
+(Tab. A.3.4; vollständige Verteilung: Tab. A.3.5).
 Dieses Muster ist konsistent mit dem Levinson-Befund aus Abschnitt 3.3:
 Ein höherer Anteil bei Codes 2.3 und 2.7 verschiebt das Profil in
 Richtung kompensatorischer und professioneller Handlungslogik, ein
@@ -385,21 +349,48 @@ Konsenskonferenz bereinigte alle 52 nicht-übereinstimmenden Fälle. Die
 finalen Kodierungen wurden in der Spalte `confirmed_code` gespeichert
 und liegen allen Analysen zugrunde.
 
-## A.3 Zusätzliche Visualisierungen
+## A.3 Ergebnistabellen
 
-Die folgenden Abbildungen ergänzen Abschnitt 3. Sie sind im
-Projekt-Repository unter
-`ergebnisse/visualisierungen_vergleich/` und `ergebnisse/cluster_*/visualisierungen/`
-abgelegt.
+**Tabelle A.3.1.** *Zusammensetzung des Datenkorpus und Umfang der Analyse*
 
-- Code-Verteilungs-Heatmap (8 Codes × 4 Cluster, prozentual)
-- Grouped Bar der Code-Verteilung über alle Cluster
-- Stacked Bars der Levinson-Verteilung pro Cluster (4 Stück)
-- Grouped Bar der Levinson-Verteilung über alle Cluster
+| Cluster | Hochschulen | Findings | Relevant | Relevanzrate | Code 1.1 |
+|---|---|---:|---:|---:|---:|
+| West | PH Tirol, PH Vorarlberg, KPH Edith Stein | 468 | 347 | 74,1 % | 0 |
+| Mitte | PH OÖ, PH Linz, PH Salzburg | 516 | 259 | 50,2 % | 8 |
+| SüdOst | PH Burgenland, PH Kärnten, PH Steiermark | 272 | 192 | 70,6 % | 0 |
+| FH Wien | FH Campus Wien | 370 | 263 | 71,1 % | 1 |
+| **Gesamt** | N = 4 Cluster | **1.626** | **1.061** | **65,3 %** | **9** |
 
-## A.4 Code-Verteilung — vollständige Tabelle
+**Tabelle A.3.2.** *Verhältnis expliziter zu impliziter Verankerung je Cluster*
 
-**A.4.1** *Prozentuale Verteilung pro Cluster (Summe je Spalte = 100 %)*
+| Cluster | Code 1.1 (explizit) | Relevant implizit | Verhältnis |
+|---|---:|---:|---:|
+| West | 0 | 347 | nur implizit |
+| Mitte | 8 | 251 | 31 : 1 |
+| SüdOst | 0 | 192 | nur implizit |
+| FH Wien | 1 | 262 | 262 : 1 |
+| **Gesamt** | **9** | **1.052** | **117 : 1** |
+
+**Tabelle A.3.3.** *Levinson-Verteilung numerisch (Anteile über die drei Stufen)*
+
+| Cluster | Formale Gleichheit | Kompensatorisch | Transformativ | Abdeckung |
+|---|---:|---:|---:|---:|
+| West | 67,1 % | 28,9 % | 4,0 % | 64,8 % |
+| Mitte | 71,8 % | 16,6 % | 11,6 % | 69,9 % |
+| SüdOst | 69,7 % | 23,5 % | 6,8 % | 68,8 % |
+| FH Wien | 48,9 % | 39,8 % | 11,3 % | 50,6 % |
+
+**Tabelle A.3.4.** *Auszug Code-Verteilung — Codes mit größter Spannweite zwischen Clustern*
+
+| Code | West | Mitte | SüdOst | FH Wien |
+|---|---:|---:|---:|---:|
+| 2.1 Diversität & Heterogenität | 32,3 % | 35,1 % | 39,1 % | 18,3 % |
+| 2.3 Individuelle Förderung | 8,9 % | 3,9 % | 8,9 % | 12,9 % |
+| 2.7 Professionelle Haltung | 26,5 % | 21,6 % | 18,2 % | 43,0 % |
+
+**Tabelle A.3.5.** *Code-Verteilung — vollständige Tabelle*
+
+*A.3.5a Prozentuale Verteilung pro Cluster (Summe je Spalte = 100 %)*
 
 | Code | West | Mitte | SüdOst | FH Wien |
 |---|---:|---:|---:|---:|
@@ -412,7 +403,7 @@ abgelegt.
 | Code 2.6 | 9,8 % | 7,7 % | 7,3 % | 7,2 % |
 | Code 2.7 | 26,5 % | 21,6 % | 18,2 % | 43,0 % |
 
-**A.4.2** *Absolute Zahlen (relevante Findings)*
+*A.3.5b Absolute Zahlen (relevante Findings)*
 
 | Code | West | Mitte | SüdOst | FH Wien |
 |---|---:|---:|---:|---:|
@@ -425,3 +416,18 @@ abgelegt.
 | Code 2.6 | 34 | 20 | 14 | 19 |
 | Code 2.7 | 92 | 56 | 35 | 113 |
 | **Summe** | **347** | **259** | **192** | **263** |
+
+## A.4 Visualisierungen
+
+**Abbildung A.4.1.** *Levinson-Heatmap — Verteilung der drei Gerechtigkeitsstufen je Cluster*
+
+![Verteilung der drei Gerechtigkeitsstufen je Cluster (nur relevante Findings, normalisiert pro Cluster über die drei Stufen). Abdeckungsraten: siehe Tab. A.3.3.](abbildungen/levinson_heatmap.png){#fig:heatmap width=100%}
+
+**Weitere Abbildungen** ergänzen Abschnitt 3 und sind im Projekt-Repository
+unter `ergebnisse/visualisierungen_vergleich/` und
+`ergebnisse/cluster_*/visualisierungen/` abgelegt:
+
+- Code-Verteilungs-Heatmap (8 Codes × 4 Cluster, prozentual)
+- Grouped Bar der Code-Verteilung über alle Cluster
+- Stacked Bars der Levinson-Verteilung pro Cluster (4 Stück)
+- Grouped Bar der Levinson-Verteilung über alle Cluster
