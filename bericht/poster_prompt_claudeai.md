@@ -60,8 +60,17 @@ höchstem Handwerksniveau.
    nicht „glätten", nichts ergänzen oder weglassen. Es ist ein
    geprüfter Forschungsbericht — inhaltliche Abweichung ist ein
    Fehler.
-2. **A0 Hochformat**, sauber als **PDF in Originalgröße A0**
-   exportierbar, randlos, Hintergrundfarben drucksicher.
+2. **A0 Hochformat, EINE Seite, kein Überlauf.** Der gesamte Inhalt
+   (bis einschließlich Literatur + Kontakt + QR) muss vollständig
+   auf **eine** A0-Seite passen — nichts wird abgeschnitten oder
+   läuft über. Das Poster ist eine **fixe Leinwand**, kein
+   fließendes Dokument. Sauber als PDF in Originalgröße A0
+   exportierbar, randlos, Hintergrundfarben drucksicher. Bei
+   Platznot: Abstände, Karten-Padding und die Heatmap-Karte
+   verkleinern — **nicht** die Schrift unter die Mindestgrößen.
+   Linke und rechte Korpus-Spalte schließen oben **und** unten auf
+   gleicher Höhe ab; alle Karten haben identische Abstände
+   zueinander und identisches Innen-Padding.
 3. **Aus 1,5 m lesbar — Schriftgrößen-Untergrenzen @ A0
    (nicht unterschreiten):** Titel 85–100 pt · Abschnitts-Headlines
    50–60 pt · Fließtext/Stichpunkte ≥ 30 pt · Bildunterschrift &
