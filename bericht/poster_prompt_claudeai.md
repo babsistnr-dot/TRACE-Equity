@@ -1,134 +1,147 @@
-# Claude.ai-Prompt für das TRACE-Equity-Poster (A0, Artifact)
+# TRACE-Equity-Poster — Briefing für Claude Design (claude.ai/design)
 
-> **Verwendung:** Auf claude.ai neuen Chat öffnen, die Datei
+> **Recherche-Basis (Mai 2026):** Claude Design ist ein eigenes Tool
+> (claude.ai/design, Opus 4.7), kein normaler Artifact-Chat. Es arbeitet
+> am besten mit einem **Design-Briefing** (Zweck · Zielgruppe ·
+> ästhetische Richtung mit kreativer Latitude · harte Tabus), nicht mit
+> pixelgenauer CSS-Diktatur. Iteration über Inline-Kommentare/Direkt-
+> Edits. Export nativ als PDF / PPTX / HTML.
+>
+> **Verwendung:** Auf **claude.ai/design** neues Projekt → die Datei
 > `ergebnisse/visualisierungen_vergleich/levinson_heatmap_poster.png`
-> an die Nachricht anhängen, dann den **gesamten Block unter „PROMPT"**
-> hineinkopieren und absenden. Schritt-für-Schritt-Anleitung: siehe
-> `poster_konzept.md` / Chat.
+> anhängen → den Block unter „BRIEFING" senden. Schritt-für-Schritt
+> siehe Chat / unten „WORKFLOW".
 
 ---
 
-## PROMPT
+## BRIEFING
 
-Du bist Grafik- und Informationsdesigner:in für wissenschaftliche
-Konferenzposter. Erstelle ein **einzelnes, in sich geschlossenes
-HTML-Artifact** (HTML + CSS inline, keine externen Abhängigkeiten) für
-ein wissenschaftliches Poster.
+**Rolle & Aufgabe**
+Du bist Senior-Designer:in für wissenschaftliche Konferenzposter.
+Gestalte ein **A0-Hochformat-Poster** (841 × 1189 mm, vertikal) für
+eine universitäre Postersession.
 
-### Format & Technik
-- **A0 Hochformat**, exakt 841 mm breit × 1189 mm hoch. Setze den
-  Poster-Container auf `width: 841mm; height: 1189mm;` und ergänze
-  `@page { size: A0 portrait; margin: 0; }` sowie passende
-  `print-color-adjust: exact;`-Regeln, damit Hintergrundfarben beim
-  PDF-Export erhalten bleiben.
-- Innenrand (Padding) ca. 30 mm.
-- Schrift: serifenlose Familie (System-Stack:
-  `-apple-system, "Segoe UI", Roboto, sans-serif`). Fließtext
-  ≥ 24 pt, Abschnitts-Headlines 48–60 pt, Take-home-Banner ~40 pt,
-  Haupttitel ≥ 80 pt. Alles muss aus 1,5 m lesbar sein.
-- Farbpalette reduziert: Akzentfarbe **#4B3F8C** (Violett), Text
-  **#222**, Flächen weiß / sehr helles Grau (#F4F2FA). Keine bunten
-  Spielereien — seriös, akademisch.
-- Oben rechts und oben links je ein leerer Platzhalter-Kasten
-  (gestrichelter Rahmen, Text „Logo Uni Graz") für späteres Logo.
+**Kontext & Zielgruppe**
+Benoteter Studienleistungs-Beitrag im Master Elementarpädagogik
+(Universität Graz). Betrachtet wird das Poster an einer Postersession
+aus ~1,5 m Entfernung von Fachpublikum (Lehrende, Studierende) und
+bewertet von der LV-Leitung. Es gelten konservative DACH-akademische
+Sehgewohnheiten.
 
-### Layout (klassisch-wissenschaftlich, von oben nach unten)
-1. **Titelband** (volle Breite): Titel groß, darunter Untertitel,
-   darunter Autorinnen/Affiliation. Logo-Platzhalter links & rechts.
-2. **Take-home-Banner** (volle Breite, Akzentfarbe hinterlegt, weiße
-   fette Schrift, zentriert).
-3. **Zweispaltiger Korpus:**
-   - Linke Spalte: „1 Hintergrund & Problem", „2 Forschungsfrage",
-     „3 Methode".
-   - Rechte Spalte: „4 Ergebnisse" mit den drei Unterblöcken D1, D2, D3.
-4. **Levinson-Heatmap** (volle Breite, größtes Einzelelement): das an
-   diese Nachricht angehängte Bild einbetten. Falls kein Bild
-   vorhanden ist, baue die Heatmap als HTML/CSS-Gitter aus den Daten
-   im Abschnitt „Heatmap-Daten" nach (3 Zeilen × 4 Spalten, Zellen
-   nach Wert von hellgelb→rot eingefärbt, Prozentzahl in jeder Zelle).
-   Bildunterschrift darunter.
-5. **Zweispaltig:** linke Spalte „5 Fazit", rechte Spalte
-   „6 Handlungsempfehlungen" (E1/E2/E3).
-6. **Fußzeile** (volle Breite, kleiner): „Literatur (Auswahl)" links,
-   „Kontakt" rechts, dazu ein Platzhalter-Quadrat „QR".
+**Ästhetische Richtung** (Richtung vorgeben, Craft dir überlassen)
+Ruhig, seriös, „akademisch elegant" — *nicht* verspielt, nicht
+Brutalismus, keine Maximalismus-Effekte. Starke typografische
+Hierarchie statt Dekor. Großzügiger Weißraum als Gestaltungsmittel.
+**Eine** Akzentfarbe (Violett **#4B3F8C**) sparsam für Headlines,
+Take-home-Banner und Kennzahl-Highlights; sonst Text **#222** auf
+Weiß, optionale ruhige Flächen in **#F4F2FA**. Serifenlose Schrift.
+Die Kernzahlen sollen visuell als Anker wirken (groß, in Akzentfarbe),
+nicht im Fließtext verschwinden — „Information lebt im Design, nicht
+im Absatz". Du hast Freiheit bei Raster, Proportionen, Mikrotypografie
+und der grafischen Umsetzung des Methoden-Flows — nutze sie auf
+höchstem Handwerksniveau.
 
-Nummerierte Abschnitts-Headlines mit Akzentfarbe. Großzügige
-Weißräume, klare Trennlinien. Der Methode-Block (3) soll als
-**horizontales Pfeil-Flussdiagramm** gestaltet sein, nicht als
-Fließtext.
+**Harte Constraints (nicht verhandelbar)**
+1. **Inhalt wörtlich.** Alle Texte und insbesondere alle Zahlen
+   exakt wie unten übernehmen. Nicht paraphrasieren, nicht runden,
+   nicht „glätten", nichts ergänzen oder weglassen. Es ist ein
+   geprüfter Forschungsbericht — inhaltliche Abweichung ist ein
+   Fehler.
+2. **A0 Hochformat**, sauber als **PDF in Originalgröße A0**
+   exportierbar, randlos, Hintergrundfarben drucksicher.
+3. **Aus 1,5 m lesbar.** Lieber Inhalt straffen als Schrift
+   verkleinern. Kein Textblock unter Poster-Lesegröße.
+4. Die **angehängte Heatmap-Grafik unverändert** einbetten (nicht
+   neu zeichnen, nicht umfärben), als größtes Einzelelement, mit
+   der angegebenen Bildunterschrift.
+5. Sprache: Deutsch. Rechtschreibung/Zeichen exakt wie vorgegeben.
 
-### Inhalte (wörtlich übernehmen)
+**Struktur (Priorität, Layout-Craft dir überlassen)**
+Lesefluss oben→unten, klassisch-wissenschaftlich:
+1. Titelband: Titel · Untertitel · Autorinnen/Affiliation; je ein
+   gestrichelter Logo-Platzhalter „Logo Uni Graz" oben links & rechts.
+2. Take-home-Banner über volle Breite (visuell zweitstärkstes
+   Element nach dem Titel).
+3. Zweispaltig: links 1 Hintergrund · 2 Forschungsfrage · 3 Methode
+   (Methode als horizontale Pfeilkette, nicht als Fließtext);
+   rechts 4 Ergebnisse mit D1/D2/D3 (Kernzahlen als Blickfang).
+4. Heatmap über volle Breite + Bildunterschrift (größtes Element).
+5. Zweispaltig: links 5 Fazit · rechts 6 Handlungsempfehlungen
+   (E1/E2/E3).
+6. Schmale Fußzeile: Literatur (Auswahl) links · Kontakt + QR-
+   Platzhalter rechts.
+Nummerierte Abschnittsüberschriften in Akzentfarbe.
+
+### Inhalt (wörtlich übernehmen)
 
 **Titel:** TRACE-Equity
-
 **Untertitel:** Curriculare Verankerung von Chancengerechtigkeit in
 der österreichischen Elementarpädagogik-Ausbildung
-
 **Autorinnen/Affiliation:** Laura König · Barbara Steiner —
 Universität Graz · Institut für Bildungsforschung und
 PädagogInnenbildung · Projektseminar zur Elementarpädagogik
 (LV-Leitung: Ass.-Prof. Dr. phil. Eva Pölzl-Stefanec)
 
-**Take-home-Banner:** Österreichs Elementarpädagogik-Curricula bleiben
-überwiegend auf formaler Gleichheit stehen — Chancengerechtigkeit als
-*transformatives* Leitprinzip ist die curriculare Leerstelle.
+**Take-home-Banner:** Österreichs Elementarpädagogik-Curricula
+bleiben überwiegend auf formaler Gleichheit stehen —
+Chancengerechtigkeit als transformatives Leitprinzip ist die
+curriculare Leerstelle.
 
 **1 Hintergrund & Problem:** Mit der Akademisierung der
 Elementarpädagogik (Bachelor seit 2018) stellt sich die Frage, ob die
-neuen Curricula den OECD-Anspruch auf *Educational Equity* (OECD,
-2018) einlösen — also Chancengerechtigkeit strukturell sichern oder
-bei formaler Gleichheitsrhetorik bleiben. Für den österreichischen
-Raum fehlte dazu eine systematische Untersuchung. TRACE-Equity
-schließt diese Lücke.
+neuen Curricula den OECD-Anspruch auf Educational Equity (OECD, 2018)
+einlösen — also Chancengerechtigkeit strukturell sichern oder bei
+formaler Gleichheitsrhetorik bleiben. Für den österreichischen Raum
+fehlte dazu eine systematische Untersuchung. TRACE-Equity schließt
+diese Lücke.
 
 **2 Forschungsfrage — Hauptforschungsfrage:** Inwiefern gehen die
 Curricula der Bachelorstudiengänge Elementarpädagogik österreichischer
 Hochschulen über formale Chancengleichheit hinaus und verankern
-Chancengerechtigkeit als pädagogisches Leitprinzip?
-*Drei Dimensionen:* D1 — Explizit vs. Implizit (Begriffsnennung oder
-Operationalisierung über Handlungskompetenzen?); D2 — Konzeptuelle
-Tiefe (welche Gerechtigkeitsstufe nach Levinson et al. 2022
-dominiert?); D3 — Komparativer Vergleich (Unterschiede zwischen
-Clustern, PH vs. FH?).
+Chancengerechtigkeit als pädagogisches Leitprinzip? Drei Dimensionen:
+D1 — Explizit vs. Implizit (Begriffsnennung oder Operationalisierung
+über Handlungskompetenzen?); D2 — Konzeptuelle Tiefe (welche
+Gerechtigkeitsstufe nach Levinson et al. 2022 dominiert?); D3 —
+Komparativer Vergleich (Unterschiede zwischen Clustern, PH vs. FH?).
 
 **3 Methode (als Pfeil-Flow):** Vollerhebung N = 4 Cluster-Curricula
 (9 PH + FH Campus Wien) → Qualitative Inhaltsanalyse (Kuckartz &
 Rädiker, 2022), deduktiv, 233 Keywords / 8 Codes → Critical Expert in
 the Loop: 1.626 Findings → 1.061 relevant (κ = 0,71 Relevanz;
 κ = 0,83 Code) → Levinson-Typologie (3 Stufen): formale Gleichheit →
-kompensatorisch → transformativ. Zusatz klein darunter: Keine
-LLM-Codierung (Validität latenter Bedeutungen); κ-Werte *gut* bis
-*sehr gut* (Landis & Koch, 1977).
+kompensatorisch → transformativ. Kleiner Zusatz darunter: Keine
+LLM-Codierung (Validität latenter Bedeutungen); κ-Werte gut bis
+sehr gut (Landis & Koch, 1977).
 
 **4 Ergebnisse:**
-- *D1 — Explizit vs. Implizit:* Nur 9 von 1.061 relevanten Findings
-  (0,8 %) nennen Gerechtigkeit explizit. Verhältnis 117 : 1 zugunsten
-  impliziter Operationalisierung. Zwei Cluster (West, SüdOst) ganz
-  ohne Begriff. → Die Verankerung liegt in den Kompetenzen, nicht in
-  den Begriffen.
-- *D2 — Konzeptuelle Tiefe:* Formale Gleichheit dominiert in allen
+- D1 — Explizit vs. Implizit: Nur 9 von 1.061 relevanten Findings
+  (0,8 %) nennen Gerechtigkeit explizit. Verhältnis 117 : 1
+  zugunsten impliziter Operationalisierung. Zwei Cluster (West,
+  SüdOst) ganz ohne Begriff. → Die Verankerung liegt in den
+  Kompetenzen, nicht in den Begriffen.
+- D2 — Konzeptuelle Tiefe: Formale Gleichheit dominiert in allen
   Clustern (48,9–71,8 %). Transformative Gerechtigkeit bleibt
   durchgängig schwach (4,0–11,6 %). → Die Progression equality →
   equity → liberation bricht nach der zweiten Stufe ab (siehe
   Heatmap).
-- *D3 — Komparativer Vergleich:* Die FH Campus Wien weicht
-  systematisch ab: weniger formale Gleichheit, mehr kompensatorische
-  Gerechtigkeit (39,8 %) und professionelle Haltung (Code 2.7:
-  43,0 %). Die institutionelle Differenz PH vs. FH ist das dominante
+- D3 — Komparativer Vergleich: Die FH Campus Wien weicht systematisch
+  ab: weniger formale Gleichheit, mehr kompensatorische Gerechtigkeit
+  (39,8 %) und professionelle Haltung (Code 2.7: 43,0 %). Die
+  institutionelle Differenz PH vs. FH ist das dominante
   Strukturmerkmal.
 
-**Bildunterschrift Heatmap:** Verteilung der drei Gerechtigkeitsstufen
-je Cluster (relevante Findings, normalisiert über die drei Stufen pro
-Cluster).
+**Bildunterschrift Heatmap:** Verteilung der drei
+Gerechtigkeitsstufen je Cluster (relevante Findings, normalisiert
+über die drei Stufen pro Cluster).
 
 **5 Fazit:** Die Curricula gehen punktuell über formale Gleichheit
 hinaus — durch kompensatorische Förderung und Haltungsbildung —,
 verankern Chancengerechtigkeit aber nicht systematisch transformativ.
 Die Schwäche ist präzise lokalisierbar: curricular im
 unterrepräsentierten Code 2.4, institutionell vor allem bei den
-Pädagogischen Hochschulen, diskursiv in der fehlenden Begriffsführung.
-Theoretisch bestätigt sich die *Gleichbehandlung von Ungleichen*
-(Gomolla & Radtke, 2009).
+Pädagogischen Hochschulen, diskursiv in der fehlenden
+Begriffsführung. Theoretisch bestätigt sich die Gleichbehandlung
+von Ungleichen (Gomolla & Radtke, 2009).
 
 **6 Handlungsempfehlungen:**
 - E1 — Begriff verankern: Chancengerechtigkeit explizit auf
@@ -140,38 +153,62 @@ Theoretisch bestätigt sich die *Gleichbehandlung von Ungleichen*
   hochschulübergreifenden Dialog.
 
 **Literatur (Auswahl):** Gomolla, M., & Radtke, F.-O. (2009).
-*Institutionelle Diskriminierung*. VS Verlag. · Kuckartz, U., &
-Rädiker, S. (2022). *Qualitative Inhaltsanalyse* (5. Aufl.). Beltz
+Institutionelle Diskriminierung. VS Verlag. · Kuckartz, U., &
+Rädiker, S. (2022). Qualitative Inhaltsanalyse (5. Aufl.). Beltz
 Juventa. · Levinson, M., Geron, T., & Brighouse, H. (2022).
-Conceptions of educational equity. *AERA Open, 8*. · OECD. (2018).
-*Equity in education*. OECD Publishing. · Stojanov, K. (2011).
-*Bildungsgerechtigkeit*. VS Verlag.
+Conceptions of educational equity. AERA Open, 8. · OECD. (2018).
+Equity in education. OECD Publishing. · Stojanov, K. (2011).
+Bildungsgerechtigkeit. VS Verlag.
 
 **Kontakt:** laura.koenig@edu.uni-graz.at ·
 barbara.steiner@edu.uni-graz.at
 
-### Heatmap-Daten (nur Fallback, falls kein Bild angehängt)
-Zeilen = Stufen, Spalten = Cluster, Werte in %:
-- Formale Gleichheit: West 67,1 · Mitte 71,8 · SüdOst 69,7 · FH Wien 48,9
-- Kompensatorische Gerechtigkeit: West 28,9 · Mitte 16,6 · SüdOst 23,5 · FH Wien 39,8
-- Transformative Gerechtigkeit: West 4,0 · Mitte 11,6 · SüdOst 6,8 · FH Wien 11,3
-
-### Ausgabe
-Gib **nur** das fertige HTML-Artifact aus. Optimiere es so, dass
-„Drucken → Als PDF speichern → Papierformat A0" ein randloses,
-korrekt proportioniertes Poster ergibt.
+**Ausgabe:** Liefere das fertige Poster als Design, das sich
+verlustfrei als A0-PDF exportieren lässt.
 
 ---
 
-## Iterations-Befehle (nach der ersten Version an Claude.ai schicken)
+## WORKFLOW (Schritt für Schritt)
 
-- „Die rechte Spalte ist zu textlastig — kürze D1–D3 auf je maximal
-  drei Zeilen und mache die Kernzahlen (0,8 %, 117:1, 48,9–71,8 %,
-  4,0–11,6 %, 39,8 %, 43,0 %) groß und farbig."
-- „Mach den Methode-Block kompakter und klar als Pfeilkette erkennbar."
-- „Mehr Weißraum zwischen den Abschnitten; Trennlinien dünner."
-- „Das Take-home-Banner soll das visuell stärkste Element nach dem
-  Titel sein."
-- „Heatmap größer ziehen, sodass sie ca. ein Viertel der Posterhöhe
-  einnimmt."
-- „Erstelle eine Querformat-Variante zum Vergleich." (optional)
+0. **Vorbereitung:** Heatmap-PNG bereitlegen
+   (`ergebnisse/visualisierungen_vergleich/levinson_heatmap_poster.png`).
+1. **claude.ai/design** öffnen → neues Projekt (nicht der normale
+   Chat). Modell Opus 4.7 ist dort Standard.
+2. **Heatmap anhängen**, dann den BRIEFING-Block senden (Bild zuerst,
+   dann Text).
+3. **Erste Version prüfen** entlang dieser Checkliste:
+   - Stimmen alle Zahlen exakt? (0,8 % · 117:1 · 48,9–71,8 % ·
+     4,0–11,6 % · 39,8 % · 43,0 % · κ 0,71 / 0,83 · N=4 · 9 PH)
+   - Ist die echte Heatmap eingebettet (nicht neu gezeichnet)?
+   - A0-Proportion (hoch, ~0,71:1)? Aus Distanz lesbar wirkend?
+4. **Gezielt iterieren** — Inline-Kommentar / Direkt-Edit am
+   konkreten Element statt Gesamt-Neubeschreibung. Ein Wunsch pro
+   Runde. Bewährte Befehle siehe unten.
+5. **Exportieren:** primär **PDF (A0, Originalgröße)**. Zusätzlich
+   **HTML** (kommt ins Repo, versionierbar) und optional **PPTX**
+   (Team-Feinschliff ohne Code).
+6. **Zurück ins Repo:** `poster_v1.pdf` (+ ggf. `poster_v1.html`)
+   nach `bericht/` legen → committen.
+
+## Iterations-Befehle (einzeln senden)
+
+- „Die Kernzahlen in Block 4 (0,8 %, 117:1, 48,9–71,8 %, 4,0–11,6 %,
+  39,8 %, 43,0 %) groß und in Akzentfarbe als Blickfang setzen."
+- „Methode (Block 3) klar als horizontale Pfeilkette mit 4 Stationen,
+  nicht als Fließtext."
+- „Take-home-Banner soll nach dem Titel das visuell stärkste Element
+  sein — mehr Präsenz, ruhige Akzentfläche."
+- „Mehr Weißraum zwischen den Sektionen; Trennlinien dünner und
+  dezenter."
+- „Heatmap größer — ca. ein Viertel der Posterhöhe, volle Breite."
+- „Schriftgröße Fließtext erhöhen, alles muss aus 1,5 m lesbar sein."
+- „Prüfe alle Zahlen gegen mein Briefing — nichts darf abweichen."
+
+## Qualitäts-Gate vor Abgabe
+
+- [ ] Jede Zahl 1:1 mit Bericht (Kurzversion) — kein „Glätten".
+- [ ] Heatmap ist die Original-PNG, unverändert.
+- [ ] A0-PDF randlos, Farben drucksicher, Proportion korrekt.
+- [ ] Aus 1,5 m alle Textebenen lesbar.
+- [ ] Literatur + Kontakt vollständig, Umlaute korrekt.
+- [ ] Logo-Platzhalter vorhanden (echtes Logo via LV-Leitung).
