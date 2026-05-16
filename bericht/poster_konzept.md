@@ -125,7 +125,7 @@ pädagogisches Leitprinzip?
 - **D2 — Konzeptuelle Tiefe:** Welche Gerechtigkeitsstufe nach
   Levinson et al. (2022) dominiert?
 - **D3 — Komparativer Vergleich:** Systematische Unterschiede
-  zwischen den Clustern (PH vs. FH)?
+  zwischen den vier Clustern (3 PH-Cluster + FH)?
 
 ---
 
@@ -165,11 +165,17 @@ Bedeutungen) · ICR κ = 0,71 / 0,83 — *gut* bis *sehr gut*
 - → Progression *equality → equity → liberation* bricht nach
   Stufe 2 ab (vgl. Heatmap)
 
-**D3 — Komparativer Vergleich**
-- **FH Campus Wien** weicht systematisch ab: weniger formale
-  Gleichheit, mehr kompensatorisch (**39,8 %**) + professionelle
+**D3 — Komparativer Vergleich (alle vier Cluster)**
+- **West:** stärkste Diversität & professionelle Haltung,
+  niedrigste Transformativ-Quote (**4,0 %**)
+- **Mitte:** höchste Transformativ-Quote aller Cluster (**11,6 %**)
+- **SüdOst:** ausgeglichenstes Profil unter den PHs
+- **FH Campus Wien:** Sonderstellung — geringste formale Gleichheit,
+  höchste kompensatorische Gerechtigkeit (**39,8 %**), professionelle
   Haltung (Code 2.7: **43,0 %**)
-- → **PH vs. FH** = dominantes Strukturmerkmal
+- → PHs untereinander **nicht homogen**; ihre Streuung ist aber
+  kleiner als der Abstand zur FH → **PH vs. FH** bleibt das
+  dominante Strukturmerkmal
 
 ---
 

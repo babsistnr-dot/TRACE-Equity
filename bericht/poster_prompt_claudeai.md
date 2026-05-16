@@ -110,7 +110,8 @@ Chancengerechtigkeit als pädagogisches Leitprinzip? Drei Dimensionen:
 D1 — Explizit vs. Implizit (Begriffsnennung oder Operationalisierung
 über Handlungskompetenzen?); D2 — Konzeptuelle Tiefe (welche
 Gerechtigkeitsstufe nach Levinson et al. 2022 dominiert?); D3 —
-Komparativer Vergleich (Unterschiede zwischen Clustern, PH vs. FH?).
+Komparativer Vergleich (systematische Unterschiede zwischen den vier
+Clustern — 3 PH-Cluster + FH?).
 
 **3 Methode (als Pfeil-Flow):** Vollerhebung N = 4 Cluster-Curricula
 (9 PH + FH Campus Wien) → Qualitative Inhaltsanalyse (Kuckartz &
@@ -132,10 +133,15 @@ bis sehr gut (Landis & Koch, 1977).
   (48,9–71,8 %); transformative Gerechtigkeit durchgängig schwach
   (4,0–11,6 %) → Progression equality → equity → liberation bricht
   nach Stufe 2 ab (siehe Heatmap).
-- D3 — Komparativer Vergleich: FH Campus Wien weicht systematisch ab
-  — weniger formale Gleichheit, mehr kompensatorisch (39,8 %) +
-  professionelle Haltung (Code 2.7: 43,0 %) → PH vs. FH = dominantes
-  Strukturmerkmal.
+- D3 — Komparativer Vergleich (alle vier Cluster): West — stärkste
+  Diversität & professionelle Haltung, niedrigste Transformativ-Quote
+  (4,0 %); Mitte — höchste Transformativ-Quote aller Cluster
+  (11,6 %); SüdOst — ausgeglichenstes Profil unter den PHs;
+  FH Campus Wien — Sonderstellung: geringste formale Gleichheit,
+  höchste kompensatorische Gerechtigkeit (39,8 %), professionelle
+  Haltung (Code 2.7: 43,0 %). → PHs untereinander nicht homogen,
+  ihre Streuung aber kleiner als der Abstand zur FH → PH vs. FH
+  bleibt das dominante Strukturmerkmal.
 
 **Bildunterschrift Heatmap:** Verteilung der drei
 Gerechtigkeitsstufen je Cluster (relevante Findings, normalisiert
