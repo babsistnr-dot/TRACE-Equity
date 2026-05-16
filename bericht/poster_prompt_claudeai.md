@@ -31,10 +31,20 @@ Sehgewohnheiten.
 **Ästhetische Richtung** (Richtung vorgeben, Craft dir überlassen)
 Ruhig, seriös, „akademisch elegant" — *nicht* verspielt, nicht
 Brutalismus, keine Maximalismus-Effekte. Starke typografische
-Hierarchie statt Dekor. Großzügiger Weißraum als Gestaltungsmittel.
-**Eine** Akzentfarbe (Violett **#4B3F8C**) sparsam für Headlines,
-Take-home-Banner und Kennzahl-Highlights; sonst Text **#222** auf
-Weiß, optionale ruhige Flächen in **#F4F2FA**. Serifenlose Schrift.
+Hierarchie statt Dekor. **Sektions-Karten-System:** Poster-Grund
+in ruhigem, sehr hellem Grau-Lavendel (z. B. **#ECEAF3**); jede
+nummerierte Sektion (1–6) als eigene, klar abgegrenzte Karte
+(Hintergrund **#FFFFFF** oder sehr helles **#F4F2FA**, dezente
+Rundung ~10 px, sehr feiner Rahmen/zarter Schatten, großzügiges
+Innen-Padding). Karten durch Weißraum getrennt (≥ 25 mm),
+ruhiges Raster — „Dashboard-clean", aber akademisch zurückhaltend,
+nicht App-verspielt. **Eine** Akzentfarbe (Violett **#4B3F8C**) für
+Headlines, Sektions-Nummern-Badges, Take-home-Banner und Kennzahl-
+Callouts; Text **#222**. **Wichtig:** Die Heatmap-Karte bleibt
+neutral weiß (kein Tönung hinter der Grafik), damit die
+Gelb-Rot-Skala unverfälscht bleibt. Kartentönung hell genug halten,
+dass Text-Kontrast ≥ 4,5:1 (WCAG AA) erhalten bleibt. Serifenlose
+Schrift.
 Die Kernzahlen sollen als visuelle Anker wirken — aber als
 **einheitlich gestaltete Kennzahl-Callouts**: gleiche Schriftgröße,
 gleiche Ausrichtung, klar vom Begleittext getrennt (z. B. konsistente
@@ -65,9 +75,10 @@ höchstem Handwerksniveau.
 **Struktur (Priorität, Layout-Craft dir überlassen)**
 Lesefluss oben→unten, klassisch-wissenschaftlich:
 1. Titelband: Titel · Untertitel · Affiliation **ohne
-   Autorinnennamen** (nur Institution/LV); je ein gestrichelter
-   Logo-Platzhalter „Logo Uni Graz" oben links & rechts. Die
-   Autorinnennamen stehen ausschließlich im Kontaktblock (Fußzeile).
+   Autorinnennamen** (nur Institution/LV); **genau ein**
+   gestrichelter Logo-Platzhalter „Logo Uni Graz" **oben rechts**
+   (kein zweites Logo links). Die Autorinnennamen stehen
+   ausschließlich im Kontaktblock (Fußzeile).
 2. Take-home-Banner über volle Breite (visuell zweitstärkstes
    Element nach dem Titel).
 3. Zweispaltig: links 1 Hintergrund · 2 Forschungsfrage · 3 Methode

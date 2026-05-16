@@ -1,4 +1,4 @@
-# TRACE-Equity — Poster-Konzept (A0 Hochformat, klassisch-wissenschaftlich)
+# TRACE-Equity — Poster-Konzept (A0 Hochformat, Sektions-Karten)
 
 > Konzept + abgabefertige Textbausteine. Visuelle Umsetzung in
 > PowerPoint / Affinity / LaTeX-beamerposter durch das Team.
@@ -10,8 +10,8 @@
 
 ```
 ┌───────────────────────────────────────────────────────────┐
-│  LOGO Uni Graz        TITEL + UNTERTITEL        LOGO/leer   │  ~12 %
-│              Autorinnen · Institut · LV                     │
+│  TITEL + UNTERTITEL                       [LOGO Uni Graz]   │  ~12 %
+│  Institut · LV  (keine Autorinnennamen)                     │
 ├───────────────────────────────────────────────────────────┤
 │  ┃ TAKE-HOME-BOTSCHAFT (volle Breite, farbig hinterlegt) ┃ │  ~7 %
 ├──────────────────────────────┬────────────────────────────┤
@@ -44,11 +44,20 @@ Fazit + Empfehlungen → Fußzeile. Klassische Z-Führung.
 - **Schrift:** max. 2 Familien. Empfehlung: eine serifenlose für
   Titel/Headlines + eine gut lesbare für Fließtext. Kein Comic Sans,
   keine schmalen Display-Fonts, **kein Versal-Satz** (GROSSBUCHSTABEN).
-- **3-Farben-Regel:** annähernd schwarzer Text (#222), nahezu weißer
-  / sehr heller Flächengrund (#F4F2FA), **eine** Akzentfarbe
-  (#4B3F8C). Nicht die 8 Code-Farben aufs Poster.
-- **Kontrast:** Text/Hintergrund ≥ 4,5:1 (WCAG AA). #222 auf Weiß und
-  Weiß auf #4B3F8C erfüllen das.
+- **Sektions-Karten-System (gewählt):** Poster-Grund ruhiges
+  Grau-Lavendel (#ECEAF3); jede Sektion 1–6 als eigene Karte
+  (Grund #FFFFFF / #F4F2FA, Rundung ~10 px, feiner Rahmen/zarter
+  Schatten, großzügiges Innen-Padding), getrennt durch Weißraum
+  (≥ 25 mm). „Dashboard-clean", akademisch zurückhaltend, nicht
+  App-verspielt. **Heatmap-Karte bleibt neutral weiß** (keine
+  Tönung hinter der Grafik).
+- **3-Farben-Regel:** annähernd schwarzer Text (#222), neutrale
+  Grau-/Lavendel-Gründe (#ECEAF3 / #F4F2FA / #FFFFFF), **eine**
+  Akzentfarbe (#4B3F8C) für Headlines, Sektions-Badges, Banner,
+  Kennzahl-Callouts. Nicht die 8 Code-Farben aufs Poster.
+- **Kontrast:** Text/Hintergrund ≥ 4,5:1 (WCAG AA). #222 auf den
+  hellen Kartengründen und Weiß auf #4B3F8C erfüllen das;
+  Kartentönung bewusst hell halten.
 - **Farbsehschwäche:** ~8 % der Männer rot-grün-blind. Heatmap (YlOrRd,
   Helligkeitsverlauf) ist akzeptabel — vor Druck Graustufen-A4-Test
   + Coblis/Color Oracle gegenprüfen.
