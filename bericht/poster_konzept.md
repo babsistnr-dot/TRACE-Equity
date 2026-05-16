@@ -166,8 +166,8 @@ Bedeutungen) · ICR κ = 0,71 / 0,83 — *gut* bis *sehr gut*
   Stufe 2 ab (vgl. Heatmap)
 
 **D3 — Komparativer Vergleich (alle vier Cluster)**
-- **West:** stärkste Diversität & professionelle Haltung,
-  niedrigste Transformativ-Quote (**4,0 %**)
+- **West:** fokussiert professionelle Haltung, niedrigste
+  Transformativ-Quote (**4,0 %**)
 - **Mitte:** höchste Transformativ-Quote aller Cluster (**11,6 %**)
 - **SüdOst:** ausgeglichenstes Profil unter den PHs
 - **FH Campus Wien:** Sonderstellung — geringste formale Gleichheit,

@@ -274,6 +274,16 @@ Stand: Commit `49c932e`).
   allem in Diskussion (aktuell 1,5 S.).
 - **Relevanz-Ratio-Varianz** (50–74 %): in Limitationen reflektieren.
 - **Latente Analyse interpretativ**: Methodik-Teil transparent halten.
+- **⚠ Bericht-interne Inkonsistenz § 5.4 (Langversion):** Die Prosa
+  sagt „West zeigt die stärkste Ausprägung bei **Diversität** und
+  professioneller Haltung", aber Tab. A.3.4 weist SüdOst als höchsten
+  Code-2.1-Wert (Diversität, 39,1 % vs. West 32,3 %) aus. Die
+  **Kurzversion** (Abgabe-Kandidat) ist bereits korrekt („West
+  fokussiert Haltung", konsistent zu Tab. A.3.4: West Code 2.7
+  26,5 % = höchster PH-Wert). Poster wurde auf den Kurzversion-
+  Wortlaut gezogen. **To-do:** Langversion § 5.4 an Kurzversion/
+  Tabelle angleichen, bevor Langversion irgendwo verwendet oder der
+  Anhang aus ihr übernommen wird (Angriffspunkt in der Verteidigung).
 - **Poster:** Format auf A0 Hochformat / klassisch-wissenschaftlich
   festgelegt. Offen: Uni-Graz-Vorlage/Logo + QR-Ziel. Inhaltliche
   Treue Poster ↔ Bericht über Qualitäts-Gate sichern (Kennzahlen

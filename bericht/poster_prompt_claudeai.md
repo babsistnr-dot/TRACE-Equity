@@ -133,8 +133,8 @@ bis sehr gut (Landis & Koch, 1977).
   (48,9–71,8 %); transformative Gerechtigkeit durchgängig schwach
   (4,0–11,6 %) → Progression equality → equity → liberation bricht
   nach Stufe 2 ab (siehe Heatmap).
-- D3 — Komparativer Vergleich (alle vier Cluster): West — stärkste
-  Diversität & professionelle Haltung, niedrigste Transformativ-Quote
+- D3 — Komparativer Vergleich (alle vier Cluster): West —
+  fokussiert professionelle Haltung, niedrigste Transformativ-Quote
   (4,0 %); Mitte — höchste Transformativ-Quote aller Cluster
   (11,6 %); SüdOst — ausgeglichenstes Profil unter den PHs;
   FH Campus Wien — Sonderstellung: geringste formale Gleichheit,
