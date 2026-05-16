@@ -36,11 +36,24 @@
 Methode) → rechte Spalte (Ergebnisse D1–D3) → Heatmap als Beleg →
 Fazit + Empfehlungen → Fußzeile. Klassische Z-Führung.
 
-**Designhinweise**
-- Schrift: serifenlose Headlines (z. B. Source Sans / Calibri),
-  Fließtext min. 24 pt @ A0, Headlines 60–72 pt, Titel ≥ 90 pt.
-- Farbpalette reduziert: 1 Akzentfarbe (Heatmap-konsistent) +
-  Dunkelgrau-Text. Nicht alle 8 Code-Farben aufs Poster.
+**Designhinweise (evidenzbasiert — Quellen s. Abschnitt 5)**
+- **Schriftgrößen @ A0** (lesbar aus ~1 m, max. 3–4 Größen gesamt):
+  Titel **85–100 pt**, Untertitel/Autorinnen ~44 pt,
+  Abschnitts-Headlines **50–60 pt**, Fließtext **30–36 pt**
+  (nie unter 28 pt), Bildunterschrift/Literatur **22–24 pt**.
+- **Schrift:** max. 2 Familien. Empfehlung: eine serifenlose für
+  Titel/Headlines + eine gut lesbare für Fließtext. Kein Comic Sans,
+  keine schmalen Display-Fonts, **kein Versal-Satz** (GROSSBUCHSTABEN).
+- **3-Farben-Regel:** annähernd schwarzer Text (#222), nahezu weißer
+  / sehr heller Flächengrund (#F4F2FA), **eine** Akzentfarbe
+  (#4B3F8C). Nicht die 8 Code-Farben aufs Poster.
+- **Kontrast:** Text/Hintergrund ≥ 4,5:1 (WCAG AA). #222 auf Weiß und
+  Weiß auf #4B3F8C erfüllen das.
+- **Farbsehschwäche:** ~8 % der Männer rot-grün-blind. Heatmap (YlOrRd,
+  Helligkeitsverlauf) ist akzeptabel — vor Druck Graustufen-A4-Test
+  + Coblis/Color Oracle gegenprüfen.
+- **Weißraum:** großzügig; ≥ 25 mm zwischen Sektionen, ~30 mm
+  Außenrand. Weißraum ist Gestaltungsmittel, kein Verlust.
 - Take-home-Banner in Akzentfarbe hinterlegt, weiße Schrift.
 - Die Heatmap ist das größte Einzelelement — nicht verkleinern.
 - **Druckfertige Grafik:**
@@ -82,12 +95,12 @@ PädagogInnenbildung · Projektseminar zur Elementarpädagogik
 
 ### 1 · Hintergrund & Problem
 
-Mit der Akademisierung der Elementarpädagogik (Bachelor seit 2018)
-stellt sich die Frage, ob die neuen Curricula den OECD-Anspruch auf
-*Educational Equity* (OECD, 2018) einlösen — also Chancengerechtigkeit
-strukturell sichern oder bei formaler Gleichheitsrhetorik bleiben.
-Für den österreichischen Raum fehlte dazu eine systematische
-Untersuchung. **TRACE-Equity schließt diese Lücke.**
+- Akademisierung der Elementarpädagogik — Bachelor seit 2018
+- OECD-Anspruch: *Educational Equity* als Qualitätsfaktor (OECD, 2018)
+- Offen: sichern die Curricula Chancengerechtigkeit **strukturell**
+  oder bleibt es bei Gleichheitsrhetorik?
+- Für Österreich bisher keine systematische Untersuchung
+  → **TRACE-Equity schließt die Lücke.**
 
 ---
 
@@ -126,44 +139,42 @@ Curricula              (Kuckartz &               1.626 Findings
                                 → transformativ
 ```
 
-Deduktives Kategoriensystem, keine LLM-Codierung (Validität latenter
-Bedeutungen). Intercoder-Reliabilität: κ = 0,71 (Relevanz),
-κ = 0,83 (Code) — *gut* bis *sehr gut* (Landis & Koch, 1977).
+Deduktiv · keine LLM-Codierung (Validität latenter Bedeutungen) ·
+ICR κ = 0,71 / 0,83 — *gut* bis *sehr gut* (Landis & Koch, 1977).
 
 ---
 
 ### 4 · Ergebnisse
 
 **D1 — Explizit vs. Implizit**
-Nur **9 von 1.061** relevanten Findings (**0,8 %**) nennen
-Gerechtigkeit explizit. Verhältnis **117 : 1** zugunsten impliziter
-Operationalisierung. Zwei Cluster (West, SüdOst) ganz ohne Begriff.
-→ Die Verankerung liegt in den Kompetenzen, nicht in den Begriffen.
+- Nur **9 / 1.061** Findings (**0,8 %**) nennen Gerechtigkeit explizit
+- Verhältnis **117 : 1** zugunsten impliziter Operationalisierung
+- West & SüdOst: kein einziger expliziter Begriff
+- → Verankerung liegt in den **Kompetenzen**, nicht in Begriffen
 
 **D2 — Konzeptuelle Tiefe**
-Formale Gleichheit dominiert in **allen** Clustern (**48,9–71,8 %**).
-Transformative Gerechtigkeit bleibt durchgängig schwach
-(**4,0–11,6 %**). → Die Progression *equality → equity → liberation*
-bricht nach der zweiten Stufe ab (vgl. Heatmap).
+- Formale Gleichheit dominiert überall: **48,9–71,8 %**
+- Transformative Gerechtigkeit durchgängig schwach: **4,0–11,6 %**
+- → Progression *equality → equity → liberation* bricht nach
+  Stufe 2 ab (vgl. Heatmap)
 
 **D3 — Komparativer Vergleich**
-Die **FH Campus Wien** weicht systematisch ab: weniger formale
-Gleichheit, mehr kompensatorische Gerechtigkeit (**39,8 %**) und
-professionelle Haltung (Code 2.7: **43,0 %**). Die institutionelle
-Differenz **PH vs. FH** ist das dominante Strukturmerkmal.
+- **FH Campus Wien** weicht systematisch ab: weniger formale
+  Gleichheit, mehr kompensatorisch (**39,8 %**) + professionelle
+  Haltung (Code 2.7: **43,0 %**)
+- → **PH vs. FH** = dominantes Strukturmerkmal
 
 ---
 
 ### 5 · Fazit
 
-Die Curricula gehen **punktuell** über formale Gleichheit hinaus —
-durch kompensatorische Förderung und Haltungsbildung —, verankern
-Chancengerechtigkeit aber **nicht systematisch transformativ**.
-Die Schwäche ist präzise lokalisierbar: curricular im
-unterrepräsentierten Code 2.4, institutionell vor allem bei den
-Pädagogischen Hochschulen, diskursiv in der fehlenden Begriffsführung.
-Theoretisch bestätigt sich die *Gleichbehandlung von Ungleichen*
-(Gomolla & Radtke, 2009).
+- **Punktuell** über formale Gleichheit hinaus (kompensatorische
+  Förderung, Haltungsbildung) — aber **nicht systematisch
+  transformativ** verankert
+- Schwäche lokalisierbar: curricular (Code 2.4) · institutionell
+  (v. a. PHs) · diskursiv (fehlende Begriffsführung)
+- Bestätigt die *Gleichbehandlung von Ungleichen*
+  (Gomolla & Radtke, 2009)
 
 ---
 
@@ -207,3 +218,72 @@ barbara.steiner@edu.uni-graz.at — [QR-Code: Link zu Bericht/Repo]
 2. ~~Heatmap in Druckauflösung~~ ✅ erledigt — `levinson_heatmap_poster.png`
    (600 dpi) liegt unter `ergebnisse/visualisierungen_vergleich/`.
 3. QR-Ziel festlegen (öffentliches Repo? PDF des Berichts?).
+4. ~~Textumfang straffen~~ ✅ erledigt — Fließtext-Absätze
+   (Hintergrund, Ergebnisse D1–D3, Fazit) in Stichpunktstil
+   überführt. Verbleibende ~448 W. sind überwiegend nicht kürzbare
+   fixe Elemente (HFF wörtlich, Affiliation, 5 Literaturangaben,
+   Take-home, Kontakt); der eigentliche Scan-Text ist jetzt
+   stichpunktbasiert. Kennzahlen unverändert.
+
+---
+
+## 5. Wissenschaftliche Poster-Richtlinien (Recherche-Synthese)
+
+Evidenzbasis aus Hochschul-Leitfäden (UCLA, Yale, UChicago, Ohio
+State, York) und Fachquellen (Mai 2026). Kernregeln, an denen sich
+das Konzept oben orientiert:
+
+**Text & Wortzahl**
+- *Weniger Text = mehr Betrachtende.* Richtwert 250 W. (aggressiv)
+  bis 300–500 W. (typisch), absolute Obergrenze ~800 W.
+- Stichpunkte und unvollständige Sätze statt Fließtext; kurze
+  Absätze; „Information lebt im Design, nicht im Absatz".
+- Methoden als Illustration, Ergebnisse als Grafik statt Tabelle
+  (hier: Methoden-Pfeilflow + Levinson-Heatmap — bereits umgesetzt).
+
+**Schriftgrößen @ A0** (lesbar aus ~1 m)
+- Titel 85–100 pt · Headlines 50–60 pt · Fließtext 30–36 pt
+  (Minimum 28) · Bildunterschrift/Literatur 18–24 pt.
+- Maximal 3–4 Schriftgrößen, maximal 2 Schriftfamilien.
+- Kein Versal-Satz für Titel/Body; keine Display-/Schmalschriften.
+
+**Farbe & Kontrast**
+- 3-Farben-Regel: ~schwarzer Text · heller Grund · *eine*
+  Akzentfarbe.
+- WCAG AA: Kontrast ≥ 4,5:1 für Fließtext.
+- ~8 % der Männer rot-grün-blind → rot-grün-Codierung meiden;
+  Graustufen-/Simulator-Test (Coblis, Color Oracle) vor Druck.
+
+**Layout & Lesefluss**
+- Spaltenweise von oben links nach unten rechts; Lesepfad muss
+  ohne Erklärung erkennbar sein.
+- Großzügiger Weißraum (≥ 25 mm zwischen Sektionen); Raster für
+  konsistente Ausrichtung; vorab auf Papier skizzieren.
+- DACH-Hinweis: Hochformat ist an Uni-Postersessions üblich und
+  hier vorgegeben — international wird oft Querformat empfohlen,
+  für diesen Abgabekontext aber nicht maßgeblich.
+
+**Häufige Fehler (Checkliste — vor Abgabe prüfen)**
+- [ ] Zu viel Text / zu kleine Schrift (< 28 pt Body @ A0)
+- [ ] Zu wenig Weißraum, „überladenes" Layout
+- [ ] Inkonsistente Ausrichtung (kein Raster)
+- [ ] > 3–4 Schriftgrößen oder > 2 Schriftfamilien
+- [ ] Mehr als ~3 Farben / rot-grün-Konflikte
+- [ ] Versal-Satz, Comic Sans, Display-Schriften
+- [ ] Plakatmaße überschritten (Rand fehlt)
+- [ ] Unklarer Lesepfad
+
+### Quellen
+
+- UCLA Library — Size, Layout, and Text:
+  https://guides.library.ucla.edu/c.php?g=223540&p=1480858
+- Ohio State — Scientific Posters: A Learner's Guide:
+  https://ohiostate.pressbooks.pub/scientificposterguide/chapter/scientific-posters/
+- Molecular Ecologist — 10 Simple Rules for Designing a Scientific Poster:
+  https://www.molecularecologist.com/2016/06/03/10-simple-rules-for-designing-a-scientific-poster/
+- Animate Your Science — Font sizes for scientific posters:
+  https://www.animateyour.science/post/how-to-choose-appropriate-font-sizes-for-your-scientific-poster
+- Animate Your Science — Colour-blind-friendly posters:
+  https://www.animateyour.science/post/how-to-design-a-colour-blind-friendly-scientific-poster
+- Yale Library — Academic Poster Accessibility:
+  https://guides.library.yale.edu/academic-poster-resources/accessibility

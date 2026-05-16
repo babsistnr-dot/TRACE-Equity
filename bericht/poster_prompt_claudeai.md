@@ -49,8 +49,11 @@ höchstem Handwerksniveau.
    Fehler.
 2. **A0 Hochformat**, sauber als **PDF in Originalgröße A0**
    exportierbar, randlos, Hintergrundfarben drucksicher.
-3. **Aus 1,5 m lesbar.** Lieber Inhalt straffen als Schrift
-   verkleinern. Kein Textblock unter Poster-Lesegröße.
+3. **Aus 1,5 m lesbar — Schriftgrößen-Untergrenzen @ A0
+   (nicht unterschreiten):** Titel 85–100 pt · Abschnitts-Headlines
+   50–60 pt · Fließtext/Stichpunkte ≥ 30 pt · Bildunterschrift &
+   Literatur ≥ 22 pt. Max. 3–4 Größen, max. 2 Schriftfamilien, kein
+   Versal-Satz. Lieber Inhalt straffen als Schrift verkleinern.
 4. Die **angehängte Heatmap-Grafik unverändert** einbetten (nicht
    neu zeichnen, nicht umfärben), als größtes Einzelelement, mit
    der angegebenen Bildunterschrift.
@@ -87,13 +90,13 @@ bleiben überwiegend auf formaler Gleichheit stehen —
 Chancengerechtigkeit als transformatives Leitprinzip ist die
 curriculare Leerstelle.
 
-**1 Hintergrund & Problem:** Mit der Akademisierung der
-Elementarpädagogik (Bachelor seit 2018) stellt sich die Frage, ob die
-neuen Curricula den OECD-Anspruch auf Educational Equity (OECD, 2018)
-einlösen — also Chancengerechtigkeit strukturell sichern oder bei
-formaler Gleichheitsrhetorik bleiben. Für den österreichischen Raum
-fehlte dazu eine systematische Untersuchung. TRACE-Equity schließt
-diese Lücke.
+**1 Hintergrund & Problem** (als Stichpunkte setzen):
+- Akademisierung der Elementarpädagogik — Bachelor seit 2018
+- OECD-Anspruch: Educational Equity als Qualitätsfaktor (OECD, 2018)
+- Offen: sichern die Curricula Chancengerechtigkeit strukturell oder
+  bleibt es bei Gleichheitsrhetorik?
+- Für Österreich bisher keine systematische Untersuchung →
+  TRACE-Equity schließt die Lücke.
 
 **2 Forschungsfrage — Hauptforschungsfrage:** Inwiefern gehen die
 Curricula der Bachelorstudiengänge Elementarpädagogik österreichischer
@@ -109,39 +112,36 @@ Komparativer Vergleich (Unterschiede zwischen Clustern, PH vs. FH?).
 Rädiker, 2022), deduktiv, 233 Keywords / 8 Codes → Critical Expert in
 the Loop: 1.626 Findings → 1.061 relevant (κ = 0,71 Relevanz;
 κ = 0,83 Code) → Levinson-Typologie (3 Stufen): formale Gleichheit →
-kompensatorisch → transformativ. Kleiner Zusatz darunter: Keine
-LLM-Codierung (Validität latenter Bedeutungen); κ-Werte gut bis
-sehr gut (Landis & Koch, 1977).
+kompensatorisch → transformativ. Kleiner Zusatz darunter: deduktiv ·
+keine LLM-Codierung (Validität latenter Bedeutungen) · κ-Werte gut
+bis sehr gut (Landis & Koch, 1977).
 
-**4 Ergebnisse:**
-- D1 — Explizit vs. Implizit: Nur 9 von 1.061 relevanten Findings
-  (0,8 %) nennen Gerechtigkeit explizit. Verhältnis 117 : 1
-  zugunsten impliziter Operationalisierung. Zwei Cluster (West,
-  SüdOst) ganz ohne Begriff. → Die Verankerung liegt in den
-  Kompetenzen, nicht in den Begriffen.
-- D2 — Konzeptuelle Tiefe: Formale Gleichheit dominiert in allen
-  Clustern (48,9–71,8 %). Transformative Gerechtigkeit bleibt
-  durchgängig schwach (4,0–11,6 %). → Die Progression equality →
-  equity → liberation bricht nach der zweiten Stufe ab (siehe
-  Heatmap).
-- D3 — Komparativer Vergleich: Die FH Campus Wien weicht systematisch
-  ab: weniger formale Gleichheit, mehr kompensatorische Gerechtigkeit
-  (39,8 %) und professionelle Haltung (Code 2.7: 43,0 %). Die
-  institutionelle Differenz PH vs. FH ist das dominante
+**4 Ergebnisse** (knapp, Kernzahlen als Blickfang):
+- D1 — Explizit vs. Implizit: nur 9 / 1.061 Findings (0,8 %) nennen
+  Gerechtigkeit explizit; Verhältnis 117 : 1 zugunsten impliziter
+  Operationalisierung; West & SüdOst ohne expliziten Begriff →
+  Verankerung in den Kompetenzen, nicht in Begriffen.
+- D2 — Konzeptuelle Tiefe: formale Gleichheit dominiert überall
+  (48,9–71,8 %); transformative Gerechtigkeit durchgängig schwach
+  (4,0–11,6 %) → Progression equality → equity → liberation bricht
+  nach Stufe 2 ab (siehe Heatmap).
+- D3 — Komparativer Vergleich: FH Campus Wien weicht systematisch ab
+  — weniger formale Gleichheit, mehr kompensatorisch (39,8 %) +
+  professionelle Haltung (Code 2.7: 43,0 %) → PH vs. FH = dominantes
   Strukturmerkmal.
 
 **Bildunterschrift Heatmap:** Verteilung der drei
 Gerechtigkeitsstufen je Cluster (relevante Findings, normalisiert
 über die drei Stufen pro Cluster).
 
-**5 Fazit:** Die Curricula gehen punktuell über formale Gleichheit
-hinaus — durch kompensatorische Förderung und Haltungsbildung —,
-verankern Chancengerechtigkeit aber nicht systematisch transformativ.
-Die Schwäche ist präzise lokalisierbar: curricular im
-unterrepräsentierten Code 2.4, institutionell vor allem bei den
-Pädagogischen Hochschulen, diskursiv in der fehlenden
-Begriffsführung. Theoretisch bestätigt sich die Gleichbehandlung
-von Ungleichen (Gomolla & Radtke, 2009).
+**5 Fazit** (als Stichpunkte setzen):
+- Punktuell über formale Gleichheit hinaus (kompensatorische
+  Förderung, Haltungsbildung), aber nicht systematisch transformativ
+  verankert.
+- Schwäche lokalisierbar: curricular (Code 2.4) · institutionell
+  (v. a. PHs) · diskursiv (fehlende Begriffsführung).
+- Bestätigt die Gleichbehandlung von Ungleichen (Gomolla & Radtke,
+  2009).
 
 **6 Handlungsempfehlungen:**
 - E1 — Begriff verankern: Chancengerechtigkeit explizit auf
