@@ -109,8 +109,13 @@ def stacked_bar_cluster(ergebnis):
     return out_path
 
 
-def heatmap_vergleich(ergebnisse):
-    """Erstellt die Kern-Heatmap: 3 Stufen × 4 Cluster."""
+def heatmap_vergleich(ergebnisse, poster=False):
+    """Erstellt die Kern-Heatmap: 3 Stufen × 4 Cluster.
+
+    poster=True exportiert dieselbe Grafik druckfertig (600 dpi,
+    separate Datei `levinson_heatmap_poster.png`), ohne die für den
+    Bericht kalibrierte 150-dpi-Version zu überschreiben.
+    """
     setup_plots()
 
     # Matrix bauen: Zeilen = Stufen, Spalten = Cluster
@@ -140,9 +145,14 @@ def heatmap_vergleich(ergebnisse):
 
     out_dir = ERGEBNISSE_DIR / 'visualisierungen_vergleich'
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = out_dir / 'levinson_heatmap.png'
+    if poster:
+        out_path = out_dir / 'levinson_heatmap_poster.png'
+        dpi = 600
+    else:
+        out_path = out_dir / 'levinson_heatmap.png'
+        dpi = 150
     plt.tight_layout()
-    plt.savefig(out_path, dpi=150, bbox_inches='tight')
+    plt.savefig(out_path, dpi=dpi, bbox_inches='tight')
     plt.close()
     return out_path
 
@@ -452,9 +462,15 @@ if __name__ == '__main__':
         print("  python analyse_levinson_mapping.py mitte")
         print("  python analyse_levinson_mapping.py fh_wien")
         print("  python analyse_levinson_mapping.py --alle")
+        print("  python analyse_levinson_mapping.py --poster   "
+              "# nur Heatmap in Druckaufloesung (600 dpi)")
         sys.exit(1)
 
-    if sys.argv[1] == '--alle':
+    if sys.argv[1] == '--poster':
+        ergebnisse = [berechne_verteilung(name) for name in CLUSTER_PATHS]
+        poster_path = heatmap_vergleich(ergebnisse, poster=True)
+        print(f"  [OK] Poster-Heatmap (600 dpi): {poster_path.name}")
+    elif sys.argv[1] == '--alle':
         ergebnisse = [analyse_cluster(name) for name in CLUSTER_PATHS]
         print("=== Cross-Cluster-Vergleich ===")
         heatmap_path = heatmap_vergleich(ergebnisse)
