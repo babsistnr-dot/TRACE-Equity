@@ -54,6 +54,13 @@ Fazit + Empfehlungen → Fußzeile. Klassische Z-Führung.
   + Coblis/Color Oracle gegenprüfen.
 - **Weißraum:** großzügig; ≥ 25 mm zwischen Sektionen, ~30 mm
   Außenrand. Weißraum ist Gestaltungsmittel, kein Verlust.
+- **Kennzahlen einheitlich:** Stat-Callouts mit gleicher
+  Schriftgröße, gleicher Ausrichtung, klar vom Begleittext getrennt
+  (z. B. konsistente Kacheln je Dimension) — *nicht* verschieden
+  große, frei im Text schwebende Riesenzahlen.
+- **Autorinnennamen nur im Kontaktblock**, nicht im Titelband
+  (dort nur Institution/LV). Akademische Konvention wäre Namen oben;
+  bewusste Abweichung der Verfasserinnen.
 - Take-home-Banner in Akzentfarbe hinterlegt, weiße Schrift.
 - Die Heatmap ist das größte Einzelelement — nicht verkleinern.
 - **Druckfertige Grafik:**
@@ -77,11 +84,11 @@ TRACE-Equity
 Curriculare Verankerung von Chancengerechtigkeit in der
 österreichischen Elementarpädagogik-Ausbildung
 
-**Autorinnen / Affiliation:**
-Laura König · Barbara Steiner
+**Affiliation (Titelband — ohne Autorinnennamen):**
 Universität Graz · Institut für Bildungsforschung und
 PädagogInnenbildung · Projektseminar zur Elementarpädagogik
 (LV-Leitung: Ass.-Prof. Dr. phil. Eva Pölzl-Stefanec)
+*Autorinnennamen erscheinen ausschließlich im Kontaktblock.*
 
 ---
 
@@ -127,20 +134,20 @@ pädagogisches Leitprinzip?
 **Mini-Flow (als Diagramm setzen):**
 
 ```
-Vollerhebung           Qualitative              Critical Expert
-N = 4 Cluster-      →   Inhaltsanalyse      →    in the Loop
-Curricula              (Kuckartz &               1.626 Findings
-(9 PH + FH Wien)       Rädiker, 2022)            → 1.061 relevant
-                       233 Keywords / 8 Codes    κ = 0,71 / 0,83
-                                                       │
-                                                       ▼
-                            Levinson-Typologie (3 Stufen):
-                       formale Gleichheit → kompensatorisch
-                                → transformativ
+Vollerhebung          Qualitative          CEiL in eigener
+N = 4 Cluster-     →   Inhaltsanalyse   →   Flask-Web-App      →  Levinson-
+Curricula             (Kuckartz &           (mit Coding-Agent      Typologie
+(9 PH + FH Wien)      Rädiker, 2022)        entwickelt)            (3 Stufen)
+                      233 Keywords          1.626 → 1.061       formale Gl. →
+                      8 Codes               κ = 0,71 / 0,83     kompens. →
+                                                                transformativ
 ```
 
-Deduktiv · keine LLM-Codierung (Validität latenter Bedeutungen) ·
-ICR κ = 0,71 / 0,83 — *gut* bis *sehr gut* (Landis & Koch, 1977).
+Eigens für das Projekt mit einem Coding-Agent entwickelte
+Flask-Web-App (Promptotyping) für Keyword-Extraktion + CEiL-
+Validierung. Deduktiv · keine LLM-Codierung (Validität latenter
+Bedeutungen) · ICR κ = 0,71 / 0,83 — *gut* bis *sehr gut*
+(Landis & Koch, 1977).
 
 ---
 
@@ -199,8 +206,9 @@ Inhaltsanalyse* (5. Aufl.). Beltz Juventa. · Levinson, M., Geron, T.,
 8*. · OECD. (2018). *Equity in education*. OECD Publishing. ·
 Stojanov, K. (2011). *Bildungsgerechtigkeit*. VS Verlag.
 
-**Kontakt:** laura.koenig@edu.uni-graz.at ·
-barbara.steiner@edu.uni-graz.at — [QR-Code: Link zu Bericht/Repo]
+**Kontakt:** Laura König — laura.koenig@edu.uni-graz.at ·
+Barbara Steiner — barbara.steiner@edu.uni-graz.at
+— [QR-Code: Link zu Bericht/Repo]
 
 ---
 

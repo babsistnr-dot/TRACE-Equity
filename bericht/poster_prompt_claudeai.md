@@ -35,9 +35,12 @@ Hierarchie statt Dekor. Großzügiger Weißraum als Gestaltungsmittel.
 **Eine** Akzentfarbe (Violett **#4B3F8C**) sparsam für Headlines,
 Take-home-Banner und Kennzahl-Highlights; sonst Text **#222** auf
 Weiß, optionale ruhige Flächen in **#F4F2FA**. Serifenlose Schrift.
-Die Kernzahlen sollen visuell als Anker wirken (groß, in Akzentfarbe),
-nicht im Fließtext verschwinden — „Information lebt im Design, nicht
-im Absatz". Du hast Freiheit bei Raster, Proportionen, Mikrotypografie
+Die Kernzahlen sollen als visuelle Anker wirken — aber als
+**einheitlich gestaltete Kennzahl-Callouts**: gleiche Schriftgröße,
+gleiche Ausrichtung, klar vom Begleittext getrennt (z. B. konsistente
+Stat-Kacheln je Dimension), ruhig und systematisch — *nicht* als
+verschieden große, frei im Text schwebende Riesenzahlen. Du hast
+Freiheit bei Raster, Proportionen, Mikrotypografie
 und der grafischen Umsetzung des Methoden-Flows — nutze sie auf
 höchstem Handwerksniveau.
 
@@ -61,8 +64,10 @@ höchstem Handwerksniveau.
 
 **Struktur (Priorität, Layout-Craft dir überlassen)**
 Lesefluss oben→unten, klassisch-wissenschaftlich:
-1. Titelband: Titel · Untertitel · Autorinnen/Affiliation; je ein
-   gestrichelter Logo-Platzhalter „Logo Uni Graz" oben links & rechts.
+1. Titelband: Titel · Untertitel · Affiliation **ohne
+   Autorinnennamen** (nur Institution/LV); je ein gestrichelter
+   Logo-Platzhalter „Logo Uni Graz" oben links & rechts. Die
+   Autorinnennamen stehen ausschließlich im Kontaktblock (Fußzeile).
 2. Take-home-Banner über volle Breite (visuell zweitstärkstes
    Element nach dem Titel).
 3. Zweispaltig: links 1 Hintergrund · 2 Forschungsfrage · 3 Methode
@@ -80,10 +85,10 @@ Nummerierte Abschnittsüberschriften in Akzentfarbe.
 **Titel:** TRACE-Equity
 **Untertitel:** Curriculare Verankerung von Chancengerechtigkeit in
 der österreichischen Elementarpädagogik-Ausbildung
-**Autorinnen/Affiliation:** Laura König · Barbara Steiner —
-Universität Graz · Institut für Bildungsforschung und
-PädagogInnenbildung · Projektseminar zur Elementarpädagogik
-(LV-Leitung: Ass.-Prof. Dr. phil. Eva Pölzl-Stefanec)
+**Affiliation (Titelband, OHNE Autorinnennamen):** Universität Graz ·
+Institut für Bildungsforschung und PädagogInnenbildung ·
+Projektseminar zur Elementarpädagogik (LV-Leitung: Ass.-Prof.
+Dr. phil. Eva Pölzl-Stefanec) — Autorinnennamen nur im Kontaktblock.
 
 **Take-home-Banner:** Österreichs Elementarpädagogik-Curricula
 bleiben überwiegend auf formaler Gleichheit stehen —
@@ -110,9 +115,11 @@ Komparativer Vergleich (Unterschiede zwischen Clustern, PH vs. FH?).
 **3 Methode (als Pfeil-Flow):** Vollerhebung N = 4 Cluster-Curricula
 (9 PH + FH Campus Wien) → Qualitative Inhaltsanalyse (Kuckartz &
 Rädiker, 2022), deduktiv, 233 Keywords / 8 Codes → Critical Expert in
-the Loop: 1.626 Findings → 1.061 relevant (κ = 0,71 Relevanz;
-κ = 0,83 Code) → Levinson-Typologie (3 Stufen): formale Gleichheit →
-kompensatorisch → transformativ. Kleiner Zusatz darunter: deduktiv ·
+the Loop in eigens entwickelter Flask-Web-App: 1.626 Findings →
+1.061 relevant (κ = 0,71 Relevanz; κ = 0,83 Code) →
+Levinson-Typologie (3 Stufen): formale Gleichheit → kompensatorisch →
+transformativ. Kleiner Zusatz darunter: Web-App eigens für das
+Projekt mit einem Coding-Agent entwickelt (Promptotyping) · deduktiv ·
 keine LLM-Codierung (Validität latenter Bedeutungen) · κ-Werte gut
 bis sehr gut (Landis & Koch, 1977).
 
@@ -160,8 +167,8 @@ Conceptions of educational equity. AERA Open, 8. · OECD. (2018).
 Equity in education. OECD Publishing. · Stojanov, K. (2011).
 Bildungsgerechtigkeit. VS Verlag.
 
-**Kontakt:** laura.koenig@edu.uni-graz.at ·
-barbara.steiner@edu.uni-graz.at
+**Kontakt:** Laura König — laura.koenig@edu.uni-graz.at ·
+Barbara Steiner — barbara.steiner@edu.uni-graz.at
 
 **Ausgabe:** Liefere das fertige Poster als Design, das sich
 verlustfrei als A0-PDF exportieren lässt.
