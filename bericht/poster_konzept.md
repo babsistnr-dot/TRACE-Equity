@@ -103,9 +103,9 @@ PädagogInnenbildung · Projektseminar zur Elementarpädagogik
 
 ### Take-home-Botschaft (Banner, volle Breite)
 
-> **Österreichs Elementarpädagogik-Curricula bleiben überwiegend auf
-> formaler Gleichheit stehen — Chancengerechtigkeit als *transformatives*
-> Leitprinzip ist die curriculare Leerstelle.**
+> **Österreichs Elementarpädagogik-Curricula denken Chancengerechtigkeit
+> bis zur kompensatorischen Förderung — die *transformative*,
+> machtkritische Stufe bleibt die Leerstelle.**
 
 ---
 

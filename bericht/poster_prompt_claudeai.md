@@ -102,9 +102,8 @@ Projektseminar zur Elementarpädagogik (LV-Leitung: Ass.-Prof.
 Dr. phil. Eva Pölzl-Stefanec) — Autorinnennamen nur im Kontaktblock.
 
 **Take-home-Banner:** Österreichs Elementarpädagogik-Curricula
-bleiben überwiegend auf formaler Gleichheit stehen —
-Chancengerechtigkeit als transformatives Leitprinzip ist die
-curriculare Leerstelle.
+denken Chancengerechtigkeit bis zur kompensatorischen Förderung —
+die transformative, machtkritische Stufe bleibt die Leerstelle.
 
 **1 Hintergrund & Problem** (als Stichpunkte setzen):
 - Akademisierung der Elementarpädagogik — Bachelor seit 2018
