@@ -46,10 +46,10 @@ Auswertung über 3 Dimensionen (Explizit/Implizit, Levinson-Tiefe, Cluster-Vergl
 | 9 | Forschungsbericht | 🟡 **Kurzversion (Abgabe-Kandidat) dreimal gereviewt**, 2.125 W. Haupttext; **Anhang-Transfer A.1–A.4 + Rückfragen an Dozentin ausstehend**. Langversion als Referenz parallel. |
 | 9.5 | Abstrakt (3 S., ohne Ergebnisse) | 🟡 Durchgang A + B + Relevanz-Satz ergänzt (~1.319 W.), **Durchgang C (Feinschliff + APA) ausstehend** |
 | 9.6 | Kurzzusammenfassung | ✅ **Obsolet** (C8) — Abstract nun in § 1 des Berichts integriert, Datei entfernt |
-| 10 | Poster | ⏳ |
+| 10 | Poster | 🟡 **Konzept + Claude-Design-Briefing + druckfertige Heatmap fertig**; visuelle Umsetzung via claude.ai/design + Iteration offen |
 | 11 | README/CLAUDE.md aktualisieren | ⏳ |
 
-Letzter Commit: `c801a88` (Kurzversion Review Pass 3 — inhaltliche Präzision + APA: 52 ICR-Fälle, „vor allem bei PHs" re-added, Code 1.1 im Mapping, Code 2.3 Zahlen, APA-Kursiv, u. a.). Davor `e591527` (Kurzversion Review Pass 1+2 inkl. drei inhaltlicher Ergänzungen), `09c90b0` (Langversion § 4), `445c510` (Langversion §§ 1–3).
+Letzter Commit: `d3f6bd8` (Poster — evidenzbasierte Richtlinien + Textstraffung). Poster-Kette: `e294fb6` (Konzept A0 + 600-dpi-Heatmap) → `e49db73` (Claude.ai-Prompt) → `b343ebe` (Briefing-Überarbeitung) → `d3f6bd8`. Bericht zuletzt: `c801a88` (Kurzversion Review Pass 3), davor `e591527` (Pass 1+2).
 
 ---
 
@@ -209,6 +209,37 @@ Stand: Commit `49c932e`).
 
 ---
 
+## Poster (Schritt 10)
+
+- **Format (entschieden):** A0 Hochformat, klassisch-
+  wissenschaftlich, 2-Spalten-Korpus mit Levinson-Heatmap als
+  dominantem Element.
+- **Werkzeug (entschieden):** claude.ai/design (Anthropic Labs,
+  Opus 4.7) — eigenes Tool, nicht Artifact-Chat. Iteration über
+  Inline-Edits, native PDF/PPTX/HTML-Exporte.
+- **Dateien:**
+  - `bericht/poster_konzept.md` — Layout-Raster, evidenzbasierte
+    Designhinweise, Recherche-Synthese (Abschnitt 5) + Häufige-
+    Fehler-Checkliste, abgabefertige Stichpunkt-Textbausteine.
+  - `bericht/poster_prompt_claudeai.md` — Copy-Paste-Briefing für
+    Claude Design (Design-Brief-Format, harte Constraints inkl.
+    Schriftgrößen-Gate, Iterations-Befehle, Qualitäts-Gate).
+  - `ergebnisse/visualisierungen_vergleich/levinson_heatmap_poster.png`
+    — 600-dpi-Export (`analyse_levinson_mapping.py --poster`),
+    druckfertig für A0.
+- **Inhaltliche Basis:** geprüfte Kennzahlen aus Kurzversion des
+  Berichts; Textbausteine in Stichpunktstil (Poster-Richtlinien:
+  „weniger Text"). Take-home: *Curricula bleiben auf formaler
+  Gleichheit; transformative Gerechtigkeit = Leerstelle.*
+- **Stand:** Konzept + Briefing + Heatmap fertig (Commits `e294fb6`
+  → `d3f6bd8`). **Offen:** visuelle Umsetzung in Claude Design,
+  2–4 Iterationsrunden, Uni-Graz-Logo/Vorlage, QR-Ziel, Export
+  `bericht/poster_v1.pdf` (+ optional `.html`/`.pptx`).
+- **Kritisch:** Qualitäts-Gate Poster ↔ Bericht — keine Zahl darf
+  von Claude Design „geglättet" werden.
+
+---
+
 ## Nächste Schritte (Reihenfolge)
 
 1. **Dozentin-Rückfragen klären** (vor Team-Review, blockierend für
@@ -224,8 +255,11 @@ Stand: Commit `49c932e`).
 3. **Schritt 9.5C Abstrakt — Feinschliff** — Wortzahl-Check (≤ 1.500 W.,
    aktuell 1.319 W.), APA-Konformität der 9 Einträge, Kreuzabgleich
    mit Bericht (κ-Werte, N, „in Anlehnung an"-Formulierung).
-4. **Schritt 10 Poster** — Inhalt: HFF, Methode kompakt, Levinson-
-   Heatmap, Kernbefunde, Fazit. Format mit Team klären.
+4. **Schritt 10 Poster** — Konzept + Briefing + druckfertige Heatmap
+   stehen (s. Abschnitt „Poster"). Offen: visuelle Umsetzung via
+   claude.ai/design (Briefing aus `bericht/poster_prompt_claudeai.md`),
+   2–4 Iterationsrunden, Logo/Vorlage + QR-Ziel klären, A0-PDF
+   exportieren → `bericht/poster_v1.pdf`.
 5. **Schritt 11 Doku** — `ergebnisse/README.md` und `CLAUDE.md`
    aktualisieren (alte Zahlen / Pfade, neue Bericht-Gliederung).
 6. **Abgabe 29.06.2026** — finale Konvertierung MD → Abgabeformat
@@ -240,7 +274,10 @@ Stand: Commit `49c932e`).
   allem in Diskussion (aktuell 1,5 S.).
 - **Relevanz-Ratio-Varianz** (50–74 %): in Limitationen reflektieren.
 - **Latente Analyse interpretativ**: Methodik-Teil transparent halten.
-- **Poster-Format ungeklärt**: vor Schritt 10 mit LV-Leitung klären.
+- **Poster:** Format auf A0 Hochformat / klassisch-wissenschaftlich
+  festgelegt. Offen: Uni-Graz-Vorlage/Logo + QR-Ziel. Inhaltliche
+  Treue Poster ↔ Bericht über Qualitäts-Gate sichern (Kennzahlen
+  dürfen nicht „geglättet" werden).
 - **Abstrakt vs. Kurzzusammenfassung konsistent halten**: Korpus-Zahlen,
   Methoden-Bezeichner und Literaturangaben müssen in beiden Dokumenten
   sowie im Bericht identisch sein (manueller Abgleich beim Feinschliff).
@@ -255,4 +292,4 @@ Stand: Commit `49c932e`).
 
 ---
 
-**Erstellt:** 2026-04-15 | **Aktualisiert:** 2026-04-23 | **Stand:** Kurzversion Review Pass 1+2+3 fertig, Anhang-Transfer ausstehend
+**Erstellt:** 2026-04-15 | **Aktualisiert:** 2026-05-16 | **Stand:** Bericht-Kurzversion Pass 1+2+3 + Poster-Konzept/Briefing/Heatmap fertig; Anhang-Transfer + Poster-Umsetzung ausstehend
