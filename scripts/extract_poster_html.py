@@ -24,11 +24,11 @@ import shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BERICHT = ROOT / "bericht"
-SRC = BERICHT / "Poster Trace Equity_files" / "_bootstrap.html"
-OUT_HTML = BERICHT / "poster.html"
+POSTER = ROOT / "Poster"
+SRC = POSTER / "Poster Trace Equity_files" / "_bootstrap.html"
+OUT_HTML = POSTER / "poster.html"
 HEATMAP_SRC = ROOT / "ergebnisse" / "visualisierungen_vergleich" / "levinson_heatmap_poster.png"
-HEATMAP_DST = BERICHT / "levinson_heatmap.png"
+HEATMAP_DST = POSTER / "levinson_heatmap.png"
 FONTS_CSS_REL = "./Poster Trace Equity_files/css2"
 
 # A0 Hochformat in CSS-Pixeln @ 96 dpi

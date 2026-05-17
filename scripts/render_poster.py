@@ -21,10 +21,11 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-POSTER_HTML = ROOT / "bericht" / "poster.html"
-PDF_OUT = ROOT / "bericht" / "poster_render.pdf"
-PNG_OUT = ROOT / "bericht" / "poster_render.png"
-PPTX_OUT = ROOT / "bericht" / "Poster_TRACE-Equity.pptx"
+POSTER = ROOT / "Poster"
+POSTER_HTML = POSTER / "poster.html"
+PDF_OUT = POSTER / "poster_render.pdf"
+PNG_OUT = POSTER / "poster_render.png"
+PPTX_OUT = POSTER / "Poster_TRACE-Equity.pptx"
 
 # A0 Hochformat
 A0_W_MM, A0_H_MM = 841, 1189

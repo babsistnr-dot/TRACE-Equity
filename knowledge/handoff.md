@@ -218,10 +218,10 @@ Stand: Commit `49c932e`).
   Opus 4.7) — eigenes Tool, nicht Artifact-Chat. Iteration über
   Inline-Edits, native PDF/PPTX/HTML-Exporte.
 - **Dateien:**
-  - `bericht/poster_konzept.md` — Layout-Raster, evidenzbasierte
+  - `Poster/poster_konzept.md` — Layout-Raster, evidenzbasierte
     Designhinweise, Recherche-Synthese (Abschnitt 5) + Häufige-
     Fehler-Checkliste, abgabefertige Stichpunkt-Textbausteine.
-  - `bericht/poster_prompt_claudeai.md` — Copy-Paste-Briefing für
+  - `Poster/poster_prompt_claudeai.md` — Copy-Paste-Briefing für
     Claude Design (Design-Brief-Format, harte Constraints inkl.
     Schriftgrößen-Gate, Iterations-Befehle, Qualitäts-Gate).
   - `ergebnisse/visualisierungen_vergleich/levinson_heatmap_poster.png`
@@ -235,9 +235,9 @@ Stand: Commit `49c932e`).
   Variante B, D2/D3 inhaltlich gegengeprüft), nach lokal überführt
   und als **A0-PPTX exportiert**. Reproduzierbare Pipeline:
   - `scripts/extract_poster_html.py` — zieht saubere
-    `bericht/poster.html` aus dem Claude-Design-Export
-    (`bericht/Poster Trace Equity_files/_bootstrap.html`), biegt
-    Heatmap auf `bericht/levinson_heatmap.png` (600 dpi), hängt
+    `Poster/poster.html` aus dem Claude-Design-Export
+    (`Poster/Poster Trace Equity_files/_bootstrap.html`), biegt
+    Heatmap auf `Poster/levinson_heatmap.png` (600 dpi), hängt
     `@page 841mm 1189mm` + Print-Override an (Chrome ignoriert
     sonst „A0 portrait" → Letter).
   - `scripts/render_poster.py` — **Chrome `--print-to-pdf`** (NICHT
@@ -248,10 +248,10 @@ Stand: Commit `49c932e`).
     `Poster_TRACE-Equity.pptx` (1 Folie, A0, Bild vollflächig).
   - Re-run nach jeder neuen Claude-Design-Version:
     `python scripts/extract_poster_html.py && python scripts/render_poster.py`
-- **Deliverables:** `bericht/poster_render.pdf` (vektoriell,
-  primäres Druck-Artefakt), `bericht/Poster_TRACE-Equity.pptx`
-  (Bild auf A0-Folie), `bericht/poster_render.png` (300 dpi),
-  `bericht/poster.html` (editierbare Quelle). PPTX/PNG **nicht
+- **Deliverables:** `Poster/poster_render.pdf` (vektoriell,
+  primäres Druck-Artefakt), `Poster/Poster_TRACE-Equity.pptx`
+  (Bild auf A0-Folie), `Poster/poster_render.png` (300 dpi),
+  `Poster/poster.html` (editierbare Quelle). PPTX/PNG **nicht
   text-editierbar** (HTML→editierbares PPTX technisch nicht möglich).
 - **Offen:** Uni-Graz-Logo/Vorlage (Platzhalter), QR-Ziel;
   Graustufen-/Farbsehschwäche-Druckcheck; finale Sichtprüfung Team.
@@ -278,9 +278,9 @@ Stand: Commit `49c932e`).
    mit Bericht (κ-Werte, N, „in Anlehnung an"-Formulierung).
 4. **Schritt 10 Poster** — Konzept + Briefing + druckfertige Heatmap
    stehen (s. Abschnitt „Poster"). Offen: visuelle Umsetzung via
-   claude.ai/design (Briefing aus `bericht/poster_prompt_claudeai.md`),
+   claude.ai/design (Briefing aus `Poster/poster_prompt_claudeai.md`),
    2–4 Iterationsrunden, Logo/Vorlage + QR-Ziel klären, A0-PDF
-   exportieren → `bericht/poster_v1.pdf`.
+   exportieren → `Poster/poster_v1.pdf`.
 5. **Schritt 11 Doku** — `ergebnisse/README.md` und `CLAUDE.md`
    aktualisieren (alte Zahlen / Pfade, neue Bericht-Gliederung).
 6. **Abgabe 29.06.2026** — finale Konvertierung MD → Abgabeformat
