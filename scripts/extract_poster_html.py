@@ -63,6 +63,19 @@ def main():
 <style>
 {css}
 </style>
+<style>
+  /* Render-Override: erzwingt exaktes A0 beim Chrome --print-to-pdf
+     (Chrome ignoriert das Keyword "A0 portrait" sonst → Letter). */
+  @page {{ size: 841mm 1189mm; margin: 0; }}
+  @media print {{
+    html, body {{ width:841mm; height:1189mm; margin:0; padding:0;
+                  background:#fff; }}
+    .poster-shell {{ width:841mm !important; height:1189mm !important;
+                     transform:none !important; position:static !important;
+                     left:auto !important; top:auto !important; }}
+    .poster {{ width:841mm !important; height:1189mm !important; }}
+  }}
+</style>
 </head>
 <body style="margin:0;background:#ECEAF3;">
 <div class="poster-shell" id="shell" style="width:{A0_W}px;height:{A0_H}px;position:relative;">

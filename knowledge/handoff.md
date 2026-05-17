@@ -237,16 +237,21 @@ Stand: Commit `49c932e`).
   - `scripts/extract_poster_html.py` — zieht saubere
     `bericht/poster.html` aus dem Claude-Design-Export
     (`bericht/Poster Trace Equity_files/_bootstrap.html`), biegt
-    Heatmap auf `bericht/levinson_heatmap.png` (600 dpi).
-  - `scripts/render_poster.py` — Headless-Chrome-Render
-    `bericht/poster_render.png` (9537×13482 px, ~288 dpi @ A0) →
-    `bericht/Poster_TRACE-Equity.pptx` (1 Folie, exakt 841×1189 mm,
-    Poster vollflächig als Bild).
+    Heatmap auf `bericht/levinson_heatmap.png` (600 dpi), hängt
+    `@page 841mm 1189mm` + Print-Override an (Chrome ignoriert
+    sonst „A0 portrait" → Letter).
+  - `scripts/render_poster.py` — **Chrome `--print-to-pdf`** (NICHT
+    Screenshot: das Poster nutzt `@media print`/`@page A0`; der
+    on-screen-Skalierer wurde entfernt) → `poster_render.pdf`
+    (vektoriell, exakt 841×1189 mm) → PyMuPDF-Raster
+    `poster_render.png` (9933×14042 px, ~300 dpi) →
+    `Poster_TRACE-Equity.pptx` (1 Folie, A0, Bild vollflächig).
   - Re-run nach jeder neuen Claude-Design-Version:
     `python scripts/extract_poster_html.py && python scripts/render_poster.py`
-- **Deliverables:** `bericht/Poster_TRACE-Equity.pptx`,
-  `bericht/poster_render.png` (druckfertig), `bericht/poster.html`
-  (editierbare Quelle). PPTX = Bild auf einer A0-Folie, **nicht
+- **Deliverables:** `bericht/poster_render.pdf` (vektoriell,
+  primäres Druck-Artefakt), `bericht/Poster_TRACE-Equity.pptx`
+  (Bild auf A0-Folie), `bericht/poster_render.png` (300 dpi),
+  `bericht/poster.html` (editierbare Quelle). PPTX/PNG **nicht
   text-editierbar** (HTML→editierbares PPTX technisch nicht möglich).
 - **Offen:** Uni-Graz-Logo/Vorlage (Platzhalter), QR-Ziel;
   Graustufen-/Farbsehschwäche-Druckcheck; finale Sichtprüfung Team.
