@@ -122,8 +122,11 @@ def heatmap_vergleich(ergebnisse, poster=False):
     data = {e['label']: [e['prozent'][s] for s in DREI_STUFEN] for e in ergebnisse}
     df = pd.DataFrame(data, index=DREI_STUFEN)
 
+    # Annotationen mit deutschem Dezimalkomma (67,1 statt 67.1)
+    annot = df.map(lambda v: f"{v:.1f}".replace('.', ','))
+
     fig, ax = plt.subplots(figsize=(10, 5))
-    sns.heatmap(df, annot=True, fmt='.1f', cmap='YlOrRd',
+    sns.heatmap(df, annot=annot, fmt='', cmap='YlOrRd',
                 cbar_kws={'label': 'Anteil in %'},
                 linewidths=0.5, linecolor='white',
                 vmin=0, vmax=100, ax=ax)
@@ -135,8 +138,9 @@ def heatmap_vergleich(ergebnisse, poster=False):
     ax.set_ylabel('')
 
     # Abdeckungsraten als Untertitel
-    abdeckungen = '   '.join(f"{e['label'].split(' (')[0]}: {e['abdeckung']:.1f}%"
-                             for e in ergebnisse)
+    abdeckungen = '   '.join(
+        f"{e['label'].split(' (')[0]}: {e['abdeckung']:.1f}".replace('.', ',') + '%'
+        for e in ergebnisse)
     fig.text(0.5, -0.02, f'Abdeckungsraten (3 Stufen / relevante Findings):\n{abdeckungen}',
              ha='center', fontsize=9, style='italic')
 
