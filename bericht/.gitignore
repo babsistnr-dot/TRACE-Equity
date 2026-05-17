@@ -1,0 +1,6 @@
+# Claude-Design Browser-"Seite speichern"-Artefakte (Vendor-Bundle,
+# kein Projekt-Source). Der echte Export _bootstrap.html wird unten
+# wieder eingeschlossen — er ist Input von scripts/extract_poster_html.py.
+Poster Trace Equity.html
+Poster Trace Equity_files/*
+!Poster Trace Equity_files/_bootstrap.html

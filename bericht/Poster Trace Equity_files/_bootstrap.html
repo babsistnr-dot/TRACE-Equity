@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<!-- saved from url=(0140)https://019e2fca-7882-7ed2-97fb-d2dd6fbaa76e.claudeusercontent.com/v1/design/projects/019e2fca-7882-7ed2-97fb-d2dd6fbaa76e/serve/poster.html -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style data-omelette-injected="">html,body{background:transparent}</style><script data-omelette-injected="">(()=>{var j=["https://claude.ai","https://preview.claude.ai"];var x=true;var S=30000;var f=3000;document.addEventListener("DOMContentLoaded",()=>{const H=window.Babel;const G="om-src-id";if(H&&H.registerPlugin&&!(H.availablePlugins&&H.availablePlugins[G])){H.registerPlugin(G,({types:Y})=>({visitor:{JSXOpeningElement(U,Q){const J=U.node;if(J.name&&J.name.type==="JSXMemberExpression")return;for(let V=0;V<J.attributes.length;V++){const L=J.attributes[V];if(L.type==="JSXAttribute"&&L.name&&L.name.name==="data-om-id")return}const W=Q.file&&Q.file.opts&&Q.file.opts.filename||"?";const Z=J.loc&&J.loc.start;const z=`jsx:${W}:${J.start??0}:${Z?Z.line:0}:${Z?Z.column+1:0}`;J.attributes.push(Y.jsxAttribute(Y.jsxIdentifier("data-om-id"),Y.stringLiteral(z)))}}}))}const k="om-text-extract";let A=false;if(x&&H&&H.registerPlugin&&!(H.availablePlugins&&H.availablePlugins[k])){const Y=window.React;if(Y&&Y.useSyncExternalStore&&Y.createElement){A=true;const U={};const Q=new Set;let J=0;window.__omTextO=U;window.__omTextSet=(z)=>{for(const V in z){const L=z[V];if(L==null)delete U[V];else U[V]=L}J++;Q.forEach((V)=>V())};const W=(z)=>{Q.add(z);return()=>Q.delete(z)};const Z=()=>J;window.__OmT=function z(V){Y.useSyncExternalStore(W,Z,Z);return Y.createElement("span",{"data-om-text":V.i,className:"__om-t"},V.i in U?U[V.i]:V.children)};H.registerPlugin(k,({types:z})=>{const V={style:1,script:1,noscript:1,textarea:1,title:1,option:1,text:1,tspan:1,textPath:1};const L={placeholder:1,alt:1,title:1,label:1,"aria-label":1,"aria-description":1,"aria-placeholder":1};const _=($,C)=>z.logicalExpression("??",z.memberExpression(z.logicalExpression("||",z.memberExpression(z.identifier("window"),z.identifier("__omTextO")),z.objectExpression([])),z.stringLiteral($),true),C);const E=($)=>$.file&&$.file.opts&&$.file.opts.filename||"?";const B=($)=>$.file&&$.file.code||"";const b=($,C)=>{const X=(F)=>F&&F.start!=null&&F.end!=null&&(F.type==="StringLiteral"||F.type==="TemplateLiteral"&&F.expressions.length===0)?[F.start,F.end]:null;const N=X(C);if(N)return N;if(C&&C.type==="Identifier"){const F=$.scope.getBinding(C.name);if(F&&F.constant&&F.path.node.type==="VariableDeclarator"){return X(F.path.node.init)}}return null};const M=($,C,X)=>{const N=$.node;let F=false;const w=(K,q)=>{F=true;return z.jsxElement(z.jsxOpeningElement(z.jsxIdentifier("__OmT"),[z.jsxAttribute(z.jsxIdentifier("i"),z.stringLiteral(K))],false),z.jsxClosingElement(z.jsxIdentifier("__OmT")),[q],false)};const D=N.children.map((K)=>{if(K.type==="JSXText"){if(K.start==null||K.end==null)return K;const q=X.slice(K.start,K.end);const R=q.length-q.trimStart().length;const m=q.length-q.trimEnd().length;if(R+m>=q.length)return K;return w(`txt:${C}:${K.start+R}:${K.end-m}`,K)}if(K.type==="JSXExpressionContainer"){const q=b($,K.expression);if(q)return w(`str:${C}:${q[0]}:${q[1]}`,K)}return K});if(F)N.children=D};return{visitor:{JSXOpeningElement($,C){const X=$.node;const N=E(C);const F={};for(let w=0;w<X.attributes.length;w++){const D=X.attributes[w];if(D.type!=="JSXAttribute"||!D.name)continue;const K=D.name.name;if(!L[K])continue;if(!D.value||D.value.type!=="StringLiteral")continue;if(D.value.start==null||D.value.end==null)continue;const q=`txt:${N}:${D.value.start}:${D.value.end}`;F[K]=q;D.value=z.jsxExpressionContainer(_(q,z.stringLiteral(D.value.value)))}if(Object.keys(F).length){X.attributes.push(z.jsxAttribute(z.jsxIdentifier("data-om-text-attrs"),z.stringLiteral(JSON.stringify(F))))}},JSXElement($,C){const X=$.node.openingElement;const N=X&&X.name&&X.name.name;if(N==="__OmT")return;if(typeof N==="string"&&V[N])return;M($,E(C),B(C))},JSXFragment($,C){M($,E(C),B(C))}}}})}}const u=A?["transform-react-jsx-source",G,k]:["transform-react-jsx-source",G];document.querySelectorAll('script[type="text/babel"],script[type="text/jsx"]').forEach((Y,U)=>{const Q=Y.getAttribute("data-plugins")||"";const J=u.filter((W)=>Q.indexOf(W)<0);if(J.length){Y.setAttribute("data-plugins",Q?`${Q},${J.join(",")}`:J.join(","))}if(!Y.hasAttribute("data-filename")){Y.setAttribute("data-filename",Y.getAttribute("src")||`inline-${U}`)}})});var y=window.parent;if(y&&y!==window){const H=(Q,J)=>{try{y.postMessage({__omelette_log:true,type:Q,data:J},"*")}catch{}};["log","warn","error"].forEach((Q)=>{const J=console[Q];console[Q]=(...W)=>{const Z=W.map((z)=>{try{return typeof z==="object"?JSON.stringify(z):String(z)}catch{try{return String(z)}catch{return"[unstringifiable]"}}}).join(" ");H(Q,Z);J.apply(console,W)}});window.addEventListener("error",(Q)=>{const J=Q.target;if(J&&J!==window&&J.tagName){const W=J.src||J.href||"";H("resource_error",`${J.tagName} failed to load: ${W}`)}else{H("error",`${Q.message||"Unknown error"} at ${Q.filename||"?"}:${Q.lineno||0}:${Q.colno||0}`)}},true);window.addEventListener("unhandledrejection",(Q)=>{const J=Q.reason;const W=J instanceof Error?`${J.message} ${J.stack}`:String(J);H("error",`Unhandled rejection: ${W}`)});const G=()=>{try{y.postMessage({type:"omelette:height",height:document.documentElement.scrollHeight},"*")}catch{}};if(document.readyState==="complete")G();else window.addEventListener("load",G);if(window.ResizeObserver)new ResizeObserver(G).observe(document.documentElement);const k={};let A=0;window.claude={complete(Q){return new Promise((J,W)=>{if(!j.length){W(new Error("claude.complete: no parent origin"));return}const Z=`c${++A}`;const z=()=>setTimeout(()=>{delete k[Z];W(new Error(`claude.complete: no data for ${S/1000}s`))},S);const V=z();k[Z]={resolve:J,reject:W,text:"",t:V,arm:z};try{for(const L of j){y.postMessage({__om_api:true,id:Z,body:Q},L)}}catch(L){clearTimeout(V);delete k[Z];W(L)}})}};const u={};let Y=0;window.omelette={writeFile:(Q,J)=>new Promise((W,Z)=>{if(!j.length){W();return}const z=`f${++Y}`;const V=setTimeout(()=>{delete u[z];W()},f);u[z]={resolve:W,reject:Z,t:V};try{for(const L of j){y.postMessage({__om_file:true,id:z,op:"write",path:Q,content:J},L)}}catch{clearTimeout(V);delete u[z];W()}})};const U=(Q)=>{try{return JSON.stringify(Q)}catch{return JSON.stringify(String(Q))}};window.addEventListener("message",(Q)=>{if(j.indexOf(Q.origin)<0)return;if(Q.source!==y)return;const J=Q.data;if(!J)return;if(J.type==="omelette-preview-refresh"){if(typeof J.token!=="string"||!/^[0-9a-f.-]+$/.test(J.token))return;const z=Math.max(1,Math.floor((J.expiresAt||0)-Date.now()/1000));document.cookie="__Host-omelette-preview="+J.token+"; Path=/; Secure; SameSite=None; Partitioned; Max-Age="+z;return}if(J.__om_file_r){const z=u[J.id];if(!z)return;clearTimeout(z.t);delete u[J.id];if(J.ok)z.resolve();else z.reject(new Error(J.error||"write failed"));return}if(J.__om_api_r){const z=k[J.id];if(!z)return;if(J.error!=null){clearTimeout(z.t);delete k[J.id];z.reject(new Error(J.error));return}if(J.chunk!=null){clearTimeout(z.t);z.t=z.arm();z.text+=J.chunk;return}if(J.done){clearTimeout(z.t);delete k[J.id];z.resolve(J.text!=null?J.text:z.text);return}return}if(!J.__om_eval)return;const W=J;const Z=(z)=>{Q.source.postMessage({...z,__om_eval_r:1,id:W.id},Q.origin)};try{const z=(0,eval)(W.code);if(z&&typeof z.then==="function"){z.then((V)=>Z({ok:1,v:U(V)}),(V)=>Z({ok:0,e:String(V)}))}else{Z({ok:1,v:U(z)})}}catch(z){Z({ok:0,e:String(z)})}})}})();
+</script>
+
+
+<title>TRACE-Equity – A0 Poster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./css2" rel="stylesheet">
+<style>
+  /* ---------- A0 page setup ---------- */
+  @page { size: A0 portrait; margin: 0; }
+
+  :root{
+    --ink:#222222;
+    --ink-soft:#5b5b66;
+    --ink-mute:#8a8a93;
+    --rule:#d9d6e6;
+    --rule-strong:#222;
+    --accent:#4B3F8C;
+    --accent-ink:#3a3174;
+    --tint:#F4F2FA;
+    --board:#ECEAF3;
+    --paper:#ffffff;
+    --card-radius: 10px;
+  }
+
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; background:#2a2a30; }
+  body{ font-family:"Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif; color:var(--ink); font-feature-settings:"ss01","lnum","tnum"; }
+
+  /* ---------- Screen-only scaling wrapper ---------- */
+  .stage{
+    position:relative;
+    width:100vw; height:100vh;
+    display:flex; align-items:center; justify-content:center;
+    overflow:hidden;
+  }
+  .poster-shell{
+    transform-origin: top left;
+    box-shadow: 0 30px 80px rgba(0,0,0,.4);
+    background:#fff;
+  }
+
+  /* ---------- The A0 poster itself ---------- */
+  .poster{
+    width: 841mm;
+    height:1189mm;
+    background:var(--board);
+    color:var(--ink);
+    padding: 20mm 26mm 16mm 26mm;
+    display:flex; flex-direction:column;
+    position:relative;
+    overflow:hidden;
+    /* Body type */
+    font-size: 30pt;
+    line-height: 1.26;
+    font-weight:400;
+    letter-spacing: -0.005em;
+  }
+
+  /* Print: no scaling */
+  @media print{
+    html,body{ background:#fff; }
+    .stage{ width:auto; height:auto; display:block; overflow:visible; }
+    .poster-shell{ transform:none !important; box-shadow:none; }
+    .poster{ box-shadow:none; }
+  }
+
+  /* ---------- Type scale ---------- */
+  .t-title       { font-size: 92pt; line-height:1.02; font-weight:700; letter-spacing:-0.022em; }
+  .t-subtitle    { font-size: 36pt; line-height:1.18; font-weight:400; color:var(--ink); letter-spacing:-0.008em; }
+  .t-authors     { font-size: 26pt; line-height:1.28; font-weight:500; color:var(--ink-soft); letter-spacing:0; }
+  .t-section     { font-size: 52pt; line-height:1.0;  font-weight:700; color:var(--accent); letter-spacing:-0.012em; }
+  .t-section .num{ font-weight:300; margin-right:.32em; font-variant-numeric: lining-nums; }
+  .t-body        { font-size: 30pt; line-height:1.32; font-weight:400; }
+  .t-caption     { font-size: 22pt; line-height:1.3;  font-weight:400; color:var(--ink-soft); }
+  .t-meta        { font-size: 22pt; line-height:1.34; font-weight:400; color:var(--ink-soft); }
+  .t-mega        { font-size: 96pt; line-height:0.95; font-weight:700; color:var(--accent); letter-spacing:-0.03em; font-variant-numeric: lining-nums tabular-nums; }
+  .t-banner      { font-size: 44pt; line-height:1.16; font-weight:500; letter-spacing:-0.012em; }
+
+  /* ---------- Title band ---------- */
+  /* ---------- Topbar (single logo right) ---------- */
+  .topbar{
+    display:flex; align-items:center; justify-content:space-between;
+    gap: 16mm;
+    margin-bottom: 6mm;
+  }
+  .logo{
+    width: 82mm; height: 28mm;
+    border: 1.2pt dashed var(--ink-mute);
+    color: var(--ink-mute);
+    display:flex; align-items:center; justify-content:center;
+    font-size: 16pt; letter-spacing:.06em; font-weight:500;
+    text-transform: none;
+    flex:0 0 auto;
+    background: rgba(255,255,255,0.5);
+    border-radius: 6px;
+  }
+  .titleblock{
+    flex:1 1 auto;
+    padding: 0;
+  }
+  .eyebrow{
+    font-size: 20pt; letter-spacing:.18em; font-weight:600;
+    color:var(--accent); text-transform: uppercase;
+    margin: 0 0 4mm 0;
+  }
+  h1.title{
+    margin:0 0 4mm 0;
+    font-size: 88pt; line-height:0.98; font-weight:700; letter-spacing:-0.025em;
+    color:var(--ink);
+  }
+  .subtitle{
+    margin: 0 0 4mm 0;
+    font-size: 28pt; line-height:1.18; font-weight:400; color:var(--ink); letter-spacing:-0.006em;
+    max-width: 600mm;
+  }
+  .authors{
+    margin:0;
+    font-size: 20pt; line-height:1.32; font-weight:500; color:var(--ink-soft);
+  }
+  .authors b{ color:var(--ink); font-weight:600; }
+
+  .hr-thin{ border:0; border-top: .7pt solid var(--rule); margin: 14mm 0 0 0; }
+
+  /* ---------- Take-home banner ---------- */
+  .takehome{
+    margin-top: 4mm;
+    background: var(--accent);
+    color:#fff;
+    padding: 7mm 11mm 7mm 11mm;
+    display:flex; align-items:flex-start; gap: 10mm;
+    border-radius: var(--card-radius);
+    box-shadow: 0 2pt 10pt rgba(75,63,140,0.18);
+  }
+  .takehome .tag{
+    flex:0 0 auto;
+    font-size: 18pt; font-weight:700; letter-spacing:.22em;
+    padding-top: 2mm;
+    color:#cdc4f1;
+    text-transform: uppercase;
+    writing-mode: horizontal-tb;
+    border-right: 1pt solid rgba(255,255,255,.35);
+    padding-right: 10mm;
+    line-height:1.0;
+    align-self: stretch;
+    display:flex; flex-direction:column; justify-content:center;
+    min-width: 60mm;
+  }
+  .takehome .tag span{ display:block; }
+  .takehome .text{
+    font-size: 32pt; line-height:1.14; font-weight:500; letter-spacing:-0.012em;
+    text-wrap: pretty;
+  }
+
+  /* ---------- Cards ---------- */
+  .card{
+    background: var(--paper);
+    border-radius: var(--card-radius);
+    border: .6pt solid rgba(75,63,140,0.12);
+    box-shadow: 0 1pt 3pt rgba(34,34,34,0.04), 0 4pt 14pt rgba(34,34,34,0.03);
+    padding: 8mm 10mm 8mm 10mm;
+    display:flex; flex-direction:column;
+  }
+  .card.tinted{ background: var(--tint); }
+  .card.flat{ box-shadow:none; }
+  .card-body{
+    flex:1 1 auto;
+    display:flex; flex-direction:column;
+  }
+  .card-body.distribute{ justify-content: space-between; gap: 6mm; }
+
+  /* ---------- Generic section ---------- */
+  section.block{
+    margin-top: 0;
+  }
+  .card-head{
+    display:flex; align-items:center; gap: 6mm;
+    margin: 0 0 4mm 0;
+    padding-bottom: 3mm;
+    border-bottom: .7pt solid rgba(75,63,140,0.18);
+    flex:0 0 auto;
+  }
+  .badge{
+    width: 17mm; height: 17mm;
+    background: var(--accent);
+    color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    font-size: 24pt; font-weight:700; line-height:1;
+    border-radius: 5px;
+    font-variant-numeric: lining-nums;
+    letter-spacing:-0.01em;
+    flex:0 0 auto;
+  }
+  .card-head .label{
+    font-size: 32pt; line-height:1.04; font-weight:700; color:var(--accent); letter-spacing:-0.012em;
+  }
+
+  ul.bullets{
+    list-style:none; margin:0; padding:0;
+  }
+  ul.bullets li{
+    position:relative;
+    padding-left: 9mm;
+    margin: 0 0 3mm 0;
+    font-size: 30pt; line-height:1.26;
+    text-wrap: pretty;
+  }
+  ul.bullets li::before{
+    content:"";
+    position:absolute; left:0; top: 0.55em;
+    width: 5mm; height: 1.6pt;
+    background: var(--accent);
+  }
+
+  /* ---------- Two-column row ---------- */
+  .row2{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10mm;
+    row-gap: 8mm;
+    margin-top: 8mm;
+    align-items: stretch;
+  }
+  .row2 .col{ display:flex; flex-direction:column; gap: 8mm; }
+  .row2 .col > .card{ flex: 0 0 auto; }
+  .row2 .col > .card:last-child{ flex: 1 1 auto; }
+
+  /* ---------- Methode flow ---------- */
+  .flow{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8mm 8mm;
+    margin-top: 2mm;
+  }
+  .step{
+    background:var(--tint);
+    border-left: 2pt solid var(--accent);
+    padding: 8mm 8mm 8mm 8mm;
+    position:relative;
+  }
+  .step .k{
+    font-size: 22pt; letter-spacing:.18em; font-weight:700;
+    color:var(--accent); text-transform:uppercase;
+    margin-bottom: 4mm;
+  }
+  .step .h{
+    font-size: 28pt; line-height:1.18; font-weight:600; color:var(--ink);
+    margin-bottom: 3mm; letter-spacing:-0.006em;
+  }
+  .step .d{
+    font-size: 22pt; line-height:1.32; color:var(--ink-soft);
+  }
+  .step .d b{ color:var(--ink); font-weight:600; }
+  .flow-foot{
+    margin-top: 5mm;
+    font-size: 22pt; line-height:1.28; color:var(--ink-soft); font-style:italic;
+  }
+  .flow-foot .dot{ color:var(--accent); font-style:normal; margin:0 .3em; }
+
+  /* ---------- Findings (right column) ---------- */
+  .finding{
+    display:block;
+    padding: 5mm 0 5mm 0;
+    border-top: .7pt solid var(--rule);
+  }
+  .finding:first-of-type{ border-top: 0; padding-top: 1mm; }
+  .finding .dim-tag{
+    font-size: 22pt; letter-spacing:.18em; font-weight:700; color:var(--accent); text-transform:uppercase;
+    margin-bottom: 2mm;
+  }
+  .finding .dim-headline{
+    font-size: 26pt; line-height:1.16; font-weight:600; color:var(--ink);
+    letter-spacing:-0.006em;
+    margin-bottom: 4mm;
+  }
+  .stat-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-top: .7pt solid var(--rule);
+    border-bottom: .7pt solid var(--rule);
+    margin-bottom: 4mm;
+  }
+  .stat-grid.cols-4{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .stat{
+    padding: 4mm 5mm 4mm 0;
+    display:flex; flex-direction:column; gap: 2mm;
+  }
+  .stat + .stat{
+    padding-left: 5mm;
+    border-left: .7pt solid var(--rule);
+  }
+  .stat .num{
+    font-size: 52pt; line-height:0.95; font-weight:700; color:var(--accent);
+    letter-spacing:-0.025em;
+    font-variant-numeric: lining-nums tabular-nums;
+  }
+  .stat .num .u{ font-size: 28pt; font-weight:500; }
+  .stat-grid.cols-4 .stat .num{ font-size: 44pt; }
+  .stat-grid.cols-4 .stat .num .u{ font-size: 24pt; }
+  .stat-grid.cols-4 .stat{ padding: 6mm 4mm 6mm 0; }
+  .stat-grid.cols-4 .stat + .stat{ padding-left: 4mm; }
+  .stat .lbl{
+    font-size: 22pt; line-height:1.26; color:var(--ink-soft);
+  }
+  .stat .lbl b{ color:var(--ink); font-weight:600; }
+  .finding .body{
+    font-size: 26pt; line-height:1.28; color:var(--ink);
+  }
+  .finding .body b{ color:var(--ink); font-weight:600; }
+
+  /* ---------- Heatmap ---------- */
+  .heatmap-block{ margin-top: 8mm; padding: 4mm 6mm 4mm 6mm; }
+  .heatmap-frame{
+    width:100%;
+    background:#fff;
+    padding: 0;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .heatmap-frame img{
+    height: 250mm;
+    width: auto;
+    max-width:100%;
+    display:block;
+  }
+  .heatmap-cap{
+    margin-top: 3mm;
+    font-size: 22pt; line-height:1.26; color:var(--ink-soft);
+    text-align:center;
+  }
+  .heatmap-cap b{ color:var(--ink); font-weight:600; }
+
+  /* ---------- Recommendations ---------- */
+  .rec-list{ display:flex; flex-direction:column; gap: 3mm; }
+  .rec{
+    display:grid; grid-template-columns: 32mm 1fr; column-gap: 6mm;
+    background: var(--tint);
+    padding: 5mm 7mm;
+    border-radius: 6px;
+  }
+  .rec .tag{
+    font-size: 26pt; line-height:1; font-weight:700; color:var(--accent);
+    letter-spacing:.02em;
+    padding-top:1mm;
+  }
+  .rec .txt{ font-size: 26pt; line-height:1.22; color:var(--ink); }
+  .rec .txt b{ font-weight:700; color:var(--ink); }
+
+  /* ---------- Footer ---------- */
+  .footer{
+    margin-top: 8mm;
+    padding-top: 6mm;
+    border-top: 1pt solid rgba(75,63,140,0.22);
+    display:grid;
+    grid-template-columns: 1.55fr 1fr;
+    column-gap: 16mm;
+  }
+  .footer h3{
+    margin:0 0 3mm 0;
+    font-size: 22pt; letter-spacing:.18em; font-weight:700; text-transform:uppercase;
+    color:var(--accent);
+  }
+  .footer .lit{
+    font-size: 22pt; line-height:1.3; color:var(--ink); text-align:left;
+  }
+  .footer .lit .ref{ display:block; margin-bottom: 2mm; }
+  .footer .lit .ref b{ font-weight:600; }
+  .footer .contact{
+    display:flex; gap: 10mm; align-items:flex-start; justify-content:flex-end;
+  }
+  .footer .contact .info{
+    font-size: 22pt; line-height:1.36; color:var(--ink); text-align:right;
+  }
+  .footer .contact .info .m{ color:var(--ink); font-weight:500; }
+  .footer .qr{
+    width: 44mm; height: 44mm;
+    border: 1pt dashed var(--ink-mute);
+    color: var(--ink-mute);
+    font-size: 14pt; letter-spacing:.1em;
+    display:flex; align-items:center; justify-content:center;
+    flex:0 0 auto;
+  }
+
+  /* Tighten when content runs long */
+  .row2 .col h3.colh{
+    margin: 0 0 6mm 0;
+  }
+
+  /* Helpers */
+  .num-accent{ color:var(--accent); font-weight:700; }
+  .small-rule{
+    width: 16mm; height: 2pt; background:var(--accent); margin: 2mm 0 6mm 0; display:block;
+  }
+
+  /* ---------- Methode arrow chain (horizontal) ---------- */
+  .arrows{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
+    margin-top: 2mm;
+    align-items: stretch;
+  }
+  .arrow-step{
+    background:var(--tint);
+    padding: 5mm 6mm 5mm 9mm;
+    position:relative;
+    clip-path: polygon(0 0, calc(100% - 6mm) 0, 100% 50%, calc(100% - 6mm) 100%, 0 100%, 6mm 50%);
+  }
+  .arrow-step:first-child{
+    clip-path: polygon(0 0, calc(100% - 6mm) 0, 100% 50%, calc(100% - 6mm) 100%, 0 100%);
+    padding-left: 8mm;
+  }
+  .arrow-step:last-child{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 6mm 50%);
+  }
+  .arrow-step + .arrow-step{ margin-left: -3mm; }
+  .arrow-step .k{
+    font-size: 18pt; letter-spacing:.18em; font-weight:700;
+    color:var(--accent); text-transform:uppercase;
+    margin-bottom: 3mm;
+  }
+  .arrow-step .h{
+    font-size: 22pt; line-height:1.14; font-weight:700; color:var(--ink);
+    margin-bottom: 2mm; letter-spacing:-0.004em;
+  }
+  .arrow-step .d{
+    font-size: 20pt; line-height:1.26; color:var(--ink-soft);
+  }
+  .arrow-step .d b{ color:var(--ink); font-weight:600; }
+
+</style>
+<style data-designer-overlay="1"></style></head>
+<body>
+<div class="stage">
+  <div class="poster-shell" id="shell" style="transform: scale(0.117267); width: 3179px; height: 4494px; transform-origin: left top; position: absolute; left: 453.603px; top: 12px;">
+    <article class="poster" data-screen-label="01 Poster">
+
+      <!-- ============ TITLE BAND ============ -->
+      <header class="topbar">
+        <div class="titleblock">
+          <p class="eyebrow">Master Elementarpädagogik · Universität Graz · 2026</p>
+          <h1 class="title">TRACE-Equity</h1>
+          <p class="subtitle">Curriculare Verankerung von Chancengerechtigkeit in der österreichischen Elementarpädagogik-Ausbildung</p>
+          <p class="authors">
+            Universität Graz · Institut für Bildungsforschung und PädagogInnenbildung<br>
+            Projektseminar zur Elementarpädagogik · LV-Leitung: Ass.-Prof. Dr. phil. Eva Pölzl-Stefanec
+          </p>
+        </div>
+        <div class="logo">Logo Uni Graz</div>
+      </header>
+
+      <!-- ============ TAKE-HOME BANNER ============ -->
+      <div class="takehome">
+        <div class="tag"><span>Take-</span><span>home</span></div>
+        <div class="text">Österreichs Elementarpädagogik-Curricula denken Chancengerechtigkeit bis zur kompensatorischen Förderung — die <i style="font-style:italic;font-weight:600">transformative</i>, machtkritische Stufe bleibt die Leerstelle.</div>
+      </div>
+
+      <!-- ============ ROW 1: LEFT (1,2,3) | RIGHT (4) ============ -->
+      <div class="row2">
+        <!-- LEFT COLUMN -->
+        <div class="col">
+
+          <section class="block card" style="margin-top:0">
+            <header class="card-head">
+              <span class="badge">1</span><span class="label">Hintergrund &amp; Problem</span>
+            </header>
+            <ul class="bullets">
+              <li>Akademisierung der Elementarpädagogik — Bachelor seit 2018.</li>
+              <li>OECD-Anspruch: Educational Equity als Qualitätsfaktor (OECD, 2018).</li>
+              <li>Offen: sichern die Curricula Chancengerechtigkeit strukturell oder bleibt es bei Gleichheitsrhetorik?</li>
+              <li>Für Österreich bisher keine systematische Untersuchung → TRACE-Equity schließt die Lücke.</li>
+            </ul>
+          </section>
+
+          <section class="block card">
+            <header class="card-head">
+              <span class="badge">2</span><span class="label">Forschungsfrage</span>
+            </header>
+            <p class="t-body" style="margin:0 0 6mm 0;">
+              <b>Hauptforschungsfrage:</b> Inwiefern gehen die Curricula der Bachelorstudiengänge Elementarpädagogik österreichischer Hochschulen über formale Chancengleichheit hinaus und verankern Chancengerechtigkeit als pädagogisches Leitprinzip?
+            </p>
+            <p class="t-body" style="margin:0 0 4mm 0; color:var(--ink-soft);">Drei Dimensionen:</p>
+            <ul class="bullets">
+              <li><b style="color:var(--accent)">D1 — Explizit vs. Implizit:</b> Begriffsnennung oder Operationalisierung über Handlungskompetenzen?</li>
+              <li><b style="color:var(--accent)">D2 — Konzeptuelle Tiefe:</b> welche Gerechtigkeitsstufe nach Levinson et al. 2022 dominiert?</li>
+              <li><b style="color:var(--accent)">D3 — Komparativer Vergleich:</b> systematische Unterschiede zwischen den vier Clustern (3 PH-Cluster + FH)?</li>
+            </ul>
+          </section>
+
+          <section class="block card">
+            <header class="card-head">
+              <span class="badge">3</span><span class="label">Methode</span>
+            </header>
+
+            <div class="arrows">
+              <div class="arrow-step">
+                <div class="k">Schritt 01</div>
+                <div class="h">Vollerhebung</div>
+                <div class="d"><b>N = 4 Cluster-Curricula</b> (9 PH + FH Campus Wien).</div>
+              </div>
+              <div class="arrow-step">
+                <div class="k">Schritt 02</div>
+                <div class="h">Qualitative Inhaltsanalyse</div>
+                <div class="d">Kuckartz &amp; Rädiker, 2022 — deduktiv, <b>233 Keywords / 8 Codes</b>.</div>
+              </div>
+              <div class="arrow-step">
+                <div class="k">Schritt 03</div>
+                <div class="h">Critical Expert in the Loop in eigens entwickelter Flask-Web-App</div>
+                <div class="d"><b>1.626 Findings → 1.061 relevant</b> (κ = 0,71 / 0,83).</div>
+              </div>
+              <div class="arrow-step">
+                <div class="k">Schritt 04</div>
+                <div class="h">Levinson-Typologie</div>
+                <div class="d"><b>3 Stufen:</b> formale Gleichheit → kompensatorisch → transformativ.</div>
+              </div>
+            </div>
+
+            <p class="flow-foot">
+              deduktiv <span class="dot">·</span> keine LLM-Codierung (Validität latenter Bedeutungen) <span class="dot">·</span> κ-Werte gut bis sehr gut (Landis &amp; Koch, 1977) <span class="dot">·</span> Web-App eigens für das Projekt mit einem Coding-Agent entwickelt (Promptotyping).
+            </p>
+          </section>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="col">
+          <section class="block card" style="margin-top:0">
+            <header class="card-head">
+              <span class="badge">4</span><span class="label">Ergebnisse</span>
+            </header>
+            <div class="card-body distribute">
+
+            <!-- D1 -->
+            <div class="finding">
+              <div class="dim-tag">D1 · Explizit vs. Implizit</div>
+              <div class="dim-headline">Verankerung in den Kompetenzen, nicht in Begriffen.</div>
+              <div class="stat-grid">
+                <div class="stat">
+                  <div class="num">0,8<span class="u"> %</span></div>
+                  <div class="lbl"><b>9 von 1.061 Findings</b> nennen Gerechtigkeit explizit</div>
+                </div>
+                <div class="stat">
+                  <div class="num">117 : 1</div>
+                  <div class="lbl">Verhältnis zugunsten <b>impliziter Operationalisierung</b></div>
+                </div>
+              </div>
+              <div class="body">West &amp; SüdOst kommen vollständig <b>ohne expliziten Begriff</b> aus.</div>
+            </div>
+
+            <!-- D2 -->
+            <div class="finding">
+              <div class="dim-tag">D2 · Konzeptuelle Tiefe</div>
+              <div class="stat-grid">
+                <div class="stat">
+                  <div class="num">48,9–71,8<span class="u"> %</span></div>
+                  <div class="lbl"><b>formale Gleichheit</b> dominiert in allen Clustern</div>
+                </div>
+                <div class="stat">
+                  <div class="num">4,0–11,6<span class="u"> %</span></div>
+                  <div class="lbl"><b>transformative Gerechtigkeit</b> durchgängig schwach</div>
+                </div>
+              </div>
+              <div class="body">→ Progression equality → equity → liberation bricht nach Stufe 2 ab (siehe Heatmap).</div>
+            </div>
+
+            <!-- D3 -->
+            <div class="finding">
+              <div class="dim-tag">D3 · Komparativer Vergleich</div>
+              <div class="dim-headline">Alle vier Cluster im Vergleich.</div>
+              <div class="stat-grid cols-4">
+                <div class="stat">
+                  <div class="num">4,0<span class="u"> %</span></div>
+                  <div class="lbl"><b>West</b> — Transformativ, niedrigste Quote</div>
+                </div>
+                <div class="stat">
+                  <div class="num">11,6<span class="u"> %</span></div>
+                  <div class="lbl"><b>Mitte</b> — Transformativ, höchste Quote aller Cluster</div>
+                </div>
+                <div class="stat">
+                  <div class="num">39,8<span class="u"> %</span></div>
+                  <div class="lbl"><b>FH Campus Wien</b> — kompensatorische Gerechtigkeit</div>
+                </div>
+                <div class="stat">
+                  <div class="num">43,0<span class="u"> %</span></div>
+                  <div class="lbl"><b>FH Campus Wien</b> — professionelle Haltung (Code 2.7)</div>
+                </div>
+              </div>
+              <ul class="bullets" style="margin-bottom:5mm">
+                <li><b>West:</b> fokussiert professionelle Haltung, niedrigste Transformativ-Quote (4,0 %).</li>
+                <li><b>Mitte:</b> höchste Transformativ-Quote aller Cluster (11,6 %).</li>
+                <li><b>SüdOst:</b> ausgeglichenstes Profil unter den PHs.</li>
+                <li><b>FH Campus Wien:</b> Sonderstellung — geringste formale Gleichheit, höchste kompensatorische Gerechtigkeit (39,8 %), professionelle Haltung (Code 2.7: 43,0 %).</li>
+              </ul>
+              <div class="body">→ Die Pädagogischen Hochschulen sind untereinander nicht homogen; ihre Streuung ist aber kleiner als der Abstand zur FH → <b>PH vs. FH bleibt das dominante Strukturmerkmal</b>.</div>
+            </div>
+
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- ============ HEATMAP ============ -->
+      <section class="block card heatmap-block">
+        <div class="heatmap-frame">
+          <img src="./levinson_heatmap.png" alt="Heatmap: Cluster-Vergleich der drei Levinson-Stufen, normalisiert über die drei Stufen pro Cluster.">
+        </div>
+        <p class="heatmap-cap"><b>Abb. 1 —</b> Verteilung der drei Gerechtigkeitsstufen je Cluster (relevante Findings, normalisiert über die drei Stufen pro Cluster).</p>
+      </section>
+
+      <!-- ============ ROW 2: FAZIT | EMPFEHLUNGEN ============ -->
+      <div class="row2">
+        <div class="col">
+          <section class="block card" style="margin-top:0">
+            <header class="card-head">
+              <span class="badge">5</span><span class="label">Fazit</span>
+            </header>
+            <ul class="bullets">
+              <li>Punktuell über formale Gleichheit hinaus (kompensatorische Förderung, Haltungsbildung), aber <b>nicht systematisch transformativ</b> verankert.</li>
+              <li>Schwäche lokalisierbar: <b>curricular</b> (Code 2.4) · <b>institutionell</b> (v. a. PHs) · <b>diskursiv</b> (fehlende Begriffsführung).</li>
+              <li>Bestätigt die <i>Gleichbehandlung von Ungleichen</i> (Gomolla &amp; Radtke, 2009).</li>
+            </ul>
+          </section>
+        </div>
+        <div class="col">
+          <section class="block card" style="margin-top:0">
+            <header class="card-head">
+              <span class="badge">6</span><span class="label">Handlungsempfehlungen</span>
+            </header>
+            <div class="rec-list">
+              <div class="rec">
+                <div class="tag">E1</div>
+                <div class="txt"><b>Begriff verankern.</b> Chancengerechtigkeit explizit auf Programmebene setzen (Qualifikationsprofile, Modulüberschriften).</div>
+              </div>
+              <div class="rec">
+                <div class="tag">E2</div>
+                <div class="txt"><b>Machtkritik ausbauen.</b> Lerngelegenheiten zu institutioneller Diskriminierung, Bildungsprivilegien und vorurteilsbewussten Ansätzen institutionalisieren.</div>
+              </div>
+              <div class="rec">
+                <div class="tag">E3</div>
+                <div class="txt"><b>Transfer-Signal nutzen.</b> FH-Wien-Profil als Referenzpunkt im hochschulübergreifenden Dialog.</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- ============ FOOTER ============ -->
+      <footer class="footer">
+        <div class="lit">
+          <h3>Literatur (Auswahl)</h3>
+          <span class="ref">Gomolla, M., &amp; Radtke, F.-O. (2009). <i>Institutionelle Diskriminierung.</i> VS Verlag.</span>
+          <span class="ref">Kuckartz, U., &amp; Rädiker, S. (2022). <i>Qualitative Inhaltsanalyse</i> (5. Aufl.). Beltz Juventa.</span>
+          <span class="ref">Levinson, M., Geron, T., &amp; Brighouse, H. (2022). Conceptions of educational equity. <i>AERA Open, 8.</i></span>
+          <span class="ref">OECD. (2018). <i>Equity in education.</i> OECD Publishing.</span>
+          <span class="ref">Stojanov, K. (2011). <i>Bildungsgerechtigkeit.</i> VS Verlag.</span>
+        </div>
+        <div class="contact">
+          <div class="info">
+            <h3 style="text-align:right">Kontakt</h3>
+            <span class="m"><b>Laura König</b> — laura.koenig@edu.uni-graz.at</span><br>
+            <span class="m"><b>Barbara Steiner</b> — barbara.steiner@edu.uni-graz.at</span><br>
+            <span style="color:var(--ink-soft)">Universität Graz · Institut für<br>Bildungsforschung und PädagogInnenbildung</span>
+          </div>
+          <div class="qr">QR</div>
+        </div>
+      </footer>
+
+    </article>
+  </div>
+</div>
+
+<script>
+  // Fit the A0 poster to the viewport for on-screen preview.
+  // Print uses @page A0 portrait, so this transform is bypassed via @media print.
+  (function fit(){
+    var shell = document.getElementById('shell');
+    var poster = shell.querySelector('.poster');
+    function apply(){
+      // A0 portrait in CSS px @ 96 DPI: 841mm ≈ 3179.5px, 1189mm ≈ 4495.2px
+      var W = poster.offsetWidth, H = poster.offsetHeight;
+      var vw = window.innerWidth, vh = window.innerHeight;
+      var pad = 24;
+      var s = Math.min((vw - pad) / W, (vh - pad) / H);
+      shell.style.transform = 'scale(' + s + ')';
+      shell.style.width = W + 'px';
+      shell.style.height = H + 'px';
+      // Center via flex; ensure overall box bounds are scaled box
+      shell.style.transformOrigin = 'top left';
+      // Reposition: center scaled box
+      var sw = W * s, sh = H * s;
+      shell.style.position = 'absolute';
+      shell.style.left = Math.max(0,(vw - sw)/2) + 'px';
+      shell.style.top  = Math.max(0,(vh - sh)/2) + 'px';
+    }
+    apply();
+    window.addEventListener('resize', apply);
+  })();
+</script>
+
+
+</body></html>

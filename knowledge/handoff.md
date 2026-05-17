@@ -231,12 +231,28 @@ Stand: Commit `49c932e`).
   Berichts; Textbausteine in Stichpunktstil (Poster-Richtlinien:
   „weniger Text"). Take-home: *Curricula bleiben auf formaler
   Gleichheit; transformative Gerechtigkeit = Leerstelle.*
-- **Stand:** Konzept + Briefing + Heatmap fertig (Commits `e294fb6`
-  → `d3f6bd8`). **Offen:** visuelle Umsetzung in Claude Design,
-  2–4 Iterationsrunden, Uni-Graz-Logo/Vorlage, QR-Ziel, Export
-  `bericht/poster_v1.pdf` (+ optional `.html`/`.pptx`).
-- **Kritisch:** Qualitäts-Gate Poster ↔ Bericht — keine Zahl darf
-  von Claude Design „geglättet" werden.
+- **Stand:** In Claude Design gestaltet (Sektions-Karten, Take-home
+  Variante B, D2/D3 inhaltlich gegengeprüft), nach lokal überführt
+  und als **A0-PPTX exportiert**. Reproduzierbare Pipeline:
+  - `scripts/extract_poster_html.py` — zieht saubere
+    `bericht/poster.html` aus dem Claude-Design-Export
+    (`bericht/Poster Trace Equity_files/_bootstrap.html`), biegt
+    Heatmap auf `bericht/levinson_heatmap.png` (600 dpi).
+  - `scripts/render_poster.py` — Headless-Chrome-Render
+    `bericht/poster_render.png` (9537×13482 px, ~288 dpi @ A0) →
+    `bericht/Poster_TRACE-Equity.pptx` (1 Folie, exakt 841×1189 mm,
+    Poster vollflächig als Bild).
+  - Re-run nach jeder neuen Claude-Design-Version:
+    `python scripts/extract_poster_html.py && python scripts/render_poster.py`
+- **Deliverables:** `bericht/Poster_TRACE-Equity.pptx`,
+  `bericht/poster_render.png` (druckfertig), `bericht/poster.html`
+  (editierbare Quelle). PPTX = Bild auf einer A0-Folie, **nicht
+  text-editierbar** (HTML→editierbares PPTX technisch nicht möglich).
+- **Offen:** Uni-Graz-Logo/Vorlage (Platzhalter), QR-Ziel;
+  Graustufen-/Farbsehschwäche-Druckcheck; finale Sichtprüfung Team.
+- **Kritisch:** Qualitäts-Gate Poster ↔ Bericht — Kennzahlen
+  geprüft (Stand zuletzt korrekt); bei neuer Claude-Design-Version
+  D2/D3 + Binnen-I erneut gegenprüfen.
 
 ---
 
