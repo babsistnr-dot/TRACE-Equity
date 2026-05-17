@@ -46,10 +46,10 @@ Auswertung über 3 Dimensionen (Explizit/Implizit, Levinson-Tiefe, Cluster-Vergl
 | 9 | Forschungsbericht | 🟡 **Kurzversion (Abgabe-Kandidat) dreimal gereviewt**, 2.125 W. Haupttext; **Anhang-Transfer A.1–A.4 + Rückfragen an Dozentin ausstehend**. Langversion als Referenz parallel. |
 | 9.5 | Abstrakt (3 S., ohne Ergebnisse) | 🟡 Durchgang A + B + Relevanz-Satz ergänzt (~1.319 W.), **Durchgang C (Feinschliff + APA) ausstehend** |
 | 9.6 | Kurzzusammenfassung | ✅ **Obsolet** (C8) — Abstract nun in § 1 des Berichts integriert, Datei entfernt |
-| 10 | Poster | 🟡 **Konzept + Claude-Design-Briefing + druckfertige Heatmap fertig**; visuelle Umsetzung via claude.ai/design + Iteration offen |
+| 10 | Poster | 🟢 **Gestaltet (Claude Design) → lokal als A0-PDF/PPTX exportiert, Inhalt verifiziert**, alles in `Poster/`. Offen nur: echtes Logo, QR-Ziel, Druck-Farbcheck |
 | 11 | README/CLAUDE.md aktualisieren | ⏳ |
 
-Letzter Commit: `d3f6bd8` (Poster — evidenzbasierte Richtlinien + Textstraffung). Poster-Kette: `e294fb6` (Konzept A0 + 600-dpi-Heatmap) → `e49db73` (Claude.ai-Prompt) → `b343ebe` (Briefing-Überarbeitung) → `d3f6bd8`. Bericht zuletzt: `c801a88` (Kurzversion Review Pass 3), davor `e591527` (Pass 1+2).
+Letzter Commit: `3050bfa` (Heatmap deutsches Dezimalkomma). Poster-Schluss-Kette: `f0ad3bb` (Claude-Design-Export → HTML) → `f96e843` (Render-Fix print-to-pdf, A0 korrekt) → `5795936` (poster_texte.md für Laura) → `7c443e6` (alles nach `Poster/` konsolidiert) → `3050bfa` (Heatmap-Komma). Bericht zuletzt: `c801a88` (Kurzversion Review Pass 3).
 
 ---
 
@@ -214,9 +214,11 @@ Stand: Commit `49c932e`).
 - **Format (entschieden):** A0 Hochformat, klassisch-
   wissenschaftlich, 2-Spalten-Korpus mit Levinson-Heatmap als
   dominantem Element.
-- **Werkzeug (entschieden):** claude.ai/design (Anthropic Labs,
-  Opus 4.7) — eigenes Tool, nicht Artifact-Chat. Iteration über
-  Inline-Edits, native PDF/PPTX/HTML-Exporte.
+- **Werkzeug:** Gestaltung erfolgte in claude.ai/design
+  (Sektions-Karten-Layout). **Claude-Design-Limit erreicht** —
+  keine weiteren Design-Iterationen dort möglich; Weiterarbeit
+  läuft über die lokale Pipeline / `Poster/poster.html` (kein
+  Claude Design nötig).
 - **Dateien:**
   - `Poster/poster_konzept.md` — Layout-Raster, evidenzbasierte
     Designhinweise, Recherche-Synthese (Abschnitt 5) + Häufige-
@@ -228,12 +230,18 @@ Stand: Commit `49c932e`).
     — 600-dpi-Export (`analyse_levinson_mapping.py --poster`),
     druckfertig für A0.
 - **Inhaltliche Basis:** geprüfte Kennzahlen aus Kurzversion des
-  Berichts; Textbausteine in Stichpunktstil (Poster-Richtlinien:
-  „weniger Text"). Take-home: *Curricula bleiben auf formaler
-  Gleichheit; transformative Gerechtigkeit = Leerstelle.*
-- **Stand:** In Claude Design gestaltet (Sektions-Karten, Take-home
-  Variante B, D2/D3 inhaltlich gegengeprüft), nach lokal überführt
-  und als **A0-PPTX exportiert**. Reproduzierbare Pipeline:
+  Berichts; Textbausteine in Stichpunktstil. Take-home (Variante B):
+  *„Österreichs Elementarpädagogik-Curricula denken Chancengerechtig-
+  keit bis zur kompensatorischen Förderung — die transformative,
+  machtkritische Stufe bleibt die Leerstelle."*
+- **Stand:** Fertig gestaltet, lokal als **vektorielles A0-PDF +
+  A0-PPTX** exportiert, **alles in `Poster/` konsolidiert**, Heatmap
+  auf **deutsches Dezimalkomma** umgestellt (67,1 statt 67.1),
+  **Schluss-Verifikation bestanden** (Levinson-Zahlen exakt gegen
+  frisch aus den CSVs erzeugte Daten-Doku; Take-home B, D2/D3,
+  Binnen-I konsistent über poster.html ↔ poster_texte.md ↔
+  poster_konzept.md; 62/62 Tests; PDF exakt 841×1189 mm).
+  Reproduzierbare Pipeline:
   - `scripts/extract_poster_html.py` — zieht saubere
     `Poster/poster.html` aus dem Claude-Design-Export
     (`Poster/Poster Trace Equity_files/_bootstrap.html`), biegt
@@ -248,16 +256,27 @@ Stand: Commit `49c932e`).
     `Poster_TRACE-Equity.pptx` (1 Folie, A0, Bild vollflächig).
   - Re-run nach jeder neuen Claude-Design-Version:
     `python scripts/extract_poster_html.py && python scripts/render_poster.py`
-- **Deliverables:** `Poster/poster_render.pdf` (vektoriell,
-  primäres Druck-Artefakt), `Poster/Poster_TRACE-Equity.pptx`
-  (Bild auf A0-Folie), `Poster/poster_render.png` (300 dpi),
-  `Poster/poster.html` (editierbare Quelle). PPTX/PNG **nicht
-  text-editierbar** (HTML→editierbares PPTX technisch nicht möglich).
-- **Offen:** Uni-Graz-Logo/Vorlage (Platzhalter), QR-Ziel;
-  Graustufen-/Farbsehschwäche-Druckcheck; finale Sichtprüfung Team.
-- **Kritisch:** Qualitäts-Gate Poster ↔ Bericht — Kennzahlen
-  geprüft (Stand zuletzt korrekt); bei neuer Claude-Design-Version
-  D2/D3 + Binnen-I erneut gegenprüfen.
+- **Deliverables (alle in `Poster/`, auf GitHub):**
+  `poster_render.pdf` (vektoriell, primäres Druck-Artefakt) ·
+  `Poster_TRACE-Equity.pptx` (Bild auf A0-Folie) ·
+  `poster_render.png` (300 dpi) · `poster.html` (editierbare
+  Quelle) · `levinson_heatmap.png` (600 dpi, dt. Komma) ·
+  **`poster_texte.md`** (Lauras Kopierquelle) · **`README.md`**
+  (rollenbasierter Einstieg) · `poster_konzept.md` ·
+  `poster_prompt_claudeai.md`. PPTX/PNG **nicht text-editierbar**.
+- **Für Laura:** alles auf GitHub unter `Poster/` (verifiziert
+  gepusht). Einstieg `Poster/README.md`; Texte aus
+  `Poster/poster_texte.md` (Wortlaut/Zahlen nicht ändern); Optik
+  aus `poster_render.pdf`; Weiterdesign aus `poster.html`. Claude
+  Design **nicht** nötig.
+- **Offen (nur Organisatorisches, keine Korrektheitsfragen):**
+  echtes Uni-Graz-Logo statt Platzhalter, QR-Ziel festlegen,
+  Graustufen-/Farbsehschwäche-Druckcheck der Heatmap.
+- **Bekannt/ungeklärt:** Root-`Poster.png` (untracked, nicht aus
+  Poster-Task, nicht auf GitHub) — Zuordnung durch Verfasserinnen.
+  Langversion § 5.4 „West Diversität" vs. Tab. A.3.4 (Poster
+  korrekt „West fokussiert Haltung"; Langversion-To-do, s.
+  Risiken).
 
 ---
 
@@ -276,11 +295,11 @@ Stand: Commit `49c932e`).
 3. **Schritt 9.5C Abstrakt — Feinschliff** — Wortzahl-Check (≤ 1.500 W.,
    aktuell 1.319 W.), APA-Konformität der 9 Einträge, Kreuzabgleich
    mit Bericht (κ-Werte, N, „in Anlehnung an"-Formulierung).
-4. **Schritt 10 Poster** — Konzept + Briefing + druckfertige Heatmap
-   stehen (s. Abschnitt „Poster"). Offen: visuelle Umsetzung via
-   claude.ai/design (Briefing aus `Poster/poster_prompt_claudeai.md`),
-   2–4 Iterationsrunden, Logo/Vorlage + QR-Ziel klären, A0-PDF
-   exportieren → `Poster/poster_v1.pdf`.
+4. **Schritt 10 Poster** — ✅ gestaltet/exportiert/verifiziert
+   (s. Abschnitt „Poster"). Nur noch durch Team/Laura: echtes
+   Uni-Graz-Logo statt Platzhalter einsetzen, QR-Ziel festlegen +
+   generieren, Graustufen-/Farbsehschwäche-Druckcheck. Änderungen
+   in `Poster/poster.html` → `python scripts/render_poster.py`.
 5. **Schritt 11 Doku** — `ergebnisse/README.md` und `CLAUDE.md`
    aktualisieren (alte Zahlen / Pfade, neue Bericht-Gliederung).
 6. **Abgabe 29.06.2026** — finale Konvertierung MD → Abgabeformat
@@ -323,4 +342,4 @@ Stand: Commit `49c932e`).
 
 ---
 
-**Erstellt:** 2026-04-15 | **Aktualisiert:** 2026-05-16 | **Stand:** Bericht-Kurzversion Pass 1+2+3 + Poster-Konzept/Briefing/Heatmap fertig; Anhang-Transfer + Poster-Umsetzung ausstehend
+**Erstellt:** 2026-04-15 | **Aktualisiert:** 2026-05-17 | **Stand:** Poster fertig (A0-PDF/PPTX in `Poster/`, dt. Heatmap-Komma, Inhalt verifiziert, für Laura auf GitHub); offen: Logo/QR/Druck-Farbcheck · Bericht-Anhang-Transfer Kurzversion · Dozentin-Rückfragen
